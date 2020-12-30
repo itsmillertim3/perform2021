@@ -13,7 +13,7 @@ echo "Create Keptn Project: ${PROJECTNAME}"
 keptn create project "${PROJECTNAME}" --shipyard=${SERVICENAME}/shipyard.yaml
 
 echo "Onboard Service ${SERVICENAME} to Project: ${PROJECTNAME}"
-keptn onboard service ${SERVICENAME} --project="${PROJECTNAME}"
+keptn onboard service ${SERVICENAME} --project="${PROJECTNAME}" --chart=simplenode/charts
 
 echo "Adding JMeter files"
 keptn add-resource --project="${PROJECTNAME}" --resource=${SERVICENAME}/jmeter/jmeter.conf.yaml --resourceUri=jmeter/jmeter.conf.yaml
