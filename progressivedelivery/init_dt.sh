@@ -35,3 +35,9 @@ kubectl create secret generic -n keptn dynatrace \
 
 echo "Make Dynatrace the default SLI provider"
 kubectl create configmap lighthouse-config -n keptn --from-literal=sli-provider=dynatrace || true
+
+echo "Install the dynatrace service"
+kubectl apply -n keptn -f https://raw.githubusercontent.com/keptn-contrib/dynatrace-service/0.10.1/deploy/service.yaml
+
+echo "Install the Dynatrace SLI Service"
+kubectl apply -n keptn -f https://raw.githubusercontent.com/keptn-contrib/dynatrace-sli-service/patch/release-0.7.1/deploy/service.yaml
