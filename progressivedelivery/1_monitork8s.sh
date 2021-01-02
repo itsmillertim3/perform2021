@@ -11,7 +11,8 @@ echo "1. Deploy OneAgent Operator"
 helm repo add dynatrace https://raw.githubusercontent.com/Dynatrace/helm-charts/master/repos/stable
 kubectl create namespace dynatrace
 
-cat > values.yaml <<- EOM platform: "kubernetes"
+cat > values.yaml <<- EOM
+platform: "kubernetes"
 
 oneagent:
   name: "oneagent"
@@ -23,7 +24,7 @@ oneagent:
 
 secret:
   apiToken: "$DT_API_TOKEN"
-  paasToken: "DT_PAAS_TOKEN"
+  paasToken: "$DT_PAAS_TOKEN"
 EOM
 
 helm install dynatrace-oneagent-operator dynatrace/dynatrace-oneagent-operator -n dynatrace --values values.yaml
