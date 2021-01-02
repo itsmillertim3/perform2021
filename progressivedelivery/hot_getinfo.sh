@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DT_TENANT=$(kubectl get secret keptn-api-token -n keptn -ojsonpath={.data.dt_tenant} | base64 --decode)
-KEPTN_BRIDGE_URL=$(kubectl get secret keptn-api-token -n keptn -ojsonpath={.data.keptn_bridge_url} | base64 --decode)
+DT_TENANT=$(kubectl get secret dynatrace -n keptn -ojsonpath={.data.DT_TENANT} | base64 --decode)
+KEPTN_BRIDGE_URL=$(kubectl get secret dynatrace -n keptn -ojsonpath={.data.KEPTN_BRIDGE_URL} | base64 --decode)
 KEPTN_BRIDGE_USER=admin
 KEPTN_BRIDGE_PASSWORD=$(keptn configure bridge --output | tail -1 | awk -F  ": " '/1/ {print $2}')
 KEPTN_INGRESS=$(kubectl get cm -n keptn ingress-config -ojsonpath={.data.ingress_hostname_suffix})
