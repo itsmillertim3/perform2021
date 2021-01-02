@@ -11,3 +11,4 @@ curl -L https://github.com/dynatrace-oss/dynatrace-monitoring-as-code/releases/d
 chmod +x monaco
 
 echo "2. Execute Monaco"
+monaco -e=monaco-environment.yaml -p=hotday_monaco monaco
