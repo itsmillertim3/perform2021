@@ -1,0 +1,4 @@
+hotday_tenant:
+    - name: "HotDay Tenant"
+    - env-url: "{{ .Env.DT_TENANT }}"
+    - env-token-name: "DT_API_TOKEN"

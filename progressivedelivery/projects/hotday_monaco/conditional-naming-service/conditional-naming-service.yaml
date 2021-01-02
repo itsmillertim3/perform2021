@@ -1,0 +1,5 @@
+config:
+    - keptn_svc_naming: "naming.json"
+
+keptn_svc_naming:
+    - name: "Keptn Service Naming Rules"

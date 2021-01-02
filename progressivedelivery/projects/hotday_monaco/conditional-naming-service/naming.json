@@ -1,0 +1,25 @@
+{
+    "type": "SERVICE",
+    "nameFormat": "{ProcessGroup:Environment:keptn_service}.{ProcessGroup:Environment:keptn_deployment}",
+    "displayName": "{{ .name }}",
+    "enabled": true,
+    "rules": [
+      {
+        "key": {
+          "attribute": "PROCESS_GROUP_CUSTOM_METADATA",
+          "dynamicKey": {
+            "source": "ENVIRONMENT",
+            "key": "keptn_deployment"
+          },
+          "type": "PROCESS_CUSTOM_METADATA_KEY"
+        },
+        "comparisonInfo": {
+          "type": "STRING",
+          "operator": "EXISTS",
+          "value": null,
+          "negate": false,
+          "caseSensitive": null
+        }
+      }
+    ]
+  }
