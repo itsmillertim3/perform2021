@@ -28,7 +28,7 @@ secret:
 EOM
 
 helm install dynatrace-oneagent-operator dynatrace/dynatrace-oneagent-operator -n dynatrace --values values.yaml
-# rm values.yaml
+rm values.yaml
 
 
 echo "2. Setup k8s API Integration"
