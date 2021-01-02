@@ -1,7 +1,7 @@
 #!/bin/bash
 # This script will apply Monitoring as Code configuration to the Dynatrace Tenant
 
-source init.sh 
+source init_helper.sh 
 
 echo "-----------------------------------------------------------------------"
 echo "Configure Dynatrace settings using Monaco - https://github.com/dynatrace-oss/dynatrace-monitoring-as-code"

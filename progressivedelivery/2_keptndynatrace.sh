@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source init.sh 
+source init_helper.sh 
 
 echo "-----------------------------------------------------------------------"
 echo "Configure Keptn - Dynatrace integration"

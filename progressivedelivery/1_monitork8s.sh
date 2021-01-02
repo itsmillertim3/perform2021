@@ -2,7 +2,7 @@
 # This script will ensure that the k8s cluster is properly monitoring with Dynatrace
 # It will install the OneAgent Operator and configure the k8s API Integration
 
-source init.sh 
+source init_helper.sh 
 
 echo "-----------------------------------------------------------------------"
 echo "Ensures k8s is properly monitored with Dynatrace"
@@ -11,7 +11,7 @@ echo "1. Deploy OneAgent Operator"
 helm repo add dynatrace https://raw.githubusercontent.com/Dynatrace/helm-charts/master/repos/stable
 kubectl create namespace dynatrace
 
-  cat << EOF | platform: "kubernetes"
+cat > values.yaml <<-EOM platform: "kubernetes"
 
 oneagent:
   name: "oneagent"
@@ -24,7 +24,8 @@ oneagent:
 secret:
   apiToken: "$DT_API_TOKEN"
   paasToken: "DT_PAAS_TOKEN"
-EOF >> values.yaml
+EOM
+
 helm install dynatrace-oneagent-operator dynatrace/dynatrace-oneagent-operator -n dynatrace --values values.yaml
 # rm values.yaml
 
