@@ -25,6 +25,8 @@ secret:
   apiToken: "$DT_API_TOKEN"
   paasToken: "DT_PAAS_TOKEN"
 EOF >> values.yaml
+helm install dynatrace-oneagent-operator dynatrace/dynatrace-oneagent-operator -n dynatrace --values values.yaml
+# rm values.yaml
 
 
 echo "2. Setup k8s API Integration"

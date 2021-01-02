@@ -20,3 +20,13 @@ keptn add-resource --project="${PROJECTNAME}" --resource=${SERVICENAME}/jmeter/j
 keptn add-resource --project="${PROJECTNAME}" --resource=${SERVICENAME}/jmeter/load.jmx --resourceUri=jmeter/load.jmx
 keptn add-resource --project="${PROJECTNAME}" --resource=${SERVICENAME}/jmeter/basiccheck.jmx --resourceUri=jmeter/basiccheck.jmx
 
+echo "Adding SLO file"
+keptn add-resource --project="${PROJECTNAME}" --service=${SERVICENAME} --stage=staging --resource=${SERVICENAME}/slo.yaml --resourceUri=slo.yaml
+keptn add-resource --project="${PROJECTNAME}" --service=${SERVICENAME} --stage=prod --resource=${SERVICENAME}/slo.yaml --resourceUri=slo.yaml
+
+echo "Enable Namespaces Labels & Annotations to be accessible by Dynatrace OneAgent"
+# https://www.dynatrace.com/support/help/technology-support/cloud-platforms/kubernetes/other-deployments-and-configurations/leverage-tags-defined-in-kubernetes-deployments/
+kubectl create namespace ${PROJECTNAME}-staging
+kubectl create namespace ${PROJECTNAME}-prod
+kubectl -n ${PROJECTNAME}-staging create rolebinding default-view --clusterrole=view --serviceaccount=${PROJECTNAME}-staging:default
+kubectl -n ${PROJECTNAME}-prod create rolebinding default-view --clusterrole=view --serviceaccount=${PROJECTNAME}-prod:default
