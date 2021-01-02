@@ -28,7 +28,5 @@ keptn add-resource --project="${PROJECTNAME}" --service=${SERVICENAME} --stage=$
 
 echo "Enable Namespaces Labels & Annotations to be accessible by Dynatrace OneAgent"
 # https://www.dynatrace.com/support/help/technology-support/cloud-platforms/kubernetes/other-deployments-and-configurations/leverage-tags-defined-in-kubernetes-deployments/
-kubectl create namespace ${PROJECTNAME}-${STAGE_STAGING}
-kubectl create namespace ${PROJECTNAME}-${STAGE_PROD}
 kubectl -n ${PROJECTNAME}-${STAGE_STAGING} create rolebinding default-view --clusterrole=view --serviceaccount=${PROJECTNAME}-${STAGE_STAGING}:default
 kubectl -n ${PROJECTNAME}-${STAGE_PROD} create rolebinding default-view --clusterrole=view --serviceaccount=${PROJECTNAME}-${STAGE_PROD}:default
