@@ -6,7 +6,7 @@ There are 4 major sections on the release inventory screen:
 1. Issue tracking information based on filter
 1. Release events based on filter
 
-![](../../assets/images/01_release_inventory_sections.png)
+![](../../../assets/images/01_release_inventory_sections.png)
 
 **ATTENTION DEMO MODE**
 In demo mode the filter only applies to the *Real-time inventory* section. The issue tracking and release events will always show the same demo data.

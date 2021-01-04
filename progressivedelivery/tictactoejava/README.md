@@ -20,4 +20,4 @@ java TicTacToeAI.java
 export DT_APPLICATION_RELEASE_VERSION=1
 export DT_APPLICATION_NAME=tictactoe
 export DT_APPLICATION_ENVIRONMENT=gameenvironment
-java TicTacToeAI.java
+java TicTacToeAI

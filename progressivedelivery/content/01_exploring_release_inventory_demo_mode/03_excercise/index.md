@@ -1,4 +1,4 @@
-## Excercise
+## Excercise on Demo Data
 
 We just learned how to navigate through the demo data. You should now be able to answer the following questions_
 
