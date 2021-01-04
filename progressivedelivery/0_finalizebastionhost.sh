@@ -9,7 +9,7 @@ echo "Ensures this Bastion host is monitored with a OneAgent and runs an ActiveG
 echo "-----------------------------------------------------------------------"
 echo "1. Install OneAgent"
 wget -O Dynatrace-OneAgent-Linux-latest.sh "https://$DT_TENANT/api/v1/deployment/installer/agent/unix/default/latest?arch=x86&flavor=default" --header="Authorization: Api-Token $DT_PAAS_TOKEN"
-sudo /bin/sh Dynatrace-OneAgent-Linux-latest.sh
+sudo /bin/sh Dynatrace-OneAgent-Linux-latest.sh --set-host-name=bastionhost
 
 echo "2. Install ActiveGate"
 wget -O Dynatrace-ActiveGate-Linux-latest.sh "https://$DT_TENANT/api/v1/deployment/installer/gateway/unix/latest?arch=x86&flavor=default" --header="Authorization: Api-Token $DT_PAAS_TOKEN"

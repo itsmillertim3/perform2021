@@ -1,5 +1,15 @@
 config:
     - keptn_svc_naming: "naming.json"
+    - keptn_pg_naming: "naming.json"
 
 keptn_svc_naming:
+    - type: "SERVICE"
     - name: "Keptn Service Naming Rules"
+    - nameFormat: "{ProcessGroup:Environment:keptn_service}.{ProcessGroup:Environment:keptn_deployment}"
+# - nameFormat: "{ProcessGroup:Environment:keptn_service}.{ProcessGroup:Environment:keptn_stage}.{ProcessGroup:Environment:keptn_deployment}"
+
+keptn_pg_naming:
+    - type: "PROCESS_GROUP"
+    - name: "Keptn Process Group Naming"
+    - nameFormat: "{ProcessGroup:Environment:keptn_service}.{ProcessGroup:Environment:keptn_deployment}"
+# - nameFormat: "{ProcessGroup:Environment:keptn_project}.{ProcessGroup:Environment:keptn_service}.{ProcessGroup:Environment:keptn_stage}.{ProcessGroup:Environment:keptn_deployment}"
