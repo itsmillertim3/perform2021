@@ -34,7 +34,7 @@ echo "Add monaco configuration for setting up Synthetic Tests"
 # If we havent yet prepared and zipped the monaco confiuration we do it. We first replace REPLACE_KEPTN_INGRESS with the actual KEPTN_INGRESS.
 if [ ! -f simplenode/monaco/monaco.zip ]; then
   cd simplenode/monaco
-  sed "s/REPLACE_KEPTN_INGRESS/$KEPTN_INGRESS/g" projects/simplenode/synthetic/synthetic.yaml.tmpl >> projects/simplenode/synthetic/synthetic.yaml
+  sed "s/REPLACE_KEPTN_INGRESS/$KEPTN_INGRESS/g" projects/simplenode/synthetic-monitor/synthetic.yaml.tmpl >> projects/simplenode/synthetic-monitor/synthetic.yaml
   zip -r monaco.zip . -x *.tmpl
   cd ../.. 
 fi 
