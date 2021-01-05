@@ -14,3 +14,9 @@ sudo /bin/sh Dynatrace-OneAgent-Linux-latest.sh --set-host-name=bastionhost
 echo "2. Install ActiveGate"
 wget -O Dynatrace-ActiveGate-Linux-latest.sh "https://$DT_TENANT/api/v1/deployment/installer/gateway/unix/latest?arch=x86&flavor=default" --header="Authorization: Api-Token $DT_PAAS_TOKEN"
 sudo /bin/sh Dynatrace-ActiveGate-Linux-latest.sh
+
+echo "3. Make sure zip is installed"
+sudo apt install zip
+
+echo "4. Make sure a JRE is installed"
+sudo apt install default-jre

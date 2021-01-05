@@ -24,6 +24,7 @@ keptn add-resource --project="${PROJECTNAME}" --resource=${SERVICENAME}/jmeter/b
 
 echo "Adding dynatrace.conf.yaml on project level"
 keptn add-resource --project="${PROJECTNAME}" --resource=${SERVICENAME}/dynatrace/dynatrace.conf.yaml --resourceUri=dynatrace/dynatrace.conf.yaml
+keptn add-resource --project="${PROJECTNAME}" --resource=${SERVICENAME}/dynatrace/monaco.conf.yaml --resourceUri=dynatrace/monaco.conf.yaml
 
 echo "Adding SLO files for staging & prod"
 keptn add-resource --project="${PROJECTNAME}" --service=${SERVICENAME} --stage=${STAGE_STAGING} --resource=${SERVICENAME}/slo.yaml --resourceUri=slo.yaml
@@ -34,7 +35,7 @@ echo "Add monaco configuration for setting up Synthetic Tests"
 if [ ! -f simplenode/monaco/monaco.zip ]; then
   cd simplenode/monaco
   sed "s/REPLACE_KEPTN_INGRESS/$KEPTN_INGRESS/g" projects/simplenode/synthetic/synthetic.yaml.tmpl >> projects/simplenode/synthetic/synthetic.yaml
-  tar -czvf monaco.zip --exclude=*.tmpl *
+  zip -r monaco.zip . -x *.tmpl
   cd ../.. 
 fi 
 
