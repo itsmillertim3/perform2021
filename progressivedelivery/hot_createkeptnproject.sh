@@ -34,13 +34,13 @@ echo "Add monaco configuration for setting up Synthetic Tests"
 # If we havent yet prepared and zipped the monaco confiuration we do it. We first replace REPLACE_KEPTN_INGRESS with the actual KEPTN_INGRESS.
 if [ ! -f simplenode/monaco/monaco.zip ]; then
   cd simplenode/monaco
+  KEPTN_INGRESS=$(kubectl get cm -n keptn ingress-config -ojsonpath={.data.ingress_hostname_suffix})
   sed "s/REPLACE_KEPTN_INGRESS/$KEPTN_INGRESS/g" projects/simplenode/synthetic-monitor/synthetic.yaml.tmpl >> projects/simplenode/synthetic-monitor/synthetic.yaml
   zip -r monaco.zip . -x *.tmpl
   cd ../.. 
 fi 
 
 keptn add-resource --project="${PROJECTNAME}" --service=${SERVICENAME} --stage=${STAGE_PROD} --resource=simplenode/monaco/monaco.zip --resourceUri=dynatrace/monaco.zip
-
 
 echo "Enable Namespaces Labels & Annotations to be accessible by Dynatrace OneAgent"
 # https://www.dynatrace.com/support/help/technology-support/cloud-platforms/kubernetes/other-deployments-and-configurations/leverage-tags-defined-in-kubernetes-deployments/
