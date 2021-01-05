@@ -26,3 +26,6 @@ kubectl apply -n keptn -f https://raw.githubusercontent.com/keptn-contrib/dynatr
 echo "5. Enable Label & Annotation monitoring of key namespaces"
 kubectl -n keptn create rolebinding default-view --clusterrole=view --serviceaccount=keptn:default
 kubectl -n istio-system create rolebinding default-view --clusterrole=view --serviceaccount=istio-system:default
+
+echo "6. Install Dynatrace Monaco Keptn Service"
+kubectl apply -n keptn -f https://raw.githubusercontent.com/keptn-sandbox/monaco-service/main/deploy/service.yaml
