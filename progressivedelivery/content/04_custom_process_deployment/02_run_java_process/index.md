@@ -56,10 +56,10 @@ Now - play at least one game. May the better human win :-)
 
 ### Step 3: Validate in Dynatrace Release Inventory
 
-If we have done everything right we should see our recent deployment show up in Dynatrace. Go ahead and explore the *Real time inventory* and filter on the Application with the name "DEMOAPP" (or whatever value you gave it)!
+If we have done everything right we should see our recent deployment show up in Dynatrace. Go ahead and explore the *Real time inventory* and filter on the Application with the name "tictactoe" (or whatever value you gave it)!
 Here is what we should see!
 
-![](../../../assets/images/04_helloworld_release_inventory.png)
+![](../../../assets/images/04_tictactoe_release_inventory.png)
 
 ### Step 4: Restart with different environment variables
 
