@@ -29,8 +29,16 @@ echo "Adding SLO files for staging & prod"
 keptn add-resource --project="${PROJECTNAME}" --service=${SERVICENAME} --stage=${STAGE_STAGING} --resource=${SERVICENAME}/slo.yaml --resourceUri=slo.yaml
 keptn add-resource --project="${PROJECTNAME}" --service=${SERVICENAME} --stage=${STAGE_PROD} --resource=${SERVICENAME}/slo.yaml --resourceUri=slo.yaml
 
-echo "TODO: Add monaco configuration for setting up Synthetic Tests"
-# We first replace REPLACE_KEPTN_INGRESS with the actual KEPTN_INGRESS. Then we zip up the monaco folder and upload it to the config repo for prod
+echo "Add monaco configuration for setting up Synthetic Tests"
+# If we havent yet prepared and zipped the monaco confiuration we do it. We first replace REPLACE_KEPTN_INGRESS with the actual KEPTN_INGRESS.
+if [ ! -f simplenode/monaco/monaco.zip ]; then
+  cd simplenode/monaco
+  sed "s/REPLACE_KEPTN_INGRESS/$KEPTN_INGRESS/g" projects/simplenode/synthetic/synthetic.yaml.tmpl >> projects/simplenode/synthetic/synthetic.yaml
+  tar -czvf monaco.zip --exclude=*.tmpl *
+  cd ../.. 
+fi 
+
+keptn add-resource --project="${PROJECTNAME}" --service=${SERVICENAME} --stage=${STAGE_PROD} --resource=simplenode/monaco/monaco.zip --resourceUri=dynatrace/monaco.zip
 
 
 echo "Enable Namespaces Labels & Annotations to be accessible by Dynatrace OneAgent"
