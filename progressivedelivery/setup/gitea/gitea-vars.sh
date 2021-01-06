@@ -16,7 +16,7 @@ GIT_PASSWORD="keptn#R0cks"
 GIT_SERVER="http://git.$K8S_DOMAIN"
 
 # static vars
-GIT_TOKEN="keptn-token"
+GIT_TOKEN="keptn-upstream-token"
 TOKEN_FILE=$GIT_TOKEN.json
 
 echo "Username: $GIT_USER"

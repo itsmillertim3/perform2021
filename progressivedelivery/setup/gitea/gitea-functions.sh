@@ -11,7 +11,7 @@ createApiToken(){
     curl -v --user $GIT_USER:$GIT_PASSWORD \
     -X POST "$GIT_SERVER/api/v1/users/$GIT_USER/tokens" \
     -H "accept: application/json" -H "Content-Type: application/json; charset=utf-8" \
-    -d "{ \"name\": \"$GIT_TOKEN\" }" -o $GIT_TOKEN.json
+    -d "{ \"name\": \"$GIT_TOKEN\" }" -o $TOKEN_FILE
 }
 
 getApiTokens(){
@@ -29,12 +29,18 @@ deleteApiToken(){
 }
 
 readApiTokenFromFile() {
+    if [ ! -f "$TOKEN_FILE" ]; then
+        createApiToken 
+    fi 
+
     if [ -f "$TOKEN_FILE" ]; then
         echo "Reading token from file $TOKEN_FILE"
         TOKENJSON=$(cat $TOKEN_FILE)
         API_TOKEN=$(echo $TOKENJSON | jq -r '.sha1')
         TOKEN_ID=$(echo $TOKENJSON | jq -r '.id')
         echo "tokenId: $TOKEN_ID hash: $API_TOKEN"
+    else 
+        echo "Cant get Git Token!"
     fi
 }
 

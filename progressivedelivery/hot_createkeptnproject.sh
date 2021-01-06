@@ -50,4 +50,6 @@ kubectl -n ${PROJECTNAME}-${STAGE_PROD} create rolebinding default-view --cluste
 echo "TODO: Create Dynatrace SLOs for service in production"
 
 echo "Creating a Git Repository for this project"
-./setup/gitea/create-upstream-git.sh ${PROJECTNAME}
+cd setup/gitea
+./create-upstream-git.sh ${PROJECTNAME}
+cd ../..

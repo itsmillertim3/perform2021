@@ -9,12 +9,6 @@ fi
 
 source ./gitea-functions.sh $K8S_DOMAIN
 
-# get Tokens for the User
-getApiTokens
-
-# create an Api Token
-createApiToken
-
 # read the Token and keep the hash in memory
 readApiTokenFromFile
 
