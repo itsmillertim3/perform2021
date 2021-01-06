@@ -1,6 +1,12 @@
 #!/bin/bash
 # Function file for adding created keptn repos to a self-hosted git repository
 
+if [[ -z "$1" ]]; then
+  echo "You have to specify a project name, e.g: studentxxx"
+  echo "Usage: $0 student001"
+  exit 1
+fi
+
 source ./gitea-functions.sh $K8S_DOMAIN
 
 # get Tokens for the User
