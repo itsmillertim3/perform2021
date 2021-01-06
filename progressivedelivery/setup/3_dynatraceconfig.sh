@@ -1,5 +1,6 @@
 #!/bin/bash
 # This script will apply Monitoring as Code configuration to the Dynatrace Tenant
+# This includes some naming rules so that all deployed services and sample apps we use later on will be correctly identified
 
 source init_helper.sh 
 

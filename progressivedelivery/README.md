@@ -17,7 +17,7 @@ This HOT requires
 1. A Bastion Host to access k8s & keptn
 
 Additional installation steps are necessary to e.g: monitor k8s with Dynatrace, install Dynatrace-Keptn services, ...
-These scripts can be found in the root folder of this repository. They are all prefixed with a number starting with 0_xxx.sh
+These scripts can be found in the setup folder of this repository. They are all prefixed with a number starting with 0_xxx.sh
 
 These scripts ARE ONLY TO BE EXECUTED by the trainers or the Dynatrace University admins!
 

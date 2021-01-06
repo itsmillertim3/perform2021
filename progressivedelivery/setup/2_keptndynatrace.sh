@@ -1,4 +1,6 @@
 #!/bin/bash
+# This script will install all dynatrace relevant keptn services, e.g: dynatrace, dynatrace-sli, monaco ..
+# It also configures the Dynatrace credentials via the secret and sets dynatrace-sli as the default SLI provider
 
 source init_helper.sh 
 
