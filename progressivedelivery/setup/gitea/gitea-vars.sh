@@ -5,7 +5,8 @@ if [ $# -eq 1 ]; then
     echo "Domain has been passed: $K8S_DOMAIN"
 else
     echo "No Domain has been passed, getting it from the api-Ingress"
-    K8S_DOMAIN=$(kubectl get ing -n keptn api-keptn-ingress -o=jsonpath='{.spec.rules[0].host}')
+    KEPTN_K8S_DOMAIN=$(kubectl get ing -n keptn api-keptn-ingress -o=jsonpath='{.spec.rules[0].host}')
+    K8S_DOMAIN=${KEPTN_K8S_DOMAIN/#keptn.}
     echo "Domain: $K8S_DOMAIN"
 fi
 

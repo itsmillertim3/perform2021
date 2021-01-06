@@ -13,4 +13,3 @@ spec:
       - backend:
           serviceName: gitea-http
           servicePort: 3000
-        path: /

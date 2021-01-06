@@ -18,6 +18,12 @@ fi
 KEPTN_INGRESS_HOSTNAME="keptn.$K8S_DOMAIN"
 
 echo "-----------------------------------------------------------------------"
+echo "Exposes the Keptn Bridge via Istio Ingress: $KEPTN_INGRESS_HOSTNAME"
+echo "-----------------------------------------------------------------------"
+cat ./keptn/keptn-ingress.yaml | sed 's~domain.placeholder~'"$K8S_DOMAIN"'~' > ./keptn/gen/keptn-ingress.yaml
+kubectl apply -f ./keptn/gen/keptn-ingress.yaml
+
+echo "-----------------------------------------------------------------------"
 echo "Ensure Keptns Helm Service has the correct Istio ingress information: $KEPTN_INGRESS_HOSTNAME"
 echo "-----------------------------------------------------------------------"
 echo "1. Create ConfigMap"
