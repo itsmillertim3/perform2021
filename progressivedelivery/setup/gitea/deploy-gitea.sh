@@ -2,7 +2,7 @@
 
 # Load git vars
 K8S_DOMAIN=$1
-source ./gitea-vars.sh $K8S_DOMAIN
+source ./gitea-vars.sh
 
 echo "Create namespace for git"
 kubectl create ns git

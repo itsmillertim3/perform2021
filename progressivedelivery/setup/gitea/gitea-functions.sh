@@ -3,7 +3,7 @@
 # https://gitea.com/gitea/helm-chart/#configuration
 
 # Load git vars
-source ./gitea-vars.sh $K8S_DOMAIN
+source ./gitea-vars.sh
 
 # Create Token
 createApiToken(){

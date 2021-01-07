@@ -1,7 +1,7 @@
 #!/bin/bash
 # Function file for adding created keptn repos to a self-hosted git repository
 
-source ./gitea-functions.sh $K8S_DOMAIN
+source ./gitea-functions.sh
 
 # get Tokens for the User
 getApiTokens
