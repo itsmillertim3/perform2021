@@ -1,0 +1,246 @@
+{
+	"info": {
+		"_postman_id": "7b7cd134-8175-4a50-99c1-ff0a886ca042",
+		"name": "DT Managed Perform 2021 Cluster API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Lookup Token Meta Data",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Api-Token {{dtAPIAuthToken}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Charset",
+						"value": "utf-8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"token\": \"{{dtAPITokenID}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{dtManaged}}.dynatrace-managed.com/api/cluster/v2/tokens/lookup",
+					"protocol": "https",
+					"host": [
+						"{{dtManaged}}",
+						"dynatrace-managed",
+						"com"
+					],
+					"path": [
+						"api",
+						"cluster",
+						"v2",
+						"tokens",
+						"lookup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Token",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Api-Token {{dtAPIAuthToken}}"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Charset",
+						"type": "text",
+						"value": "utf-8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Environment Token Management One\",\r\n    \"expiresIn\": {\r\n        \"value\": 10,\r\n        \"unit\": \"DAYS\"\r\n    },\r\n    \"scopes\": [\r\n        \"EnvironmentTokenManagement\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{dtManaged}}.dynatrace-managed.com/api/cluster/v2/tokens",
+					"protocol": "https",
+					"host": [
+						"{{dtManaged}}",
+						"dynatrace-managed",
+						"com"
+					],
+					"path": [
+						"api",
+						"cluster",
+						"v2",
+						"tokens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Token License Extension",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Api-Token {{dtAPIAuthToken}}"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Charset",
+						"type": "text",
+						"value": "utf-8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"EnvToken\",\r\n  \"expiresIn\": {\r\n    \"value\": 30,\r\n    \"unit\": \"DAYS\"\r\n  },\r\n  \"scopes\": [\r\n    \"DiagnosticExport\",\r\n    \"ServiceProviderAPI\"\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{dtManaged}}.dynatrace-managed.com/api/cluster/v2/tokens",
+					"protocol": "https",
+					"host": [
+						"{{dtManaged}}",
+						"dynatrace-managed",
+						"com"
+					],
+					"path": [
+						"api",
+						"cluster",
+						"v2",
+						"tokens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Token",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Api-Token 6XVtM64DQY2QtqTeKIOlt"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Charset",
+						"type": "text",
+						"value": "utf-8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Environment Token Management holy shit\",\r\n    \"expiresIn\": {\r\n        \"value\": 10,\r\n        \"unit\": \"DAYS\"\r\n    },\r\n    \"scopes\": [\r\n        \"EnvironmentTokenManagement\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gjy420.dynatrace-managed.com/api/cluster/v2/tokens",
+					"protocol": "https",
+					"host": [
+						"gjy420",
+						"dynatrace-managed",
+						"com"
+					],
+					"path": [
+						"api",
+						"cluster",
+						"v2",
+						"tokens"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
