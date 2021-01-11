@@ -1,5 +1,13 @@
 # Pre-Flight Checklist
 
+Keptn-in-a-Box is a 🚀 rocket launcher for enabling tutorials or workshops in an easy, fast and ressource efficient way.
+Keptn-In-A-Box is a Bash script that will convert a plain Ubuntu machine in a Single Node Kubernetes Cluster with Keptn installed and configured 
+
+In a matter of minutes you'll have a fully configured Single Node Kubernetes Cluster for learning Keptn tutorials, trying out new functionalities, building your own pipeline or even delivering Performance-as-a-Self-Service.
+
+Keptn-in-a-Box runs on microk8s, which is a simple production-grade upstream certified Kubernetes made for developers and DevOps.
+
+
 ## Create Credentials
 
   - [ ] TENANTID="https://mytenant.live.dynatrace.com"
@@ -46,7 +54,7 @@ Once the build has completed, it should return the command prompt.
 
 ## What we deployed
 
-KIAB
+KIAB ()
 
 1. Kubernetes
 	- API
