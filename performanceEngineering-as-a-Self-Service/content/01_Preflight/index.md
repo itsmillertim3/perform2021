@@ -19,12 +19,14 @@
 ## Run Shell command
 
     
+```
 ()$ sudo bash -c './keptn-in-a-box.sh'
+```
     
 You will need to provide the Tenant ID, API token, PaaS token and an Email.
 For the class we will use the provided student account for the email.
 
-<img src="../../assets/images/run_script.png" width="300"/>
+<img src="../../assets/images/run_script.png" width="400"/>
 
 Then answer 'Y' if the information is correct.
 
