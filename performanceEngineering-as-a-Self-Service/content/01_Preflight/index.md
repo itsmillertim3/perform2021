@@ -56,7 +56,7 @@ ssh ssh dtu.training@Your-instance-ip
 ()$ sudo bash -c './keptn-in-a-box.sh'
 ```
     
-You will need to provide the Tenant ID, API token, PaaS token and an Email.
+You will need to provide the **Dynatrace Tenant ID**, **Dynatrace API token**, **Dynatrace PaaS token** and an Email.
 For the class we will use the provided student account for the email.
 
 <img src="../../assets/images/run_script.png" width="500"/>
