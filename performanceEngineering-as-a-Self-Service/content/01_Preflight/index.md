@@ -1,8 +1,8 @@
 ## Pre-Flight Checklist
 
-	- [ ] TENANT=\"https://mytenant.live.dynatrace.com\"
-	- [ ] PAASTOKEN=myDynatracePaaSToken
-	- [ ] APITOKEN=myDynatraceApiToken
+	[ ] TENANT="https://mytenant.live.dynatrace.com"
+	[ ] PAASTOKEN=myDynatracePaaSToken
+	[ ] APITOKEN=myDynatraceApiToken
 
 1. Create a API Token.
 	- [API Authentication](https://www.dynatrace.com/support/help/extend-dynatrace/dynatrace-api/basics/dynatrace-api-authentication/)
