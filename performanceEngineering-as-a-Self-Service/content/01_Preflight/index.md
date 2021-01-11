@@ -59,6 +59,11 @@ KIAB
 4. CI/CD
 	- Jenkins
 	- Unleash
+5. Order Application
+	- Frontend Service
+	- Customer Service
+	- Catalog Service
+	- Order Service
 
 ## Order App Overview
 
