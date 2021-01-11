@@ -2,9 +2,9 @@
 
 ## Create Credentials
 
-	[ ] TENANT="https://mytenant.live.dynatrace.com"
-	[ ] PAASTOKEN=myDynatracePaaSToken
-	[ ] APITOKEN=myDynatraceApiToken
+  - [ ] TENANT="https://mytenant.live.dynatrace.com"
+  - [ ] PAASTOKEN=myDynatracePaaSToken
+  - [ ] APITOKEN=myDynatraceApiToken
 
 1. Create a API Token.
 	- [API Authentication](https://www.dynatrace.com/support/help/extend-dynatrace/dynatrace-api/basics/dynatrace-api-authentication/)
@@ -18,14 +18,13 @@
 
 ## Run Shell command
 
-	```bash
-	()$ sudo bash -c './keptn-in-a-box.sh'
-	```
-	
+    ```bash
+    ()$ sudo bash -c './keptn-in-a-box.sh'
+    ```
 You will need to provide the Tenant ID, API token, PaaS token and an Email.
 For the class we will use the provided student account for the email.
 
-	<img src="../../assets/images/run_script.png" width="300"/>
+    <img src="../../assets/images/run_script.png" width="300"/>
 
 Then answer 'Y' if the information is correct.
 
