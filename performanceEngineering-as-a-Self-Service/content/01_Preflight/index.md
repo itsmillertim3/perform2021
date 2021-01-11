@@ -6,7 +6,7 @@ This application was built for demonstations of Dynatrace.  The front-end look l
 
 The overall application is made up of four Docker components: a frontend web UI and 3 backend services.  Once monitored by Dynatrace, a multi-tier call flow will be available such as shown below.
 
-<img src="assets/images/dt-call-flow.png" width="500"/>
+<img src="../assets/images/dt-call-flow.png" width="500"/>
 
 # Pre-built Docker Images
 
