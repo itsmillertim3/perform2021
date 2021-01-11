@@ -2,7 +2,7 @@
 
 ## Create Credentials
 
-  - [ ] TENANT="https://mytenant.live.dynatrace.com"
+  - [ ] TENANTID="https://mytenant.live.dynatrace.com"
   - [ ] PAASTOKEN=myDynatracePaaSToken
   - [ ] APITOKEN=myDynatraceApiToken
 
@@ -11,15 +11,17 @@ Open a text editor and use this to copy and paste the Credential information.
 1. Retrieve your Tenant ID. For this exercise, we need the fully qualified name.
 	xxxx.sprint.dynatracelabs.com
 
-<img src="../../assets/images/Tenant_id.png" width="300"/>
+<img src="../../assets/images/Tenant_id.png" width="500"/>
 
-1. Create a API Token.
+2. Create a API Token.
 	- [API Authentication](https://www.dynatrace.com/support/help/extend-dynatrace/dynatrace-api/basics/dynatrace-api-authentication/)
 	
+Use the following for the API permissions.
+
 <img src="../../assets/images/API_token.png" width="300"/>
 	
 	
-2. Create a PAAS token.
+3. Create a PAAS token.
 	- [PaaS Token](https://www.dynatrace.com/support/help/reference/dynatrace-concepts/environment-id/#anchor_paas)
 
 
