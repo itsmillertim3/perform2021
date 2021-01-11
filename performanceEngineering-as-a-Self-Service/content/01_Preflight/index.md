@@ -20,7 +20,7 @@ Open a text editor we will use this as a cheat sheet for our Credential informat
 
 1. Retrieve your Tenant ID. 
 
-For this exercise, we need the fully qualified name.
+For this exercise, we need the fully qualified name without the trailing /.
 **xxxx.sprint.dynatracelabs.com**
 
 <img src="../../assets/images/Tenant_id.png" width="500"/>
@@ -57,7 +57,7 @@ ssh ssh dtu.training@Your-instance-ip
 sudo bash -c './keptn-in-a-box.sh'
 ```
     
-You will need to provide the **Dynatrace Tenant ID**, **Dynatrace API token**, **Dynatrace PaaS token** and an Email.
+You will need to provide the **Dynatrace Tenant ID**, **Dynatrace API token**, **Dynatrace PaaS token** and a **Email**.
 For the class we will use the provided student account for the email.
 
 <img src="../../assets/images/run_script.png" width="500"/>
