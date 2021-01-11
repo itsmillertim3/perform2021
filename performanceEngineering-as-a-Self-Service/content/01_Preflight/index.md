@@ -92,7 +92,7 @@ Run the following from the command prompt.
 less +F /tmp/install.log
 ```
 
-We can now get the URL for KIAB.
+Get the URL for KIAB.
 
 <img src="../../assets/images/KIAB_info.png" width="500"/>
 
