@@ -43,7 +43,7 @@ Do not interrupt the build, this will cause failures.
 
 Once the build has completed, it should return the command prompt.
 
-What have we deployed?
+## What we deployed
 
 KIAB
 
