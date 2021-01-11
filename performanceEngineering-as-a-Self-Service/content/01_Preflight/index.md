@@ -14,6 +14,19 @@
 	- [PaaS Token](https://www.dynatrace.com/support/help/reference/dynatrace-concepts/environment-id/#anchor_paas)
 
 
+# Run Shell command
+
+	```
+	sudo bash -c './keptn-in-a-box.sh'
+	```
+You will need to provide the Tenant ID, API token, PaaS token and an Email.
+For the class we will use the provided student account for the email.
+
+	<img src="../../assets/images/run_script.png" width="300"/>
+
+Then answer 'Y' if the information is correct.
+
+
 # Order App Overview
 
 This application was built for demonstations of Dynatrace.  The front-end look like this.
