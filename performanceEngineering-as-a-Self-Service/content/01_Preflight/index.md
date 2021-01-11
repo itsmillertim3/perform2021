@@ -42,6 +42,7 @@ Use the following for the API permissions.
 
 In your Dynatrace tenant, go to **Settings > Integration > Platform as a Service**, and create a new PaaS Token.
 
+## Run Shell command
 
 💻 Login to your Ubuntu instance
 
@@ -51,8 +52,9 @@ Use the credentials provided to open a ssh client or you can use the provided sh
 ssh ssh dtu.training@Your-instance-ip
 ```
 
-## Run Shell command
+Next
 
+Run the following command.
     
 ```bash
 sudo bash -c './keptn-in-a-box.sh'
