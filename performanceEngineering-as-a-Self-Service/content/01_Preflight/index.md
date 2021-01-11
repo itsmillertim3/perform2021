@@ -1,10 +1,10 @@
 ## Pre-Flight Checklist
 
-	- TENANT="https://mytenant.live.dynatrace.com"
-	- PAASTOKEN=myDynatracePaaSToken
-	- APITOKEN=myDynatraceApiToken
+	- [ ] TENANT=\"https://mytenant.live.dynatrace.com\"
+	- [ ] PAASTOKEN=myDynatracePaaSToken
+	- [ ] APITOKEN=myDynatraceApiToken
 
-1. Create an API Token.
+1. Create a API Token.
 	- [API Authentication](https://www.dynatrace.com/support/help/extend-dynatrace/dynatrace-api/basics/dynatrace-api-authentication/)
 	
 	<img src="../../assets/images/API_token.png" width="300"/>
@@ -17,7 +17,7 @@
 ## Run Shell command
 
 	```bash
-	()$ sudo bash -c './keptn-in-a-box.sh'
+	()$ sudo bash -c \'./keptn-in-a-box.sh\'
 	```
 	
 You will need to provide the Tenant ID, API token, PaaS token and an Email.
