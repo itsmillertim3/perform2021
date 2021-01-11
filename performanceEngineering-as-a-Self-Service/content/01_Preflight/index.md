@@ -22,6 +22,8 @@ Open a text editor and use this to copy and paste the Credential information.
 <img src="../../assets/images/Tenant_id.png" width="500"/>
 
 2. Create a API Token.
+Log in to your Dynatrace tenant and go to Settings > Integration > Dynatrace API. Then, create anew API token with the following permissions
+
 	- [API Authentication](https://www.dynatrace.com/support/help/extend-dynatrace/dynatrace-api/basics/dynatrace-api-authentication/)
 	
 Use the following for the API permissions.
