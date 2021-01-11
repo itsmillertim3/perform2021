@@ -106,7 +106,11 @@ From this we can now get the URL for KIAB.
 
 <img src="../../assets/images/KIAB_info.png" width="500"/>
 
-Now you can open a Browser window with the URL.
+Now open a Browser window with the URL.
+
+Welcome to KIAB.
+
+<img src="../../assets/images/KIAB.png" width="400"/>
 
 ## Order App Overview
 
