@@ -8,6 +8,8 @@ In a matter of minutes you'll have a fully configured Single Node Kubernetes Clu
 Keptn-in-a-Box runs on microk8s, which is a simple production-grade upstream certified Kubernetes made for developers and DevOps.
 
 
+Let's begin by creating the necessary credentials.
+
 ## Create Credentials
 
   - [ ] TENANTID="https://mytenant.live.dynatrace.com"
@@ -22,7 +24,8 @@ Open a text editor and use this to copy and paste the Credential information.
 <img src="../../assets/images/Tenant_id.png" width="500"/>
 
 2. Create a API Token.
-Log in to your Dynatrace tenant and go to Settings > Integration > Dynatrace API. Then, create anew API token with the following permissions
+
+Log in to your Dynatrace tenant and go to **Settings > Integration > Dynatrace API**. Then, create a new API token with the following permissions
 
 	- [API Authentication](https://www.dynatrace.com/support/help/extend-dynatrace/dynatrace-api/basics/dynatrace-api-authentication/)
 	
