@@ -38,6 +38,7 @@ Use the following for the API permissions.
 	
 3. Create a Dynatrace PAAS token.
 - [PaaS Token](https://www.dynatrace.com/support/help/reference/dynatrace-concepts/environment-id/#anchor_paas)
+
 In your Dynatrace tenant, go to **Settings > Integration > Platform as a Service**, and create a new PaaS Token.
 
 
