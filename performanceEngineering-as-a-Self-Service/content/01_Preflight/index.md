@@ -19,7 +19,7 @@
 ## Run Shell command
 
     
-```
+```bash
 ()$ sudo bash -c './keptn-in-a-box.sh'
 ```
     
