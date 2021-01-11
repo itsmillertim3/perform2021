@@ -54,7 +54,7 @@ ssh ssh dtu.training@Your-instance-ip
 
     
 ```bash
-()$ sudo bash -c './keptn-in-a-box.sh'
+sudo bash -c './keptn-in-a-box.sh'
 ```
     
 You will need to provide the **Dynatrace Tenant ID**, **Dynatrace API token**, **Dynatrace PaaS token** and an Email.
