@@ -61,7 +61,6 @@ sudo bash -c './keptn-in-a-box.sh'
 ```
     
 You will need to provide the **Dynatrace Tenant ID**, **Dynatrace API token**, **Dynatrace PaaS token** and a **Email**.
-
 For the class, we can use the provided student account for the email.
 
 <img src="../../assets/images/run_script.png" width="500"/>
