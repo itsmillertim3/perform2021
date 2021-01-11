@@ -6,6 +6,13 @@
   - [ ] PAASTOKEN=myDynatracePaaSToken
   - [ ] APITOKEN=myDynatraceApiToken
 
+Open a text editor and use this to copy and paste the Credential information.
+
+1. Retrieve your Tenant ID. For this exercise, we need the fully qualified name.
+	xxxx.sprint.dynatracelabs.com
+
+<img src="../../assets/images/Tenant_id.png" width="300"/>
+
 1. Create a API Token.
 	- [API Authentication](https://www.dynatrace.com/support/help/extend-dynatrace/dynatrace-api/basics/dynatrace-api-authentication/)
 	
@@ -26,9 +33,9 @@
 You will need to provide the Tenant ID, API token, PaaS token and an Email.
 For the class we will use the provided student account for the email.
 
-<img src="../../assets/images/run_script.png" width="400"/>
+<img src="../../assets/images/run_script.png" width="500"/>
 
-Then answer 'Y' if the information is correct.
+Then answer 'y' if the information is correct.
 
 
 ## Order App Overview
