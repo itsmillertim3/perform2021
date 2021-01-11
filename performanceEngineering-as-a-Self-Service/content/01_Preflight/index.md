@@ -1,4 +1,6 @@
-## Pre-Flight Checklist
+# Pre-Flight Checklist
+
+## Create Credentials
 
 	[ ] TENANT="https://mytenant.live.dynatrace.com"
 	[ ] PAASTOKEN=myDynatracePaaSToken
@@ -16,9 +18,9 @@
 
 ## Run Shell command
 
-	bash
-	()$ sudo bash -c \'./keptn-in-a-box.sh\'
-	
+	```bash
+	()$ sudo bash -c './keptn-in-a-box.sh'
+	```
 	
 You will need to provide the Tenant ID, API token, PaaS token and an Email.
 For the class we will use the provided student account for the email.
