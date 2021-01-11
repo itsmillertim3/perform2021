@@ -16,7 +16,8 @@
 
 # Run Shell command
 
-	```sudo bash -c './keptn-in-a-box.sh'
+	```bash
+	()$ sudo bash -c './keptn-in-a-box.sh'
 	```
 	
 You will need to provide the Tenant ID, API token, PaaS token and an Email.
