@@ -16,7 +16,7 @@ Let's begin by creating the necessary credentials.
   - [ ] PAASTOKEN=myDynatracePaaSToken
   - [ ] APITOKEN=myDynatraceApiToken
 
-Open a text editor we will use this as a cheat sheet for our Credential information.
+Open a text editor, we will use this as a cheat sheet, for our Credential information.
 
 1. Retrieve your Tenant ID. 
 
