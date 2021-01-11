@@ -21,6 +21,7 @@ Open a text editor we will use this as a cheat sheet for our Credential informat
 1. Retrieve your Tenant ID. 
 
 For this exercise, we need the fully qualified name without the trailing /.
+
 **xxxx.sprint.dynatracelabs.com**
 
 <img src="../../assets/images/Tenant_id.png" width="500"/>
