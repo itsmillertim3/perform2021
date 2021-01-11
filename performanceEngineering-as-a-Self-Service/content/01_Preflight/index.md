@@ -38,7 +38,8 @@ For the class we will use the provided student account for the email.
 <img src="../../assets/images/run_script.png" width="500"/>
 
 Then answer 'y' if the information is correct.
-Be patient, this build can take ~13-20 minutes to finish.
+
+Please be patient, this build can take ~13-20 minutes to finish.
 Do not interrupt the build, this will cause failures. 
 
 Once the build has completed, it should return the command prompt.
@@ -50,9 +51,9 @@ KIAB
 1. Kubernetes
 	- API
 	- Cluster
-2. Keptn
+2. Keptn [Keptn](https://keptn.sh/)
 	- API
-	- Brindge
+	- Bridge
 3. Git
 	- API
 	- Repositories
