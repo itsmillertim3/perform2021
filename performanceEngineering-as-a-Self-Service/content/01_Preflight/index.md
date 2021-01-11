@@ -49,7 +49,7 @@ In your Dynatrace tenant, go to **Settings > Integration > Platform as a Service
 Use the credentials provided to open a ssh client or you can use the provided shell.
 
 ```bash
-ssh ssh dtu.training@Your-instance-ip
+ssh dtu.training@Your-instance-ip
 ```
 
 Next
@@ -68,7 +68,7 @@ For the class, we can use the provided student account for the email.
 Then answer 'y' if the information is correct.
 
 Please be patient, this build can take ~13-20 minutes to finish.
-Do not interrupt the build, this will cause failures. 
+Do not interrupt the build, interruption will cause failures. 
 
 Once the build has completed, it should return the command prompt.
 
@@ -93,6 +93,20 @@ KIAB (Keptn in a Box)
 	- Customer Service
 	- Catalog Service
 	- Order Service
+
+## We can now access our KIAB.
+
+Run the following from the command prompt.
+
+```bash
+less +F /tmp/install.log
+```
+
+From this we can now get the URL for KIAB.
+
+<img src="../../assets/images/KIAB_info.png" width="500"/>
+
+Now you can open a Browser window with the URL.
 
 ## Order App Overview
 
