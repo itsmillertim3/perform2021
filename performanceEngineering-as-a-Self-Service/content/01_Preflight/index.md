@@ -25,7 +25,7 @@ For this exercise, we need the fully qualified name.
 
 <img src="../../assets/images/Tenant_id.png" width="500"/>
 
-2. Create a API Token.
+2. Create a Dynatrace API Token.
 
 Log in to your Dynatrace tenant and go to **Settings > Integration > Dynatrace API**. Then, create a new API token with the following permissions
 
@@ -36,8 +36,10 @@ Use the following for the API permissions.
 <img src="../../assets/images/API_token.png" width="300"/>
 	
 	
-3. Create a PAAS token.
+3. Create a Dynatrace PAAS token.
 - [PaaS Token](https://www.dynatrace.com/support/help/reference/dynatrace-concepts/environment-id/#anchor_paas)
+In your Dynatrace tenant, go to **Settings > Integration > Platform as a Service**, and create a new PaaS Token.
+
 
 💻 Login to your Ubuntu instance
 
