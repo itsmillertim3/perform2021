@@ -1,4 +1,20 @@
-# Overview
+# Pre-Flight Checklist
+
+	- TENANT="https://mytenant.live.dynatrace.com"
+	- PAASTOKEN=myDynatracePaaSToken
+	- APITOKEN=myDynatraceApiToken
+
+1. Create an API Token.
+	- [API Authentication](https://www.dynatrace.com/support/help/extend-dynatrace/dynatrace-api/basics/dynatrace-api-authentication/)
+	
+	<img src="../../assets/images/API_token.png" width="300"/>
+	
+	
+2. Create a PAAS token.
+	- [PaaS Token](https://www.dynatrace.com/support/help/reference/dynatrace-concepts/environment-id/#anchor_paas)
+
+
+# Order App Overview
 
 This application was built for demonstations of Dynatrace.  The front-end look like this.
 
