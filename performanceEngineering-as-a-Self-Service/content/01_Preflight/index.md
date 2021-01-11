@@ -2,7 +2,7 @@
 
 This application was built for demonstations of Dynatrace.  The front-end look like this.
 
-<img src="assets/images/orders.png" width="300"/>
+<img src="../../assets/images/orders.png" width="300"/>
 
 The overall application is made up of four Docker components: a frontend web UI and 3 backend services.  Once monitored by Dynatrace, a multi-tier call flow will be available such as shown below.
 
@@ -29,17 +29,17 @@ This is a summary of the versions followed by a description of the problem scena
 
 ## Deploy dtdemos/customer-service:2
 
-<img src="assets/images/usecase1.png" width="500"/>
+<img src="../../assets/images/usecase1.png" width="500"/>
 
 ## Deploy dtdemos/order-service:2 
 
 Both these scenearios are enabled
 
-<img src="assets/images/usecase2.png" width="500"/>
+<img src="../../assets/images/usecase2.png" width="500"/>
 
 and...
 
-<img src="assets/images/usecase3.png" width="500"/>
+<img src="../../assets/images/usecase3.png" width="500"/>
 
 # Deployment
 
