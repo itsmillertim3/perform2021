@@ -38,7 +38,12 @@ For the class we will use the provided student account for the email.
 <img src="../../assets/images/run_script.png" width="500"/>
 
 Then answer 'y' if the information is correct.
+Be patient, this build can take ~13-20 minutes to finish.
+Do not interrupt the build, this will cause failures. 
 
+Once the build has completed, it should return the command prompt.
+
+What have we deployed?
 
 ## Order App Overview
 
