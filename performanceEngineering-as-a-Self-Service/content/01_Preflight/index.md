@@ -37,8 +37,9 @@ Use the following for the API permissions.
 3. Create a PAAS token.
 - [PaaS Token](https://www.dynatrace.com/support/help/reference/dynatrace-concepts/environment-id/#anchor_paas)
 
-💻 Login to your Ubuntu
-Use the credentials provided to open and ssh client or you can use the provided shell.
+💻 Login to your Ubuntu instance
+
+Use the credentials provided to open a ssh client or you can use the provided shell.
 
 ```bash
 ssh ssh dtu.training@Your-instance-ip
