@@ -76,13 +76,13 @@ Once the build has completed, it should return the command prompt.
 
 KIAB (Keptn in a Box)
 
-| Componenet | Detail |
+| Componenet | Details |
 | ---------- | ------ |
 | Kubernetes | API, Cluster |
 | [Keptn](https://keptn.sh/) | API, Bridge |
 | Upstream Git | API, Repositories |
 | CI/CD | Jenkins, Unleash |
-| Order Application | - Frontend Service - Customer Service - Catalog Service - Order Service |
+| Order Application | <ul><li>Frontend Service</li><li>Customer Service</li><li>Catalog Service</li><li>Order Service</li></ul> |
 
 ## We can now access our KIAB.
 
