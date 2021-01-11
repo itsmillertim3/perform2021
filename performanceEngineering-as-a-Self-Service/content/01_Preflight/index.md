@@ -45,19 +45,20 @@ Once the build has completed, it should return the command prompt.
 
 What have we deployed?
 
-1. KIAB
-	Kubernetes
-		API
-		Cluster
-	Keptn
-		API
-		Brindge
-	Git
-		API
-		Repositories
-	CI/CD
-		Jenkins
-		Unleash
+KIAB
+
+1. Kubernetes
+	- API
+	- Cluster
+2. Keptn
+	- API
+	- Brindge
+3. Git
+	- API
+	- Repositories
+4. CI/CD
+	- Jenkins
+	- Unleash
 
 ## Order App Overview
 
