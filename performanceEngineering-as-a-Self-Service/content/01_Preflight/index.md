@@ -74,7 +74,7 @@ Once the build has completed, it should return the command prompt.
 
 ## What we deployed
 
-KIAB ()
+KIAB (Keptn in a Box)
 
 1. Kubernetes
 	- API
