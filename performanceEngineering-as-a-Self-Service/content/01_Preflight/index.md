@@ -16,10 +16,12 @@ Let's begin by creating the necessary credentials.
   - [ ] PAASTOKEN=myDynatracePaaSToken
   - [ ] APITOKEN=myDynatraceApiToken
 
-Open a text editor and use this to copy and paste the Credential information.
+Open a text editor we will use this as a cheat sheet for our Credential information.
 
-1. Retrieve your Tenant ID. For this exercise, we need the fully qualified name.
-	xxxx.sprint.dynatracelabs.com
+1. Retrieve your Tenant ID. 
+
+For this exercise, we need the fully qualified name.
+**xxxx.sprint.dynatracelabs.com**
 
 <img src="../../assets/images/Tenant_id.png" width="500"/>
 
