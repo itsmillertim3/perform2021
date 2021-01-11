@@ -27,7 +27,7 @@ Open a text editor and use this to copy and paste the Credential information.
 
 Log in to your Dynatrace tenant and go to **Settings > Integration > Dynatrace API**. Then, create a new API token with the following permissions
 
-	- [API Authentication](https://www.dynatrace.com/support/help/extend-dynatrace/dynatrace-api/basics/dynatrace-api-authentication/)
+- [API Authentication](https://www.dynatrace.com/support/help/extend-dynatrace/dynatrace-api/basics/dynatrace-api-authentication/)
 	
 Use the following for the API permissions.
 
@@ -35,7 +35,7 @@ Use the following for the API permissions.
 	
 	
 3. Create a PAAS token.
-	- [PaaS Token](https://www.dynatrace.com/support/help/reference/dynatrace-concepts/environment-id/#anchor_paas)
+- [PaaS Token](https://www.dynatrace.com/support/help/reference/dynatrace-concepts/environment-id/#anchor_paas)
 
 💻 Login to your Ubuntu
 Use the credentials provided to open and ssh client or you can use the provided shell.
