@@ -51,7 +51,7 @@ KIAB
 1. Kubernetes
 	- API
 	- Cluster
-2. Keptn [Keptn](https://keptn.sh/)
+2. [Keptn](https://keptn.sh/)
 	- API
 	- Bridge
 3. Git
