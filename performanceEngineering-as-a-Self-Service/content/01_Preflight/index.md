@@ -65,9 +65,9 @@ For the class, we can use the provided student account for the email.
 
 <img src="../../assets/images/run_script.png" width="500"/>
 
-Then answer 'y' if the information is correct.
+answer 'y' if the information is correct.
 
-Press enter.
+Press **enter**
 
 Type 'less +F /tmp/install.log' for viewing the output of installation in realtime
 
@@ -80,10 +80,10 @@ KIAB (Keptn in a Box)
 
 | Componenet | Details |
 | ---------- | ------ |
-| Kubernetes | API, Cluster |
-| [Keptn](https://keptn.sh/) | API, Bridge |
-| Upstream Git | API, Repositories |
-| CI/CD | Jenkins, Unleash |
+| Kubernetes | <ul><li>API</li><li>Cluster</li></ul> |
+| [Keptn](https://keptn.sh/) | <ul><li>API</li><li>Bridge</li></ul> |
+| Upstream Git | <ul><li>API</li><li>Repositories</li></ul> |
+| CI/CD | <ul><li>Jenkins</li><li>Unleash</li></ul> |
 | Order Application | <ul><li>Frontend Service</li><li>Customer Service</li><li>Catalog Service</li><li>Order Service</li></ul> |
 
 ## We can now access our KIAB.
