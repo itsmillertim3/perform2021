@@ -147,8 +147,3 @@ and...
 
 <img src="../../assets/images/usecase3.png" width="500"/>
 
-## Deployment
-
-Below are two option to deploy the application:
-* Using [docker-compose](docker-compose/README.md)
-* Using [Kubernetes](k8/README.md)
