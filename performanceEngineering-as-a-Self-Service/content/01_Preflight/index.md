@@ -67,10 +67,12 @@ For the class, we can use the provided student account for the email.
 
 Then answer 'y' if the information is correct.
 
-Please be patient, this build can take ~13-20 minutes to finish.
-Do not interrupt the build, interruption will cause failures. 
+Press enter.
 
-Once the build has completed, it should return the command prompt.
+Type 'less +F /tmp/install.log' for viewing the output of installation in realtime
+
+Please be patient, this build can take ~13-20 minutes to finish.
+
 
 ## What we deployed
 
