@@ -65,11 +65,11 @@ For the class, we can use the provided student account for the email.
 
 <img src="../../assets/images/run_script.png" width="500"/>
 
-answer 'y' if the information is correct.
+answer **'y'** if the information is correct.
 
 Press **enter**
 
-Type 'less +F /tmp/install.log' for viewing the output of installation in realtime
+Type **'less +F /tmp/install.log'** for viewing the output of installation in realtime
 
 Please be patient, this build can take ~13-20 minutes to finish.
 
