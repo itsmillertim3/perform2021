@@ -30,4 +30,4 @@ kubectl -n keptn create rolebinding default-view --clusterrole=view --serviceacc
 kubectl -n istio-system create rolebinding default-view --clusterrole=view --serviceaccount=istio-system:default
 
 echo "6. Install Dynatrace Monaco Keptn Service"
-kubectl apply -n keptn -f https://raw.githubusercontent.com/keptn-sandbox/monaco-service/main/deploy/service.yaml
+kubectl apply -n keptn -f https://raw.githubusercontent.com/keptn-sandbox/monaco-service/release-0.2.0/deploy/service.yaml

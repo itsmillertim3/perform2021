@@ -31,16 +31,14 @@ keptn add-resource --project="${PROJECTNAME}" --service=${SERVICENAME} --stage=$
 keptn add-resource --project="${PROJECTNAME}" --service=${SERVICENAME} --stage=${STAGE_PROD} --resource=${SERVICENAME}/slo.yaml --resourceUri=slo.yaml
 
 echo "Add monaco configuration for setting up Synthetic Tests"
-# If we havent yet prepared and zipped the monaco confiuration we do it. We first replace REPLACE_KEPTN_INGRESS with the actual KEPTN_INGRESS.
-if [ ! -f simplenode/monaco/monaco.zip ]; then
-  cd simplenode/monaco
+# If we havent yet prepared the synthetic.yaml we do it now by replacing REPLACE_KEPTN_INGRESS with the actual KEPTN_INGRESS.
+if [ ! -f simplenode/monaco/projects/simplenode/synthetic-monitor/synthetic.yaml ]; then
   KEPTN_INGRESS=$(kubectl get cm -n keptn ingress-config -ojsonpath={.data.ingress_hostname_suffix})
-  sed "s/REPLACE_KEPTN_INGRESS/$KEPTN_INGRESS/g" projects/simplenode/synthetic-monitor/synthetic.yaml.tmpl >> projects/simplenode/synthetic-monitor/synthetic.yaml
-  zip -r monaco.zip . -x *.tmpl
-  cd ../.. 
+  sed "s/REPLACE_KEPTN_INGRESS/$KEPTN_INGRESS/g" simplenode/monaco/projects/simplenode/synthetic-monitor/synthetic.yaml.tmpl >> simplenode/monaco/projects/simplenode/synthetic-monitor/synthetic.yaml
 fi 
 
-keptn add-resource --project="${PROJECTNAME}" --service=${SERVICENAME} --stage=${STAGE_PROD} --resource=simplenode/monaco/monaco.zip --resourceUri=dynatrace/monaco.zip
+keptn add-resource --project="${PROJECTNAME}" --service=${SERVICENAME} --stage=${STAGE_PROD} --resource=simplenode/monaco/projects/simplenode/synthetic-monitor/synthetic.yaml --resourceUri=dynatrace/projects/${SERVICENAME}/synthetic-monitor/synthetic.yaml
+keptn add-resource --project="${PROJECTNAME}" --service=${SERVICENAME} --stage=${STAGE_PROD} --resource=simplenode/monaco/projects/simplenode/synthetic-monitor/synthetic.json --resourceUri=dynatrace/projects/${SERVICENAME}/synthetic-monitor/synthetic.json
 
 echo "Enable Namespaces Labels & Annotations to be accessible by Dynatrace OneAgent"
 # https://www.dynatrace.com/support/help/technology-support/cloud-platforms/kubernetes/other-deployments-and-configurations/leverage-tags-defined-in-kubernetes-deployments/
