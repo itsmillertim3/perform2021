@@ -2,16 +2,16 @@
 
 In this lab you will:
 
-	1.  Kick off Keptn Orders 2 Build
-	2.  Create Dynatrace Load Test Request Attribute
-	3.  Create Calculated Service Metrics for Load Test Steps
-	4.  Update Keptn: keptnorders staging Manament Zone
-	5.  Create KeptnOdersDatabase Database Service Rule Name
-	6.  Create Keptn Process group naming rule
-	7.  Tag Eval Service
-	8.  Run Load Test
-	9.  Import Performance Test Dashboard with Transaction Steps
-	10. Load Test Performance Analysis
+1.  Kick off Keptn Orders 2 Build
+2.  Create Dynatrace Load Test Request Attribute
+3.  Create Calculated Service Metrics for Load Test Steps
+4.  Update Keptn: keptnorders staging Manament Zone
+5.  Create KeptnOdersDatabase Database Service Rule Name
+6.  Create Keptn Process group naming rule
+7.  Tag Eval Service
+8.  Run Load Test
+9.  Import Performance Test Dashboard with Transaction Steps
+10. Load Test Performance Analysis
 
 ### Kick off Keptn Orders 2 Build
 
