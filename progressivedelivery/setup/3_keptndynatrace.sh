@@ -28,6 +28,27 @@ echo "-----------------------------------------------------------------------"
 cat ./keptn/keptn-ingress.yaml | sed 's~domain.placeholder~'"$K8S_DOMAIN"'~' > ./keptn/gen/keptn-ingress.yaml
 kubectl apply -f ./keptn/gen/keptn-ingress.yaml
 
+cat > gateway.yaml <<- EOM
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: public-gateway
+  namespace: istio-system
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - port:
+      name: http
+      number: 80
+      protocol: HTTP
+    hosts:
+    - '*'
+EOM
+kubectl apply -f gateway.yaml
+rm gateway.yaml
+
 echo "-----------------------------------------------------------------------"
 echo "Ensure Keptns Helm Service has the correct Istio ingress information: $KEPTN_INGRESS_HOSTNAME"
 echo "-----------------------------------------------------------------------"

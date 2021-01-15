@@ -5,7 +5,7 @@
 K8S_DOMAIN=${K8S_DOMAIN:-none}
 INGRESS_PORT=${INGRESS_PORT:-80}
 INGRESS_PROTOCOL=${INGRESS_PROTOCOL:-http}
-ISTIO_GATEWAY=${ISTIO_GATEWAY:-public-gateway.istio.system}
+ISTIO_GATEWAY=${ISTIO_GATEWAY:-public-gateway.istio-system}
 
 if [[ "$K8S_DOMAIN" == "none" ]]; then
     echo "Couldnt get istio-ingressgateway to retrieve ingress hostname!"
