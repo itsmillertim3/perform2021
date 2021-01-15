@@ -23,21 +23,6 @@ fi
 sudo apt install curl
 sudo apt install wget
 
-echo "-----------------------------------------------------------------------"
-echo "Download Helm, Istio & Keptn CLI"
-echo "-----------------------------------------------------------------------"
-# Download Helm
-wget https://get.helm.sh/helm-v${HELM_VERSION}-linux-amd64.tar.gz
-tar -zxvf helm-v${HELM_VERSION}-linux-amd64.tar.gz
-mv linux-amd64/helm /usr/local/bin/helm
-
-# Download Istio
-curl -L https://istio.io/downloadIstio | ISTIO_VERSION=${ISTIO_VERSION} sh -
-mv istio-${ISTIO_VERSION}/bin/istioctl /usr/local/bin/istioctl
-
-# Download keptn cli
-curl -sL https://get.keptn.sh | sudo -E bash
-
 source init_helper.sh 
 
 
@@ -56,4 +41,32 @@ echo "3. Make sure zip is installed"
 sudo apt install zip
 
 echo "4. Make sure a JRE is installed"
-sudo apt install default-jre
+sudo apt install default-jre -y
+
+
+echo "-----------------------------------------------------------------------"
+echo "Download Helm, Istio & Keptn CLI"
+echo "-----------------------------------------------------------------------"
+echo "1. Download Helm"
+wget https://get.helm.sh/helm-v${HELM_VERSION}-linux-amd64.tar.gz
+tar -zxvf helm-v${HELM_VERSION}-linux-amd64.tar.gz
+sudo mv linux-amd64/helm /usr/local/bin/helm
+
+echo "2. Keptn CLI Helm"
+curl -sL https://get.keptn.sh | sudo -E bash
+
+echo "3. Download Install Istio"
+curl -L https://istio.io/downloadIstio | ISTIO_VERSION=${ISTIO_VERSION} sh -
+sudo mv istio-${ISTIO_VERSION}/bin/istioctl /usr/local/bin/istioctl
+
+istioctl install -y
+
+# get the ingress_host
+INGRESS_HOST=$(kubectl get svc istio-ingressgateway -n istio-system -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')
+echo "-----------------------------------------------------------------------"
+echo "MANUAL STEP REQUIRED BEFORE CONTINUE"
+echo "-----------------------------------------------------------------------"
+echo "1. Setup wildcard DNS, e.g: *.dtu-perform-s26.dynatrace.training for Istio-Ingress: $INGRESS_HOST"
+echo "2. Then export K8S_DOMAIN=dtu-perform.s26.dynatrace.training"
+echo "3. Continue running the rest of the installation scripts"
+

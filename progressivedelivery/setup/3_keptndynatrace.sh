@@ -7,16 +7,6 @@ source init_helper.sh
 # Initialize versions
 KEPTN_VERSION="0.7.3"
 
-
-echo "-----------------------------------------------------------------------"
-echo "Install Istio"
-echo "-----------------------------------------------------------------------"
-
-istioctl install -y
-
-# get the ingress_host
-INGRESS_HOST=$(kubectl get svc istio-ingressgateway -n istio-system -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')
-
 echo "-----------------------------------------------------------------------"
 echo "Install Keptn"
 echo "-----------------------------------------------------------------------"
@@ -76,4 +66,4 @@ echo "6. Install Dynatrace Monaco Keptn Service"
 kubectl apply -n keptn -f https://raw.githubusercontent.com/keptn-sandbox/monaco-service/release-0.2.0/deploy/service.yaml
 
 echo "7. Authenticate Keptn CLI"
-keptn auth  --api-token "${KEPTN_API_TOKEN}" --endpoint "${KEPTN_ENDPOINT/api"
+keptn auth  --api-token "${KEPTN_API_TOKEN}" --endpoint "${KEPTN_ENDPOINT}/api"

@@ -1,8 +1,8 @@
 #!/bin/bash
 # This script initializes a couple of important env-variables for istio & keptn
 
-INGRESS_HOST=$(kubectl get svc istio-ingressgateway -n istio-system -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')
-K8S_DOMAIN=${INGRESS_HOST:-none}
+# INGRESS_HOST=$(kubectl get svc istio-ingressgateway -n istio-system -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')
+K8S_DOMAIN=${K8S_DOMAIN:-none}
 INGRESS_PORT=${INGRESS_PORT:-80}
 INGRESS_PROTOCOL=${INGRESS_PROTOCOL:-http}
 ISTIO_GATEWAY=${ISTIO_GATEWAY:-public-gateway.istio.system}

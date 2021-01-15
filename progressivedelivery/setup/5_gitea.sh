@@ -1,8 +1,7 @@
 #!/bin/bash
 # This script will install gitea on the k8s cluster so that we can use it for our upstream git repos
 
-INGRESS_HOST=$(kubectl get svc istio-ingressgateway -n istio-system -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')
-K8S_DOMAIN=${INGRESS_HOST:-none}
+source keptn_helper.sh
 
 echo "-----------------------------------------------------------------------"
 echo "Installing Gitea as Git service for our upstream git repos"
