@@ -67,6 +67,6 @@ echo "-----------------------------------------------------------------------"
 echo "MANUAL STEP REQUIRED BEFORE CONTINUE"
 echo "-----------------------------------------------------------------------"
 echo "1. Setup wildcard DNS, e.g: *.dtu-perform-s26.dynatrace.training for Istio-Ingress: $INGRESS_HOST"
-echo "2. Then export K8S_DOMAIN=dtu-perform.s26.dynatrace.training"
+echo "2. Then export K8S_DOMAIN=dtu-perform-s26.dynatrace.training"
 echo "3. Continue running the rest of the installation scripts"
 
