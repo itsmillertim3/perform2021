@@ -12,3 +12,8 @@ helm repo add gitea-charts https://dl.gitea.io/charts/
 cd gitea
 ./deploy-gitea.sh $K8S_DOMAIN
 cd ..
+
+echo "-----------------------------------------------------------------------"
+echo "Waiting for Gitea pods to be ready (max 5 minutes)"
+echo "-----------------------------------------------------------------------"
+kubectl wait --namespace=git --for=condition=Ready pods --timeout=300s --all
