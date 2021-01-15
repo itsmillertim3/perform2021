@@ -1,13 +1,3 @@
-summary: Cloud Migration
-id: 05-operate
-categories: dynatrace
-tags: migration
-status: Submitted
-authors: Rob Jahn
-Feedback Link: https://github.com/keptn/tutorials/tree/master/site/tutorials
-
-# Cloud Migration Best Practices / Bridging the gap between legacy & cloud
-
 ## Operate
 
 Meet Emma from the Cloud Operations team who is already a bit stressed about supporting the current systems, now has some concerns about what is coming with the new changes. Here are a few:

@@ -1,15 +1,4 @@
-summary: Cloud Migration
-id: 02-why-dynatrace
-categories: dynatrace
-tags: migration
-status: Submitted
-authors: Rob Jahn
-Feedback Link: https://github.com/keptn/tutorials/tree/master/site/tutorials
-
-# Cloud Migration Best Practices / Bridging the gap between legacy & cloud
-
 ## AWS migration framework
-
 
 Now that you are up and going with easyTravel, let me take minute to share our approach to migrating to AWS and why we choose Dynatrace as strategic partner for this journey.
 

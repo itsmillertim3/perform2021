@@ -1,14 +1,4 @@
-summary: Cloud Migration
-id: 03-mobilize
-categories: dynatrace
-tags: migration
-status: Submitted
-authors: Rob Jahn
-Feedback Link: https://github.com/keptn/tutorials/tree/master/site/tutorials
-
-# Cloud Migration Best Practices / Bridging the gap between legacy & cloud
-
-# Migration Assessment, Readiness and planning
+## Migration Assessment, Readiness and planning
 
 ![image](../../assets/images/florian.png)
 
