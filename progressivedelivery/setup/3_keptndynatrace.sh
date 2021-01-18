@@ -12,9 +12,9 @@ echo "Install Keptn"
 echo "-----------------------------------------------------------------------"
 # helm upgrade keptn keptn --install -n keptn --create-namespace --wait --version=${KEPTN_VERSION} --repo=https://storage.googleapis.com/keptn-installer --set=continuous-delivery.enabled=true
 # ran into issues where helm couldnt download the helm charts - so - moved to downloading the tgz first
-wget https://storage.googleapis.com/keptn-installer/keptn-{KEPTN_VERSION}.tgz
-helm upgrade keptn keptn-{KEPTN_VERSION}.tgz --install -n keptn --create-namespace --wait --repo=https://storage.googleapis.com/keptn-installer --set=continuous-delivery.enabled=true
-rm keptn-{KEPTN_VERSION}.tgz
+wget https://storage.googleapis.com/keptn-installer/keptn-${KEPTN_VERSION}.tgz
+helm upgrade keptn keptn-${KEPTN_VERSION}.tgz --install -n keptn --create-namespace --wait --set=continuous-delivery.enabled=true
+rm keptn-${KEPTN_VERSION}.tgz
 
 echo "-----------------------------------------------------------------------"
 echo "Waiting for Keptn pods to be ready (max 5 minutes)"

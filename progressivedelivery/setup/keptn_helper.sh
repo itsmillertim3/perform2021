@@ -8,7 +8,7 @@ INGRESS_PROTOCOL=${INGRESS_PROTOCOL:-http}
 ISTIO_GATEWAY=${ISTIO_GATEWAY:-public-gateway.istio-system}
 
 if [[ "$K8S_DOMAIN" == "none" ]]; then
-    echo "Couldnt get istio-ingressgateway to retrieve ingress hostname!"
+    echo "K8S_DOMAIN variable not set. Please set it to the domain that can resolve to the istio-ingress!"
     echo "We need this to expose Keptn services. For more information visit: https://keptn.sh/docs/0.7.x/continuous_delivery/expose_services/"
     exit 1
 fi
