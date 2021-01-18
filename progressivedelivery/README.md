@@ -4,7 +4,7 @@ This repository contains 3 major assets
 
 ## 1: CodeLab instructions
 
-As you are going to run throug this HOT (Hands-On-Training) you will walk through the instructions on Dynatrace University powered by CodeLab!
+As you are going to run through this HOT (Hands-On-Training) you will walk through the instructions on Dynatrace University powered by CodeLab!
 The markdown for CodeLab and the images can be found in the content and assets folders!
 
 ## 2: Setup Scripts
@@ -19,7 +19,7 @@ Here are the setup instructions for the training environment. If you do this as 
 **Environment Variables**
 We need 3 environment variables
 * DT_TENANT: hostname of your SaaS or managed environment, e.g: abc12345.live.dynatrace.com
-* DT_API_TOKEN: It needs configuration read/write access. Best is to give it all priviliges that dont touch sensitive data
+* DT_API_TOKEN: It needs configuration read/write access. Best is to give it all privileges that don't touch sensitive data
 * DT_PAAS_TOKEN: A PAAS Token as the script also installs a OneAgent & ActiveGate on your Bastion Host
 
 So - we start with
@@ -33,7 +33,7 @@ $ export DT_PAAS_TOKEN=YOURPAASTOKEN
 This repo contains a setup folder with all the necessary setup scripts. So - we start by cloning this repo
 ```console
 $ git clone https://github.com/Dynatrace/perform-2021-hotday/
-$ cd perform-2021-hotday/progressive-deliver/setup
+$ cd perform-2021-hotday/progressivedelivery/setup
 ```
 
 **Finalize Bastion host**
@@ -62,7 +62,36 @@ $ ./5_gitea.sh
 $ ./6_outputsetupinfo.sh
 ```
 
-## 3: Hands-On Tutorial Scripts
+## 3: Finalize Dynatrace configuration
+
+While almost everything in this setup is automated through the scripts, API calls and using Dynatrace Monaco - one step has to be done manually as there is currently no API for it. Its the setup of a **Process Group Detection** rule for the sample Java application as shown in the following screenshot:
+![](./assets/images/00_pgi_detection_javaapp.png)
+
+## 4: Hands-On Tutorial Scripts
 
 For some of the Hands on Tutorials the trainees need to e.g: deploy a new version of a microservice.
-To make this easier we have created a set of scripts that are prefixed with hot_xxx.sh
+To make this easier we have created a set of scripts that are prefixed with hot_xxx.sh. Here is an overview:
+
+
+| Script | Description |
+| ----- | ---------|
+| `hot_createkeptnproject.sh` | Will create a new keptn project for 3 stage delivery, initialized with helm chart for the simplenodeservice, jmeter tests and a monaco config for automating synthetic tests |
+| `hot_deletekeptnproject.sh` | Will delete an existing Keptn project |
+| `hot_deploy.sh` | Instructs Keptn to start the delivery process of a new version |
+| `hot_getinfo.sh` | Will output all relevant links for your Keptn environment, e.g: bridge, user, password, ... |
+
+Here is an example flow of calls:
+```console
+$ ./hot_getinfo.sh
+Lists links of your Keptn Bridge, Username, ...
+
+$ ./hot_createkeptnproject.sh student001
+Will create keptn project with name student001
+
+$ ./hot_deploy.sh student001 1
+Will deploy version 1 of the sample service for student001
+
+$ ./hot_deletekeptnproject.sh student001
+Will delete the keptn project
+```
+

@@ -3,6 +3,7 @@
 # It will install the OneAgent Operator and configure the k8s API Integration
 
 source init_helper.sh 
+source keptn_helper.sh
 
 echo "-----------------------------------------------------------------------"
 echo "Ensures k8s is properly monitored with Dynatrace"
@@ -34,10 +35,11 @@ rm values.yaml
 echo "2. Setup k8s API Integration"
 # kubectl create namespace dynatrace
 kubectl apply -f https://www.dynatrace.com/support/help/codefiles/kubernetes/kubernetes-monitoring-service-account.yaml
+DT_K8S_CONFIG_NAME="Keptn k8s Cluster - $K8S_DOMAIN"
 K8SAPI_URL=$(kubectl config view --minify -o jsonpath='{.clusters[0].cluster.server}')
 K8SBEARER_TOKEN=$(kubectl get secret $(kubectl get sa dynatrace-monitoring -o jsonpath='{.secrets[0].name}' -n dynatrace) -o jsonpath='{.data.token}' -n dynatrace | base64 --decode)
 curl -X POST "https://$DT_TENANT/api/config/v1/kubernetes/credentials" \
      -H "accept: application/json; charset=utf-8" \
     -H "Authorization: Api-Token $DT_API_TOKEN" \
     -H "Content-Type: application/json; charset=utf-8" \
-    -d "{\"active\":true,\"label\":\"Keptn k8s Cluster\",\"endpointUrl\":\"$K8SAPI_URL\",\"authToken\":\"$K8SBEARER_TOKEN\",\"eventsIntegrationEnabled\":true,\"workloadIntegrationEnabled\":true,\"prometheusExportersIntegrationEnabled\":true,\"eventsFieldSelectors\":[{\"label\":\"Node events\",\"fieldSelector\":\"involvedObject.kind=Node\",\"active\":true},{\"label\":\"All non-node events\",\"fieldSelector\":\"involvedObject.kind!=Node\",\"active\":true}],\"certificateCheckEnabled\":false}"
+    -d "{\"active\":true,\"label\":\"$DT_K8S_CONFIG_NAME\",\"endpointUrl\":\"$K8SAPI_URL\",\"authToken\":\"$K8SBEARER_TOKEN\",\"eventsIntegrationEnabled\":true,\"workloadIntegrationEnabled\":true,\"prometheusExportersIntegrationEnabled\":true,\"eventsFieldSelectors\":[{\"label\":\"Node events\",\"fieldSelector\":\"involvedObject.kind=Node\",\"active\":true},{\"label\":\"All non-node events\",\"fieldSelector\":\"involvedObject.kind!=Node\",\"active\":true}],\"certificateCheckEnabled\":false}"

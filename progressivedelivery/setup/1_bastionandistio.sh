@@ -29,16 +29,27 @@ source init_helper.sh
 echo "-----------------------------------------------------------------------"
 echo "Ensures this Bastion host is monitored with a OneAgent and runs an ActiveGate"
 echo "-----------------------------------------------------------------------"
-echo "1. Install OneAgent"
-wget -O Dynatrace-OneAgent-Linux-latest.sh "https://$DT_TENANT/api/v1/deployment/installer/agent/unix/default/latest?arch=x86&flavor=default" --header="Authorization: Api-Token $DT_PAAS_TOKEN"
-sudo /bin/sh Dynatrace-OneAgent-Linux-latest.sh --set-host-name=bastionhost
 
-echo "2. Install ActiveGate"
-wget -O Dynatrace-ActiveGate-Linux-latest.sh "https://$DT_TENANT/api/v1/deployment/installer/gateway/unix/latest?arch=x86&flavor=default" --header="Authorization: Api-Token $DT_PAAS_TOKEN"
-sudo /bin/sh Dynatrace-ActiveGate-Linux-latest.sh
+ONEAGENTDIR="/opt/dynatrace/oneagent"
+if [ -d "$ONEAGENTDIR" ]; then
+  echo "1. OneAgent already installed"
+else 
+  echo "1. Install OneAgent"
+  wget -O Dynatrace-OneAgent-Linux-latest.sh "https://$DT_TENANT/api/v1/deployment/installer/agent/unix/default/latest?arch=x86&flavor=default" --header="Authorization: Api-Token $DT_PAAS_TOKEN"
+  sudo /bin/sh Dynatrace-OneAgent-Linux-latest.sh --set-host-name=bastionhost
+fi
+
+AGDIR="/opt/dynatrace/gateway"
+if [ -d "$AGDIR" ]; then
+  echo "2. ActiveGate already installed"
+else 
+  echo "2. Install ActiveGate"
+  wget -O Dynatrace-ActiveGate-Linux-latest.sh "https://$DT_TENANT/api/v1/deployment/installer/gateway/unix/latest?arch=x86&flavor=default" --header="Authorization: Api-Token $DT_PAAS_TOKEN"
+  sudo /bin/sh Dynatrace-ActiveGate-Linux-latest.sh
+fi
 
 echo "3. Make sure zip is installed"
-sudo apt install zip
+sudo apt install zip -y 
 
 echo "4. Make sure a JRE is installed"
 sudo apt install default-jre -y
@@ -47,19 +58,29 @@ sudo apt install default-jre -y
 echo "-----------------------------------------------------------------------"
 echo "Download Helm, Istio & Keptn CLI"
 echo "-----------------------------------------------------------------------"
-echo "1. Download Helm"
+echo "1. Download Helm ${HELM_VERSION}"
 wget https://get.helm.sh/helm-v${HELM_VERSION}-linux-amd64.tar.gz
 tar -zxvf helm-v${HELM_VERSION}-linux-amd64.tar.gz
 sudo mv linux-amd64/helm /usr/local/bin/helm
 
-echo "2. Keptn CLI Helm"
+# remove downloaded files
+rm helm-v${HELM_VERSION}-linux-amd64.tar.gz
+rm -r linux-amd64
+
+echo "2. Install latest Keptn CLI"
 curl -sL https://get.keptn.sh | sudo -E bash
 
-echo "3. Download Install Istio"
-curl -L https://istio.io/downloadIstio | ISTIO_VERSION=${ISTIO_VERSION} sh -
-sudo mv istio-${ISTIO_VERSION}/bin/istioctl /usr/local/bin/istioctl
+ISTIO_EXISTS=$(kubectl get po -n istio-system | grep Running | wc | awk '{ print $1 }')
+if [[ "$ISTIO_EXISTS" -gt "0" ]]
+then
+  echo "3. Istio already installed on k8s"
+else
+  echo "3. Downloading and installing Istio ${ISTIO_VERSION}"
+  curl -L https://istio.io/downloadIstio | ISTIO_VERSION=${ISTIO_VERSION} sh -
+  sudo mv istio-${ISTIO_VERSION}/bin/istioctl /usr/local/bin/istioctl
 
-istioctl install -y
+  istioctl install -y
+fi
 
 # get the ingress_host
 INGRESS_HOST=$(kubectl get svc istio-ingressgateway -n istio-system -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')

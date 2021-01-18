@@ -31,9 +31,9 @@ To do that we execute the kubectl apply command where we pass the target namespa
 deployment.apps/helloworld created
 ```
 
-It should say "deployment.apps/helloworld created". If not then please check the error message. Double check your deployment.yaml file for correct spacing and quotes. Also make sure that you didnt misspell your namespace name.
+It should say "deployment.apps/helloworld created". If not then please check the error message. Double check your deployment.yaml file for correct spacing and quotes. Also make sure that you didn't misspell your namespace name.
 
-We can also validate that everything worked as expected by looking at the running pods in our namespace. Here the example for student016-staging (again - make sure you use your studentid):
+We can also validate that everything worked as expected by looking at the running pods in our namespace. Here the example for student016-staging (again - make sure you use your `studentid`):
 ```bash
 (bastion)$ kubectl get pods -n student016-staging
 NAME                          READY   STATUS    RESTARTS   AGE

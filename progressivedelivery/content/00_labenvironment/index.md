@@ -8,11 +8,16 @@ The lab we are providing as part of the Hands-On-Training session looks like thi
 
 ### Run the lab yourself
 
-If you want to run the lab yourself you need
+For detailed information on how to run the lab yourself please look at the [GitHub repo's readme](https://github.com/Dynatrace/perform-2021-hotday/tree/main/progressivedelivery)
+
+Here the quick overview:
+
+**You need**
 1. A k8s cluster
 2. A Dynatrace Tenant
 3. A host that is connected to the internet and connected to the k8s cluster
 
+**To setup**
 To install the lab environment on your k8s:
 1. Clone the github repository on your host
 2. Execute all scripts under the setup folder!
