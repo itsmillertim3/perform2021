@@ -18,11 +18,11 @@ To make the most of the session, you should:
 
 Referring to the picture below:
 
-#1 . Lab activities are found in the `Activities` section
+1. Lab activities are found in the `Activities` section
 
-#2 . Your `Environments` page has the URL and credentials for your pre-provisioned workshop components and Dynatrace environment
+1. Your `Environments` page has the URL and credentials for your pre-provisioned workshop components and Dynatrace environment
 
-#3 . **You will NOT have access to the AWS console**, but your `Environments` page has a built-in Web SSH Client for the Bastion Host.  Recommend ”duplicate” tab to have SSH in its own tab
+1. **You will NOT have access to the AWS console**, but your `Environments` page has a built-in Web SSH Client for the Bastion Host.  Recommend ”duplicate” tab to have SSH in its own tab
 
 ![image](../../assets/images/ssh.png)
 
