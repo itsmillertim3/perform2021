@@ -8,9 +8,9 @@ As you plan your migration, you need more than just host level metrics.  Knowing
 
 Return back to the host view for the host with the prefix of **monolith** and locate the **Processes and Containers** section.
 
-Click on the **bin/www (frontend)** process in the **Processes and Containers** section to open the process detail view.
+Click on the **SpringBoot backend com.ewolff.microservice.BackendApp** process in the **Processes and Containers** section to open the process detail view.
 
-![image](../../assets/images/lab1-host-process.png)
+![image](../../../assets/images/lab1-host-process.png)
 
 ### Process view
 
@@ -26,7 +26,7 @@ You should be on the process page where you will see information for this proces
 
 ![image](../../../assets/images/lab1-process-view.png)
 
-:boom: **TECHNICAL NOTE**: that Dynatrace automatically recognizes many common processes like Tomcat and will capture process specific metrics such as JVM garbage collection. See a list of supported technologies in the [Dynatrace documentation](https://www.dynatrace.com/support/help/technology-support/supported-technologies-and-versions)
+💥 **TECHNICAL NOTE**: that Dynatrace automatically recognizes many common processes like Tomcat and will capture process specific metrics such as JVM garbage collection. See a list of supported technologies in the [Dynatrace documentation](https://www.dynatrace.com/support/help/technology-support/supported-technologies-and-versions)
 
 ### Did you notice Docker??
 
@@ -41,7 +41,7 @@ See more details in the [Dynatrace documentation](https://www.dynatrace.com/supp
 Now Let’s review a specific service.
 
 1. Click the **services** square above the host infographic to open the list of services
-1. From the list of services, choose the **BookingService**
+1. From the list of services, choose the **scripts_backend-service_1**
 
 ![image](../../../assets/images/lab1-process-view-list.png)
 

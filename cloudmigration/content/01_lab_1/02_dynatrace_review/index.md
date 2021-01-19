@@ -35,7 +35,7 @@ To see the running OneAgent, choose the `Deployment status` option from the left
 
 ![image](../../../assets/images/lab1-deployment-status.png)
 
-:boom: **TECHNICAL NOTE**: Dynatrace University has a few interfaces that run before the OneAgent was installed. So some warnings are OK.
+💥 **TECHNICAL NOTE**: Dynatrace University has a few interfaces that run before the OneAgent was installed. So some warnings are OK.
 
 To see how the OneAgent gets installed
 

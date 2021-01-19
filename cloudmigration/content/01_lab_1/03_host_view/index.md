@@ -6,7 +6,7 @@ From the left-side menu in Dynatrace choose **hosts** then click on the host wit
 
 ![image](../../../assets/images/lab1-hostlist.png)
 
-:boom: **TECHNICAL NOTE**: This host has this name since we added the option to set it during the OneAgent install process.  `/bin/sh Dynatrace-OneAgent-Linux-1.207.184.sh --set-host-name=monolith`  This is just [one of the ways](https://www.dynatrace.com/support/help/how-to-use-dynatrace/hosts/configuration/set-custom-host-names-in-dynamic-environments/) to customize host naming. 
+💥 **TECHNICAL NOTE**: This host has this name since we added the option to set it during the OneAgent install process.  `/bin/sh Dynatrace-OneAgent-Linux-1.207.184.sh --set-host-name=monolith`  This is just [one of the ways](https://www.dynatrace.com/support/help/how-to-use-dynatrace/hosts/configuration/set-custom-host-names-in-dynamic-environments/) to customize host naming. 
 
 On host page, you will see basic infrastructure information for the host.
 
@@ -17,7 +17,8 @@ On host page, you will see basic infrastructure information for the host.
 
 ![image](../../../assets/images/lab1-host-view.png)
 
-:boom: **TECHNICAL NOTE**: Dynatrace University has an interface that runs on nginx which are installed before the OneAgent is, so a warning on ungix is OK.
+💥 **TECHNICAL NOTE**: 
+Dynatrace University has an interface that runs on nginx which are installed before the OneAgent is, so a warning on ungix is OK.
 
 ## How this helps
 
