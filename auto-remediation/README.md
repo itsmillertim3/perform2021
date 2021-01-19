@@ -1,4 +1,4 @@
-# perform-2021-hotday
+# AIOps - Leverage the power of Davis for Auto-Remediation
 
 ## Instructions (trainers)
 
@@ -15,7 +15,7 @@ Students will require the public IP address of the HAProxy server during the lab
 1. After logging in to the newly provisioned HAProxy server, run the following script:
 
     ```bash
-    sudo ./install_haproxy.sh
+    ./install_haproxy.sh
     ```
 
 2. To retrieve the HAProxy public IP, run the following command:

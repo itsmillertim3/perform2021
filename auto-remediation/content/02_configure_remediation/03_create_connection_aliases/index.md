@@ -18,7 +18,7 @@
 
 1. Click `Submit`.
 
-### Create Connection Alias
+### Create Ansible AWX Connection
 
 1. Navigate to `Integration Hub -> Connections & Credentials -> Connection & Credential Aliases` and click on the `Ansible AWX` Connection Alias:
 
@@ -29,10 +29,10 @@
     ![service-now-conn-alias-details](../../../assets/images/service-now-conn-alias-details.png)
 
 1. Set the `Connection` fields to these values:
-    - **Name:** AWX Basic Auth
-    - **Credential:** admin
-    - **Connection alias:** dynatrace
-    - **Connection URL:** your ansible AWX url - `https://XX.XX.XX.XX`
+    - **Name:** Ansible AWX Connection
+    - **Credential:** AWX Basic Auth
+    - **Connection alias:** Ansible_AWX
+    - **Connection URL:** your ansible AWX url - `https://XX.XX.XX.XX/`
 
     ![servicenow-connection-details](../../../assets/images/servicenow-connection-details.png)
 
@@ -42,7 +42,7 @@
 
 Since we'll be using self-signed certificates, we'll need to add/update system properties in ServiceNow to ignore any untrusted certificates and hosts.
 
-1. On the ServiceNow filter navigator enter `sys_properties.list` and press `Enter/return` on your keyboard:
+1. On the ServiceNow filter navigator type in `sys_properties.list` and press `Enter/return` on your keyboard:
 
     ![servicenow_sys_properties](../../../assets/images/servicenow_sys_properties.png)
 
