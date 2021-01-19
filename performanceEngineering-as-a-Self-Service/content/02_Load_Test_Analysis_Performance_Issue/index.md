@@ -37,8 +37,8 @@ Now we can create the **"evalservice"** tag.
 
 1. Login to Jenkins
 
-	username = keptn
-	password = keptn
+	* username = keptn
+	* password = keptn
 
 <img src="../../assets/images/Lab_1_Jenkins_Log_In.png" width="500"/>
 
