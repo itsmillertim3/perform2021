@@ -29,7 +29,7 @@ Navigate to **Transactions and services>frontend**
 
 We are looking for **frontend** with **keptnorders.staging.frontend [direct]**
 
-Now we can create the **evalservice** tag.
+Now we can create the **"evalservice"** tag.
 
 <img src="../../assets/images/lab1_service_tag.png" width="500"/>
 
