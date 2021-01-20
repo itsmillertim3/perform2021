@@ -19,9 +19,10 @@ Next we will create a few configuration items and kick off a load test.
 ### Configuration
 
 1.	Create a service tag
+2.  Process Detection Naming rule
 2.  Kick off Keptn Orders 2 Build
-3.  Create Dynatrace Load Test Request Attribute
-4.  Create Calculated Service Metrics for Load Test Steps
+3.  Describe Dynatrace Load Test Request Attribute
+4.  Describe Calculated Service Metrics for Load Test Steps
 5.  Update Keptn: keptnorders staging Management Zone
 6.  Create KeptnOdersDatabase Database Service Rule Name
 7.  Create Keptn Process group naming rule
@@ -46,6 +47,25 @@ We are looking for **frontend** with **keptnorders.staging.frontend [direct]**
 Now we can create the **"evalservice"** tag.
 
 <img src="../../assets/images/lab1_service_tag.png" width="500"/>
+
+### Create Process Group Naming Rule
+
+Go to **"Settings>Processes and Containers>Process group naming"**
+
+<img src="../../assets/images/lab_1_gettoprocessgroup.png" width="500"/>
+
+Then select "add new rule"
+
+Now we will create the rule with the following parameters.
+
+<img src="../../assets/images/lab_1_process_group_name.png" width="500"/>
+
+Rule name: Keptn Processgroup Naming
+Process group naming format: {ProcessGroup:Environment:keptn_project}.{ProcessGroup:Environment:keptn_stage}.{ProcessGroup:Environment:keptn_service} [{ProcessGroup:Environment:keptn_deployment}]
+Conditions: keptn_deployment (Environment)
+
+Click **"Preview"**
+Click **"create rule"** then **"save"**
 
 ### Kick off Keptn Orders 2 Build
 
