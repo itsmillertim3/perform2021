@@ -23,11 +23,12 @@ Next we will create a few configuration items and kick off a load test.
 3.  Run first Load Test
 4.  Describe Dynatrace Load Test Request Attribute
 4.  Describe Calculated Service Metrics for Load Test Steps
-5.  Update Keptn: keptnorders staging Management Zone
-6.  Create KeptnOdersDatabase Database Service Rule Name
-7.  Examine Performance Test Dashboard with Transaction Steps
-8.  Kick off Keptn Orders 2 Build
-9.  Load Test Performance Analysis
+5.  Kick off Keptn Customer 2 Build
+6.  Describe Dynatrace Load Test Request Header
+7.  Update Keptn: keptnorders staging Management Zone
+8.  Create KeptnOdersDatabase Database Service Rule Name
+9.  Examine Performance Test Dashboard with Transaction Steps
+10.  Load Test Performance Analysis
 
 ### Create Service tag
 
@@ -85,6 +86,14 @@ We need to change the Deployment URL
 
 Click **Build**
 
+
+### Describe Dynatrace Load Test Request Attribute
+
+
+### Describe Calculated Service Metrics for Load Test Steps
+
+
+
 ### Kick off Keptn Customer 2 Build
 
 Click on **01_deploy_order_application** pipeline
@@ -100,6 +109,15 @@ Then we need to change the build for customer to version 2 and select the build 
 <img src="../../assets/images/lab_1_customer_build.png" width="500"/>
 
 
+### Update Keptn: keptnorders staging Management Zone
 
-### Create Dynatrace Load Test Request Header
+
+### Create KeptnOdersDatabase Database Service Rule Name
+
+
+### Examine Performance Test Dashboard with Transaction Steps
+
+
+### Load Test Performance Analysis
+
 
