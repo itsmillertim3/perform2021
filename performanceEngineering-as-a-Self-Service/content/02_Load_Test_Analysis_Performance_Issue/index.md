@@ -75,7 +75,7 @@ Login to Jenkins
 
 <img src="../../assets/images/Lab_1_Jenkins_Log_In.png" width="500"/>
 
-We are going to run the 03-simpletest-qualitygate pipeline.
+We are going to run the **03-simpletest-qualitygate pipeline**.
 Click **"build"** this initial build will fail.
 Refresh the page, now we can do a **"Build with Parameters"**
 
@@ -85,13 +85,20 @@ We need to change the Deployment URL
 
 Click **Build**
 
-### Kick off Keptn Orders 2 Build
+### Kick off Keptn Customer 2 Build
 
-Click on 01_deploy_order_application
+Click on **01_deploy_order_application** pipeline
 
 <img src="../../assets/images/Lab_1_deploy_order_application_1.png" width="500"/>
 
-3. 
+Now we are going to push the **customer** version 2.
+
+Select **Build with parameters"
+
+Then we need to change the build for customer to version 2 and select the build for **Customer**
+
+<img src="../../assets/images/lab_1_customer_build.png" width="500"/>
+
 
 
 ### Create Dynatrace Load Test Request Header
