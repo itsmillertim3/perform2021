@@ -1,12 +1,15 @@
-Environment Setup
+## Environment Setup
 Here are a few quick steps to get your environment ready for today's exercises.
 
-Step 1. Pull the GitHub Repo
-(ubuntuvm)$ git clone https://github.com/JasonOstroski/PerformTest.git
+### Step 1. Pull the GitHub Repo
+```(ubuntuvm)$ git clone https://github.com/JasonOstroski/PerformTest.git
+```
 
-Step 2. Run the start up scripts
+### Step 2. Run the start up scripts
 Navigate to the Actionable Infrasctucture Observability directory
-(ubuntuvm)$ cd example
+```(ubuntuvm)$ cd example
+```
 
 Run the script
-(ubuntuvm)$ python3 script.py
+```(ubuntuvm)$ python3 script.py
+```
