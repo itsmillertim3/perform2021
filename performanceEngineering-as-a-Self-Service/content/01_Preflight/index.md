@@ -115,7 +115,7 @@ Login to Jenkins with the following credentials
 * username = keptn
 * password = keptn
 
-<img src="../../assets/images/Lab_1_Jenkins_Log_In.png" width="500"/>
+<img src="../../assets/images/Lab_1_Jenkins_Log_In.png" width="200"/>
 
 After selecting the pipeline click **"build"**
 
