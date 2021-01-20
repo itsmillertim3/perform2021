@@ -2,11 +2,11 @@
 
 Now that we have our KIAB installed. 
 
-Let's start by viewing a dashbaord.
+Let's start by viewing a dashboard.
 
-Click "Dashbaords" from the Main Navigation menu.
+Click **"Dashboards"** from the Main Navigation menu.
 
-THen Select the "Autonomous Cloud Concepts with Keptn" Dashboard.
+Then Select the "Autonomous Cloud Concepts with Keptn" Dashboard.
 
 <img src="../../assets/images/lab_1-acck-dashboard.png" width="500"/>
 
