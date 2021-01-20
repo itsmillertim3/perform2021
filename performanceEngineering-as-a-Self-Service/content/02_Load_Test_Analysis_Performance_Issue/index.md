@@ -100,7 +100,7 @@ Click on **01_deploy_order_application** pipeline
 
 <img src="../../assets/images/Lab_1_deploy_order_application_1.png" width="500"/>
 
-Now we are going to push the **customer** version 2.
+Now we are going to push the **customer** version **2**.
 
 Select **"Build with parameters"**
 
