@@ -66,8 +66,7 @@ You can cut and paste the items.
 * Process group naming format: {ProcessGroup:Environment:keptn_project}.{ProcessGroup:Environment:keptn_stage}.{ProcessGroup:Environment:keptn_service} [{ProcessGroup:Environment:keptn_deployment}]
 * Conditions: keptn_deployment (Environment)
 
-Click **"Preview"**
-Click **"create rule"** then **"save changes"**
+Click **"Preview"** -> **"create rule"** -> **"save changes"**
 
 ### Kick off Keptn Orders 2 Build
 
