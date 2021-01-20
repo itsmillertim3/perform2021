@@ -108,7 +108,7 @@ Welcome to KIAB.
 
 Click on **"Jenkins"**
 
-Now we will kick off the Pipeline 01-deploy-order-application to build out the application.
+Now we will kick off the Pipeline **01-deploy-order-application** to build out the application.
 
 Login to Jenkins with the following credentials
 
