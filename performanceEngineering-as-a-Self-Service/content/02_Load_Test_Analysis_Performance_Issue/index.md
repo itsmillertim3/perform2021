@@ -77,6 +77,7 @@ Login to Jenkins
 
 We are going to run the 03-simpletest-qualitygate pipeline.
 Click **"build"** this initial build will fail.
+Refresh the page, now we can do a **"Build with Parameters"**
 
 We need to change the Deployment URL
 
