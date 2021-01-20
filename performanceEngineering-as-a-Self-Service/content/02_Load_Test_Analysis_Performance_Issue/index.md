@@ -60,7 +60,7 @@ Now we will create the rule with the following parameters.
 
 <img src="../../assets/images/lab_1_process_group_name.png" width="500"/>
 
-You can cut and paste the items.
+You can cut and paste these items.
 
 * Rule name: **Keptn Processgroup Naming**
 * Process group naming format: **{ProcessGroup:Environment:keptn_project}.{ProcessGroup:Environment:keptn_stage}.{ProcessGroup:Environment:keptn_service} [{ProcessGroup:Environment:keptn_deployment}]**
