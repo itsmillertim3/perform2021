@@ -1,5 +1,22 @@
 ## Load Test Analysis Performance Issue
 
+Now that we have our KIAB installed. 
+
+Let's start by viewing a dashbaord.
+
+Click "Dashbaords" from the Main Navigation menu.
+
+THen Select the "Autonomous Cloud Concepts with Keptn" Dashboard.
+
+<img src="../../assets/images/lab_1-acck-dashboard.png" width="500"/>
+
+Now your Dashboard should load.
+
+<img src="../../assets/images/lab_1-acck-details.png" width="500"/>
+
+
+
+
 ### Outline
 In this lab you will:
 
