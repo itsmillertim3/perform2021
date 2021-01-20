@@ -119,6 +119,8 @@ Login to Jenkins with the following credentials
 
 After selecting the pipeline click **"build"**
 
+<img src="../../assets/images/Lab_1_deploy_order_application_1.png" width="500"/>
+
 ### Order App Overview
 
 This application was built for demonstations of Dynatrace.  The front-end look like this.
