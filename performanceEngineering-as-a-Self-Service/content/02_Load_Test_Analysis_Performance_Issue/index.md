@@ -6,19 +6,17 @@ Let's start by viewing a dashboard.
 
 Click **"Dashboards"** from the Main Navigation menu.
 
-Then Select the "Autonomous Cloud Concepts with Keptn" Dashboard.
+Then Select the **"Autonomous Cloud Concepts with Keptn"** Dashboard.
 
 <img src="../../assets/images/lab_1-acck-dashboard.png" width="500"/>
 
-Now your Dashboard should load.
+Now you should see your Dashboard.
 
 <img src="../../assets/images/lab_1-acck-details.png" width="500"/>
 
+Next we will create a few configuration items.
 
-
-
-### Outline
-In this lab you will:
+### Configuration
 
 1.	Create a service tag
 2.  Kick off Keptn Orders 2 Build
