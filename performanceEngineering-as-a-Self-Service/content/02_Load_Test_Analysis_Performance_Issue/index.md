@@ -93,7 +93,7 @@ Click on **01_deploy_order_application** pipeline
 
 Now we are going to push the **customer** version 2.
 
-Select **Build with parameters"
+Select **"Build with parameters"**
 
 Then we need to change the build for customer to version 2 and select the build for **Customer**
 
