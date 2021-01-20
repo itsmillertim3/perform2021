@@ -20,16 +20,14 @@ Next we will create a few configuration items and kick off a load test.
 
 1.	Create a service tag
 2.  Process Detection Naming rule
-2.  Kick off Keptn Orders 2 Build
-3.  Describe Dynatrace Load Test Request Attribute
+3.  Run first Load Test
+4.  Describe Dynatrace Load Test Request Attribute
 4.  Describe Calculated Service Metrics for Load Test Steps
 5.  Update Keptn: keptnorders staging Management Zone
 6.  Create KeptnOdersDatabase Database Service Rule Name
-7.  Create Keptn Process group naming rule
-8.  Run Load Test
-9.  Import Performance Test Dashboard with Transaction Steps
-10. Load Test Performance Analysis
-
+7.  Examine Performance Test Dashboard with Transaction Steps
+8.  Kick off Keptn Orders 2 Build
+9.  Load Test Performance Analysis
 
 ### Create Service tag
 
@@ -68,16 +66,27 @@ You can cut and paste these items.
 
 Click **"Preview"** -> **"create rule"** -> **"save changes"**
 
-### Kick off Keptn Orders 2 Build
+### Kick off our first load test
 
-1. Login to Jenkins
+Login to Jenkins
 
 	* username = keptn
 	* password = keptn
 
 <img src="../../assets/images/Lab_1_Jenkins_Log_In.png" width="500"/>
 
-2. Click on 01_deploy_order_application
+We are going to run the 03-simpletest-qualitygate pipeline.
+Click **"build"** this initial build will fail.
+
+We need to change the Deployment URL
+
+<img src="../../assets/images/lab_1_simple_test.png" width="500"/>
+
+Click Build
+
+### Kick off Keptn Orders 2 Build
+
+Click on 01_deploy_order_application
 
 <img src="../../assets/images/Lab_1_deploy_order_application_1.png" width="500"/>
 
