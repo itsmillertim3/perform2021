@@ -117,6 +117,7 @@ Login to Jenkins with the following credentials
 
 <img src="../../assets/images/Lab_1_Jenkins_Log_In.png" width="500"/>
 
+after selecting the pipeline select **"build"**
 
 ### Order App Overview
 
