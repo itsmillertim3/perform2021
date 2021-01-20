@@ -106,14 +106,14 @@ Welcome to KIAB.
 
 ### Run Pipeline
 
-Click on "jenkins"
+Click on **"Jenkins"**
 
 Now we will kick off the Pipeline 01-deploy-order-application to build out the application.
 
-Login to Jenkins
+Login to Jenkins with the following credentials
 
-	* username = keptn
-	* password = keptn
+* username = keptn
+* password = keptn
 
 <img src="../../assets/images/Lab_1_Jenkins_Log_In.png" width="500"/>
 
