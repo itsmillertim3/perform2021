@@ -10,7 +10,7 @@ Add content here
 
 🔷 Objective 3
 
-
+# NOTES
 Enable a problem (let run)  - kubectl command
 Review what we did for:
 Tagging rules

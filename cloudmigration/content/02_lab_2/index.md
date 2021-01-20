@@ -11,14 +11,10 @@ Add content here
 🔷 Objective 3
 
 # NOTES
-Open up sample app in browser
-In DT, Review how the sample app went to microservices
-For the sample app assess:
-Host view and smartscape
-Processes and Services
-Backtrace and Service Flow
+Review how the sample app went to microservices
+Review sample app in browsers
 Transactions and Services
-Databases
-Technology View
-Review Kubernetes Dashboard & Demo kubectl commands
+Service Flow
+Host view and smartscape
+Review Kubernetes Dashboard -- kubectl commands
 Run kubectl commands (time permitting - bonus)

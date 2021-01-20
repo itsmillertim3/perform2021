@@ -4,9 +4,7 @@ Referring to the picture below, here are the components for lab 1.
 
 **#1 . Demo App**
 
-Sample app representing a "monolith" architecture of a frontend and backend.  The application was implemented as two Docker containers that we will review in this lab within Dynatrace.
-
-💥 **TECHNICAL NOTE**: A real scnenario would often start with the application components running on a physical or virtualzied host in on-prem and not "Dockerized". In Dynatrace, Java, Apache and Docker containers all show up as "processes".  So for our workshop, we took that step that is often done in modernization, "Dockerize" the application if it is small enough.
+Sample app representing a "monolith" architecture of a front and and backend.  The application was implemented as two Docker containers that we will review in this lab within Dynatrace.
 
 **#2 . Dynatrace monitoring**
 

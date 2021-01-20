@@ -6,7 +6,11 @@ Seeing which processes make up the monolith has been an eye-opener for many team
 
 As you plan your migration, knowing what technologies make up your eco-system is key so what you can decide whether to migrate, refactor or replace certain services.
 
-## Technology View
+## 👍 How this helps
+
+This is another out the box feature that helps you understand what technologies are in your environment and with a heatmap presentation to what degree they exist. 
+
+## Review Technologies View
 
 Click on the **Technologies** link on the left side menu within Dynatrace to view the technologies that OneAgent was able to automatically discover and instrument.
 
@@ -19,7 +23,3 @@ In the filter box, type `tag`, choose `app`, and the value of `monolith`. It sho
 The workshop is somewhat limited, so here is an example from another environment.
 
 ![image](../../../assets/images/technology-demo.png)
-
-## How this helps
-
-This is another out the box feature that helps you understand what technologies are in your environment and with a heatmap presentation to what degree they exist. 
