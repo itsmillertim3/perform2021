@@ -83,7 +83,7 @@ We need to change the Deployment URL
 
 <img src="../../assets/images/lab_1_simple_test.png" width="500"/>
 
-Click Build
+Click **Build**
 
 ### Kick off Keptn Orders 2 Build
 
