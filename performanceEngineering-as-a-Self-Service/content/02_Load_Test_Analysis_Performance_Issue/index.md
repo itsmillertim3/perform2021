@@ -14,7 +14,7 @@ Now you should see your Dashboard.
 
 <img src="../../assets/images/lab_1-acck-details.png" width="500"/>
 
-Next we will create a few configuration items.
+Next we will create a few configuration items and kick off a load test.
 
 ### Configuration
 
@@ -22,13 +22,12 @@ Next we will create a few configuration items.
 2.  Kick off Keptn Orders 2 Build
 3.  Create Dynatrace Load Test Request Attribute
 4.  Create Calculated Service Metrics for Load Test Steps
-5.  Update Keptn: keptnorders staging Manament Zone
+5.  Update Keptn: keptnorders staging Management Zone
 6.  Create KeptnOdersDatabase Database Service Rule Name
 7.  Create Keptn Process group naming rule
-8.  Tag Eval Service
-9.  Run Load Test
-10.  Import Performance Test Dashboard with Transaction Steps
-11. Load Test Performance Analysis
+8.  Run Load Test
+9.  Import Performance Test Dashboard with Transaction Steps
+10. Load Test Performance Analysis
 
 
 ### Create Service tag
