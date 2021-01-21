@@ -82,7 +82,7 @@ Click **"Applications"** from the Main Navigation menu. Then click **My web appl
 
 This will bring up the **My web application** Performance Overview.  In the Dynatrace infographic click on the **1 Service** box.   Then under the **Called services** table click on the aqua box called **View service flow**.
 
-<img src="../../assets/images/ab_1_application_service_flow_2.png" width="500"/>
+<img src="../../assets/images/lab_1_application_service_flow_2.png" width="500"/>
 
 This will bring up the **Service flow** for the **My web application**.  View results.
 
