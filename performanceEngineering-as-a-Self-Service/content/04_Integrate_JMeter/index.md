@@ -1,16 +1,15 @@
-## Monolith to Microservices
+### Jmeter Integration
 
-![ticketmonster](../../assets/images/ticketmonster.png)
+Previously we discussed the Load Test Request Attributes.
 
-In this module you'll learn how to migrate a monolithic application to the cloud and how to fearlessly break it up into microservices. Therefore, we want to walk you through the different stages of identifying and extracting a microservice, as well as strangling it around its origin – the monolith. For this purpose, the module provides step-by-step instructions and labs showing the best practices we have identified for migrating a monolith to the cloud. This module goes along with a blog post series, which you can find [here](https://www.dynatrace.com/news/blog/fearless-monolith-to-microservices-migration-a-guided-journey/). Please take a look at the different blog posts to learn more about certain migration steps.
+To integrate Dynatrace with JMeter:
 
-In this module you will go through the following actions:
+Within JMeter, use the HTTP Header Manager to add custom HTTP request headers. 
+You can use any custom HTTP headers to pass context information. In this example, 
+we use the header x-dynatrace-test and the set of key/value LSN=Scenario1;TSN=Put Item into Cart; for the header value. 
+See Dynatrace and load testing tools integration for more details on the recommended key/value pairs. 
 
-1. Check Prerequisites
-1. Gathering Facts and installing the OneAgent Operator
-1. Lift and Shift Ticketmonster
-1. Extract the UI from the Monolith
-1. Generate some load on the UI
-1. Identifying a Microservice with Dynatrace
-1. Looking at the Domain Model of the Microservice
-1. Deploying the new Microservice
+Good News, we have already added this into the jmeter scripts.
+
+<img src="../../assets/images/lab_04_jmeter.png" width="500"/>
+
