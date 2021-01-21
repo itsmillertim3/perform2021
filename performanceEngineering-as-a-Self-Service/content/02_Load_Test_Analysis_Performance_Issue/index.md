@@ -170,6 +170,8 @@ There are different ways to analyze the data. Your approach should be based on t
 
 On the Response time analysis page you see the average response time observed during the analyzed timeframe. On the left side of the infographic, under Distribution, you can see how much time is contributed by calls to other services, calls to databases, and code-level execution. On the right side, under Top findings, we list the biggest hotspots identified by Dynatrace. You can click any of these entries to view further details.
 
+<img src="../../assets/images/lab_1_response_time_hotspots_1.png" width="500"/>
+
 **Compare**
 
 The Compare view enables you to compare critical service-request metrics (Response time, Failures, CPU, and Load) between two load tests. Compare view includes a header that contains filters and a comparison time-frame picker that you can use to select a time frame for comparison (options include 2 hours before, day before, week before, and custom time frame).
@@ -178,8 +180,12 @@ The charts in compare view are interactive. Click into a chart and drag to adjus
 
 The Compare view example below compares performance metrics across two time frames. The base chart on the left shows up-to-the minute performance measurements. The compare chart on the right shows the performance of the same service hours earlier on the same day, when a serious performance problem was encountered. Both Response time and Failures all spiked during the compare time frame.
 
+<img src="../../assets/images/lab_1_compare_1.png" width="500"/>
+
 **Architecture Validation - Service Flow**
 
 As testers, we typically only test against the service endpoint. As performance engineers we should however understand what happens end-to-end with that request. Which other services does it call? How many round trips to the database does it make? Does service load balancing and failover work correctly? Do the caching layers work well? And do we have any bad architectural patterns such as a data-driven N+1 query problem?
 
-In Dynatrace, we analyze the Service Flow which shows us the full end-to-end flow of every request executed against our service endpoint. You can also apply filters to only focus on a particular test transaction, a specific time frame or compare the flow of failing vs non- failing transactions:
+In Dynatrace, we analyze the Service Flow which shows us the full end-to-end flow of every request executed against our service endpoint. You can also apply filters to only focus on a particular test transaction, a specific time frame or compare the flow of failing vs non- failing transactions.
+
+<img src="../../assets/images/lab_1_service_flow_1.png" width="500"/>
