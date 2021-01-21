@@ -22,15 +22,16 @@ Next we will create a few configuration items and kick off a load test.
 
 ### Configuration
 
-1.	Create a service tag
-2.  Process Detection Naming rule
-3.  Run first Load Test
-4.  Describe Dynatrace Load Test Request Attribute
-4.  Describe Calculated Service Metrics for Load Test Steps
-5.  Kick off Keptn Customer 2 Build
-6.  Update Keptn: keptnorders staging Management Zone
-7.  Examine Performance Test Dashboard with Transaction Steps
-8.  Load Test Performance Analysis
+1.  Create a service tag
+1.  Process Detection Naming rule
+1.  Architecture Validation
+1.  Run first Load Test
+1.  Describe Dynatrace Load Test Request Attribute
+1.  Describe Calculated Service Metrics for Load Test Steps
+1.  Kick off Keptn Customer 2 Build.  
+1.  Update Keptn: keptnorders staging Management Zone
+1.  Examine Performance Test Dashboard with Transaction Steps
+1.  Load Test Performance Analysis
 
 ### Create Service tag
 
@@ -68,6 +69,24 @@ You can cut and paste these items.
 * Conditions: **keptn_deployment (Environment)**
 
 Click **"Preview"** -> **"create rule"** -> **"save changes"**
+
+### Architecture Validation - Service Flow
+
+As testers, we typically only test against the service endpoint. As performance engineers we should however understand what happens end-to-end with that request. Which other services does it call? How many round trips to the database does it make? Does service load balancing and failover work correctly? Do the caching layers work well? And do we have any bad architectural patterns such as a data-driven N+1 query problem?
+
+In Dynatrace, we analyze the Service Flow which shows us the full end-to-end flow of every request executed against our service endpoint. You can also apply filters to only focus on a particular test transaction, a specific time frame or compare the flow of failing vs non- failing transactions.
+
+We are going to focus on the customer step name transaction.
+
+<img src="../../assets/images/lab_1_peformance_analysis_1.png" width="500"/>
+
+Click on the ... at the end of the table for customer step name transaction which will bring up the Analyze menu and then click  **Service Flow**
+
+<img src="../../assets/images/lab_1_service_flow_1.png" width="500"/>
+
+This will bring up the *Service flow**
+
+<img src="../../assets/images/lab_1_service_flow_2.png" width="500"/>
 
 ### Kick off our first load test
 
@@ -188,40 +207,6 @@ In this screen click on **Hotspots**.   This will change the view to find the **
 
 <img src="../../assets/images/lab_1_response_time_hotspots_3.png" width="500"/>
 
-**Performance Comparison**
-
-The Compare view enables you to compare critical service-request metrics (Response time, Failures, CPU, and Load) between two load tests. Compare view includes a header that contains filters and a comparison time-frame picker that you can use to select a time frame for comparison (options include 2 hours before, day before, week before, and custom time frame).
-
-The charts in compare view are interactive. Click into a chart and drag to adjust the comparison time frame. You can also zoom in/out of the base chart on the left and/or select specific performance percentiles for comparison (Median, Slowest 10%, and Slowest 5%).
-
-The Compare view example below compares performance metrics across two time frames. The base chart on the left shows up-to-the minute performance measurements. The compare chart on the right shows the performance of the same service hours earlier on the same day, when a serious performance problem was encountered. Both Response time and Failures all spiked during the compare time frame.
-
-We are going to focus on the customer step name transaction.
-
-<img src="../../assets/images/lab_1_peformance_analysis_1.png" width="500"/>
-
-Click on the ... at the end of the table for customer step name transaction which will bring up the Analyze menu and then click  **Performance Comparison**
-
-<img src="../../assets/images/lab_1_compare_1.png" width="100" height="200"/>
-
-This will bring the **Compare** view.   Change the compare with to **custom time frame**.
 
 
-**Architecture Validation - Service Flow**
-
-As testers, we typically only test against the service endpoint. As performance engineers we should however understand what happens end-to-end with that request. Which other services does it call? How many round trips to the database does it make? Does service load balancing and failover work correctly? Do the caching layers work well? And do we have any bad architectural patterns such as a data-driven N+1 query problem?
-
-In Dynatrace, we analyze the Service Flow which shows us the full end-to-end flow of every request executed against our service endpoint. You can also apply filters to only focus on a particular test transaction, a specific time frame or compare the flow of failing vs non- failing transactions.
-
-We are going to focus on the customer step name transaction.
-
-<img src="../../assets/images/lab_1_peformance_analysis_1.png" width="500"/>
-
-Click on the ... at the end of the table for customer step name transaction which will bring up the Analyze menu and then click  **Service Flow**
-
-<img src="../../assets/images/lab_1_service_flow_1.png" width="500"/>
-
-This will bring up the *Service flow**
-
-<img src="../../assets/images/lab_1_service_flow_2.png" width="500"/>
 
