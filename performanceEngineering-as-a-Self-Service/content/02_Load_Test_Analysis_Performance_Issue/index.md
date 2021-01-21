@@ -203,7 +203,7 @@ On the Response time analysis page you see the average response time observed du
 
 From the current screen click on **View method hotspots** which will drill to the **Method hotspots**
 
-In this screen click on **Hotspots**.   This will change the view to find the **Top hotspots**.   In the **Top hotspots* table click the top node in the tree.   This will update the **Callings methods.  Click expand and you can see the method that is causing the bottleneck in the code. 
+In this screen click on **Hotspots**.   This will change the view to find the **Top hotspots**.   In the **Top hotspots** table click the top node in the tree.   This will update the **Callings methods**.  Click expand and you can see the method that is causing the bottleneck in the code. 
 
 <img src="../../assets/images/lab_1_response_time_hotspots_3.png" width="500"/>
 
