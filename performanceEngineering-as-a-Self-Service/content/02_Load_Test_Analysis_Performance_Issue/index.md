@@ -28,10 +28,9 @@ Next we will create a few configuration items and kick off a load test.
 4.  Describe Dynatrace Load Test Request Attribute
 4.  Describe Calculated Service Metrics for Load Test Steps
 5.  Kick off Keptn Customer 2 Build
-6.  Describe Dynatrace Load Test Request Header
-7.  Update Keptn: keptnorders staging Management Zone
-8.  Examine Performance Test Dashboard with Transaction Steps
-9.  Load Test Performance Analysis
+6.  Update Keptn: keptnorders staging Management Zone
+7.  Examine Performance Test Dashboard with Transaction Steps
+8.  Load Test Performance Analysis
 
 ### Create Service tag
 
@@ -96,9 +95,9 @@ While executing a load test from your load testing tool of choice (JMeter, Neoty
 
 Dynatrace can analyze incoming HTTP headers and extract such contextual information from the header values and tag the captured requests with request attributes. Request attributes enable you to filter your monitoring data based on defined tags.
 
-You can use any (or multiple) HTTP headers or HTTP parameters to pass context information. The extraction rules can be configured via ```Settings --> Server-side service monitoring --> Request attributes```.
+You can use any (or multiple) HTTP headers or HTTP parameters to pass context information. The extraction rules can be configured via **Settings --> Server-side service monitoring --> Request attributes**.
 
-The header ```x-dynatrace-test``` is used one or more key/value pairs for the header. Here are some examples:
+The header **x-dynatrace-test** is used one or more key/value pairs for the header. Here are some examples:
 
 | **Key**   | **Description**   |
 | --- | --- |
