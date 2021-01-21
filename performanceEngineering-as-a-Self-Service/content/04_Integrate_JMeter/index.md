@@ -64,3 +64,18 @@ We should see this output.
 
 <img src="../../assets/images/lab_4_script_output.png" width="500"/>
 
+### Rum Load Test
+
+Now we need to run the **05-jmeter-test-order-application** pipeline in Jenkins.
+
+Click **"build"** to initialize the pipeline. Refresh the page.
+
+Now we can select **"Build with Parameters"**
+
+Change the Deployment URL and click **"build"**
+
+<img src="../../assets/images/lab_4_buildwparams.png" width="500"/>
+
+
+
+
