@@ -6,6 +6,8 @@ KEPTN_BRIDGE_URL=$(kubectl get secret dynatrace -n keptn -ojsonpath={.data.KEPTN
 KEPTN_BRIDGE_USER=keptn
 KEPTN_BRIDGE_PASSWORD=$(keptn configure bridge --output | tail -1 | awk -F  ": " '{print $2}')
 KEPTN_INGRESS=$(kubectl get cm -n keptn ingress-config -ojsonpath={.data.ingress_hostname_suffix})
+GIT_USER="keptn"
+GIT_PASSWORD="keptn#R0cks"
 
 echo "==============================================================================="
 echo "Here are all the useful URLs and tokens you will need for the HOTDAY"
@@ -20,6 +22,11 @@ echo ""
 echo "==============================================================================="
 echo "Dynatrace Tenant Url: https://$DT_TENANT"
 echo "Dynatrace Username / Password: see it in Dynatrace University"
+echo "==============================================================================="
+echo ""
+echo "==============================================================================="
+echo "Gitea user credentials: $GIT_USER / $GIT_PASSWORD"
+echo "==============================================================================="
 echo ""
 echo "==============================================================================="
 echo "For some of the excercises you need the Dynatrace API token in the DT_API_TOKEN Env Variable"
