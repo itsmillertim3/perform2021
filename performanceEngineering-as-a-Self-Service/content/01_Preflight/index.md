@@ -7,12 +7,19 @@ In a matter of minutes you'll have a fully configured Single Node Kubernetes Clu
 
 Keptn-in-a-Box runs on microk8s, which is a simple production-grade upstream certified Kubernetes made for developers and DevOps.
 
+Projects used for this Session
+- [Keptn](https://keptn.sh/)
+- [Jenkins Service for Keptn](https://github.com/keptn-sandbox/jenkins-service/)
+- [Order Overview](https://github.com/dthotday-performance/overview)
+- [Jmeter Plugin](https://github.com/dynatrace-oss/jmeter-dynatrace-plugin)
+- [KIAB](https://github.com/keptn-sandbox/keptn-in-a-box)
+- [Jmeter Service](https://github.com/keptn/keptn/tree/master/jmeter-service#workloads)
 
 Let's begin by creating the necessary credentials.
 
 ### Create Credentials
 
-  - [ ] TENANTID="https://mytenant.live.dynatrace.com"
+  - [ ] TENANTID=mytenant.sprint.dynatracelabs.com
   - [ ] PAASTOKEN=myDynatracePaaSToken
   - [ ] APITOKEN=myDynatraceApiToken
 
@@ -23,6 +30,8 @@ Open a text editor, we will use this as a cheat sheet, for our Credential inform
 For this exercise, we need the fully qualified name without the trailing /.
 
 **xxxx.sprint.dynatracelabs.com**
+
+_For the TenantID protocol use: https://{your-domain}/e/{your-environment-id} for managed or https://{your-environment-id}.live.dynatrace.com for SaaS__
 
 <img src="../../assets/images/Tenant_id.png" width="500"/>
 
@@ -164,3 +173,6 @@ and...
 
 <img src="../../assets/images/usecase3.png" width="500"/>
 
+### Examine Dynatrace 
+
+Now lets look at what we have discovered in Dynatrace.
