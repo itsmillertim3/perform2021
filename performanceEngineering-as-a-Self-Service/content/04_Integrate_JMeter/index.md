@@ -35,3 +35,12 @@ the Events section on all overview pages of the entities that are defined in the
 Load test events are also displayed on associated services pages (see example below).
 
 <img src="../../assets/images/lab_4_event_tag.png" width="500"/>
+
+###Dynatrace Backend listener plugin for JMeter
+This library implements a JMeter Backend listener and sends the recorded loadtest metrics via the Dynatrace MINT 
+metric ingest to the configured Dynatrace monitoring environment. 
+See https://jmeter.apache.org/usermanual/component_reference.html#Backend_Listener for a description of the JMeter BackendListener concept.
+
+We have also configured this in the Jmeter script.
+
+<img src="../../assets/images/lab_4_jmeter_listener.png" width="500"/>
