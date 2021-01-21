@@ -142,7 +142,7 @@ Click ```Keptn: keptnorders staging``` management zone  ``` and add a new 
     - Rule applies to Process groups
     - Process group name begins with = keptnorders.staging
     
-    <img src="../../assets/images/lab_1_management_zone.png" width="500"/>
+<img src="../../assets/images/lab_1_management_zone.png" width="500"/>
 
 Select ```apply to underlying hosts of matching services``` check box.
 
