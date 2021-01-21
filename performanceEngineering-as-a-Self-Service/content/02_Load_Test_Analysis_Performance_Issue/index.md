@@ -76,17 +76,17 @@ As testers, we typically only test against the service endpoint. As performance 
 
 In Dynatrace, we analyze the Service Flow which shows us the full end-to-end flow of every request executed against our service endpoint. You can also apply filters to only focus on a particular test transaction, a specific time frame or compare the flow of failing vs non- failing transactions.
 
-We are going to focus on the customer step name transaction.
+Click **"Applications"** from the Main Navigation menu. Then click **My web application**.
 
-<img src="../../assets/images/lab_1_peformance_analysis_1.png" width="500"/>
+<img src="../../assets/images/lab_1_application_service_flow_1.png" width="500"/>
 
-Click on the ... at the end of the table for customer step name transaction which will bring up the Analyze menu and then click  **Service Flow**
+This will bring up the **My web application** Performance Overview.  In the Dynatrace infographic click on the **1 Service** box.   Then under the **Called services** table click on the aqua box called **View service flow**.
 
-<img src="../../assets/images/lab_1_service_flow_1.png" width="500"/>
+<img src="../../assets/images/ab_1_application_service_flow_2.png" width="500"/>
 
-This will bring up the *Service flow**
+This will bring up the **Service flow** for the **My web application**.  View results.
 
-<img src="../../assets/images/lab_1_service_flow_2.png" width="500"/>
+<img src="../../assets/images/lab_1_application_service_flow_3.png" width="500"/>
 
 ### Kick off our first load test
 
@@ -201,9 +201,9 @@ On the Response time analysis page you see the average response time observed du
 
 <img src="../../assets/images/lab_1_response_time_hotspots_2.png" width="500"/>
 
-From the current screen click on *View method hotspots* which will drill to the **Method hotspots**
+From the current screen click on **View method hotspots** which will drill to the **Method hotspots**
 
-In this screen click on **Hotspots**.   This will change the view to find the **Top hotspots**.   In the *Top hotspots* table click the top node in the tree.   This will update the **Callings methods.  Click expand and you can see the method that is causing the bottleneck in the code. 
+In this screen click on **Hotspots**.   This will change the view to find the **Top hotspots**.   In the **Top hotspots* table click the top node in the tree.   This will update the **Callings methods.  Click expand and you can see the method that is causing the bottleneck in the code. 
 
 <img src="../../assets/images/lab_1_response_time_hotspots_3.png" width="500"/>
 
