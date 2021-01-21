@@ -28,10 +28,9 @@ Next we will create a few configuration items and kick off a load test.
 4.  Describe Dynatrace Load Test Request Attribute
 4.  Describe Calculated Service Metrics for Load Test Steps
 5.  Kick off Keptn Customer 2 Build
-6.  Describe Dynatrace Load Test Request Header
-7.  Update Keptn: keptnorders staging Management Zone
-8.  Examine Performance Test Dashboard with Transaction Steps
-9.  Load Test Performance Analysis
+6.  Update Keptn: keptnorders staging Management Zone
+7.  Examine Performance Test Dashboard with Transaction Steps
+8.  Load Test Performance Analysis
 
 ### Create Service tag
 
