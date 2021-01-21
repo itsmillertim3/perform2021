@@ -1,4 +1,5 @@
-## <img src="../../assets/images/jmeter.png" width="100"/> Jmeter Integration
+## Jmeter Integration
+<img src="../../assets/images/jmeter.png" width="100"/>
 
 Previously we discussed the Load Test Request Attributes.
 
