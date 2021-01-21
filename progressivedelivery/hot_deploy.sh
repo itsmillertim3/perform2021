@@ -24,7 +24,7 @@ VERSION=$2
 
 echo "Sending a Configuration-Changed Event via the Keptn API"
 curl -X POST "http://${KEPTN_INGRESS}/api/v1/event" \
-     -H "accept: application/json" \ 
-     -H "x-token: ${KEPTN_API_TOKEN}" \ 
-     -H "Content-Type: application/json" \ 
+     -H "accept: application/json" \
+     -H "x-token: ${KEPTN_API_TOKEN}" \
+     -H "Content-Type: application/json" \
      -d "{ \"contenttype\": \"application/json\", \"data\": { \"canary\": { \"action\": \"set\", \"value\": 100 }, \"project\": \"${PROJECTNAME}\", \"service\": \"${SERVICENAME}\", \"stage\": \"staging\", \"valuesCanary\": { \"image\": \"docker.io/grabnerandi/simplenodeservice:${VERSION}.0.0\" }, \"labels\": { \"triggeredby\" : \"hot_deploy\", \"student\" : \"${PROJECTNAME}\" } }, \"source\": \"https://github.com/keptn/keptn/api\", \"specversion\": \"0.2\", \"type\": \"sh.keptn.event.configuration.change\"}"
