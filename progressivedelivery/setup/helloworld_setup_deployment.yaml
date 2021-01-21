@@ -1,0 +1,44 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: helloworld
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: helloworld
+  template:
+    metadata: 
+      labels:
+        app: helloworld
+        app.kubernetes.io/part-of: HELLOWORLD_SETUP
+        app.kubernetes.io/version: "1.00"
+    spec:
+      containers:
+      - name: helloworld
+        image: hello-world:linux
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: DT_CUSTOM_PROP
+          value: "keptn_project=setup_project keptn_service=helloworld_setup keptn_stage=setup_stage keptn_deployment=setup_deployment"
+        - name: DT_TAGS
+          value: "HELLOWORLD_SETUP"
+        resources:
+          limits:
+            cpu: 100m
+            memory: 200Mi
+          requests:
+            cpu: 100m
+            memory: 200Mi
+        ports:
+        - name: http
+          protocol: TCP
+          containerPort: 80
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 60
+          periodSeconds: 10
+          timeoutSeconds: 15
