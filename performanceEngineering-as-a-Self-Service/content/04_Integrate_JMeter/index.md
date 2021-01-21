@@ -62,5 +62,5 @@ Now we need to run the following command.
 ```
 We should see this output.
 
-<img src="../../assets/images/lab_4_script_output.png" width="300"/>
+<img src="../../assets/images/lab_4_script_output.png" width="500"/>
 
