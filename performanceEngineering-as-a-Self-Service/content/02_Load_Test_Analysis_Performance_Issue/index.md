@@ -168,9 +168,12 @@ There are different ways to analyze the data. Your approach should be based on t
 
 **Response Time Analysis**
 
-On the Response time analysis page you see the average response time observed during the analyzed timeframe. On the left side of the infographic, under Distribution, you can see how much time is contributed by calls to other services, calls to databases, and code-level execution. On the right side, under Top findings, we list the biggest hotspots identified by Dynatrace. You can click any of these entries to view further details.
+Click on Response time hotspots
 
 <img src="../../assets/images/lab_1_response_time_hotspots_1.png" width="500"/>
+
+On the Response time analysis page you see the average response time observed during the analyzed timeframe. On the left side of the infographic, under Distribution, you can see how much time is contributed by calls to other services, calls to databases, and code-level execution. On the right side, under Top findings, we list the biggest hotspots identified by Dynatrace. You can click any of these entries to view further details.
+
 
 **Compare**
 
