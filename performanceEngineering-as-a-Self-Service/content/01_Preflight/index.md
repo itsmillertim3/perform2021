@@ -187,3 +187,14 @@ We can also see the processes for the order application.
 
 <img src="../../assets/images/pre_processes.png" width="300"/>
 
+Next we can examine the Transactions and Services.
+
+Select **Transactions and Services** from the menu.
+
+<img src="../../assets/images/pre_services.png" width="300"/>
+
+You can also change the focus by using the _management zone_ filter.
+
+
+
+
