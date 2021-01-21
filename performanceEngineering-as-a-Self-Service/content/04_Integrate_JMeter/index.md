@@ -1,15 +1,37 @@
-### <img src="../../assets/images/jmeter.png" width="100"/> Jmeter Integration
+## <img src="../../assets/images/jmeter.png" width="100"/> Jmeter Integration
 
 Previously we discussed the Load Test Request Attributes.
 
-To integrate Dynatrace with JMeter:
+### Tag tests with HTTP headers 
+
+While executing a load test from your load testing tool of choice (JMeter, Neotys, 
+LoadRunner, etc) each simulated HTTP request can be tagged with additional HTTP headers that 
+contain test-transaction information (for example, script name, test step name, and virtual user ID). 
+Dynatrace can analyze incoming HTTP headers and extract such contextual information from the header 
+values and tag the captured requests with request attributes. 
+Request attributes enable you to filter your monitoring data based on defined tags.
+
+<img src="../../assets/images/lab_4_load_test_headers.png" width="500"/>
+
+### Integrate Dynatrace with JMeter:
 
 Within JMeter, use the HTTP Header Manager to add custom HTTP request headers. 
 You can use any custom HTTP headers to pass context information. In this example, 
 we use the header x-dynatrace-test and the set of key/value LSN=Scenario1;TSN=Put Item into Cart; for the header value. 
 See Dynatrace and load testing tools integration for more details on the recommended key/value pairs. 
 
+[Dynatrace Jmeter Integration](https://www.dynatrace.com/support/help/setup-and-configuration/integrations/third-party-integrations/test-automation-frameworks/dynatrace-and-jmeter-integration/)
+
 Good News, we have already added this into the jmeter scripts.
 
 <img src="../../assets/images/lab_04_jmeter.png" width="500"/>
 
+Push custom events 
+When running a load test, you can push additional context information to Dynatrace using the custom event API. A custom annotation then appears in 
+the Events section on all overview pages of the entities that are defined in the API call (see example below).
+
+<img src="../../assets/images/lab_4_events.png" width="500"/>
+
+Load test events are also displayed on associated services pages (see example below).
+
+<img src="../../assets/images/lab_4_event_tag.png" width="500"/>
