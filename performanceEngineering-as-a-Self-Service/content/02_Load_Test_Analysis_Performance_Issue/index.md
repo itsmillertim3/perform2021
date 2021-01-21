@@ -95,9 +95,9 @@ While executing a load test from your load testing tool of choice (JMeter, Neoty
 
 Dynatrace can analyze incoming HTTP headers and extract such contextual information from the header values and tag the captured requests with request attributes. Request attributes enable you to filter your monitoring data based on defined tags.
 
-You can use any (or multiple) HTTP headers or HTTP parameters to pass context information. The extraction rules can be configured via ```Settings --> Server-side service monitoring --> Request attributes```.
+You can use any (or multiple) HTTP headers or HTTP parameters to pass context information. The extraction rules can be configured via **Settings --> Server-side service monitoring --> Request attributes**.
 
-The header ```x-dynatrace-test``` is used one or more key/value pairs for the header. Here are some examples:
+The header **x-dynatrace-test** is used one or more key/value pairs for the header. Here are some examples:
 
 | **Key**   | **Description**   |
 | --- | --- |
