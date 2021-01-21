@@ -1,19 +1,15 @@
-## Sample App Modernization
+## Modernize the Sample App 
 
-Re-hosting (also referred to as lift and shift) is a common migration use case. Re-architecture and Re-platform are steps that break the traditional monolithic architectures and replace individual components with cloud services, such as Amazon Relational Database Service (Amazon RDS), which replaces on-premises relational databases) and Amazon DynamoDB, which replaces NoSQL databases. These steps can also replace newly-developed microservices, including containerized or serverless.
+As we saw earlier that the sample application is a three-tiered application --> frontend, backend, database.
 
-We just learned how we can get great information on back-end services, front-end API services, or user-facing features using Dynatrace and OneAgent. This helps us now decide what individual features or complete applications based on business benefits we need to migrate and modernize. The idea here is to focus on feature-based business benefit with functional migration.
-
-## Identify
-
-EasyTravel is a monolithic Java application that as we saw earlier provides several web services like Booking, Authentication, and Journey.
-
-Our overall goal at easyTravel is to breakout each of these backend services into separate services. This will allow us to have separate Continuous Integration (CI) pipelines to build and test each service independantly. By putting these service into Docker images, we gain the ability to deploy the service into modern platforms like Kubernetes using AWS managed services. By adding Continuous Deployment (CD) to our process, we will vastly increase our ability to delivery features faster to our customers.
+For our lab, another version of the application exists that breakouts each of these backend services into separate services. By putting these service into Docker images, we gain the ability to deploy the service into modern platforms like Kubernetes and Cloud managed services such as the ones from AWS shown below.
 
 ![image](../../../assets/images/lab2-eks-picture.png)
 
-## Sample App Modernization
+## Beyond the Lab
 
-Sample app broken up as into "services" architecture of a frontend and backend services.  The application was implemented as two Docker containers that we will review in this lab within Dynatrace.
+Over time, you can imagine that this sample application will be futher changed to add in other technologies like serverless [AWS Lambda](https://aws.amazon.com/lambda/) and other PaaS servies like [AWS RDS](https://aws.amazon.com/rds/) or [AWS DynamoDB](https://aws.amazon.com/dynamodb/) databases and virtual networking [AWS API gateway](https://aws.amazon.com/api-gateway) as shown in the picture below. 
 
 ![image](../../../assets/images/lab2-eks-picture-future.png)
+
+💥 **TECHNICAL NOTE**: We will not cover this, but organziations are establishing DevOps approaches and estabishing Continuous Integration (CI) pipelines to build and test each service independantly. Then adding Continuous Deployment (CD) to the process too that vastly increase our ability to delivery features faster to our customers.  Dynatrace has a number of solutions to support DevOps that you can read about [here](https://www.dynatrace.com/solutions/devops/)

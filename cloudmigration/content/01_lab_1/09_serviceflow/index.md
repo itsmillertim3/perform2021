@@ -33,13 +33,10 @@ Right away, we can see how this application is structured:
 
 Refer to the numbers in the picture above:
 
-1 . The timeframe defaults to 10 minutes but can be adjusted
-
-2 . We are viewing the data from a **Response time perspective**. Shortly, we will review the **Throughput perspective**.
-
-3 . Click on the boxes to expand the response time metrics. We can see that most of the response time, roughly 70%, is spent in the backend service.
-
-4 . Even though there are roughly 3 calls to the database for every backend service request, only 2% of the response time is spent in the database. 
+1. The timeframe defaults to 10 minutes but can be adjusted1. 
+1. We are viewing the data from a **Response time perspective**. Shortly, we will review the **Throughput perspective**.
+1. Click on the boxes to expand the response time metrics. We can see that most of the response time, most of the time is spent in the backend service.
+1. Even though there are roughly 3 calls to the database for every backend service request, only a very small amount of the response time is spent in the database. 
 
 ## Throughput perspective
 
@@ -47,10 +44,7 @@ Refer to the numbers in the picture above:
 
 Refer to the numbers in the picture above:
 
-1 . The timeframe defaults to 10 minutes but can be adjusted
-
-2 . Change to the **Throughput** perspective by clicking on the box
-
-3 . Click on the boxes to expand the metrics to see the number of requests and average response times going to the BookingService
-
-4 . We can see that roughly 85% of the calls to `backend` service and we can see the number of requests too.
+1. The timeframe defaults to 10 minutes but can be adjusted
+1. Change to the **Throughput** perspective by clicking on the box
+1. Click on the boxes to expand the metrics to see the number of requests and average response times going to the BookingService
+1.  We can see the number of requests  to `backend` service

@@ -37,3 +37,23 @@ On this page you can view the top 15 requests and their response time consumptio
 By clicking on one of the requests, the time-series charts are filtered to just that one request.
 
 ![image](../../../assets/images/lab1-request-filter.png)
+
+## Request attributes
+
+💥 **TECHNICAL NOTE**: Are wondering what the "lsn", "ltn", and "tsn" are all about?
+
+Dynatrace tracks all requests, from end to end, and automatically monitors the services that underlie each transaction. The performance and attributes of each request can be analyzed in detail. You can even create custom multi-faceted filters that enable you to analyze call sequences from multiple perspectives. 
+
+With such advanced request filtering, Dynatrace enables you to slice and dice your way through your requests to find the proverbial “needle in the haystack.” Such filtering isn't only possible on certain predefined attributes. You can also configure custom request attributes that you can use to improve filtering and analysis of problematic web requests.
+
+The load traffic script was built to send a custom header for each request with information for:
+* "lsn" - load script name
+* "ltn" - load test name
+* "tsn" - test step name
+
+See this repo for how the Dynatrace configuration was done.
+https://github.com/dt-orders/load-traffic/blob/main/README.md#dynatrace-setup
+
+## 👍 How this helps
+
+This is a more advanced feature, bet very powerful. In this example, a test script send in custom header information, but information in you apps might already available.  You can read more on the topic in the [Dynatrace docs](https://www.dynatrace.com/support/help/how-to-use-dynatrace/transactions-and-services/basic-concepts/request-attributes/) 

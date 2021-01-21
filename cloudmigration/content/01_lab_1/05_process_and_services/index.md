@@ -27,18 +27,19 @@ You should be on the process page where you will see information for this proces
     * Click to view the services that are served by this process. In this case there are multiple
     * Click to view the processes that this process calls (Outbound)
     * Click to view the Process specific time-services metrics
+1. Did you notice Docker??
 
 ![image](../../../assets/images/lab1-process-view.png)
 
-💥 **TECHNICAL NOTE**: that Dynatrace automatically recognizes many common processes like Tomcat and will capture process specific metrics such as JVM garbage collection. See a list of supported technologies in the [Dynatrace documentation](https://www.dynatrace.com/support/help/technology-support/supported-technologies-and-versions)
-
-## Did you notice Docker??
+## Dynatace and containers
 
 In the picture above, the arrow with number 4 shows the properties for Docker.
 
 Our sample app was built as a Docker container and Dynatrace hooks into containers and provides code for injecting OneAgent into containerized process.  
 
 See more details in the [Dynatrace documentation](https://www.dynatrace.com/support/help/technology-support/cloud-platforms/other-platforms/docker/basic-concepts/how-dynatrace-monitors-containers/)
+
+💥 **TECHNICAL NOTE**: that Dynatrace automatically recognizes many common processes like Tomcat and will capture process specific metrics such as JVM garbage collection. See a list of supported technologies in the [Dynatrace documentation](https://www.dynatrace.com/support/help/technology-support/supported-technologies-and-versions)
 
 ## View a Service
 

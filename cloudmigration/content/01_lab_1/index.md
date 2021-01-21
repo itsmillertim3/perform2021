@@ -1,6 +1,8 @@
 ## Lab 1 Overview
 
-While choosing the right migration strategies, such as rehosting or rearchitect, one must access the different risks, costs, and benefits but often the details of what is where and what is dependent on what within the technical stack is missing or poorly documented.  All that may exist is out of date digrams and a mix of monitoring tools.
+While choosing the right migration strategies, such as rehosting or rearchitecting, one must access the different risks, costs, and benefits.  
+
+However, often the details of what is where and what is dependent on what within the technical stack is missing or poorly documented.  All that may exist is out of date diagrams and a mix of monitoring tool metrics that must be stiched together.
 
 Not having enough details about the current environment is hindering organization's ability to make the right decisions when planning what to migrate and when.
 
