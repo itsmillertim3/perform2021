@@ -131,6 +131,24 @@ Then we need to change the build for customer to version 2 and select the build 
 
 ### Update Keptn: keptnorders staging Management Zone
 
+Each customizable management zone comprises a set of monitored entities in your environment, be it hosts that share a common purpose, a specific application, a staging environment, or services of a certain technology. Management zones may overlap, just as team responsibilities often overlap. Users may be granted access to entire environments, a specific management zone, or a subset of related management zones.
+
+This exercise shows how to add a zone that filters by the tag [Environment]app:keptn-orders.
+
+In Dynatrace on the left menu, navigate to ```settings --> preferences --> management zones```
+
+Click ```Keptn: keptnorders staging``` management zone  ``` and add a new rule with configuration as show below.
+
+    - Rule applies to Process groups
+    - Process group name begins with = keptnorders.staging
+    
+    <img src="../../assets/images/lab_1_management_zone.png" width="500"/>
+
+Select ```apply to underlying hosts of matching services``` check box.
+
+Click the ```preview``` button to verify.
+
+Save the zone. Click ```create rule``` button. Then ```Save changes``` button.
 
 ### Create KeptnOdersDatabase Database Service Rule Name
 
