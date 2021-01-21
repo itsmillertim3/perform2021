@@ -16,4 +16,4 @@ SERVICENAME=simplenode
 PROJECTNAME=$1
 VERSION=$2
 
-keptn send event new-artifact --project=$PROJECTNAME --service=$SERVICENAME --image=docker.io/grabnerandi/simplenodeservice --tag=$VERSION.0.0
+keptn send event new-artifact --project=$PROJECTNAME --service=$SERVICENAME --stage=staging --image=docker.io/grabnerandi/simplenodeservice --tag=$VERSION.0.0
