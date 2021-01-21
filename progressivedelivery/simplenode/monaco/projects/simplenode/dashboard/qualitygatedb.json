@@ -59,7 +59,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "Server side response time - P50;SLI=response_time_p50;",
+            "customName": "Server side response time - P50;sli=response_time_p50;",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
