@@ -189,11 +189,11 @@ There are different ways to analyze the data. Your approach should be based on t
 
 For Developers to understand how to avoid future performance issues and proactively optimize performance, you must be able to analyze real-time data and understand code performance bottlenecks.
 
-We are going to focus on the customer step name transaction.
+We are going to focus on the **customer** step name transaction.
 
 <img src="../../assets/images/lab_1_peformance_analysis_1.png" width="500"/>
 
-Click on the ... at the end of the table for customer step name transaction which will bring up the Analyze menu and then click  **Response time hotspots**
+Click on the ... at the end of the table for **customer** step name transaction which will bring up the **Analyze** menu and then click  **Response time hotspots**
 
 <img src="../../assets/images/lab_1_response_time_hotspots_1.png" width="200" height="300"/>
 
