@@ -140,11 +140,11 @@ In Dynatrace on the left menu, navigate to ```settings --> preferences --> man
 Click ```Keptn: keptnorders staging``` management zone and add a new rule with configuration as show below.
 
     - Rule applies to Process groups
-    - Process group name begins with = keptnorders.staging
+    - Process group name begins with = ***keptnorders.staging***
     
 <img src="../../assets/images/lab_1_management_zone.png" width="500"/>
 
-Select ```apply to underlying hosts of matching services``` check box.
+Select ```apply to underlying hosts of matching process groups``` check box.
 
 Click the ```preview``` button to verify.
 
