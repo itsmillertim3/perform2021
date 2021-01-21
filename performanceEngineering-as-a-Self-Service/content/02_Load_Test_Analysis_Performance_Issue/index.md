@@ -138,20 +138,20 @@ Each customizable management zone comprises a set of monitored entities in your 
 
 This exercise shows how to update a management zone that will be used in dashboards to show process and host metrics for analysis.
 
-In Dynatrace on the navigation menu, navigate to ```settings --> preferences --> management zones```
+In Dynatrace on the navigation menu, navigate to **settings --> preferences --> management zones**
 
-Click ```Keptn: keptnorders staging``` management zone and add a new rule with configuration as show below.
+Click **Keptn: keptnorders staging** management zone and add a new rule with configuration as show below.
 
-    - Rule applies to Process groups
-    - Process group name begins with = keptnorders.staging
+- Rule applies to Process groups
+- Process group name begins with = keptnorders.staging
     
 <img src="../../assets/images/lab_1_management_zone.png" width="500"/>
 
-Select ```apply to underlying hosts of matching process groups``` check box.
+Select **apply to underlying hosts of matching process groups** check box.
 
-Click the ```preview``` button to verify.
+Click the **preview** button to verify.
 
-Save the zone. Click ```create rule``` button. Then ```Save changes``` button.
+Save the zone. Click **create rule** button. Then **Save changes** button.
 
 ### Examine Performance Test Dashboard with Transaction Steps
 
