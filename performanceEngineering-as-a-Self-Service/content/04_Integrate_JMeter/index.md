@@ -1,4 +1,4 @@
-### Jmeter Integration
+### <img src="../../assets/images/jmeter.png" width="100"/> Jmeter Integration
 
 Previously we discussed the Load Test Request Attributes.
 
