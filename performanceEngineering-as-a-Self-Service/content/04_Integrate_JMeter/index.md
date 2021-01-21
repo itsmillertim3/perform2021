@@ -53,6 +53,8 @@ Load test events are also displayed on associated services pages (see example be
 
 <img src="../../assets/images/lab_4_event_tag.png" width="500"/>
 
+Further good news, these events are pushed via the keptn bridge.
+
 ### Dynatrace Backend listener plugin for JMeter
 This library implements a JMeter Backend listener and sends the recorded loadtest metrics via the Dynatrace MINT 
 metric ingest to the configured Dynatrace monitoring environment. 
