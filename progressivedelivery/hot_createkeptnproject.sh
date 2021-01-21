@@ -12,7 +12,7 @@ fi
 # For the first run we need to make sure we set the owner into the dashboard template
 DT_USERNAME=${DT_USERNAME:-none}
 if [ ! -f simplenode/monaco/projects/simplenode/dashboard/qualitygatedb.yaml ]; then
-  if [[ -z "$DT_USERNAME" ]]; then
+  if [[ "$DT_USERNAME" == "none" ]]; then
     echo "Please export DT_USERNAME=dynatraceusername as its needed for dashboard owner"
     exit 1
   fi
