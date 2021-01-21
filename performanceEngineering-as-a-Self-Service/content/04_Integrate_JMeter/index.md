@@ -86,6 +86,9 @@ Change the Deployment URL and click **"build"**
     * Select `Pin to dashboard`
 * Save the dashboard 
 
+Further Reading:
+[Load Testing Redefined](https://www.dynatrace.com/news/blog/load-testing-redefined-a-guide-from-kpi-reporting-to-ai-supported-performance-engineering/)
+
 
 
 
