@@ -1,7 +1,14 @@
 ## Jmeter Integration
 <img src="../../assets/images/jmeter.png" width="100"/>
 
-Previously we discussed the Load Test Request Attributes.
+Previously we discussed the Load Test Request Attributes. 
+
+While executing a load test in Apache JMeter, each simulated HTTP request 
+can be tagged in JMeter with additional HTTP Headers that contain test-transaction 
+information (for example, script name, test step name and virtual user ID). Dynatrace
+can analyze incoming HTTP headers and extract such contextual information from the header 
+values and "tag" the captured requests. Having a tag on a request allows you to analyze 
+requests with specific tags.
 
 ### Tag tests with HTTP headers 
 
