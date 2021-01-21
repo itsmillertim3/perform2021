@@ -176,3 +176,14 @@ and...
 ### Examine Dynatrace 
 
 Now lets look at what we have discovered in Dynatrace.
+
+Open Dynatrace and navigate to **Hosts** in the menu and select the host.
+
+Here we can examine all the proceses automatically discovered by the Dynatrace oneAgent.
+
+<img src="../../assets/images/pre_host.png" width="500"/>
+
+We can also see the processes for the order application.
+
+<img src="../../assets/images/pre_processes.png" width="300"/>
+
