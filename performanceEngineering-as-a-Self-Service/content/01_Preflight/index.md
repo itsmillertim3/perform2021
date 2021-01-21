@@ -181,7 +181,7 @@ Open Dynatrace and navigate to **Hosts** in the menu and select the host.
 
 Here we can examine all the proceses automatically discovered by the Dynatrace oneAgent.
 
-<img src="../../assets/images/pre_host.png" width="500"/>
+<img src="../../assets/images/pre_host.png" width="400"/>
 
 We can also see the processes for the order application.
 
@@ -191,10 +191,24 @@ Next we can examine the Transactions and Services.
 
 Select **Transactions and Services** from the menu.
 
-<img src="../../assets/images/pre_services.png" width="300"/>
+<img src="../../assets/images/pre_services.png" width="400"/>
 
 You can also change the focus by using the _management zone_ filter.
 
+Finally, we can also see how the KIAB configured Kubernetes cluster monitoring.
+
+Select **Kubernetes** from the menu.
+
+<img src="../../assets/images/pre_kube.png" width="400"/>
+
+Pre-configured items also include:
+
+1. Dashboards
+1. Request Attributes
+1. Calculated Service Metrics
+1. Management Zones
+1. Automatically Applied Tags
 
 
+Now that we are more familiar with what we have running, let's continue to the next activity.
 
