@@ -7,6 +7,11 @@ In a matter of minutes you'll have a fully configured Single Node Kubernetes Clu
 
 Keptn-in-a-Box runs on microk8s, which is a simple production-grade upstream certified Kubernetes made for developers and DevOps.
 
+Projects used for KIAB
+-[Jenkins Service for Keptn](https://github.com/keptn-sandbox/jenkins-service/)
+-[Order Overview](https://github.com/dthotday-performance/overview)
+-[Jmeter Plugin](https://github.com/dynatrace-oss/jmeter-dynatrace-plugin)
+-[KIAB](https://github.com/keptn-sandbox/keptn-in-a-box)
 
 Let's begin by creating the necessary credentials.
 
@@ -23,6 +28,8 @@ Open a text editor, we will use this as a cheat sheet, for our Credential inform
 For this exercise, we need the fully qualified name without the trailing /.
 
 **xxxx.sprint.dynatracelabs.com**
+
+For the TenantID protocol use: https://{your-domain}/e/{your-environment-id} for managed or https://{your-environment-id}.live.dynatrace.com for SaaS
 
 <img src="../../assets/images/Tenant_id.png" width="500"/>
 
