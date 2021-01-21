@@ -46,4 +46,6 @@ curl -X POST "https://$DT_TENANT/api/config/v1/kubernetes/credentials" \
     -d "{\"active\":true,\"label\":\"$DT_K8S_CONFIG_NAME\",\"endpointUrl\":\"$K8SAPI_URL\",\"authToken\":\"$K8SBEARER_TOKEN\",\"eventsIntegrationEnabled\":true,\"workloadIntegrationEnabled\":true,\"prometheusExportersIntegrationEnabled\":true,\"eventsFieldSelectors\":[{\"label\":\"Node events\",\"fieldSelector\":\"involvedObject.kind=Node\",\"active\":true},{\"label\":\"All non-node events\",\"fieldSelector\":\"involvedObject.kind!=Node\",\"active\":true}],\"certificateCheckEnabled\":false}"
 
 echo "3. Deploy a HelloWorld Sample App to validate monitoring and initialize CUSTOM_PROPS needed later"
-kubectl apply -f ./helloworld_setup_deployment.yaml
+kubectl apply -n default -f ./helloworld_setup_deployment.yaml
+kubectl wait --namespace=default --for=condition=Ready pods --timeout=300s --all
+
