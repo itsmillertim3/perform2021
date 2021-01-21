@@ -104,6 +104,23 @@ Welcome to KIAB.
 
 <img src="../../assets/images/KIAB.png" width="400"/>
 
+### Run Pipeline
+
+Click on **"Jenkins"**
+
+Now we will kick off the Pipeline **01-deploy-order-application** to build out the application.
+
+Login to Jenkins with the following credentials
+
+* username = keptn
+* password = keptn
+
+<img src="../../assets/images/Lab_1_Jenkins_Log_In.png" width="250"/>
+
+After selecting the pipeline click **"build"**
+
+<img src="../../assets/images/Lab_1_deploy_order_application_1.png" width="500"/>
+
 ### Order App Overview
 
 This application was built for demonstations of Dynatrace.  The front-end look like this.

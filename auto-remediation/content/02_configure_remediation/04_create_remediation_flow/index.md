@@ -29,7 +29,7 @@ i
 
 Add the required steps to execute the remediation and trigger the ansible AWX template.
 
-1. Click on `Create Task` (Step #11) to expand the action.
+1. Click on `Create Task` (Step #9) to expand the action.
 
 1. Click on the `+ Add Field Value` button and select `Assignment Group`
 
@@ -82,18 +82,18 @@ Add the required steps to execute the remediation and trigger the ansible AWX te
 
 1. Click Done.
 
-1. Create a new step under the `Trigger ansible AWX Template` subflow step.
+1. Create a new step under the `12 - Trigger ansible AWX Template` subflow step.
 
 1. Select `Flow logic` -> `If` and complete the fields as shown below:
 
     - **Condition:** subflow finishes successfully
-    - **Condition 1 (case sensitive):** `12-Trigger ansible AWX Template -> Status is successful`
+    - **Condition 1 (case sensitive):** `12 - Trigger ansible AWX Template -> Status is successful`
 
     ![servicenow-add-subflow-4](../../../assets/images/servicenow-add-subflow-4.png)
 
 1. Click `Done`
 
-1. Add an `Update Record` action under the `If` step with the following values:
+1. Add an `Update Record` action under the `13 - If` step with the following values:
     - **action:** Update Record
     - **Record:** Click on the data pill picker and select - `Subflow-Inputs -> alertGR`
     - **Field Value:** `Work notes` set to `Remediation completed successfully`
@@ -102,16 +102,14 @@ Add the required steps to execute the remediation and trigger the ansible AWX te
 
 1. Click `Done`
 
-1. Create a new step under the `If subflow finishes successfully then` conditional step:
+1. Create a new step under the `13 - If subflow finishes successfully then` conditional step:
 
     ![servicenow-add-subflow-6](../../../assets/images/servicenow-add-subflow-6.png)
 
 1. Select `Flow Logic` -> `Else`
     ![servicenow-add-subflow-7](../../../assets/images/servicenow-add-subflow-7.png)
 
-1. Click `Done`
-
-1. Add an `Update Record` action under the `If` step with the following values:
+1. Add an `Update Record` action under the `15 - Else` step with the following values:
     - **action:** Update Record
     - **Record:** Click on the data pill picker and select - `Subflow-Inputs -> alertGR`
     - **Field Value:** `Work notes` set to `Remediation failed`

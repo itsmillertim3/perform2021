@@ -4,15 +4,15 @@
 
 1. Create a new rule by pressing the `New` button.
 
-1. Set the name of the Alert Management Rule to `Memory Leak Automated Remediation`:
+1. Set the name of the Alert Management Rule to `Memory Leak Automated Remediation`.
 
 1. Click on the Alert Filter tab.
 
 1. Set the following filters (Case Sensitive):
 
-    - `Source` is `DYNATRACE`
-    - `State` is not `Closed`
-    - `Description` contains `Memory exhausted`
+    - `Source` is `DYNATRACE` 
+    - **AND** `State` is not `Closed`
+    - **AND** `Description` contains `Memory exhausted`
 
     ![servicenow-alert-filter](../../../assets/images/servicenow-alert-filter.png)
 

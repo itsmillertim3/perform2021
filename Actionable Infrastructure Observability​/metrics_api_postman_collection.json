@@ -11,7 +11,6 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "774ba4fc-0040-40ad-bee7-12a9786a243c",
 						"exec": [
 							"pm.environment.set(\"rev1\", _.random(1, 100));",
 							"var date = new Date();",
@@ -61,7 +60,6 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "01d452b3-20a2-46c4-842f-2b520d6fac32",
 						"exec": [
 							"pm.environment.set(\"temperature_random1\", _.random(10, 70));",
 							"pm.environment.set(\"temperature_random2\", _.random(20, 75));",
@@ -110,7 +108,6 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "8fdb774c-f405-48a0-9457-9e2a33ae9afc",
 						"exec": [
 							"pm.environment.set(\"temperature_random1\", _.random(10, 70));",
 							"pm.environment.set(\"temperature_random2\", _.random(20, 75));",
@@ -159,7 +156,6 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "6aeb655d-1e96-41c9-8865-4ff5c9d94030",
 						"exec": [
 							"pm.environment.set(\"rev1\", _.random(100, 1000));",
 							"pm.environment.set(\"rev2\", _.random(200, 2000));",
@@ -509,13 +505,235 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get DDU billing information last 30-days",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Api-Token {{API_TOKEN}}"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "text/csv; header=present; charset=utf-8",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://{{URL}}/api/v2/metrics/query?metricSelector=builtin:billing.ddu.metrics.total:fold&resolution=m&from=now-30d",
+					"protocol": "https",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"metrics",
+						"query"
+					],
+					"query": [
+						{
+							"key": "metricSelector",
+							"value": "builtin:billing.ddu.metrics.total:fold"
+						},
+						{
+							"key": "resolution",
+							"value": "m"
+						},
+						{
+							"key": "from",
+							"value": "now-30d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query builtin:host.cpu.idle average CPU idle last hour per host",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Api-Token {{API_TOKEN}}"
+					}
+				],
+				"url": {
+					"raw": "https://{{URL}}/api/v2/metrics/query?metricSelector=builtin:host.cpu.idle:splitby(dt.entity.host):fold:avg&from=now-1h",
+					"protocol": "https",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"metrics",
+						"query"
+					],
+					"query": [
+						{
+							"key": "metricSelector",
+							"value": "builtin:host.cpu.idle:splitby(dt.entity.host):fold:avg"
+						},
+						{
+							"key": "from",
+							"value": "now-1h"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query builtin:host.cpu.usage - get max value of average CPU from last hour",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Api-Token {{API_TOKEN}}"
+					}
+				],
+				"url": {
+					"raw": "https://{{URL}}/api/v2/metrics/query?metricSelector=builtin:host.cpu.usage:avg:splitBy():fold:max&from=now-1h",
+					"protocol": "https",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"metrics",
+						"query"
+					],
+					"query": [
+						{
+							"key": "metricSelector",
+							"value": "builtin:host.cpu.usage:avg:splitBy():fold:max"
+						},
+						{
+							"key": "from",
+							"value": "now-1h"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query builtin:host.disk.usedPct with disk filter",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Api-Token {{API_TOKEN}}"
+					}
+				],
+				"url": {
+					"raw": "https://{{URL}}/api/v2/metrics/query?metricSelector=builtin:host.disk.usedPct:names:filter(prefix(dt.entity.disk.name,/opt))&from=now-2h",
+					"protocol": "https",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"metrics",
+						"query"
+					],
+					"query": [
+						{
+							"key": "metricSelector",
+							"value": "builtin:host.disk.usedPct:names:filter(prefix(dt.entity.disk.name,/opt))"
+						},
+						{
+							"key": "from",
+							"value": "now-2h"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query builtin:host.disk.usedPct with names enrichment",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Api-Token {{API_TOKEN}}"
+					}
+				],
+				"url": {
+					"raw": "https://{{URL}}/api/v2/metrics/query?metricSelector=builtin:host.disk.usedPct:names&from=now-2h",
+					"protocol": "https",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"metrics",
+						"query"
+					],
+					"query": [
+						{
+							"key": "metricSelector",
+							"value": "builtin:host.disk.usedPct:names"
+						},
+						{
+							"key": "from",
+							"value": "now-2h"
+						},
+						{
+							"key": "to",
+							"value": "now-12h",
+							"disabled": true
+						},
+						{
+							"key": "resolution",
+							"value": "15m",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "50954c80-8987-45d0-a749-a37637425a40",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -525,7 +743,6 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "f5265f33-16ea-459f-b9aa-200a1567c669",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -535,15 +752,12 @@
 	],
 	"variable": [
 		{
-			"id": "d0fc545a-e463-4249-abd2-c03b48ba1769",
 			"key": "URL",
 			"value": ""
 		},
 		{
-			"id": "7c3a37bb-a9e9-4867-b9c1-43532e3d7692",
 			"key": "API_TOKEN",
 			"value": ""
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }

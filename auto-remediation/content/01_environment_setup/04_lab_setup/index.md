@@ -9,7 +9,7 @@ In this lab we will run  the scripts to install the packages and create configur
     ```
 
     ```bash
-    sudo ./install_packages.sh && logout
+    ./install_packages.sh && logout
     ```
 
 1. Log back into the ubuntu server with your username and password.
