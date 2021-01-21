@@ -28,10 +28,9 @@ Next we will create a few configuration items and kick off a load test.
 4.  Describe Dynatrace Load Test Request Attribute
 4.  Describe Calculated Service Metrics for Load Test Steps
 5.  Kick off Keptn Customer 2 Build
-6.  Describe Dynatrace Load Test Request Header
-7.  Update Keptn: keptnorders staging Management Zone
-8.  Examine Performance Test Dashboard with Transaction Steps
-9.  Load Test Performance Analysis
+6.  Update Keptn: keptnorders staging Management Zone
+7.  Examine Performance Test Dashboard with Transaction Steps
+8.  Load Test Performance Analysis
 
 ### Create Service tag
 
@@ -96,9 +95,9 @@ While executing a load test from your load testing tool of choice (JMeter, Neoty
 
 Dynatrace can analyze incoming HTTP headers and extract such contextual information from the header values and tag the captured requests with request attributes. Request attributes enable you to filter your monitoring data based on defined tags.
 
-You can use any (or multiple) HTTP headers or HTTP parameters to pass context information. The extraction rules can be configured via ```Settings --> Server-side service monitoring --> Request attributes```.
+You can use any (or multiple) HTTP headers or HTTP parameters to pass context information. The extraction rules can be configured via **Settings --> Server-side service monitoring --> Request attributes**.
 
-The header ```x-dynatrace-test``` is used one or more key/value pairs for the header. Here are some examples:
+The header **x-dynatrace-test** is used one or more key/value pairs for the header. Here are some examples:
 
 | **Key**   | **Description**   |
 | --- | --- |
@@ -138,20 +137,20 @@ Each customizable management zone comprises a set of monitored entities in your 
 
 This exercise shows how to update a management zone that will be used in dashboards to show process and host metrics for analysis.
 
-In Dynatrace on the navigation menu, navigate to ```settings --> preferences --> management zones```
+In Dynatrace on the navigation menu, navigate to **settings --> preferences --> management zones**
 
-Click ```Keptn: keptnorders staging``` management zone and add a new rule with configuration as show below.
+Click **Keptn: keptnorders staging** management zone and add a new rule with configuration as show below.
 
-    - Rule applies to Process groups
-    - Process group name begins with = keptnorders.staging
+- Rule applies to Process groups
+- Process group name begins with = keptnorders.staging
     
 <img src="../../assets/images/lab_1_management_zone.png" width="500"/>
 
-Select ```apply to underlying hosts of matching process groups``` check box.
+Select **apply to underlying hosts of matching process groups** check box.
 
-Click the ```preview``` button to verify.
+Click the **preview** button to verify.
 
-Save the zone. Click ```create rule``` button. Then ```Save changes``` button.
+Save the zone. Click **create rule** button. Then **Save changes** button.
 
 ### Examine Performance Test Dashboard with Transaction Steps
 
