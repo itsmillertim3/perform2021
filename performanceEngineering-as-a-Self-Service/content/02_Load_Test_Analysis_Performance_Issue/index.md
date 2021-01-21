@@ -1,5 +1,9 @@
 ## Load Test Analysis Performance Issue
 
+Learn how to use Dynatrace features that support Performance testing for each phase: scripting, analysis, and reporting
+
+<img src="../../assets/images/lab_1_overview.png" width="500"/>
+
 Now that we have our KIAB installed. 
 
 Let's start by viewing a dashboard.
@@ -26,9 +30,8 @@ Next we will create a few configuration items and kick off a load test.
 5.  Kick off Keptn Customer 2 Build
 6.  Describe Dynatrace Load Test Request Header
 7.  Update Keptn: keptnorders staging Management Zone
-8.  Create KeptnOdersDatabase Database Service Rule Name
-9.  Examine Performance Test Dashboard with Transaction Steps
-10.  Load Test Performance Analysis
+8.  Examine Performance Test Dashboard with Transaction Steps
+9.  Load Test Performance Analysis
 
 ### Create Service tag
 
@@ -135,7 +138,7 @@ Each customizable management zone comprises a set of monitored entities in your 
 
 This exercise shows how to update a management zone that will be used in dashboards to show process and host metrics for analysis.
 
-In Dynatrace on the left menu, navigate to ```settings --> preferences --> management zones```
+In Dynatrace on the navigation menu, navigate to ```settings --> preferences --> management zones```
 
 Click ```Keptn: keptnorders staging``` management zone and add a new rule with configuration as show below.
 
@@ -149,9 +152,6 @@ Select ```apply to underlying hosts of matching process groups``` check box.
 Click the ```preview``` button to verify.
 
 Save the zone. Click ```create rule``` button. Then ```Save changes``` button.
-
-### Create KeptnOdersDatabase Database Service Rule Name
-
 
 ### Examine Performance Test Dashboard with Transaction Steps
 
