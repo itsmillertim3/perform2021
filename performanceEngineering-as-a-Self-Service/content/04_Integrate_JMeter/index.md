@@ -64,7 +64,7 @@ We should see this output.
 
 <img src="../../assets/images/lab_4_script_output.png" width="500"/>
 
-### Rum Load Test
+### Run Load Test
 
 Now we need to run the **05-jmeter-test-order-application** pipeline in Jenkins.
 
@@ -75,6 +75,16 @@ Now we can select **"Build with Parameters"**
 Change the Deployment URL and click **"build"**
 
 <img src="../../assets/images/lab_4_buildwparams.png" width="500"/>
+
+### Monitoring the metrics in Dynatrace
+* Create a dashboard
+* For every metric:
+    * Add a custom chart
+    * Select `Try it out` in the Banner line `Analyze multidimensional metrics from Prometheus, StatsD and others channels right on your dashboards`
+    * Enter the name of the metric (from the list of the metrics above) in the field `Filter metrics by...`
+    * Specify the chart settings (Visualization type, Chart type...)
+    * Select `Pin to dashboard`
+* Save the dashboard 
 
 
 
