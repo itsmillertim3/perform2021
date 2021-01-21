@@ -154,6 +154,13 @@ Save the zone. Click **create rule** button. Then **Save changes** button.
 
 ### Examine Performance Test Dashboard with Transaction Steps
 
+We have provided **Performance Test Dashboard with Transaction Steps Dashboard** in your environment.   This dashboard provides a complete overview for your Performance Test focusing on SLIs (Latency, Traffic, Errors & Saturation) including Health Status, Transaction Steps Scorecard, Services Overview,  Database Overview,  Process Overview and Hosts.   This dashboard also provides quick analysis links.  
+
+Click **"Dashboards"** from the Main Navigation menu.
+
+Then Select the **Performance Test Dashboard with Transaction Steps** Dashboard.
+
+<img src="../../assets/images/lab_1_performance_test_dashboard_with_transaction_steps.png" width="500"/>
 
 ### Load Test Performance Analysis
 
