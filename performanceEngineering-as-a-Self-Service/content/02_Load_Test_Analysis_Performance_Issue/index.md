@@ -108,7 +108,11 @@ The header ```x-dynatrace-test``` is used one or more key/value pairs for th
 
 ### Describe Calculated Service Metrics for Load Test Steps
 
+Dynatrace automatically captures important metrics for services with no configuration required. Additionally you might need additional business or technical metrics that are specific to your application. These metrics can be calculated and derived based on a wide variety of available data within the captured PurePath. This allows you to further customize key performance metrics for which alerts should be generated and helps you keeping an eye on them by pinning them to your dashboards.
 
+For Performance Testing you can use Calculated service metrics to track your Performance transaction steps.   These can be used in Dashboards and alerting during the Performance Test but also can be used in analysis after the Performance test is complete. 
+
+<img src="../../assets/images/Lab_1_Transaction_Scorecard.png" width="500"/>
 
 ### Kick off Keptn Customer 2 Build
 
