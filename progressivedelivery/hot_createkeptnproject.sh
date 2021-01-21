@@ -1,8 +1,8 @@
 #!/bin/bash
 
-STUDENTID=${STUDENTID:-$1}
+PROJECTNAME=${1:-$STUDENTID}
 
-if [[ -z "$STUDENTID" ]]; then
+if [[ -z "$PROJECTNAME" ]]; then
   echo "You have to specify a project name, e.g: studentxxx"
   echo "Usage: $0 student001"
   exit 1
@@ -32,7 +32,6 @@ DT_API_TOKEN=$(kubectl get secret dynatrace -n keptn -ojsonpath={.data.DT_API_TO
 SERVICENAME=simplenode
 STAGE_PROD=prod
 STAGE_STAGING=staging
-PROJECTNAME=$STUDENTID
 
 echo "Create Keptn Project: ${PROJECTNAME} based on shipyard.yaml"
 keptn create project "${PROJECTNAME}" --shipyard=${SERVICENAME}/shipyard.yaml
