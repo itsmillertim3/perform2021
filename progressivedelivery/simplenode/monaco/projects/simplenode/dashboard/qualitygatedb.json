@@ -2,9 +2,10 @@
     "dashboardMetadata": {
         "name": "{{ .name }}",
         "shared": false,
+        "owner" : "{{ .owner }}",
         "sharingDetails": {
             "linkShared": true,
-            "published": false
+            "published": true
         },
         "dashboardFilter": {
             "managementZone": {
