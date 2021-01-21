@@ -1,7 +1,16 @@
 ## Jmeter Integration
 <img src="../../assets/images/jmeter.png" width="100"/>
 
-Previously we discussed the Load Test Request Attributes. 
+Previously we discussed the Load Test Request Attributes. Now we will expand on these concepts.
+
+## Test automation frameworks 
+Test automation involves the use of special software (separate from the software being tested) 
+to control the execution of tests and the comparison of actual outcomes with predicted outcomes. 
+Test automation can automate some repetitive tasks in a formalized testing process already in place, 
+or perform additional testing that would otherwise be difficult to do manually. 
+Test automation is important for continuous delivery and continuous testing.
+
+## Test with Jmeter
 
 While executing a load test in Apache JMeter, each simulated HTTP request 
 can be tagged in JMeter with additional HTTP Headers that contain test-transaction 
