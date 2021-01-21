@@ -36,7 +36,7 @@ Load test events are also displayed on associated services pages (see example be
 
 <img src="../../assets/images/lab_4_event_tag.png" width="500"/>
 
-###Dynatrace Backend listener plugin for JMeter
+### Dynatrace Backend listener plugin for JMeter
 This library implements a JMeter Backend listener and sends the recorded loadtest metrics via the Dynatrace MINT 
 metric ingest to the configured Dynatrace monitoring environment. 
 See https://jmeter.apache.org/usermanual/component_reference.html#Backend_Listener for a description of the JMeter BackendListener concept.
@@ -44,3 +44,23 @@ See https://jmeter.apache.org/usermanual/component_reference.html#Backend_Listen
 We have also configured this in the Jmeter script.
 
 <img src="../../assets/images/lab_4_jmeter_listener.png" width="500"/>
+
+### Change Jmeter Service
+
+Before we can use the backend listener, we need to change the Jmeter service.
+
+Go to your ssh client or use the built in command utility
+
+```bash
+cd ~/keptn-in-a-box/
+```
+
+Now we need to run the following command.
+
+```bash
+./04-set-jmeter.sh
+```
+We should see this output.
+
+<img src="../../assets/images/lab_4_script_output.png" width="300"/>
+
