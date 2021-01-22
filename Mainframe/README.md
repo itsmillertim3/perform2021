@@ -1,9 +1,11 @@
-# Dynatrace for Mainframe
+# Dynatrace for z/OS
 
-The Hands on Training covers three topics. 
+The Hands on Training covers the following topics. 
 
-## Hands On - Deployment and Customization of Dynatrace for z/OS 
+## Introduction, Architecture & Sizing
 
-## Hands On - Create Dynatrace for z/OS Dashboard
+## Hands On - Deployment and Customization 
+
+## Hands On - Metrics, Charts & Dashboards
 
 ## Hands On - Capture Application Data with CICS SDK
