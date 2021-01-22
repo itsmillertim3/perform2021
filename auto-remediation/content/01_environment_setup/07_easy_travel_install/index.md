@@ -16,6 +16,18 @@
 
     **Note:** The easyTravel URL will be part of the script execution output.
 
+1. After the script finishes executing, ensure you can access both the easyTravel management console on port `8094` and the easyTravel app itself on port `8080`:
+
+    ![easy-travel-app-portal](../../../assets/images/easy-travel-app-portal.png)
+    ![easy-travel-consolel](../../../assets/images/easy-travel-console.png)
+
+1. Enable visibility of problem patterns by clicking on the gear icon on the top right corner of the easyTravel management portal and proceed to select `Show Problem Patterns`:
+    ![et-enable-problem-patterns](../../../assets/images/et-enable-problem-patterns.png)
+
+1. Click on `Problem Patterns` tab on the left side of the portal and search for the `MediumMemoryLeak` problem pattern to ensure it's present.
+
+    ![et-enable-problem-patterns](../../../assets/images/et-memopry-leak-plugin.png)
+
 1. Navigate to Technologies and filter by `Name: com.dynatrace.easytravel.weblauncher.jar easytravel-*-x*`.
 
 1. click on the process group `com.dynatrace.easytravel.weblauncher.jar easytravel-*-x*`.
