@@ -178,6 +178,7 @@ node {
 }
 ```
 
+
 ### Validating Deployment version
 
 After every deployment we can start in the Keptn's bridge to validate the progress. We can answer questions like
@@ -194,5 +195,6 @@ The bridge also gives you access to the links of the deployed service.
 
 <img src="../../assets/images/lab_5_keptnbridgeflow.png" width="500"/>
 
+## Questions and Answers?
 
 
