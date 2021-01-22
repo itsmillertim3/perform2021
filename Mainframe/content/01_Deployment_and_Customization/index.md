@@ -5,6 +5,7 @@ In this module you will learn how to deploy a Mainframe ActiveGate and zRemote a
 ### Step 1: Open Dynatrace Tenant
 - Open the Dynatrace tenant provided to you
 - Login with the credentials provided to you
+
 ![Login](../../assets/images/003_Credentials.png)
 
 ### Step 2: Install the Mainframe ActiveGate
@@ -16,6 +17,7 @@ In this module you will learn how to deploy a Mainframe ActiveGate and zRemote a
 - Navigate to the Downloads folder in the DOS prompt
 - `Copy` installation command from the Dynatrace Tenant (Step 3) and install with the default settings
 - Click on `Show Deployment Status` after the Installation has been successful
+
   ![ActiveGate](../../assets/images/019_AG_Details.png)
 - Note the IP-Address of YOUR Mainframe ActiveGate
 
