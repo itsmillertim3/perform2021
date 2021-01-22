@@ -40,7 +40,7 @@ Click **Next** at the button right of the screen.
 
 In a new tab open you Orders Staging Service.  In the URL bar copy the service_id in notepad.
 
-<img src="../../assets/images/lab_3_slo_service_id_.png" width="500"/>
+<img src="../../assets/images/lab_3_slo_service_id.png" width="500"/>
 
 Go back to your SLO Wizard screen and then add the below filter.  Make sure the change the text in the entityId with what you copied to Notepad.
 
@@ -48,7 +48,7 @@ type("SERVICE"),entityId("**OrderSericeIdYouCopiedtoNoatedGoesHere**")
 
 Then click the **Verify Button**
 
-<img src="../../assets/images/lab_3_slo_3_.png" width="500"/>
+<img src="../../assets/images/lab_3_slo_3.png" width="500"/>
 
 ### Kick off Keptn Orders 2 Build
 
