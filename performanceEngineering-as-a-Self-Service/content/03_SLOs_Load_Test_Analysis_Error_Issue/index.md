@@ -94,8 +94,6 @@ Select **"Build with parameters"**
 
 We only need to update the **DeployomentURI** section.   Copy your Orders Application URL and paste into the **DeployomentURI** section.   Make sure to remove the last / if present when you copied it.
 
-Example:  **http://frontend.keptnorders-staging.54.237.173.135.nip.io**
-
 When done click the **Build Button** which will start the Performance Test.
 
 <img src="../../assets/images/lab_3_jenkins_run_load_test_2.png" width="500"/>
@@ -106,9 +104,11 @@ We have provided a **Performance Test Dashboard with Transaction Steps & SLOs** 
 
 Click **"Dashboards"** from the Main Navigation menu.
 
-Then Select the **Performance Test Dashboard with Transaction Steps & SLOs** dashboard.
+Then select the **Performance Test Dashboard with Transaction Steps & SLOs** dashboard.
 
 <img src="../../assets/images/lab_2_performance_test_dashboard_with_transaction_steps_slos.png" width="500"/>
 
-
 ### Load Test Availability/Error Analysis
+
+
+
