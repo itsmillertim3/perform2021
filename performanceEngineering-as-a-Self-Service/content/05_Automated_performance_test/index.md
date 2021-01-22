@@ -38,7 +38,7 @@ Now let's take a quick tour of the keptn bridge.
 
 <img src="../../assets/images/lab_5_bridge.png" width="500"/>
 
-### What do we see?
+## What do we see?
 
 ### Declarative Multi-Stage Delivery
 Keptn allows to declaratively define multi-stage delivery workflows by defining what needs to be done. 
@@ -70,5 +70,14 @@ A service-level objective is “a target value or range of values for a service 
 An example of an SLO can define that a specific request must return results within 100 milliseconds. 
 Keptn quality gates can comprise several SLOs that are all evaluated and scored, based even on different 
 weights for each SLO to consider different importance of each SLO. Keptn defines SLOs in a dedicated slo.yaml.
+
+### Continuous Performance Verification
+
+Keptn helps automating your tests by having Keptn triggering the test execution and evaluating the result of 
+these performance tests. The result can then be automatically processed or presented in the Keptn Bridge to 
+take further decisions. You can even expand this use case by letting Keptn deploying new versions of your 
+applications to a test environment, succeeded by triggering and evaluating the tests.
+
+<img src="../../assets/images/lab_5_ktap.png" width="500"/>
 
 
