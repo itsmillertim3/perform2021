@@ -6,7 +6,7 @@ In this module you will learn how to deploy a Mainframe ActiveGate and zRemote a
 
 1. Open a browser and provide your tenant URL
 
-   ![Lab guide example](../../assets/images/Deploy/001 Tenant.png)
+   ![Lab guide example](././assets/images/Deploy/001 Tenant.png)
 
 1. Create a new file named `Dockerfile` and add the following content:
 
