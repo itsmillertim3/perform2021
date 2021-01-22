@@ -12,9 +12,13 @@ We're going to use the new endpoint `/api/v2/metrics/ingest​` to push external
    (dtu.training@ip-10-0-0-X)$ curl -s --location --request GET 'http://covidtracking.com/api/us'
    ```
 
-2. Use `jq` a command-line tool for parsing JSON to only retrieve the positive US cases.
+2. Use `jq` to parse the JSON in the command-line.
 
-3. Change the output to show failed SSH attempts that occurred in the last minute.
+   ```bash
+   (dtu.training@ip-10-0-0-X)$ curl -s --location --request GET 'http://covidtracking.com/api/us' | jq 
+   ```
+
+3. Change the output to show only positive COVID cases in the US.
 
    ```bash
    (dtu.training@ip-10-0-0-X)$ curl -s --location --request GET 'http://covidtracking.com/api/us' | jq -r '.[].positive' 
