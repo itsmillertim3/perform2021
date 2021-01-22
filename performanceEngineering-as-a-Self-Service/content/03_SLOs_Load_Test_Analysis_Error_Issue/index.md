@@ -58,6 +58,20 @@ In the next screen change the Timeframe section to **-30m** and then click the *
 
 ### Kick off Keptn Orders 2 Build
 
+Go back to Jenkins.
+
+Click on **01_deploy_order_application** pipeline
+
+<img src="../../assets/images/Lab_1_deploy_order_application_1.png" width="500"/>
+
+Now we are going to push the **order** version **2**.
+
+Select **"Build with parameters"**
+
+Then we need to change the build for customer to version 2 and select the build for **order** and then click **Build**.
+
+<img src="../../assets/images/lab_3_order_build.png" width="500"/>
+
 ### Run Load Test
 
 ### Examine Performance Test Dashboard with Transaction Steps & SLOs
