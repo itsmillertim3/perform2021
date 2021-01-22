@@ -17,15 +17,15 @@ The result of that calculation is getting sent to a Kafka Broker.
 - In your Dynatrace Environment navigate to `Hosts` and select the Workstation you're working on
 - Use either your Browser or `curl http://localhost:28080/fib?n=3` within a new Terminal to access your new HTTP Service
 - Wait until `fib.exe` shows up among the Processes on this host
-- Dynatrace by default has decided to disable monitoring for this executable (`Process isn't monitored`). Click on the link `monitored technologies` and override the defaults for this Process Group. 
-  ![Process isn't monitored](../../assets/images/process_isnt_monitored.png)
+- Dynatrace by default has decided to disable monitoring for this executable (`Process isn't monitored`). Click on the link `monitored technologies` and override the defaults for this Process Group.
+- ![Process isn't monitored](../../assets/images/process_isnt_monitored.png)
 - Within your Terminal press `Ctrl-C` to shut down `fib.exe`. Launch `fib.exe` again. 
 - Dynatrace in some cases tells you afterwards that this process needs to get restarted yet another time. Within your Terminal press `Ctrl-C` to shut down `fib.exe`. Launch `fib.exe` again. 
-  ![Process must be restarted](../../assets/images/process_must_be_restarted.png)
+- ![Process must be restarted](../../assets/images/process_must_be_restarted.png)
 - Use either your Browser or `curl http://localhost:28080/fib?n=3` within a new Terminal to access your new HTTP Service
 - Wait for a couple of seconds. After that you should see a PurePath for the HTTP request you just sent to your HTTP Service.
   - The contents of this PurePath is produced by out of the box Sensors of OneAgent
-  ![PurePath](../../assets/images/purepath.png)
+- ![PurePath](../../assets/images/purepath.png)
 
 ### Step 2: Introduce OpenTelemetry to your Application
 - Shut down `fib.exe` using `Ctrl-C` within your Terminal if you haven't done so already
