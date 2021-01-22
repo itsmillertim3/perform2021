@@ -1,7 +1,7 @@
 ## Automated Performance Test
 
 ### What is keptn
-
+<img src="../../assets/images/keptn_logo.png"/>
 [keptn](https://keptn.sh/)
 
 **Keptn** is an event-based control plane for continuous delivery and automated operations for 
