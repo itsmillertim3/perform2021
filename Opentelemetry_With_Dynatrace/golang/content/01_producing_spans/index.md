@@ -5,6 +5,7 @@ The sample consists of an HTTP Server which is able to calculate any Fibonacci n
 ### Prerequisites
 - OneAgent is already installed on your Workstation
 - OpenTelemetry instrumentation for Golang has been enabled for your Dynatrace Environment (`Settings` > `Server-side service monitoring` > `Deep Monitoring` > `OpenTelemetry and OpenTracing`)
+  ![Deep Monitoring](../../assets/images/deep_monitoring.png)
 
 ### Step 1: Compile and launch the program
 - In Visual Studio Code open up a Terminal
