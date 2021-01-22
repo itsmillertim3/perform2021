@@ -44,13 +44,17 @@ Example = **SERVICE-05EF363368D48FF5**
 
 <img src="../../assets/images/lab_3_slo_service_id.png" width="500"/>
 
-Go back to your SLO Wizard screen and then add the below filter.  Make sure the change the text in the entityId with what you copied to Notepad.
+Go back to your SLO Wizard screen and then add the below text filter section.  Make sure the change the text in the entityId with what you copied to Notepad.
 
-type("SERVICE"),entityId("**OrderSericeIdYouCopiedtoNoatedGoesHere**")
+type("SERVICE"),entityId("**OrderServiceenittyIdYouCopiedtoNoatedGoesHere**")
 
 Then click the **Verify Button**
 
 <img src="../../assets/images/lab_3_slo_3.png" width="500"/>
+
+In the next screen change the Timeframe section to **-30m** and then click the **Next** button, and then **Save** button.
+
+<img src="../../assets/images/lab_3_slo_4.png" width="500"/>
 
 ### Kick off Keptn Orders 2 Build
 
