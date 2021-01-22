@@ -38,11 +38,7 @@ Click **Next** at the button right of the screen.
 
 <img src="../../assets/images/lab_3_slo_2.png" width="500"/>
 
-In a new tab goto the you Order Service Overview screen, making sure you are in the Keptn: keptnorders staging Management Zone.  In the URL bar copy the Order ervice entityId in notepad.
 
-Example = **SERVICE-05EF363368D48FF5**
-
-<img src="../../assets/images/lab_3_slo_service_id.png" width="500"/>
 
 Go back to your SLO Wizard screen and then add the below text filter section.  Make sure the change the text in the entityId with what you copied to Notepad.
 
