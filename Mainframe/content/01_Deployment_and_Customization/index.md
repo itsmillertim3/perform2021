@@ -1,16 +1,12 @@
-## Working with Containers
+## Deployment and Customization
 
-In this lab you'll learn how to create a container image and how to run a container based on this image. During this activity you will pull an image from a global container registry to get hands-on experience with container registries in general.
+In this module you will learn how to deploy a Mainframe ActiveGate and zRemote and make the definitions on the Mainframe to connect an LPAR to this zRemote.
 
-### Step 1: Create the Dockerfile and script
+### Step 1: Open your Dynatrace Tenant 
 
-1. Create a directory for the docker artifacts
+1. Open a browser and provide your tenant URL
 
-   ```bash
-   (bastion)$ cd ~
-   (bastion)$ mkdir -p docker/
-   (bastion)$ cd docker/
-   ```
+   ![Lab guide example](assets/images/Deploy/001 Tenant.png)
 
 1. Create a new file named `Dockerfile` and add the following content:
 
@@ -35,7 +31,7 @@ In this lab you'll learn how to create a container image and how to run a contai
    (bastion)$ chmod +x hello_world.sh
    ```
 
-### Step 2. Build and Tag a Container Image
+### Step 2. Install the Mainframe ActiveGate
 
 1. Build the container image (`-t` specifies the repository and a tag). The `$USER` variable will tag the image with your username.
 
@@ -61,7 +57,7 @@ In this lab you'll learn how to create a container image and how to run a contai
    (bastion)$ docker images
    ```
 
-### Step 3. Run a Container
+### Step 3. Change the connection information on the Mainframe
 
 1. Run the container based on a container image.
 
