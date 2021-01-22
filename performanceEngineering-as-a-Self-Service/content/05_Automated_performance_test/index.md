@@ -167,9 +167,13 @@ node {
 After every deployment we can start in the Keptn's bridge to validate the progress. We can answer questions like
 
 Did the deployment already happen?
+
 What is the URL of the deployed service in each stage?
+
 Did anything bad happen?
+
 Go to Keptn's Bridge and see how Keptn has deployed the service into staging and then production:
+
 The bridge also gives you access to the links of the deployed service.
 
 <img src="../../assets/images/lab_5_keptnbridgeflow.png" width="500"/>
