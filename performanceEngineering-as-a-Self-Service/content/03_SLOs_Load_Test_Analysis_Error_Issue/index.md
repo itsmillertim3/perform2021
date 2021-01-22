@@ -104,9 +104,11 @@ We have provided a **Performance Test Dashboard with Transaction Steps & SLOs** 
 
 Click **"Dashboards"** from the Main Navigation menu.
 
-Then Select the **Performance Test Dashboard with Transaction Steps & SLOs** dashboard.
+Then select the **Performance Test Dashboard with Transaction Steps & SLOs** dashboard.
 
 <img src="../../assets/images/lab_2_performance_test_dashboard_with_transaction_steps_slos.png" width="500"/>
 
 ### Load Test Availability/Error Analysis
+
+
 
