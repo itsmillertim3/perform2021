@@ -38,13 +38,11 @@ Click **Next** at the button right of the screen.
 
 <img src="../../assets/images/lab_3_slo_2.png" width="500"/>
 
+This brings us to the **Define a filter** screen.   In the filter section copy the below text and paste into the filter section.
 
+**mzName("Keptn: keptnorders staging"),type("SERVICE"),entityName("order")**
 
-Go back to your SLO Wizard screen and then add the below text filter section.  Make sure the change the text in the entityId with what you copied to Notepad.
-
-type("SERVICE"),entityId("**OrderServiceenittyIdYouCopiedtoNoatedGoesHere**")
-
-Then click the **Verify Button**
+Then click the **Verify Button**, and after verified click the **Next** button.
 
 <img src="../../assets/images/lab_3_slo_3.png" width="500"/>
 
@@ -52,9 +50,25 @@ In the next screen change the Timeframe section to **-30m** and then click the *
 
 <img src="../../assets/images/lab_3_slo_4.png" width="500"/>
 
+After the **Availability - Order_Staging** has been created lets create two more SLOs for the **customer** and **catalog** services.
+
+Use the follow settings for the **catalog** SLO: 
+
+SLO Name = **Availability - Catalog_Staging**
+
+Filter   = **mzName("Keptn: keptnorders staging"),type("SERVICE"),entityName("catalog")**
+
+Use the follow settings for the **customer** SLO:
+
+SLO Name = **Availability - Customer_Staging**
+
+Filter   = **mzName("Keptn: keptnorders staging"),type("SERVICE"),entityName("customer")**
+
+When complete,  review the results.
+
 ### Kick off Keptn Orders 2 Build
 
-Go back to Jenkins.
+Open Jenkins.
 
 Click on **01_deploy_order_application** pipeline
 
@@ -69,6 +83,22 @@ Then we need to change the build for customer to version 2 and select the build 
 <img src="../../assets/images/lab_3_order_build.png" width="500"/>
 
 ### Run Load Test
+
+Open Jenkins.
+
+Click on **04-performancetest-qualitygate** pipeline
+
+<img src="../../assets/images/lab_3_jenkins_run_load_test_1.png" width="500"/>
+
+Select **"Build with parameters"**
+
+We only need to update the **DeployomentURI** section.   Copy your Orders Application URL and paste into the **DeployomentURI** section.   Make sure to remove the last / if present when you copied it.
+
+Example:  **http://frontend.keptnorders-staging.54.237.173.135.nip.io**
+
+When done click the **Build Button** which will start the Performance Test.
+
+<img src="../../assets/images/lab_3_jenkins_run_load_test_2.png" width="500"/>
 
 ### Examine Performance Test Dashboard with Transaction Steps & SLOs
 

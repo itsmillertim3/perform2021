@@ -1,0 +1,24 @@
+{
+  "name": "custom.remote.python.spacex",
+  "version": "1.001",
+  "metricGroup": "tech.SpaceX",
+  "technologies": [
+    "SpaceX"
+  ],
+  "favicon": "https://imgur.com/H0kgC2m.png",
+  "type": "python",
+  "entity": "CUSTOM_DEVICE",
+  "source": {
+    "package": "spacex_extension",
+    "className": "SpaceXExtension",
+    "install_requires": ["requests"]
+  },
+  "properties": [],
+  "configUI": {
+    "displayName": "SpaceX",
+    "properties": []
+  },
+  "metrics": [
+    {"timeseries": { "key": "fuel", "unit": "Count", "displayname": "Fuel" }}
+  ]
+}
