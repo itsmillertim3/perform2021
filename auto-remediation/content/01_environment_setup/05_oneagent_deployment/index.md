@@ -27,9 +27,9 @@
         dynatrace_paas_token: your-paas-token
         dynatrace_oneagent_host_metadata: environment=prod app=easytravel supportgroup=easyTravel-Support
         dynatrace_oneagent_install_args:
-        --set-app-log-content-access: true
-        --set-infra-only: false
-        --set-host-group: easytravel-production
+            --set-app-log-content-access: true
+            --set-infra-only: false
+            --set-host-group: easytravel-production
     ```
 
 1. Install OneAgent
@@ -43,3 +43,7 @@
     ```bash
     systemctl status oneagent
     ```
+
+1. On dynatrace navigate to `Hosts`, search for your host and ensure that the metadata set during the deployment of the OneAgent is visible:
+
+    ![haproxy-template](../../../assets/images/dynatrace-host-metadata.png)

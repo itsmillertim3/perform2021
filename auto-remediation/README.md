@@ -1,12 +1,12 @@
 # AIOps - Leverage the power of Davis for Auto-Remediation
 
-## Instructions (trainers)
+## Steps (instructors)
 
 ### Components used in this session:
 
 1. Ubuntu server (AWX/easyTravel) - 1 per student
 1. Ubuntu server (HAProxy) - 1 per session
-1. Dynatrace Tenant
+1. Dynatrace Tenant - 1 per student
 
 Students will require the public IP address of the HAProxy server during the labs.
 

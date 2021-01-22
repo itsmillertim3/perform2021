@@ -18,6 +18,7 @@ A ServiceNow Update Set is provided to run this tutorial. To install the Update 
     ![servicenow-preview-updateset](../../../assets/images/servicenow-preview-updateset.png)
 1. After successfully previewing ther update set, click on `Commit Update Set` to add the required configurations required for this lab to your instance.
     ![servicenow-commit-updateset](../../../assets/images/servicenow-commit-updateset.png)
+1. Review the newly imported subflow named `Trigger ansible AWX Template` by navigating to `Process Automation` -> `Flow Designer`. Click on the Subflows tab and then search for `Trigger ansible AWX Template` under the Name column.
 
 ### Create easyTravel support group
 
