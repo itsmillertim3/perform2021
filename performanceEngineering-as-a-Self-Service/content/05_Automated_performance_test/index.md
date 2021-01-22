@@ -84,7 +84,18 @@ applications to a test environment, succeeded by triggering and evaluating the t
 
 Let's discuss how we put these concepts into practice.
 
+- [Keptn Jenkins Shared Library](https://github.com/keptn-sandbox/keptn-jenkins-library)
+Jenkins shared library for integrating Keptn Use Cases with your Jenkins Pipelines
 
+In order to use this Jenkins Shared Library simply configure it in your Global Jenkins Configuration.
+
+You can obtain Keptn API Token and Endpoint as explained in the Keptn doc:
+
+KEPTN_ENDPOINT=https://api.keptn.$(kubectl get cm keptn-domain -n keptn -ojsonpath={.data.app_domain})
+KEPTN_API_TOKEN=$(kubectl get secret keptn-api-token -n keptn -ojsonpath={.data.keptn-api-token} | base64 --decode)
+The KEPTN_BRIDGE is the link to your keptn bridge so that the Library can generate some deep links to the bridge to give you easy access to quality gate results!
+
+Once you have everything configured use it in your Jenkins Pipeline like this
 
 ```groovy
 @Library('keptn-library')_
