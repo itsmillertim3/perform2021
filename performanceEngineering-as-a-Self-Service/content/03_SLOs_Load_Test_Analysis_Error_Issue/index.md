@@ -68,7 +68,7 @@ When complete,  review the results.
 
 ### Kick off Keptn Orders 2 Build
 
-Go back to Jenkins.
+Open Jenkins.
 
 Click on **01_deploy_order_application** pipeline
 
@@ -83,6 +83,22 @@ Then we need to change the build for customer to version 2 and select the build 
 <img src="../../assets/images/lab_3_order_build.png" width="500"/>
 
 ### Run Load Test
+
+Open Jenkins.
+
+Click on **04-performancetest-qualitygate** pipeline
+
+<img src="../../assets/images/lab_3_jenkins_run_load_test_1.png" width="500"/>
+
+Select **"Build with parameters"**
+
+We only need to update the **DeployomentURI** section.   Copy your Orders Application URL and paste into the **DeployomentURI** section.   Make sure to remove the last / if present when you copied it.
+
+Example:  **http://frontend.keptnorders-staging.54.237.173.135.nip.io**
+
+When done click the **Build Button** which will start the Performance Test.
+
+<img src="../../assets/images/lab_3_jenkins_run_load_test_2.png" width="500"/>
 
 ### Examine Performance Test Dashboard with Transaction Steps & SLOs
 
