@@ -4,10 +4,11 @@ import (
 	"fmt"
 
 	"github.com/Shopify/sarama"
-	// "go.opentelemetry.io/contrib/instrumentation/github.com/Shopify/sarama/otelsarama"
+	"go.opentelemetry.io/contrib/instrumentation/github.com/Shopify/sarama/otelsarama"
 )
 
 // BrokerURL has no documentation
+// LESSION 03: INSTRUMENTATION LIBRARIES
 const BrokerURL = "kafka.mushroom.home:9092"
 
 // TopicName has no documentation
@@ -32,7 +33,9 @@ func newSyncProducer(brokers []string) (sarama.SyncProducer, error) {
 		return nil, err
 	}
 
-	// producer = otelsarama.WrapSyncProducer(config, producer)
+	/** LESSON 03: INSTRUMENTATION LIBRARIES
+	producer = otelsarama.WrapSyncProducer(config, producer)
+	*/
 	return producer, nil
 }
 
@@ -51,4 +54,36 @@ func send(producer sarama.SyncProducer, msgID int) {
 
 	fmt.Printf("Sent message, id: %d, partition: %d, offset: %d \n", msgID, partition, offset)
 
+}
+
+/*
+DO NOT REMOVE ANY TEXT BELOW THIS LINE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+// PreserveImport is never getting called.
+// In order to keep this session as simple as possible it's purpose is to preserve imports on top of this file
+func PreserveImport() {
+	otelsarama.WrapSyncProducer(nil, nil)
 }
