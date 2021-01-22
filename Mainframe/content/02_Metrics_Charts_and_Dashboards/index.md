@@ -1,8 +1,21 @@
-## Cloud-Native Concepts
+## Metrics, Charts and Dashboards
 
-In this module, you will learn the definition of cloud-native concepts such as microservices, containers (and container images), Container Registry, and Kubernetes. Learning these concepts will build a foundation for upcoming modules.
+In this module you will learn how to to define Custom metrics, Charts and Dashboards.
 
-### Prerequisites
+### Step 1: Open Dynatrace Tenant
+- Open the Dynatrace tenant provided to you
 
-- Access to the _Bastion host_
-- Access to the acl-docs repository
+### Step 2: Define Custom Metrics
+- Go to `Diagnostic tools` and and click on `Create analysis view`
+- ...
+
+### Step 3: Create a new Dashboard and add Charts
+- ...
+
+### You've arrived
+- You have successfully created a new Dashboard with your key Mainframe components! 
+
+
+
+
+

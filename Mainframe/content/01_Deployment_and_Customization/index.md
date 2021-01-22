@@ -45,7 +45,7 @@ In this module you will learn how to deploy a Mainframe ActiveGate and zRemote a
 - Use member AFDTRAN in `<userid>.JCL`
 
 ### You've arrived
-- You have successfuly deployed Dynatrace and have defined the CICS transaction, which will be used in the SDK Hands-On! 
+- You have successfully deployed Dynatrace and have defined the CICS transaction, which will be used in the SDK Hands-On! 
 
 
 
