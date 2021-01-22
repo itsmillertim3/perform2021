@@ -209,6 +209,5 @@ Pre-configured items also include:
 1. Management Zones
 1. Automatically Applied Tags
 
-
 Now that we are more familiar with what we have running, let's continue to the next activity.
 

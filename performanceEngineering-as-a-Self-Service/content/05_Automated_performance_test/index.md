@@ -1,16 +1,25 @@
-## Monolith to Microservices
+## Automated Performance Test
 
-![ticketmonster](../../assets/images/ticketmonster.png)
+### What is keptn
 
-In this module you'll learn how to migrate a monolithic application to the cloud and how to fearlessly break it up into microservices. Therefore, we want to walk you through the different stages of identifying and extracting a microservice, as well as strangling it around its origin – the monolith. For this purpose, the module provides step-by-step instructions and labs showing the best practices we have identified for migrating a monolith to the cloud. This module goes along with a blog post series, which you can find [here](https://www.dynatrace.com/news/blog/fearless-monolith-to-microservices-migration-a-guided-journey/). Please take a look at the different blog posts to learn more about certain migration steps.
+[keptn](https://keptn.sh/)
 
-In this module you will go through the following actions:
+**Keptn** is an event-based control plane for continuous delivery and automated operations for 
+cloud-native applications.
 
-1. Check Prerequisites
-1. Gathering Facts and installing the OneAgent Operator
-1. Lift and Shift Ticketmonster
-1. Extract the UI from the Monolith
-1. Generate some load on the UI
-1. Identifying a Microservice with Dynatrace
-1. Looking at the Domain Model of the Microservice
-1. Deploying the new Microservice
+#### Get full observability for your Keptn workflows
+Keptn traces every event and all resulting actions and provides real-time tracing information 
+and a powerful API enabling full visibility of every deployment and operations triggered via Keptn.
+
+## keptn bridge
+
+You can access the keptn bridge by opening the "Autonomous Cloud Concepts with Keptn" Dashboard in Dynatrace.
+Then simply select the "Keptn Bridge" link.
+
+<img src="../../assets/images/pre_keptn_bridge01.png" width="500"/>
+
+You can also access the bridge from the KIAB page.
+
+<img src="../../assets/images/pre_keptn_kiab.png" width="500"/>
+
+Now let's take a quick tour of the keptn bridge. 
