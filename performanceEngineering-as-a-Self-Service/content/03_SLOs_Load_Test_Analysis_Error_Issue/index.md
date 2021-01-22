@@ -38,19 +38,31 @@ Click **Next** at the button right of the screen.
 
 <img src="../../assets/images/lab_3_slo_2.png" width="500"/>
 
+This brings us to the **Define a filter** screen.   In the filter section copy the below text and paste into the filter section.
 
+**mzName("Keptn: keptnorders staging"),type("SERVICE"),entityName("order")**
 
-Go back to your SLO Wizard screen and then add the below text filter section.  Make sure the change the text in the entityId with what you copied to Notepad.
-
-type("SERVICE"),entityId("**OrderServiceenittyIdYouCopiedtoNoatedGoesHere**")
-
-Then click the **Verify Button**
+Then click the **Verify Button**, and after verified click the **Next** button.
 
 <img src="../../assets/images/lab_3_slo_3.png" width="500"/>
 
 In the next screen change the Timeframe section to **-30m** and then click the **Next** button, and then **Save** button.
 
 <img src="../../assets/images/lab_3_slo_4.png" width="500"/>
+
+After the **Availability - Order_Staging** has been created lets create two more SLOs for the **customer** and **catalog** services.
+
+Use the follow settings for the **catalog** SLO: 
+
+SLO Name = **Availability - Catalog_Staging**
+Filter   = **mzName("Keptn: keptnorders staging"),type("SERVICE"),entityName("catalog")**
+
+Use the follow settings for the **customer** SLO:
+
+SLO Name = **Availability - Customer_Staging**
+Filter   = **mzName("Keptn: keptnorders staging"),type("SERVICE"),entityName("customer")**
+
+When complete,  review the results.
 
 ### Kick off Keptn Orders 2 Build
 
