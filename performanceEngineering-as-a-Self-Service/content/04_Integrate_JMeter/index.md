@@ -1,7 +1,23 @@
-## Jmeter Integration
+## Integrate Jmeter 
 <img src="../../assets/images/jmeter.png" width="100"/>
 
-Previously we discussed the Load Test Request Attributes.
+Previously we discussed the Load Test Request Attributes. Now we will expand on these concepts.
+
+## Test automation frameworks 
+Test automation involves the use of special software (separate from the software being tested) 
+to control the execution of tests and the comparison of actual outcomes with predicted outcomes. 
+Test automation can automate some repetitive tasks in a formalized testing process already in place, 
+or perform additional testing that would otherwise be difficult to do manually. 
+Test automation is important for continuous delivery and continuous testing.
+
+## Test with Jmeter
+
+While executing a load test in Apache JMeter, each simulated HTTP request 
+can be tagged in JMeter with additional HTTP Headers that contain test-transaction 
+information (for example, script name, test step name and virtual user ID). Dynatrace
+can analyze incoming HTTP headers and extract such contextual information from the header 
+values and "tag" the captured requests. Having a tag on a request allows you to analyze 
+requests with specific tags.
 
 ### Tag tests with HTTP headers 
 
@@ -36,6 +52,8 @@ the Events section on all overview pages of the entities that are defined in the
 Load test events are also displayed on associated services pages (see example below).
 
 <img src="../../assets/images/lab_4_event_tag.png" width="500"/>
+
+Further good news, these events are pushed via the keptn bridge.
 
 ### Dynatrace Backend listener plugin for JMeter
 This library implements a JMeter Backend listener and sends the recorded loadtest metrics via the Dynatrace MINT 
