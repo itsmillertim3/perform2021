@@ -105,7 +105,7 @@ This example will utilize the `monitored entities v2 API` to crawl upstream depe
 
 3. If you run the code now, you won't see any of the returned data, only the response code from the request, which is hopefully `200`. If it isn't examine the code to make sure there aren't any issues before proceeding
    
-4. Parse the json object returned from the API and print the result to inpect. replace the existing `print(reponse)` line with the following lines that parse the json and log the result
+4. Parse the json object returned from the API and print the result to inspect. replace the existing `print(response)` line with the following lines that parse the json and log the result
    
    ```python
    jresponse = response.json()
