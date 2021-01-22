@@ -1,4 +1,4 @@
-## Service Flow
+## Analyze serviceflow
 
 We just saw one way to review process and service communication, but Let’s look at how Dynatrace understands your applications’ transactions from end to end. and visualizes through **Service Backtraces** and **Service flows**.
 
@@ -33,7 +33,7 @@ Right away, we can see how this application is structured:
 
 Refer to the numbers in the picture above:
 
-1. The timeframe defaults to 10 minutes but can be adjusted1. 
+1. The timeframe defaults to 10 minutes but can be adjusted. 
 1. We are viewing the data from a **Response time perspective**. Shortly, we will review the **Throughput perspective**.
 1. Click on the boxes to expand the response time metrics. We can see that most of the response time, most of the time is spent in the backend service.
 1. Even though there are roughly 3 calls to the database for every backend service request, only a very small amount of the response time is spent in the database. 
@@ -46,5 +46,5 @@ Refer to the numbers in the picture above:
 
 1. The timeframe defaults to 10 minutes but can be adjusted
 1. Change to the **Throughput** perspective by clicking on the box
-1. Click on the boxes to expand the metrics to see the number of requests and average response times going to the BookingService
-1.  We can see the number of requests  to `backend` service
+1. Click on the boxes to expand the metrics to see the number of requests and average response times going to the backend sevice
+1.  We can see the number of requests  to `backend` database

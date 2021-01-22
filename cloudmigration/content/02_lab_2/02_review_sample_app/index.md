@@ -11,7 +11,7 @@ To view the application, we need to get the AWS elastic IP for the running appli
 From the command prompt type this command
 
 ```
-kubectl -n dt-order get svc
+kubectl -n dt-orders get svc
 ```
 
 From the output, copy the entire value from `CLUSTER-IP` and open it in a browser.

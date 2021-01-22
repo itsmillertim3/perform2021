@@ -1,4 +1,4 @@
-## Service backtrace
+## Analyze service backtrace
 
 Dynatrace understands your applications transactions from end to end. This transactional insight is visualized several ways like the backtrace. 
 

@@ -1,4 +1,4 @@
-# Review Dynatrace
+## Review Dynatrace
 
 In this next few sections, review what the OneAgent automatically discovered for the host, services, processes, and the complete dependency mapping for the sample application running on Kubernetes.  
 
