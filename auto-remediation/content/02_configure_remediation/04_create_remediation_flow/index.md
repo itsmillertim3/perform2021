@@ -75,7 +75,7 @@ Add the required steps to execute the remediation and trigger the ansible AWX te
     ![servicenow-add-subflow-2](../../../assets/images/servicenow-add-subflow-2.png)
 
 1. Complete the fields with the following values:
-    - **Template ID:** Enter the ID of the ansible awx `remediation` template.
+    - **Template ID:** Enter the ID of the ansible AWX `Dynatrace Automated Remediation for Memory Leak` template.
     - **Alert:** Click on the Data pill picker for the alert, select `Subflow inputs` -> `alertGR`.
 
     ![servicenow-add-subflow-3](../../../assets/images/servicenow-add-subflow-3.png)

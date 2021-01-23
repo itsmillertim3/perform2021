@@ -1,0 +1,22 @@
+## Prepare the environment
+In this step we will prepare the environment for the hands on steps
+- Install OneAgent
+- Enable OpenTelemetry instrumentation
+- Clone the repos for the Java and Go exercise
+
+### Step 1: Install OneAgent
+- Access the Dynatrace tenant provided to you
+- In your RDP Windows instance provided to you, download the Windows based OneAgent from Deploy Dynatrace
+- Start the installation with default settings
+
+### Step 2: Enable OpenTelemetry instrumentation
+- Go to your environment, under `Settings` > `Server-side service monitoring` > `Deep Monitoring` > `OpenTelemetry and OpenTracing`)
+  ![Deep Monitoring](../../assets/images/deep_monitoring.png)
+
+### Step 3: Clone the repos
+- Launch Visual Studio Code
+- Click on `clone repository`, and enter `https://github.com/Dynatrace/perform-2021-hotday/tree/main/Opentelemetry_With_Dynatrace/golang`
+- Open a new Window, click on `clone repository` and enter `https://github.com/Dynatrace/perform-2021-hotday/tree/main/Opentelemetry_With_Dynatrace/java`
+
+### You've arrived
+- You are now ready to start the hands on!
