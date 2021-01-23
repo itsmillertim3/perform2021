@@ -142,6 +142,30 @@ Then click on the **Errors** link under **Transaction** on the left side of the 
 
 <img src="../../assets/images/lab_3_slo_dashboard_1.png" width="500"/>
 
+This will bring us to **Multidimensional analysis** that is showing failed request counts split by the **TSN** request attribute.   Note,  you can also create your own **Multidimensional analysis** views and save them by going to the Diagnostic tools-->Top web requests configure desired settings.
+
+In the table provides the details for the failed Transaction Steps.  On the far left in the table details click you will see the **Actions**,  click the ... which will bring up the **Analyze** Menu.
+
+Click on **Details of failures**.
+
+<img src="../../assets/images/lab_3_slo_dashboard_2.png" width="500"/>
+
+This will bring us to the **Failure analysis** screen.  We can see HTTP 500 Errors were generated and also see exactly which transactions were impacted.  To dig deeper you can drill-down to the Purepaths by click on the **Purepaths** icon at the top right of the screen.
+
+<img src="../../assets/images/lab_3_load_test_problem_2.png" width="500"/>
+
+This will bring us to the failed **Purepaths**.  Click on a **Purepath** to see the trace details Dynatrace has captured around the failure.
+
+<img src="../../assets/images/lab_3_load_test_problem_3.png" width="500"/>
+
+This will bring us to the Purepath trace details screen.    Click on the **second node which is the order service** in the trace tree.   Then click on **Errors** in the table.   Then click on the down arrow under the **Details** of the Exception.
+
+When looking at the Exception details we can see the in **Message** details that has the exact error message which caused the failure rate for the Performance test.   A good best practice is to copy the Dynatrace URL(s) of the screens you want to share with your analysis back to the Application team.
+
+<img src="../../assets/images/lab_3_load_test_problem_4.png" width="500"/>
+
+
+
 
 
 
