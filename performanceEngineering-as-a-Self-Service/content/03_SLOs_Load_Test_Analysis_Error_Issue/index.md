@@ -124,4 +124,11 @@ This will bring us to the **Failure analysis** screen.  We can see HTTP 500 Erro
 
 <img src="../../assets/images/lab_3_load_test_problem_2.png" width="500"/>
 
+This will bring us to the failed **Purepaths**.  Click on a **Purepath** to see the trace details Dynatrace has captured around the failure.
+
+<img src="../../assets/images/lab_3_load_test_problem_3.png" width="500"/>
+
+
+
+
 
