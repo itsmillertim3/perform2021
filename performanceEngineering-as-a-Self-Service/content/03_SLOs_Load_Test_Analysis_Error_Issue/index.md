@@ -110,5 +110,14 @@ Then select the **Performance Test Dashboard with Transaction Steps & SLOs** das
 
 ### Load Test Availability/Error Analysis
 
+Dynatrace uses a sophisticated AI causation engine, called Davis®, to automatically detect performance anomalies in your applications, services, and infrastructure. Dynatrace-detected problems are used to report and alert on abnormal situations, such as performance degradations, improper functionality, or lack of availability (i.e., problems represent anomalies in baseline system performance).  
+
+For Performance Testing the Dynatrace AI might not generate a Problems unless you are doing continuous performance testing.  You can setup custom alerts with static thresholds.  
+
+If a Dynatrace Problem has generated during your Performance Test that is always a good place to start.
+
+<img src="../../assets/images/lab_3_load_test_problem_1.png" width="500"/>
+
+
 
 
