@@ -134,6 +134,14 @@ When looking at the Exception details we can see the in **Message** details that
 
 <img src="../../assets/images/lab_3_load_test_problem_4.png" width="500"/>
 
+If a Dynatrace Problem wasn't detected you can use out of the box workflows and custom dashboards.    We will walk through using the **Performance Test Dashboard with Transaction Steps & SLOs** but also out of the box options as well.
+
+Open the **Performance Test Dashboard with Transaction Steps & SLOs** dashboard.  
+
+Then click on the **Errors** link under **Transaction** on the left side of the dashboard.
+
+<img src="../../assets/images/llab_3_slo_dashboard_1.png" width="500"/>
+
 
 
 
