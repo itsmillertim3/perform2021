@@ -114,10 +114,12 @@ Dynatrace uses a sophisticated AI causation engine, called Davis®, to automatic
 
 For Performance Testing the Dynatrace AI might not generate a Problems unless you are doing continuous performance testing.  You can setup custom alerts with static thresholds.  
 
-If a Dynatrace Problem has generated during your Performance Test that is always a good place to start.
+If a Dynatrace Problem has generated a Problem during your Performance Test that is always a good place to start.
 
 <img src="../../assets/images/lab_3_load_test_problem_1.png" width="500"/>
 
+From the Problem card we will focus on the Root cause Dynatrace has provided around the Failure rate increase.   Click on the **Analyze failure rate degradation** button.  This will bring us to the **Failure analysis** screen.
 
+<img src="../../assets/images/lab_3_load_test_problem_2.png" width="500"/>
 
 
