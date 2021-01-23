@@ -72,9 +72,9 @@ While almost everything in this setup is automated through the scripts, API call
 For some of the Hands on Tutorials the trainees need to e.g: deploy a new version of a microservice.
 To make this easier we have created a set of scripts that are prefixed with hot_xxx.sh. Here is an overview:
 
-
 | Script | Description |
 | ----- | ---------|
+| `hot_initialize.sh` | Will initialize some of the monaco scripts with correct information such as username of dashboards that get created. This needs to be called ONCE and requires the env-variable DT_USERNAME set to the username on your DT Tenant that will become the owner of those dashboards | 
 | `hot_createkeptnproject.sh` | Will create a new keptn project for 3 stage delivery, initialized with helm chart for the simplenodeservice, jmeter tests and a monaco config for automating synthetic tests |
 | `hot_deletekeptnproject.sh` | Will delete an existing Keptn project |
 | `hot_deploy.sh` | Instructs Keptn to start the delivery process of a new version |
