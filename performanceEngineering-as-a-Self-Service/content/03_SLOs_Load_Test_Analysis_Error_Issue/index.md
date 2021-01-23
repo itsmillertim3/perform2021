@@ -164,6 +164,24 @@ When looking at the Exception details we can see the in **Message** details that
 
 <img src="../../assets/images/lab_3_load_test_problem_4.png" width="500"/>
 
+Last, we will cover troubleshooting via an out of the box workflow for a key service that has been impacted during the Performance Test.  
+
+Click "**Transactions and services**" from the Main Navigation menu.
+
+Then click on the **Order** service in the **Services** screen.
+
+<img src="../../assets/images/lab_3_analysis_oob_1.png" width="500"/>
+
+This will bring up the **Order** Service overview screen.   Under Dynamic web requests section (charts) click the **Failure rate** section.
+
+<img src="../../assets/images/lab_3_analysis_oob_2.png" width="500"/>
+
+This will bring up the **Order** Service **Failure rate** screen.   Click the **View details of failures** button.
+
+<img src="../../assets/images/lab_3_analysis_oob_3.png" width="500"/>
+
+
+
 
 
 
