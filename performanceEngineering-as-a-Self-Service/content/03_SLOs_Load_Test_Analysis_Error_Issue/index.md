@@ -180,9 +180,9 @@ This will bring up the **Order** Service **Failure rate** screen.   Click the **
 
 <img src="../../assets/images/lab_3_analysis_oob_3.png" width="500"/>
 
+This will bring us to the **Failure analysis** screen.   We can see all the failures, which transactions were impacted and Reason for failed requests including the Stack Trace Exception message.  To dig deeper you can drill-down to the Purepaths by click on the **Purepaths** icon at the top right of the screen.
 
-
-
+<img src="../../assets/images/lab_3_analysis_oob_4.png" width="500"/>
 
 
 
