@@ -106,6 +106,8 @@ Click **"Dashboards"** from the Main Navigation menu.
 
 Then select the **Performance Test Dashboard with Transaction Steps & SLOs** dashboard.
 
+We can see the SLO for the **Order** service is not being met.  In the next section we will show you why!
+
 <img src="../../assets/images/lab_3_performance_test_dashboard_with_transaction_steps_slos_1.png" width="500"/>
 
 ### Load Test Availability/Error Analysis
