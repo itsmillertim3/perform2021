@@ -130,7 +130,7 @@ This will bring us to the failed **Purepaths**.  Click on a **Purepath** to see 
 
 This will bring us to the Purepath trace details screen.    Click on the **second node which is the order service** in the trace tree.   Then click on **Errors** in the table.   Then click on the down arrow under the **Details** of the Exception.
 
-When looking at the Exception details we can see the in **Message** details that has the exact error message which caused the failure rate for the Performance test.   A good practice is to copy the Dynatrace URL(s) which you attach to your analysis back to the Application team.
+When looking at the Exception details we can see the in **Message** details that has the exact error message which caused the failure rate for the Performance test.   A good best practice is to copy the Dynatrace URL(s) of the screens you want to share with your analysis back to the Application team.
 
 <img src="../../assets/images/lab_3_load_test_problem_4.png" width="500"/>
 
