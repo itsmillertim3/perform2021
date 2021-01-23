@@ -140,7 +140,7 @@ Open the **Performance Test Dashboard with Transaction Steps & SLOs** dashboard.
 
 Then click on the **Errors** link under **Transaction** on the left side of the dashboard.
 
-<img src="../../assets/images/llab_3_slo_dashboard_1.png" width="500"/>
+<img src="../../assets/images/lab_3_slo_dashboard_1.png" width="500"/>
 
 
 
