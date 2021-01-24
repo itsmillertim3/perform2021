@@ -28,3 +28,16 @@ sudo vim /etc/td-agent/td-agent.conf
 ```Shell
 curl -X POST -d 'json={"json":"message"}' http://localhost:8888/debug.test
 ```
+
+# Active Gate operations
+1. Start & stop Active Gate
+```Shell
+service dynatracegateway stop
+service dynatracegateway start
+```
+
+2. Edit Active Gate custom.properties
+```Shell
+vi /var/lib/dynatrace/gateway/config/custom.properties​
+```
+
