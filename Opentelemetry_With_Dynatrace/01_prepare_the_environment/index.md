@@ -1,16 +1,16 @@
 ## Prepare the environment
-In this step we will prepare the environment for the hands on steps
+In this step we will prepare the environment for the hands on exercises
 - Install OneAgent
 - Enable OpenTelemetry instrumentation
 - Clone the repos for the Java and Go exercise
 
 ### Step 1: Install OneAgent
 - Access the Dynatrace tenant provided to you
-- In your RDP Windows instance provided to you, download the Windows based OneAgent from Deploy Dynatrace
+- In your RDP Windows instance provided to you, download the Windows-based OneAgent from Deploy Dynatrace menu
 - Start the installation with default settings
 
-### Step 2: Enable OpenTelemetry instrumentation
-- Go to your environment, under `Settings` > `Server-side service monitoring` > `Deep Monitoring` > `OpenTelemetry and OpenTracing`)
+### Step 2: Enable OpenTelemetry and OpenTracing instrumentation
+- Go to your environment, under `Settings` > `Server-side service monitoring` > `Deep Monitoring` > `OpenTelemetry and OpenTracing`
   ![Deep Monitoring](../../assets/images/deep_monitoring.png)
 
 ### Step 3: Clone the repos
