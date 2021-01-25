@@ -7,7 +7,7 @@ If time permits during our session we have created a few more exercises for you.
 1.  Custom Alert
 1.  Request Naming Rule
 1.  Performance Analysis
-1.  Build Your OWn Dashboard
+1.  Build Your Own Dashboard
 1.  Compare Results of Two Test Runs
 
 ### Custom Alert
