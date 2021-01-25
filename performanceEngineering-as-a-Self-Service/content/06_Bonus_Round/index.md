@@ -1,13 +1,11 @@
 ### Bonus Round
 
-If time permits during our session we have created a few more exercises for you.
+If time permits during our session we have created a few more exercises/topics to cover. See below:
 
-### Configuration
-
-1.  Request Naming Rule
-1.  Custom Alert
-1.  Performance Analysis
-1.  Compare Results of Two Test Runs
+- Request Naming Rule
+- Custom Alert
+- Performance Analysis
+- Compare Results of Two Test Runs
 
 ### Request Naming Rule
 
