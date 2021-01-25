@@ -29,7 +29,7 @@ In this lesson we learn how to enable the OpenTelemetry Metric Exporter for Dyna
     - The access scope (= permissions) needs to include `Ingest metrics`
     - The name of the API Token can get chosen freely
     - You can now copy the API Token to your clipboard and paste into the String on Line 18 of `metrics.go`
-    - ![API Token](../../assets/images/api_token.png)
+    - ![API Token](../../../assets/images/api_token.png)
 - Shut down `fib.exe` using `Ctrl-C` within your Terminal if you haven't done so already.
 - Compile the program using the command line `go build`. This produces a file name `fib.exe` within the current directory.
 - Launch `fib.exe` via your current Terminal
