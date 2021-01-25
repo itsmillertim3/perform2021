@@ -2,7 +2,9 @@
 In this step we will compile our Java Springboot application and explore the out-of-the-box instrumentation of the OneAgent
 
 ### Step 1: Compile and run the application
-- Edit hazelcast-client.yaml in src > main > resources
+- Edit `hazelcast-client.yaml` in VHOT2001 > 02_OpenTracing > src\main > resources
+  ![EditFile](../../assets/images/01_oneagent_outofthebox_instrumentation-01.png)
+
 - Input the public IP address ``
 - Open up a Terminal from the top menu bar
 - Run this command `mvn spring-boot:run`
