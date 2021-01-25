@@ -47,11 +47,11 @@ In this lesson we learn how to enable the OpenTelemetry Metric Exporter for Dyna
   - `http://localhost:28080/fib?n=11`
 - Within the Dynatrace WebUI select `Create custom chart` in the left hand side menu
 - On top of your screen you're getting the option to `Analyze multidimensional metrics from Prometheus, StatsD and others channels right on your dashboards`. Click on `Try it out` in order to launch the `Data explorer`.
-- ![Custom Chart](../../assets/images/custom_chart.png)
+- ![Custom Chart](../../../assets/images/custom_chart.png)
 - Click on the Dropdown box `Filter metrics by` and type in `otel`. You should now be able to select the metric `otel.fibonacci.iterations`.
 - Click on the input box `Split by`. You should be able to select `input` here.
 - For this specific kind of metric it makes sense to select `Pie` as the Visualization on the right hand side menu
-- ![Data Explorer](../../assets/images/data_explorer.png)
+- ![Data Explorer](../../../assets/images/data_explorer.png)
 - Click on `Run query`
 
 ### You've arrived
