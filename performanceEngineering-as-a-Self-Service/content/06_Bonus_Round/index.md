@@ -25,7 +25,7 @@ Within in the service settings, navigate to Web request naming and click the
 
 <img src="../../assets/images/lab_6_request_web_request_naming_rule_3.png" width="500"/>
 
-Below are setting we want to use:
+Below are the settings we want to use:
 
 - naming pattern = **{RequestAttribute:LSN}**
 - conditions =  **{RequestAttribute:LSN}** exists
@@ -33,7 +33,7 @@ Below are setting we want to use:
 
 It should look like this:
 
-<img src="../../assets/images/lab_6_request_web_request_naming_rule_4.png" width="500"/>
+---Placeholder screenshot---
 
 ### Custom Alert
 
