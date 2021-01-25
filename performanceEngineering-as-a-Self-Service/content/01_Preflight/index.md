@@ -235,7 +235,7 @@ curl -O https://raw.githubusercontent.com/dthotday-performance/keptn-in-a-box/re
 chmod +x keptn-in-a-box.sh
 ```
 
-Now proceed with 
+Next.
 
 Run the following command and follow the process from above.
     
