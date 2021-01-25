@@ -4,31 +4,26 @@ In this step we will compile our Java Springboot application and explore the out
 ### Step 1: Compile and run the application
 - Edit `hazelcast-client.yaml` in VHOT2001 > 02_OpenTracing > src\main > resources
   ![EditFile](../../../assets/images/01_oneagent_outofthebox_instrumentation-01.png)
-
 - Input the public IP address ``
 - Open up a Terminal from the top menu bar
   ![EditFile](../../../assets/images/01_oneagent_outofthebox_instrumentation-02.png)
-
 - Change diretory to `02_OpenTracing` and run this command `mvn spring-boot:run`
-
-```powershell
-PS C:\Users\dtu.training\Documents\vhot2021> cd 02_OpenTracing
-PS C:\Users\dtu.training\Documents\vhot2021\02_OpenTracing> mvn spring-boot:run
-```
-
+  ```powershell
+  PS C:\Users\dtu.training\Documents\vhot2021> cd 02_OpenTracing
+  PS C:\Users\dtu.training\Documents\vhot2021\02_OpenTracing> mvn spring-boot:run
+  ```
 - Check that the program compiles without any errors and it connects to the HazelCast nodes
 - Open a new terminal tab
 - Enter `curl http://localhost:8080/get?key=testkey`
 - You will observe a response of `{"response":null}`. This is normal as you have not populated the HazelCast map with entries.
-
-```powershell
-PS C:\Users\dtu.training\Documents\opentracing-hazelcast> curl http://localhost:8080/get?key=testkey
-
-StatusCode        : 200
-StatusDescription :
-Content           : {"response":null}
-...
-```
+  ```powershell
+  PS C:\Users\dtu.training\Documents\opentracing-hazelcast> curl http://localhost:8080/get?key=testkey
+  
+  StatusCode        : 200
+  StatusDescription :
+  Content           : {"response":null}
+  ...
+  ```
 ### Step 2: Populate the HazelCast instance with entries and retrieve the data
 - Enter `curl http://localhost:8080/pop1`
 
