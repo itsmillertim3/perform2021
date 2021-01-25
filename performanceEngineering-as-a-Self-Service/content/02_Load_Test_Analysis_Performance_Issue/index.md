@@ -111,11 +111,11 @@ Click **Build**
 
 ### Describe Dynatrace Load Test Request Attribute
 
+Dynatrace by default captures and traces every single incoming request on our instrumented applications and services. This allows us to analyze metrics (SLIs) for each individual endpoint URL. While this is great, the URL is not necessarily meaningful when we want to analyze details for a step from your load testing script, e.g: Login, Add to Cart, Checkout.
+
 While executing a load test from your load testing tool of choice (JMeter, Neotys, LoadRunner, etc.) each simulated HTTP request can be tagged with additional HTTP headers that contain test-transaction information (for example, script name, test step name, and virtual user ID).
 
-Dynatrace can analyze incoming HTTP headers and extract such contextual information from the header values and tag the captured requests with request attributes. Request attributes enable you to filter your monitoring data based on defined tags.
-
-You can use any (or multiple) HTTP headers or HTTP parameters to pass context information. The extraction rules can be configured via **Settings --> Server-side service monitoring --> Request attributes**.
+<img src="../../assets/images/lab_1_request_attribute_1.png" width="500"/>
 
 The header **x-dynatrace-test** is used one or more key/value pairs for the header. Here are some examples:
 
@@ -127,6 +127,10 @@ The header **x-dynatrace-test** is used one or more key/value pairs for the 
 | LSN  | Load Script Name - name of the load testing script. This groups a set of test steps that make up a multi-step transaction (for example, an online purchase).  |
 | LTN  | The Load Test Name uniquely identifies a test execution (for example, 6h Load Test – June 25)  |
 | PC  | Page Context provides information about the document that is loaded in the currently processed page.  |
+
+Dynatrace can analyze incoming HTTP headers and extract such contextual information from the header values and tag the captured requests with request attributes. Request attributes enable you to filter your monitoring data based on defined tags.
+
+You can use any (or multiple) HTTP headers or HTTP parameters to pass context information. The extraction rules can be configured via **Settings --> Server-side service monitoring --> Request attributes**.
 
 ### Describe Calculated Service Metrics for Load Test Steps
 
