@@ -1,5 +1,8 @@
 ## Automated Performance Test
 
+We previously discussed SLO's in Dynatrace. Now we will examine, in detail, more about SLO's and 
+how we can use both SLI's and SLO's with our deployment strategies.
+
 ### Deployment automation 
 Deployment automation is about the automated implementation of your application’s build, deploy, test 
 and release process. In general, the automated deployment process is initiated whenever a developer 
@@ -103,6 +106,49 @@ A service-level objective is “a target value or range of values for a service 
 An example of an SLO can define that a specific request must return results within 100 milliseconds. 
 Keptn quality gates can comprise several SLOs that are all evaluated and scored, based even on different 
 weights for each SLO to consider different importance of each SLO. Keptn defines SLOs in a dedicated slo.yaml.
+
+The SLI file we provided contains a good list of individual indicators. What we need to do now is to define an SLO 
+(Service Level Objective) that indicate what Keptn should do with these SLIs. We have these options after Keptn pulled 
+the value through the SLI Provider a) Just give me the value b) Compare the value with a static threshold c) Compare 
+it with a baseline from previous runs, this is an example.  To see the full SLO, view this in the Keptn Bridge.
+
+```yaml
+---
+    spec_version: '0.1.0'
+    comparison:
+      compare_with: "single_result"
+      include_result_with_score: "pass" # pass_or_warn
+      aggregate_function: avg
+    objectives:
+      - sli: rt_svc_p95
+        pass:        # pass if (relative change <= 10% AND absolute value is < 500)
+          - criteria:
+              - "<=+10%" # relative values require a prefixed sign (plus or minus)
+              - "<600"   # absolute values only require a logical operator
+        warning:     # if the response time is below 800ms, the result should be a warning
+          - criteria:
+              - "<=800"
+      - sli: throughput_svc
+        pass:
+          - criteria:
+            - "> 2000" # at least 1000 Calls for a basic test to pass.
+      - sli: error_count
+        weight: 2
+        pass:
+          - criteria:
+              - "<=1" # less than 1% failurerate
+        warning:
+          - criteria:
+              - "<=2" # more than 2 failed transactions is failed
+      - sli: rt_svc_p50
+      - sli: rt_svc_p90
+        pass:
+          - criteria:
+              - "<=+10%"
+        warning:
+          - criteria:
+              - "<=+50%"   
+```
 
 ### Continuous Performance Verification
 

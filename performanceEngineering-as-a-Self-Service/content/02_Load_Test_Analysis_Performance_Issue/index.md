@@ -231,8 +231,6 @@ Then click on the **Transactions** link under **Transaction** on the left side o
 
 This will bring us to **Multidimensional analysis** that is showing response time split by the **TSN** request attribute.   Note,  you can also create your own **Multidimensional analysis** views and save them by going to the Diagnostic tools-->Top web requests configure desired settings.
 
-**Response Time Hotspots**
-
 For Developers to understand how to avoid future performance issues and proactively optimize performance, you must be able to analyze real-time data and understand code performance bottlenecks.
 
 We are going to focus on the **customer** step name transaction.
@@ -253,6 +251,8 @@ In this screen click on **Hotspots**.   This will change the view to find the **
 
 <img src="../../assets/images/lab_1_response_time_hotspots_3.png" width="500"/>
 
+### What did we Learn
 
+### Questions and Answers? 
 
 
