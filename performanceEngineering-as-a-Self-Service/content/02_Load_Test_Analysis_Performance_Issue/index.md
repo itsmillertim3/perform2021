@@ -208,9 +208,17 @@ For Performance Testing the Dynatrace AI might not generate a Problems unless yo
 
 If a Dynatrace Problem has generated a Problem during your Performance Test that is always a good place to start.
 
-You can also analyze the data using custom Dashboard as well as out of the box workflows. Your approach should be based on the type of performance analysis you want to do (for example, crashes, resource and performance hotspots, or scalability issues). 
+You can also analyze the data using custom Dashboards as well as out of the box workflows. Your approach should be based on the type of performance analysis you want to do (for example, crashes, resource and performance hotspots, or scalability issues). 
 
 Following is an overview of using our **Performance Test Dashboard with Transaction Steps**.
+
+Open the **Performance Test Dashboard with Transaction Steps** dashboard.  
+
+Then click on the **Transactions** link under **Transaction** on the left side of the dashboard.
+
+<img src="../../assets/images/lab_1_performance_test_dashboard_with_transaction_steps.png" width="500"/>
+
+This will bring us to **Multidimensional analysis** that is showing response time split by the **TSN** request attribute.   Note,  you can also create your own **Multidimensional analysis** views and save them by going to the Diagnostic tools-->Top web requests configure desired settings.
 
 **Response Time Hotspots**
 
