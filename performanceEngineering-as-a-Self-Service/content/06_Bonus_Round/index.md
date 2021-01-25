@@ -4,11 +4,36 @@ If time permits during our session we have created a few more exercises for you.
 
 ### Configuration
 
-1.  Custom Alert
 1.  Request Naming Rule
+1.  Custom Alert
 1.  Performance Analysis
-1.  Build Your Own Dashboard
 1.  Compare Results of Two Test Runs
+
+### Request Naming Rule
+
+Within Dynatrace, you can use request naming rules to adjust how your requests are tracked and to define business transactions in your customer-facing workflow that are critical to the success of your digital business. With such end-to-end tracing, Dynatrace enables you to view and monitor important business transactions from end to end.
+
+For the **order** service, we want to change the discovered transaction names to use the **LSN** request attribute that has the Test Step Name you use in your load test product when running Performance Tests.
+
+<img src="../../assets/images/lab_6_request_web_request_naming_rule_1.png" width="500"/>
+
+At the top of the **order** services page and choosing the edit option as shown below.
+
+<img src="../../assets/images/lab_6_request_web_request_naming_rule_2.png" width="500"/>
+
+Within in the service settings, navigate to Web request naming and click the **Add rule** button
+
+<img src="../../assets/images/lab_6_request_web_request_naming_rule_3.png" width="500"/>
+
+Below are setting we want to use:
+
+- naming pattern = **{RequestAttribute:LSN}**
+- conditions =  **{RequestAttribute:LSN}** exists
+- click the **Preview Rule** button to verify.
+
+It should look like this:
+
+<img src="../../assets/images/lab_6_request_web_request_naming_rule_4.png" width="500"/>
 
 ### Custom Alert
 
@@ -59,10 +84,6 @@ When finished then select the **Create custom event for alerting** button.   Thi
 
 We wil run another Load Test and review the problem that gets created for your the custom alert setup.
 
-### Request Naming Rule
-
-
-
 ### Performance Analysis
 
 Lets cover another troubleshooting example via an out of the box workflow for a key service that has been impacted during the Performance Test.  
@@ -112,5 +133,3 @@ In this example a new deploy for version 2.0.0 of a node.js sample application t
 Focusing on “Average Failure Rate split by Test Names” and comparison with the previous test.
 
 <img src="../../assets/images/lab_6_comparison_example.png" width="800"/>
-
-### Build Your Own Dashboard
