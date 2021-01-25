@@ -41,6 +41,7 @@ In this step we extend the Java SpringBoot application with an available OpenTra
 - Check that the program compiles without any errors and it connects to the HazelCast nodes
 
 ### Step 3: Populate the HazelCast instance with new entries and retrieve the data
+- Switch to the 2nd terminal tab
 - Enter `curl.exe http://localhost:8080/pop2`
   ```powershell
   PS C:\Users\dtu.training\Documents\vhot2021> curl.exe http://localhost:8080/pop2
