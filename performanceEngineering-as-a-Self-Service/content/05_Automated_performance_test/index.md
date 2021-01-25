@@ -1,5 +1,8 @@
 ## Automated Performance Test
 
+We previously discussed SLO's in Dynatrace. Now we will examine, in detail, more about SLO's and 
+how we can use both SLI's and SLO's with our deployment strategies.
+
 ### Deployment automation 
 Deployment automation is about the automated implementation of your application’s build, deploy, test 
 and release process. In general, the automated deployment process is initiated whenever a developer 
