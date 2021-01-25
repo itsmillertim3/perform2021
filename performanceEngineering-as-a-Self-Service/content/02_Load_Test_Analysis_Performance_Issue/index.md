@@ -251,6 +251,8 @@ In this screen click on **Hotspots**.   This will change the view to find the **
 
 <img src="../../assets/images/lab_1_response_time_hotspots_3.png" width="500"/>
 
+### What did we Learn
 
+### Questions and Answers? 
 
 
