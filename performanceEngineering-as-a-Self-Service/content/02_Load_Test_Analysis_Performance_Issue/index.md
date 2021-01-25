@@ -202,7 +202,23 @@ Then Select the **Performance Test Dashboard with Transaction Steps** Dashboard.
 
 ### Load Test Performance Analysis
 
-There are different ways to analyze the data. Your approach should be based on the type of performance analysis you want to do (for example, crashes, resource and performance hotspots, or scalability issues). Following is an overview of some useful approaches you can follow to analyze your load tests. Of course, any Dynatrace analysis and diagnostic function can be used as well
+Dynatrace uses a sophisticated AI causation engine, called Davis®, to automatically detect performance anomalies in your applications, services, and infrastructure. Dynatrace-detected problems are used to report and alert on abnormal situations, such as performance degradations, improper functionality, or lack of availability (i.e., problems represent anomalies in baseline system performance).
+
+For Performance Testing the Dynatrace AI might not generate a Problems unless you are doing continuous performance testing. You can setup custom alerts with static thresholds.
+
+If a Dynatrace Problem has generated a Problem during your Performance Test that is always a good place to start.
+
+You can also analyze the data using custom Dashboards as well as out of the box workflows. Your approach should be based on the type of performance analysis you want to do (for example, crashes, resource and performance hotspots, or scalability issues). 
+
+Following is an overview of using our **Performance Test Dashboard with Transaction Steps**.
+
+Open the **Performance Test Dashboard with Transaction Steps** dashboard.  
+
+Then click on the **Transactions** link under **Transaction** on the left side of the dashboard.
+
+<img src="../../assets/images/lab_1_performance_test_dashboard_with_transaction_steps.png" width="500"/>
+
+This will bring us to **Multidimensional analysis** that is showing response time split by the **TSN** request attribute.   Note,  you can also create your own **Multidimensional analysis** views and save them by going to the Diagnostic tools-->Top web requests configure desired settings.
 
 **Response Time Hotspots**
 
