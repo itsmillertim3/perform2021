@@ -227,7 +227,7 @@ This script will reset the Ubuntu instance by removing Kubernetes and the Dynatr
 
 Now we need to re-initialize the environment.
 
-Run the following command and follow the process from above.
+Run the following commands, then follow the process from above.
     
 ```bash
 cd ~
