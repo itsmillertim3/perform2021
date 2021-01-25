@@ -28,8 +28,9 @@ Next we will create a few configuration items and kick off a load test.
 1.  Run first Load Test
 1.  Describe Dynatrace Load Test Request Attribute
 1.  Describe Calculated Service Metrics for Load Test Steps
-1.  Kick off Keptn Customer 2 Build.  
+1.  Kick off Keptn Customer 2 Build
 1.  Update Keptn: keptnorders staging Management Zone
+1.  Run Load Test
 1.  Examine Performance Test Dashboard with Transaction Steps
 1.  Load Test Performance Analysis
 
@@ -149,7 +150,6 @@ Then we need to change the build for customer to version 2 and select the build 
 
 <img src="../../assets/images/lab_1_customer_build.png" width="500"/>
 
-
 ### Update Keptn: keptnorders staging Management Zone
 
 Each customizable management zone comprises a set of monitored entities in your environment, be it hosts that share a common purpose, a specific application, a staging environment, or services of a certain technology. Management zones may overlap, just as team responsibilities often overlap. Users may be granted access to entire environments, a specific management zone, or a subset of related management zones.
@@ -170,6 +170,25 @@ Select **apply to underlying hosts of matching process groups** check box.
 Click the **preview** button to verify.
 
 Save the zone. Click **create rule** button. Then **Save changes** button.
+
+## Run Load Test
+
+Login to Jenkins
+
+* username = keptn
+* password = keptn
+
+<img src="../../assets/images/Lab_1_Jenkins_Log_In.png" width="500"/>
+
+We are going to run the **03-simpletest-qualitygate pipeline**.
+Click **"build"** this initial build will fail.
+Refresh the page, now we can do a **"Build with Parameters"**
+
+We need to change the Deployment URL
+
+<img src="../../assets/images/lab_1_simple_test.png" width="500"/>
+
+Click **Build**
 
 ### Examine Performance Test Dashboard with Transaction Steps
 
