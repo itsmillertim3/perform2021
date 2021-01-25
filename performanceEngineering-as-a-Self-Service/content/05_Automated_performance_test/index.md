@@ -62,6 +62,39 @@ An example of an SLI is the response time (also named request latency), which is
  it takes for a request to respond with an answer. Other prominent SLIs are error rate (or failure rate), 
  and throughput. Keptn defines all SLIs in a dedicated sli.yaml file to make SLIs reusable within several 
  quality gates. To learn more about the SLI configuration.
+ 
+ We have prepared SLIs which include service response time metrics (p50, p90, p95), througput and failure rate.
+ In our use cases, we use the Dynatrace Metrics API v2 Query String. In order for Dynatrace to know from which 
+ service I want to pull these metrics I assume the service is tagged with the name of the service we are testing.
+ 
+ This makes the SLI much more flexible and I can reuse it for other projects as well. Other placeholders are $PROJECT, $STAGE & $DEPLOYMENT.
+ 
+ Lets have a quick look at two of these SLIs - one showing a regular built-in Dynatrace service metric the other one is a custom calculated 
+ service metric that gives me response time for a particular test name:
+ 
+```yaml
+ rt_svc_p95:       "metricSelector=builtin:service.response.time:merge(0):percentile(95)?entitySelector=tag($SERVICE),type(SERVICE)"
+
+ rt_test_homepage: "metricSelector=calc:service.teststepresponsetime:filter(eq(Test Step,homepage)):merge(0):avg?entitySelector=tag($SERVICE),type(SERVICE)"
+```
+
+Now let's examine the complete SLI setup.
+
+```yaml
+---
+spec_version: '1.0'
+indicators:
+  throughput_svc:  "metricSelector=builtin:service.requestCount.total:merge(0):sum&entitySelector=tag($SERVICE),type(SERVICE)"
+  error_count:  "metricSelector=builtin:service.errors.total.rate:merge(0):avg&entitySelector=tag($SERVICE),type(SERVICE)"
+  rt_svc_p50:      "metricSelector=builtin:service.response.time:merge(0):percentile(50)&entitySelector=tag($SERVICE),type(SERVICE)"
+  rt_svc_p90:      "metricSelector=builtin:service.response.time:merge(0):percentile(90)&entitySelector=tag($SERVICE),type(SERVICE)"
+  rt_svc_p95:      "metricSelector=builtin:service.response.time:merge(0):percentile(95)&entitySelector=tag($SERVICE),type(SERVICE)"
+  db_calls:       "metricSelector=builtin:service.dbChildCallCount:merge(0):sum&entitySelector=tag($SERVICE),type(SERVICE)"
+  non_db_calls:   "metricSelector=builtin:service.nonDbChildCallCount:merge(0):sum&entitySelector=tag($SERVICE),type(SERVICE)"
+  lock_time:    "metricSelector=builtin:service.lockTime:merge(0):sum&entitySelector=tag($SERVICE),type(SERVICE)"
+  io_time:      "metricSelector=builtin:service.ioTime:merge(0):sum&entitySelector=tag($SERVICE),type(SERVICE)"
+  cpu_time:     "metricSelector=builtin:service.cpu.time:merge(0):sum&entitySelector=tag($SERVICE),type(SERVICE)"
+```  
 
 ### What is a Service-Level Objective (SLO)?
 A service-level objective is “a target value or range of values for a service level that is measured by an SLI.” 
