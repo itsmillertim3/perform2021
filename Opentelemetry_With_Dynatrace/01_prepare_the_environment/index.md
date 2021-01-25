@@ -16,6 +16,7 @@ In this step we will prepare the environment for the hands on exercises
 ### Step 3: Clone the repos
 - Launch Visual Studio Code
 - Click on `clone repository`, and enter `https://github.com/Dynatrace-APAC/vhot2021.git`
+  ![CloneRepo](../assets/images/01_prepare_the_environment-3.png)
 
 ### You've arrived
 - You are now ready to start the hands on!
