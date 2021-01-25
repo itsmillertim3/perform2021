@@ -211,3 +211,35 @@ Pre-configured items also include:
 
 Now that we are more familiar with what we have running, let's continue to the next activity.
 
+### Troubleshooting
+
+If you need to rebuild the environment, follow these steps.
+
+```bash
+cd ~/keptn-in-a-box
+```
+
+This will reset the Ubuntu instance by removing Kubernetes and the Dynatrace ActiveGate.
+
+```bash
+./resetenv.sh
+```
+
+Now we need to re-initialize the environment.
+
+Run the following:
+
+```bash
+cd ~
+curl -O https://raw.githubusercontent.com/dthotday-performance/keptn-in-a-box/release-0.7.3.1/keptn-in-a-box.sh
+chmod +x keptn-in-a-box.sh
+```
+
+Now proceed with 
+
+Run the following command and follow the process from above.
+    
+```bash
+sudo bash -c './keptn-in-a-box.sh'
+```
+
