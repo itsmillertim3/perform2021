@@ -35,6 +35,7 @@ In this step we will compile our Java Springboot application and explore the out
   ```
 - Execute a few more `get` transactions with different keys (until number 99)
 - Once done, go back to the first terminal tab and terminate the Java program by using `CTRL+C`
+
   ![EditFile](../../../assets/images/01_oneagent_outofthebox_instrumentation-04.png)
   ```powershell
   [INFO] ------------------------------------------------------------------------
