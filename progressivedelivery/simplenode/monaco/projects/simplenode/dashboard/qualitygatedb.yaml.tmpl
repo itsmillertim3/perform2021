@@ -4,5 +4,8 @@ config:
 staging_qualitygate_db:
   - owner: "REPLACE_DASHBOARD_OWNER"
   - name: "KQG;project={{ .Env.KEPTN_PROJECT }};service={{ .Env.KEPTN_SERVICE }};stage={{ .Env.KEPTN_STAGE }}"
+  - project: "{{ .Env.KEPTN_PROJECT }}"
+  - stage: "{{ .Env.KEPTN_STAGE }}"
+  - service: "{{ .Env.KEPTN_SERVICE }}"  
   - mzId: "simplenode/management-zone/management-zone-keptn-project-stage.id"
   - mzName: "simplenode/management-zone/management-zone-keptn-project-stage.name"

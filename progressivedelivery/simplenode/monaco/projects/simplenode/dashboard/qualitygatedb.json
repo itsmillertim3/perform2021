@@ -12,7 +12,8 @@
                 "id": "{{ .mzId }}",
                 "name": "{{ .mzName }}"
             }
-        }        
+        },
+        "tags": ["keptn", "{{ .stage }}", "{{ .project }}", "{{ .service }}"]
     },
     "tiles": [{
         "name": "Custom chart",
