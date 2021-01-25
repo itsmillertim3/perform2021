@@ -7,7 +7,15 @@ In this step we will compile our Java Springboot application and explore the out
 
 - Input the public IP address ``
 - Open up a Terminal from the top menu bar
-- Run this command `mvn spring-boot:run`
+  ![EditFile](../../assets/images/01_oneagent_outofthebox_instrumentation-02.png)
+
+- Change diretory to `02_OpenTracing` and run this command `mvn spring-boot:run`
+
+```powershell
+PS C:\Users\dtu.training\Documents\vhot2021> cd 02_OpenTracing
+PS C:\Users\dtu.training\Documents\vhot2021\02_OpenTracing> mvn spring-boot:run
+```
+
 - Check that the program compiles without any errors and it connects to the HazelCast nodes
 - Open a new terminal tab
 - Enter `curl http://localhost:8080/get?key=testkey`
