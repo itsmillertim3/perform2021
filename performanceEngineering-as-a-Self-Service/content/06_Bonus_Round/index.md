@@ -111,6 +111,6 @@ In this example a new deploy for version 2.0.0 of a node.js sample application t
 
 Focusing on “Average Failure Rate split by Test Names” and comparison with the previous test.
 
-<img src="../../assets/images/lab_6_comparison_example.png" width="500"/>
+<img src="../../assets/images/lab_6_comparison_example.png" width="800"/>
 
 ### Build Your Own Dashboard
