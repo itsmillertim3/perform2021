@@ -114,7 +114,7 @@ This will bring us to the slow **Purepaths**.  Click on a **Purepath** to see th
 
 This will bring us to the Purepath trace details screen. Reviewing the puepath details we quickly see an high number of queries are being executed by the **customer** service over and over.   
 
-This is a **N+1** issue that is inefficient at that transaction level but can also kill your database and impact other transactions.
+This is a **N+1** issue!!  This is inefficient at that transaction level but can also kill your database and impact other transactions.
 
 <img src="../../assets/images/lab_6_oob_nplus1_6.png" width="500"/>
 
