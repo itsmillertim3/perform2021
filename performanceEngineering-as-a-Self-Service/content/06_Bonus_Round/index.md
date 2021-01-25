@@ -49,17 +49,17 @@ The will bring you to the **Create custom event for alerting** screen.
 
 In the **Metric** section use the following settings:
  
-Category dropdown pick: **Services**
-Metric dropdown pick: **Test Step Response Time**
-Aggregation keep the default which is **Average**
+- Category dropdown pick: **Services**
+- Metric dropdown pick: **Test Step Response Time**
+- Aggregation keep the default which is **Average**
 
 In the **Entities** section click **Add a rule base filer**
 
 We will use the following settings:
 
-Property dropdown pick: **Management zone**
-Operator dropdown pick: **Exists**
-Value dropdown pick: **Keptn: keptnorders staging**
+- Property dropdown pick: **Management zone**
+- Operator dropdown pick: **Exists**
+- Value dropdown pick: **Keptn: keptnorders staging**
 
 When finished then select the **Create rule based filer**
 
@@ -67,16 +67,16 @@ When finished then select the **Create rule based filer**
 
 In the **Monitoring strategy** section we will use the following settings:
 
-Keep the default which is **Static threshold**.
+- Keep the default which is **Static threshold**.
 
 In the Static threshold settings section use:
 
-**4 seconds**
+- **4 seconds**
 
 In the **Event description** section we will use the following settings:
 
-Title use:  **Test Step Name Response Time High**
-Severity dropdown pick:  **Slowdown**
+- Title use:  **Test Step Name Response Time High**
+- Severity dropdown pick:  **Slowdown**
 
 When finished then select the **Create custom event for alerting** button.   This will create our custom alert.
 
