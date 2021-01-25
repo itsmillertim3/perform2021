@@ -11,12 +11,12 @@ In this step we will prepare the environment for the hands on exercises
 
 ### Step 2: Enable OpenTelemetry and OpenTracing instrumentation
 - Go to your environment, under `Settings` > `Server-side service monitoring` > `Deep Monitoring` > `OpenTelemetry and OpenTracing`
-  ![Deep Monitoring](../../assets/images/deep_monitoring.png)
+  ![Deep Monitoring](../assets/images/deep_monitoring.png)
 
 ### Step 3: Clone the repos
 - Launch Visual Studio Code
-- Click on `clone repository`, and enter `https://github.com/Dynatrace/perform-2021-hotday/tree/main/Opentelemetry_With_Dynatrace/golang`
-- Open a new Window, click on `clone repository` and enter `https://github.com/Dynatrace/perform-2021-hotday/tree/main/Opentelemetry_With_Dynatrace/java`
+- Click on `clone repository`, and enter
+`https://github.com/`
 
 ### You've arrived
 - You are now ready to start the hands on!
