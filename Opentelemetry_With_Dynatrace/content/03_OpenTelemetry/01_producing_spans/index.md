@@ -6,7 +6,7 @@ The result of that calculation is getting sent to a Kafka Broker.
 ### Prerequisites
 - OneAgent is already installed on your Workstation
 - OpenTelemetry instrumentation for Golang has been enabled for your Dynatrace Environment (`Settings` > `Server-side service monitoring` > `Deep Monitoring` > `OpenTelemetry and OpenTracing`)
-  ![Deep Monitoring](../../assets/images/deep_monitoring.png)
+  ![Deep Monitoring](../../../assets/images/deep_monitoring.png)
 
 ### Step 1: Compile and launch the program
 - In Visual Studio select `File` > `Open Folder` and choose the `golang` directory of the previously checked out GitHub Repository. TODO: Specify the EXACT directory
