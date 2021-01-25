@@ -58,7 +58,7 @@ In this task our goal is to grant users of Dynatrace deeper insight into what is
 - In Dynatrace navigate to `Settings` > `Server-side service monitoring` > `Span Attributes`. Add an additional item here. The key you want Dynatrace to capture is `fib.result`.
 - Use either your Browser or `curl http://localhost:28080/fib?n=3` within a new Terminal to access your new HTTP Service
 
-### Step 2: Capture a Request Attribute based on the OpenTelemetry Key
+### Step 3: Capture a Request Attribute based on the OpenTelemetry Key
 - In Dynatrace navigate to `Settings` > `Server-side service monitoring` > `Request Attributes`.
 - The Data Source for our Request Attribute needs to be a `Span Attribute`.
 - The Key of the Request Attribute is called `fib.result` (unless you have chosen a different name)
