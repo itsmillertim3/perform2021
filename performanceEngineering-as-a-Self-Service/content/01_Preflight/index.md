@@ -230,6 +230,7 @@ Now we need to re-initialize the environment.
 Run the following command and follow the process from above.
     
 ```bash
+cd ~
 sudo bash -c './keptn-in-a-box.sh'
 ```
 
