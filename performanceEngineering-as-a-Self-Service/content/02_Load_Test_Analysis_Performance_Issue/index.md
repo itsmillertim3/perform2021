@@ -216,7 +216,7 @@ Open the **Performance Test Dashboard with Transaction Steps** dashboard.
 
 Then click on the **Transactions** link under **Transaction** on the left side of the dashboard.
 
-<img src="../../assets/images/lab_1_performance_test_dashboard_with_transaction_steps.png" width="500"/>
+<img src="../../assets/images/lab_1_performance_test_dashboard_with_transaction_steps_2_.png" width="500"/>
 
 This will bring us to **Multidimensional analysis** that is showing response time split by the **TSN** request attribute.   Note,  you can also create your own **Multidimensional analysis** views and save them by going to the Diagnostic tools-->Top web requests configure desired settings.
 
