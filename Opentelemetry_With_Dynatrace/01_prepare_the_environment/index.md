@@ -16,6 +16,7 @@ In this step we will prepare the environment for the hands on exercises
 ### Step 3: Clone the repos
 - Launch Visual Studio Code
 - Click on `clone repository`, and enter
+
 `https://github.com/`
 
 ### You've arrived
