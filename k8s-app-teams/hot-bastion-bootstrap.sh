@@ -16,8 +16,10 @@ else
     fi
 fi
 
-git clone https://github.com/steve-caron-dynatrace/dynatrace-k8s.git
-cd dynatrace-k8s
+DTU_TRAINING_HOME=/home/dtu_training
+
+git clone https://github.com/steve-caron-dynatrace/dynatrace-k8s.git /home/dtu_training/dynatrace-k8s
+cd /home/dtu_training/dynatrace-k8s
 sed -i -r 's~DT_ENVIRONMENT_ID=(.*)~DT_ENVIRONMENT_ID\='"$DYNATRACE_ENVIRONMENT_ID"'~' ./configuration.conf
 sed -i -r 's~DT_API_TOKEN=(.*)~DT_API_TOKEN\='"$DYNATRACE_TOKEN"'~' ./configuration.conf
 sed -i -r 's~DT_PAAS_TOKEN=(.*)~DT_PAAS_TOKEN\='"$DYNATRACE_TOKEN"'~' ./configuration.conf
