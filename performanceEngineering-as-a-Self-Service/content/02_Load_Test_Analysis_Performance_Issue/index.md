@@ -108,7 +108,6 @@ We need to change the Deployment URL
 
 Click **Build**
 
-
 ### Describe Dynatrace Load Test Request Attribute
 
 Dynatrace by default captures and traces every single incoming request on our instrumented applications and services. This allows us to analyze metrics (SLIs) for each individual endpoint URL. While this is great, the URL is not necessarily meaningful when we want to analyze details for a step from your load testing script, e.g: Login, Add to Cart, Checkout.
@@ -132,7 +131,7 @@ Dynatrace can analyze incoming HTTP headers and extract such contextual informat
 
 You can use any (or multiple) HTTP headers or HTTP parameters to pass context information. The extraction rules can be configured via **Settings --> Server-side service monitoring --> Request attributes**.
 
-We have setup the Load Test **Request** for you.   Below is an example setup but we will also show you in your environment where they are.
+We have setup the Load Test **Request attribute** for you.   Below is an example setup but we will also show you in your environment where they are.
 
 <img src="../../assets/images/lab_1_request_attribute_2.png" width="500"/>
   
