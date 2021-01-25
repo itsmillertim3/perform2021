@@ -257,6 +257,9 @@ node {
 }
 ```
 
+### Walk through the Kept Bridge.
+
+Open the Keptn Bridge, Then we can walk through the Keptn Bridge.
 
 ### Validating Deployment version
 
