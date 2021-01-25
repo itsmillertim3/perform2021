@@ -40,9 +40,15 @@ In this module you will learn how to deploy a Mainframe ActiveGate and zRemote a
 - Make a newcopy using `cemt s prog(ADKCOBOL) ne` 
 
 ### Step 5: Define the CICS transaction in Dynatrace
+- Open your Dynatrace Tenant
+- Navigate to `Settings -> Server Side Service Monitoring -> Deep Monitoring -> CICS, IMS and MQ Monitoring` 
+- In section `Transaction Monitoring` click on `Add CICS transaction Start Id filter` and add transaction `DADC`
+- Do not forget to `Save changes`
 
 ### Step 6: Trigger the Mainframe transaction 
 - Use member AFDTRAN in `<userid>.JCL`
+- Submit this and it will execute transaction `DADC` 20 times
+- You will see these PurePaths as Requests under the CICS service
 
 ### You've arrived
 - You have successfully deployed Dynatrace and have defined the CICS transaction, which will be used in the SDK Hands-On! 
