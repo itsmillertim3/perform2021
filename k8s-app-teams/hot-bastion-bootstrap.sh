@@ -16,8 +16,6 @@ else
     fi
 fi
 
-cp -r /home/dtu_training/.kube ~/
-
 git clone https://github.com/steve-caron-dynatrace/dynatrace-k8s.git
 cd dynatrace-k8s
 sed -i -r 's~DT_ENVIRONMENT_ID=(.*)~DT_ENVIRONMENT_ID\='"$DYNATRACE_ENVIRONMENT_ID"'~' ./configuration.conf
@@ -29,13 +27,3 @@ CURRENT_DIR=$(pwd)
 
 ## Execute the generic setup script
 ./setup.sh
-
-## Move to /home/dtu_training/
-mv $CURRENT_DIR /home/dtu_training/
-chown -R dtu_training:dtu_training /home/dtu_training/dynatrace-k8s 
-
-# Set persistent env variables
-echo "export DYNATRACE_ENVIRONMENT_ID=$DYNATRACE_ENVIRONMENT_ID" >> /home/dtu_training/.profile
-echo "export DYNATRACE_TOKEN=$DYNATRACE_TOKEN" >> /home/dtu_training/.profileecho "export DYNATRACE_TOKEN=$DYNATRACE_TOKEN" >> /home/dtu_training/.profile
-
-rm -rf ~/.kube
