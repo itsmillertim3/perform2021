@@ -219,7 +219,7 @@ If you need to rebuild the environment, follow these steps.
 cd ~/keptn-in-a-box
 ```
 
-This will reset the Ubuntu instance by removing Kubernetes and the Dynatrace ActiveGate.
+This script will reset the Ubuntu instance by removing Kubernetes and the Dynatrace ActiveGate.
 
 ```bash
 ./resetenv.sh
