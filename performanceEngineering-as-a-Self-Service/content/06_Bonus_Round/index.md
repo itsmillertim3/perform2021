@@ -7,9 +7,8 @@ If time permits during our session we have created a few more exercises for you.
 1.  Custom Alert
 1.  Request Naming Rule
 1.  Performance Analysis
-1.  
-
-
+1.  Build Your Own Dashboard
+1.  Compare Results of Two Test Runs
 
 ### Custom Alert
 
@@ -60,6 +59,9 @@ When finished then select the **Create custom event for alerting** button.   Thi
 
 We wil run another Load Test and review the problem that gets created for your the custom alert setup.
 
+### Request Naming Rule
+
+
 
 ### Performance Analysis
 
@@ -101,3 +103,14 @@ This is a **N+1** issue that is inefficient at that transaction level but can al
 
 <img src="../../assets/images/lab_6_oob_nplus1_6.png" width="500"/>
 
+### Compare Results of Two Test Runs
+
+Analyzing one test run is great, but comparing two is better as we want to know what the difference between two test runs really is.
+
+In this example a new deploy for version 2.0.0 of a node.js sample application that had some issues where requests to one of the api endpoints has a high failure rate.
+
+Focusing on “Average Failure Rate split by Test Names” and comparison with the previous test.
+
+<img src="../../assets/images/lab_6_comparison_example.png" width="800"/>
+
+### Build Your Own Dashboard

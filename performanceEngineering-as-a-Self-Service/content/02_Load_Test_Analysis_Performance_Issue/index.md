@@ -108,14 +108,13 @@ We need to change the Deployment URL
 
 Click **Build**
 
-
 ### Describe Dynatrace Load Test Request Attribute
+
+Dynatrace by default captures and traces every single incoming request on our instrumented applications and services. This allows us to analyze metrics (SLIs) for each individual endpoint URL. While this is great, the URL is not necessarily meaningful when we want to analyze details for a step from your load testing script, e.g: Login, Add to Cart, Checkout.
 
 While executing a load test from your load testing tool of choice (JMeter, Neotys, LoadRunner, etc.) each simulated HTTP request can be tagged with additional HTTP headers that contain test-transaction information (for example, script name, test step name, and virtual user ID).
 
-Dynatrace can analyze incoming HTTP headers and extract such contextual information from the header values and tag the captured requests with request attributes. Request attributes enable you to filter your monitoring data based on defined tags.
-
-You can use any (or multiple) HTTP headers or HTTP parameters to pass context information. The extraction rules can be configured via **Settings --> Server-side service monitoring --> Request attributes**.
+<img src="../../assets/images/lab_1_request_attribute_1.png" width="500"/>
 
 The header **x-dynatrace-test** is used one or more key/value pairs for the header. Here are some examples:
 
@@ -128,6 +127,14 @@ The header **x-dynatrace-test** is used one or more key/value pairs for the 
 | LTN  | The Load Test Name uniquely identifies a test execution (for example, 6h Load Test – June 25)  |
 | PC  | Page Context provides information about the document that is loaded in the currently processed page.  |
 
+Dynatrace can analyze incoming HTTP headers and extract such contextual information from the header values and tag the captured requests with request attributes. Request attributes enable you to filter your monitoring data based on defined tags.
+
+You can use any (or multiple) HTTP headers or HTTP parameters to pass context information. The extraction rules can be configured via **Settings --> Server-side service monitoring --> Request attributes**.
+
+We have setup the Load Test **Request attribute** for you.   Below is an example setup but we will also show you in your environment where they are.
+
+<img src="../../assets/images/lab_1_request_attribute_2.png" width="500"/>
+  
 ### Describe Calculated Service Metrics for Load Test Steps
 
 Dynatrace automatically captures important metrics for services with no configuration required. Additionally you might need additional business or technical metrics that are specific to your application. These metrics can be calculated and derived based on a wide variety of available data within the captured PurePath. This allows you to further customize key performance metrics for which alerts should be generated and helps you keeping an eye on them by pinning them to your dashboards.
@@ -135,6 +142,10 @@ Dynatrace automatically captures important metrics for services with no configur
 For Performance Testing you can use Calculated service metrics to track your Performance transaction steps.   These can be used in Dashboards and alerting during the Performance Test but also can be used in analysis after the Performance test is complete. 
 
 <img src="../../assets/images/Lab_1_Transaction_Scorecard.png" width="500"/>
+
+We have setup the Load Test **Calculated service metrics** for you.   Below is an example setup but we will also show you in your environment where they are.  The Calculated service metrics can be configured via **Settings --> Server-side service monitoring --> Calculated service metrics**.
+
+<img src="../../assets/images/lab_1_calculated_service_metrics.png" width="500"/>
 
 ### Kick off Keptn Customer 2 Build
 
@@ -202,7 +213,23 @@ Then Select the **Performance Test Dashboard with Transaction Steps** Dashboard.
 
 ### Load Test Performance Analysis
 
-There are different ways to analyze the data. Your approach should be based on the type of performance analysis you want to do (for example, crashes, resource and performance hotspots, or scalability issues). Following is an overview of some useful approaches you can follow to analyze your load tests. Of course, any Dynatrace analysis and diagnostic function can be used as well
+Dynatrace uses a sophisticated AI causation engine, called Davis®, to automatically detect performance anomalies in your applications, services, and infrastructure. Dynatrace-detected problems are used to report and alert on abnormal situations, such as performance degradations, improper functionality, or lack of availability (i.e., problems represent anomalies in baseline system performance).
+
+For Performance Testing the Dynatrace AI might not generate a Problems unless you are doing continuous performance testing. You can setup custom alerts with static thresholds.
+
+If a Dynatrace Problem has generated a Problem during your Performance Test that is always a good place to start.
+
+You can also analyze the data using custom Dashboards as well as out of the box workflows. Your approach should be based on the type of performance analysis you want to do (for example, crashes, resource and performance hotspots, or scalability issues). 
+
+Following is an overview of using our **Performance Test Dashboard with Transaction Steps**.
+
+Open the **Performance Test Dashboard with Transaction Steps** dashboard.  
+
+Then click on the **Transactions** link under **Transaction** on the left side of the dashboard.
+
+<img src="../../assets/images/lab_1_performance_test_dashboard_with_transaction_steps_1.png" width="500"/>
+
+This will bring us to **Multidimensional analysis** that is showing response time split by the **TSN** request attribute.   Note,  you can also create your own **Multidimensional analysis** views and save them by going to the Diagnostic tools-->Top web requests configure desired settings.
 
 **Response Time Hotspots**
 
