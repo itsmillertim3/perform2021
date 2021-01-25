@@ -143,6 +143,10 @@ For Performance Testing you can use Calculated service metrics to track your Per
 
 <img src="../../assets/images/Lab_1_Transaction_Scorecard.png" width="500"/>
 
+We have setup the Load Test **Calculated service metrics*** for you.   Below is an example setup but we will also show you in your environment where they are.  The Calculated service metrics can be configured via **Settings --> Server-side service monitoring --> Calculated service metrics**.
+
+<img src="../../assets/images/lab_1_calculated_service_metrics.png" width="500"/>
+
 ### Kick off Keptn Customer 2 Build
 
 Click on **01_deploy_order_application** pipeline
