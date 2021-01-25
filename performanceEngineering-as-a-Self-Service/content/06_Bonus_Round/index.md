@@ -9,8 +9,6 @@ If time permits during our session we have created a few more exercises for you.
 1.  Performance Analysis
 1.  
 
-
-
 ### Custom Alert
 
 We are going to cover how to create a Customer alert based on response time for your Test Step transactions.
@@ -100,4 +98,6 @@ Reviewing the puepath details we quickly see an high number of queries are being
 This is a **N+1** issue that is inefficient at that transaction level but can also kill your database and impact other transactions.
 
 <img src="../../assets/images/lab_6_oob_nplus1_6.png" width="500"/>
+
+### Request Naming Rule
 
