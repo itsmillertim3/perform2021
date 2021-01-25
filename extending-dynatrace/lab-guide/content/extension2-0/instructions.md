@@ -85,7 +85,7 @@ Remove the "id" : "xxxx" line.
 
 ## Create the extension
 
-Inside a fresh folder or your choise, create a subfolder called dashboards, copy dashboard.json file in this folder.
+Inside a fresh folder or your choice, create a subfolder called dashboards, copy dashboard.json file in this folder.
 
 
 Create a new file called extension.yaml at the root of your folder.
@@ -128,7 +128,7 @@ Go back to swagger and switch to environment api V2.
 
 Use extension 2.0, POST extension (2nd link) and try it out.
 
-Chose you demoextension.zip file 
+Choose you demoextension.zip file 
 
 The extension has been uploaded.
 
