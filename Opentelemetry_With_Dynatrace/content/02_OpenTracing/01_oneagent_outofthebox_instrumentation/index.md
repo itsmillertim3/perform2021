@@ -15,6 +15,7 @@ In this step we will compile our Java Springboot application and explore the out
   ```
 - Check that the program compiles without any errors and it connects to the HazelCast nodes
 - Open a new terminal tab
+  ![EditFile](../../../assets/images/01_oneagent_outofthebox_instrumentation-03.png)
 - Enter `curl http://localhost:8080/get?key=testkey`
 - You will observe a response of `{"response":null}`. This is normal as you have not populated the HazelCast map with entries.
   ```powershell
