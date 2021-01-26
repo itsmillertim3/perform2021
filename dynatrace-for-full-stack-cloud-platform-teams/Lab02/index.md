@@ -1,1 +1,0 @@
-## Deploying SockShop Sample Application
