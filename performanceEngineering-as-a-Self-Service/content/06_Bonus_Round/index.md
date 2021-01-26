@@ -78,11 +78,11 @@ In the **Event description** section we will use the following settings:
 - Title use:  **Test Step Name Response Time High**
 - Severity dropdown pick:  **Slowdown**
 
-When finished then select the **Create custom event for alerting** button.   This will create our custom alert.
+When finished, select the **Create custom event for alerting** button.   This will create your custom alert.
 
 <img src="../../assets/images/lab_6_custom_alert_3.png" width="500"/>
 
-We wil run another Load Test and review the Problem that gets generated from the custom alert you setup.
+We need to run a Load Test so we can review the Problem that gets generated from the custom alert you setup.
 
 ### Performance Analysis
 
