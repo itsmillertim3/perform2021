@@ -134,6 +134,8 @@ You can use any (or multiple) HTTP headers or HTTP parameters to pass context in
 We have setup the Load Test **Request attributes** for you.   Below is an example setup but we will also show you in your environment where they are.
 
 <img src="../../assets/images/lab_1_request_attribute_2.png" width="500"/>
+
+[Tag tests with HTTP headers](https://www.dynatrace.com/support/help/shortlink/load-testing-process#tag-test-requests-and-push-custom-events/)
   
 ### Describe Calculated Service Metrics for Load Test Steps
 
