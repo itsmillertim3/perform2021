@@ -28,13 +28,13 @@ This lab guide will deploy the Dynatrace Operator and Dynatrace integration for 
    
    - After creating the PaaS token follow the step 1-3 above to get back to the kubernest deployment screen.
 
-6. Select the PaaS and API tokens you created above
+6. Select the PaaS and API tokens you previously created
 
-   ![SelectTokens](../../assets/images/selecttokens.png)
+   ![SelectTokens](../assets/007_OperatorConf.png)
 
-7. Click the Copy Button
+7. Click the Copy Button next to the auto-generated wget command
 
-   ![CopyScript](../../assets/images/copyscript.png)
+   ![CopyScript](../assets/008_OperatorCopy.png)
 
 8. Run Script on Bastion host
 
