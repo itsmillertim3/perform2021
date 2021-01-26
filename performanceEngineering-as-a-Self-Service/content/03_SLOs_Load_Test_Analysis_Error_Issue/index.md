@@ -51,7 +51,7 @@ This will bring up the **Add new SLO** wizard screen.
 
 Click on the **Service-level availability** button.
 
-In the Name this service-level availability slo add this name:  **Availability - Order_Staging**
+In the **Name this service-level availability SLO** section use this name:  **Availability - Order_Staging**
 
 Click **Next** at the button right of the screen.
 
@@ -73,15 +73,13 @@ After the **Availability - Order_Staging** has been created lets create two more
 
 Use the follow settings for the **catalog** SLO: 
 
-SLO Name = **Availability - Catalog_Staging**
-
-Filter   = **mzName("Keptn: keptnorders staging"),type("SERVICE"),entityName("catalog")**
+- SLO Name = **Availability - Catalog_Staging**
+- Filter   = **mzName("Keptn: keptnorders staging"),type("SERVICE"),entityName("catalog")**
 
 Use the follow settings for the **customer** SLO:
 
-SLO Name = **Availability - Customer_Staging**
-
-Filter   = **mzName("Keptn: keptnorders staging"),type("SERVICE"),entityName("customer")**
+- SLO Name = **Availability - Customer_Staging**
+- Filter   = **mzName("Keptn: keptnorders staging"),type("SERVICE"),entityName("customer")**
 
 When complete,  review the results.
 
