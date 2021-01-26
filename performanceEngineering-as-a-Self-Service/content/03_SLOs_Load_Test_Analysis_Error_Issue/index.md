@@ -123,13 +123,13 @@ Dynatrace uses a sophisticated AI causation engine, called Davis®, to automatic
 
 For Performance Testing the Dynatrace AI might not generate a Problems unless you are doing continuous performance testing.  You can setup custom alerts with static thresholds.  
 
-If a Dynatrace Problem has generated a Problem during your Performance Test that is always a good place to start.  
+If a Dynatrace Problem has generated a Problem during your Performance Test that is always a best place to start.  
 
 From the Problem card we will focus on the Root cause Dynatrace has provided around the Failure rate increase.   Click on the **Analyze failure rate degradation** button. 
 
 <img src="../../assets/images/lab_3_load_test_problem_1.png" width="500"/>
 
-This will bring us to the **Failure analysis** screen.  We can see HTTP 500 Errors were generated and also see exactly which transactions were impacted.  To dig deeper you can drill-down to the Purepaths by click on the **Purepaths** icon at the top right of the screen.
+This will bring us to the **Failure analysis** screen.  We can see HTTP 500 Errors were generated and by each transaction.  To dig deeper you can drill-down to the Purepaths by clicking on the **Purepaths** icon at the top right of the screen.
 
 <img src="../../assets/images/lab_3_load_test_problem_2.png" width="500"/>
 
@@ -137,9 +137,9 @@ This will bring us to the failed **Purepaths**.  Click on a **Purepath** to see 
 
 <img src="../../assets/images/lab_3_load_test_problem_3.png" width="500"/>
 
-This will bring us to the Purepath trace details screen.    Click on the **second node which is the order service** in the trace tree.   Then click on **Errors** in the table.   Then click on the down arrow under the **Details** of the Exception.
+This will bring us to the Purepath trace details screen. Click on the **second node which is the order service** in the trace tree.  Then click on **Errors** in the table.  Then click on the down arrow under the **Details** of the Exception.
 
-When looking at the Exception details we can see the in **Message** details that has the exact error message which caused the failure rate for the Performance test.   A good best practice is to copy the Dynatrace URL(s) of the screens you want to share with your analysis back to the Application team.
+When looking at the Exception details we can see the in **Message** details the exact error message which caused the failure rate for the Performance test.   A good best practice is to copy the Dynatrace URL(s) for the screens you want to share in your analysis back to the Application team.
 
 <img src="../../assets/images/lab_3_load_test_problem_4.png" width="500"/>
 
