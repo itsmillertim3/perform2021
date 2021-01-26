@@ -1,5 +1,8 @@
 ## Automated Performance Test
 
+We previously discussed SLO's in Dynatrace. Now we will examine, in detail, more about SLO's and 
+how we can use both SLI's and SLO's with our deployment strategies.
+
 ### Deployment automation 
 Deployment automation is about the automated implementation of your application’s build, deploy, test 
 and release process. In general, the automated deployment process is initiated whenever a developer 
@@ -62,6 +65,39 @@ An example of an SLI is the response time (also named request latency), which is
  it takes for a request to respond with an answer. Other prominent SLIs are error rate (or failure rate), 
  and throughput. Keptn defines all SLIs in a dedicated sli.yaml file to make SLIs reusable within several 
  quality gates. To learn more about the SLI configuration.
+ 
+ We have prepared SLIs which include service response time metrics (p50, p90, p95), througput and failure rate.
+ In our use cases, we use the Dynatrace Metrics API v2 Query String. In order for Dynatrace to know from which 
+ service I want to pull these metrics I assume the service is tagged with the name of the service we are testing.
+ 
+ This makes the SLI much more flexible and I can reuse it for other projects as well. Other placeholders are $PROJECT, $STAGE & $DEPLOYMENT.
+ 
+ Lets have a quick look at two of these SLIs - one showing a regular built-in Dynatrace service metric the other one is a custom calculated 
+ service metric that gives me response time for a particular test name:
+ 
+```yaml
+ rt_svc_p95:       "metricSelector=builtin:service.response.time:merge(0):percentile(95)?entitySelector=tag($SERVICE),type(SERVICE)"
+
+ rt_test_homepage: "metricSelector=calc:service.teststepresponsetime:filter(eq(Test Step,homepage)):merge(0):avg?entitySelector=tag($SERVICE),type(SERVICE)"
+```
+
+Now let's examine the complete SLI setup.
+
+```yaml
+---
+spec_version: '1.0'
+indicators:
+  throughput_svc:  "metricSelector=builtin:service.requestCount.total:merge(0):sum&entitySelector=tag($SERVICE),type(SERVICE)"
+  error_count:  "metricSelector=builtin:service.errors.total.rate:merge(0):avg&entitySelector=tag($SERVICE),type(SERVICE)"
+  rt_svc_p50:      "metricSelector=builtin:service.response.time:merge(0):percentile(50)&entitySelector=tag($SERVICE),type(SERVICE)"
+  rt_svc_p90:      "metricSelector=builtin:service.response.time:merge(0):percentile(90)&entitySelector=tag($SERVICE),type(SERVICE)"
+  rt_svc_p95:      "metricSelector=builtin:service.response.time:merge(0):percentile(95)&entitySelector=tag($SERVICE),type(SERVICE)"
+  db_calls:       "metricSelector=builtin:service.dbChildCallCount:merge(0):sum&entitySelector=tag($SERVICE),type(SERVICE)"
+  non_db_calls:   "metricSelector=builtin:service.nonDbChildCallCount:merge(0):sum&entitySelector=tag($SERVICE),type(SERVICE)"
+  lock_time:    "metricSelector=builtin:service.lockTime:merge(0):sum&entitySelector=tag($SERVICE),type(SERVICE)"
+  io_time:      "metricSelector=builtin:service.ioTime:merge(0):sum&entitySelector=tag($SERVICE),type(SERVICE)"
+  cpu_time:     "metricSelector=builtin:service.cpu.time:merge(0):sum&entitySelector=tag($SERVICE),type(SERVICE)"
+```  
 
 ### What is a Service-Level Objective (SLO)?
 A service-level objective is “a target value or range of values for a service level that is measured by an SLI.” 
@@ -70,6 +106,49 @@ A service-level objective is “a target value or range of values for a service 
 An example of an SLO can define that a specific request must return results within 100 milliseconds. 
 Keptn quality gates can comprise several SLOs that are all evaluated and scored, based even on different 
 weights for each SLO to consider different importance of each SLO. Keptn defines SLOs in a dedicated slo.yaml.
+
+The SLI file we provided contains a good list of individual indicators. What we need to do now is to define an SLO 
+(Service Level Objective) that indicate what Keptn should do with these SLIs. We have these options after Keptn pulled 
+the value through the SLI Provider a) Just give me the value b) Compare the value with a static threshold c) Compare 
+it with a baseline from previous runs, this is an example.  To see the full SLO, view this in the Keptn Bridge.
+
+```yaml
+---
+    spec_version: '0.1.0'
+    comparison:
+      compare_with: "single_result"
+      include_result_with_score: "pass" # pass_or_warn
+      aggregate_function: avg
+    objectives:
+      - sli: rt_svc_p95
+        pass:        # pass if (relative change <= 10% AND absolute value is < 500)
+          - criteria:
+              - "<=+10%" # relative values require a prefixed sign (plus or minus)
+              - "<600"   # absolute values only require a logical operator
+        warning:     # if the response time is below 800ms, the result should be a warning
+          - criteria:
+              - "<=800"
+      - sli: throughput_svc
+        pass:
+          - criteria:
+            - "> 2000" # at least 1000 Calls for a basic test to pass.
+      - sli: error_count
+        weight: 2
+        pass:
+          - criteria:
+              - "<=1" # less than 1% failurerate
+        warning:
+          - criteria:
+              - "<=2" # more than 2 failed transactions is failed
+      - sli: rt_svc_p50
+      - sli: rt_svc_p90
+        pass:
+          - criteria:
+              - "<=+10%"
+        warning:
+          - criteria:
+              - "<=+50%"   
+```
 
 ### Continuous Performance Verification
 
@@ -178,6 +257,9 @@ node {
 }
 ```
 
+### Walk through the Kept Bridge.
+
+Open the Keptn Bridge, Then we can walk through the Keptn Bridge.
 
 ### Validating Deployment version
 
