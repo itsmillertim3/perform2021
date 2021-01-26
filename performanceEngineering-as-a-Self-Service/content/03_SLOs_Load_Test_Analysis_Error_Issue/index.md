@@ -95,9 +95,13 @@ Click on **04-performancetest-qualitygate** pipeline
 
 Select **"Build with parameters"**
 
-We only need to update the **DeployomentURI** section.   Copy your Orders Application URL and paste into the **DeployomentURI** section.   Make sure to remove the last / if present when you copied it.
+We only need to update the **DeployomentURI** section.   
 
-When done click the **Build Button** which will start the Performance Test.
+Copy your Order Application URL and paste into the **DeployomentURI** section.   
+
+**Make sure to remove the last / if present when you copied it**
+
+When done click the **Build** button which will start the Performance Test.
 
 <img src="../../assets/images/lab_3_jenkins_run_load_test_2.png" width="500"/>
 
