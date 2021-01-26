@@ -9,17 +9,14 @@ In this exercise we will install the Dynatrace Operator.
 
    ![Deploy](../assets/001_DeployDT.png)
 
-2. Search for "kubernetes", then select the kubernetes tile
+2. Search for "kubernetes", then select the kubernetes tile and then "Monitor Kubernetes"
    ![SearchForK8S](../assets/002_Deployk8s.png)
 
-3. Click on Kubernetes tile from above
-   ![DeployK8S](../../assets/images/deployk8s-full.png)
-
-4. Click Create PaaS token
+3. In the Monitor Kubernetes Deployment screen -> Create a new PaaS Token
 
    ![CreatePaasToken](../../assets/images/createpaastoken.png)
 
-   - After creating the PaaS token follow the step 1-3 above to get back to this screen.
+4. 
 
 5. Create API token
 
