@@ -57,15 +57,17 @@ Click **Next** at the button right of the screen.
 
 <img src="../../assets/images/lab_3_slo_2.png" width="500"/>
 
-This brings us to the **Define a filter** screen.   In the filter section copy the below text and paste into the filter section.
+This brings us to the **Define a filter** screen.   
+
+Copy and paste the below text into the **filter** section:
 
 **mzName("Keptn: keptnorders staging"),type("SERVICE"),entityName("order")**
 
-Then click the **Verify Button**, and after verified click the **Next** button.
+Then click the **Verify Button**, and after verified, click the **Next** button.
 
 <img src="../../assets/images/lab_3_slo_3.png" width="500"/>
 
-In the next screen change the Timeframe section to **-30m** and then click the **Next** button, and then **Save** button.
+In the next screen change the Timeframe section to **-30m** and then click the **Next** button, and then the **Save** button.
 
 <img src="../../assets/images/lab_3_slo_4.png" width="500"/>
 
