@@ -13,7 +13,7 @@ While an SLI is just a metric, an SLO just a threshold you expect your SLI to be
 ### Configuration
 
 1.  Kick off Keptn Orders 2 Build
-1.  Create a Availability/Error SLOs
+1.  Create Availability/Error SLOs
 1.  Run Load Test
 1.  Examine Performance Test Dashboard with Transaction Steps & SLOs
 1.  Load Test Availability/Error Analysis
@@ -31,13 +31,13 @@ Now we are going to push the **order** version **2**.
 Select **"Build with parameters"**
 
 - In the **orderimage** field we need to change the value at the end from 1 to **2**
-- In the DEPLOY_TO field, change the dropdown box to **order**
+- In the **DEPLOY_TO field**, change the dropdown box to **order**
 
 Next, click the **Build** button.
 
 <img src="../../assets/images/lab_3_order_build.png" width="500"/>
 
-### Create a Availability/Error SLOs
+### Create Availability/Error SLOs
 
 The Dynatrace Software Intelligence Platform delivers all the necessary Service-Level Indicators (SLIs) for defining your Service-Level Objectives (SLOs) and monitors the status and error budgets of those objectives. Whether you want to define an SLO for real user experience or for measuring your service availability, your Dynatrace monitoring environment already comes with the right tools for your Site Reliability Teams. You can get all the facts about the health of you critical business services with respect to Business and Service-Level Objectives (SLO), Service-Level Agreements (SLAs), and end-user experience
 
