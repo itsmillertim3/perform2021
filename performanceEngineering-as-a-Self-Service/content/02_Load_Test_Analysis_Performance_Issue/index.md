@@ -51,7 +51,9 @@ Now we can create the **"evalservice"** tag.
 
 <img src="../../assets/images/lab1_service_tag.png" width="500"/>
 
-### Create Process Group Naming Rule
+### Create Process Group Naming Rule (if not created)
+
+Hopefully the naming rule has been created by the API call.  We need to validate that this has occurred.
 
 Go to **"Settings>Processes and Containers>Process group naming"**
 
