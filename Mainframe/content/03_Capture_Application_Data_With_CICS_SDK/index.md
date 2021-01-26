@@ -4,10 +4,11 @@ In this module you will learn how to capture application data using the SDK and 
 
 ### Step 1: Prepare your COBOL application program
 - Edit member `<userid>.JCL(ADKCOBOL)`
-- Uncomment the following lines in the source code 
+- Uncomment the following lines in the source code
+ 
 begin and end marked with
 ```COBOL
-*==============================================================*)
+*==============================================================*
 ```
 
 ```COBOL
@@ -48,7 +49,7 @@ If RC Not Equal ZERO
 - Go to your CICS session or open a new session and logon to CICS with `l HVDACnnn` 
 - Click on Keypad and `Clr Scrn`
 - Make a newcopy using `cemt s prog(ADKCOBOL) ne` 
-- Your new ADKCOBOL program is active now
+- Your new ADKCOBOL program version is active now
  
 ### Step 2: Define Request Attribute for your Mainframe Data
 - Go to your Dynatrace Tenant
