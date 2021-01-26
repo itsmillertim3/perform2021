@@ -30,8 +30,6 @@ Now we are going to push the **order** version **2**.
 
 Select **"Build with parameters"**
 
-Select "Build with parameters"
-
 - In the **orderimage** field we need to change the value at the end from 1 to **2**
 - In the DEPLOY_TO field, change the dropdown box to **order**
 
