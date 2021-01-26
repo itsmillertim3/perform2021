@@ -2,7 +2,7 @@
 
 In this lab we walk through how to create SLOs in Dynatrace that can be used in your Performance Testing and we will also troubleshoot why a Availability/Error SLO failed.
 
-<img src="../../assets/images/lab_3_overview.png" width="500"/>
+<img src="../../assets/images/lab_3_overview.png" width="800"/>
 
 The Google’s SRE Handbook mostly focuses on the production use case for SLIs/SLOs, Dynatrace is “Shifting-Left” this approach and using SLIs/SLOs
 
