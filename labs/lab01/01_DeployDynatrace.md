@@ -38,8 +38,8 @@ This lab guide will deploy the Dynatrace Operator and Dynatrace integration for 
 
 8. Run Script on Bastion host
 
-   ![RunScript](../../assets/images/runscript1.png)
-   ![RunScript](../../assets/images/runscript2.png)
+   ![RunScript](../assets/009_OperatorDeploy1.png)
+   ![RunScript](../assets/010_OperatorDeploy2.png)
 
 
 ### 2. Update Kubernetes Integration Settings
