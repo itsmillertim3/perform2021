@@ -131,7 +131,7 @@ Dynatrace can analyze incoming HTTP headers and extract such contextual informat
 
 You can use any (or multiple) HTTP headers or HTTP parameters to pass context information. The extraction rules can be configured via **Settings --> Server-side service monitoring --> Request attributes**.
 
-We have setup the Load Test **Request attribute** for you.   Below is an example setup but we will also show you in your environment where they are.
+We have setup the Load Test **Request attributes** for you.   Below is an example setup but we will also show you in your environment where they are.
 
 <img src="../../assets/images/lab_1_request_attribute_2.png" width="500"/>
   
@@ -139,7 +139,7 @@ We have setup the Load Test **Request attribute** for you.   Below is an example
 
 Dynatrace automatically captures important metrics for services with no configuration required. Additionally you might need additional business or technical metrics that are specific to your application. These metrics can be calculated and derived based on a wide variety of available data within the captured PurePath. This allows you to further customize key performance metrics for which alerts should be generated and helps you keeping an eye on them by pinning them to your dashboards.
 
-For Performance Testing you can use Calculated service metrics to track your Performance transaction steps.   These can be used in Dashboards and alerting during the Performance Test but also can be used in analysis after the Performance test is complete. 
+For Performance Testing you can use Calculated service metrics to track your Performance transaction steps as an example.  Once created, these metrics can be used in Dashboards and alerting during the Performance Test but also can be used in analysis after the Performance test is complete. 
 
 <img src="../../assets/images/Lab_1_Transaction_Scorecard.png" width="500"/>
 
@@ -157,7 +157,10 @@ Now we are going to push the **customer** version **2**.
 
 Select **"Build with parameters"**
 
-Then we need to change the build for customer to version 2 and select the build for **Customer**
+- In the **customerimage** field we need to change the value at the end from 1 to **2**
+- In the DEPLOY_TO field, change the dropdown box to **customer**
+
+Next, click the **Build** button.
 
 <img src="../../assets/images/lab_1_customer_build.png" width="500"/>
 
