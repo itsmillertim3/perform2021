@@ -10,6 +10,7 @@ This lab guide will deploy the Dynatrace Operator and Dynatrace integration for 
    ![Deploy](../assets/001_DeployDT.png)
 
 2. Search for "kubernetes", then select the kubernetes tile and then "Monitor Kubernetes"
+
    ![SearchForK8S](../assets/002_Deployk8s.png)
 
 3. In the Monitor Kubernetes Deployment screen -> Create a new PaaS Token
@@ -51,9 +52,11 @@ This lab guide will deploy the Dynatrace Operator and Dynatrace integration for 
    - Toggle OFF "Require valid certificates for communication with API server" (this workshop cluster uses self-signed).
 
    - Toggle ON "Monitor Prometheus exports"
+   
    ![K8SToggles](../assets/012_k8sSlider.png)
 
 4. Click Add event field selector
+
    ![K8SEventSelector](../../assets/images/addevent.png)
 
 5. Add a field selector name and expression
