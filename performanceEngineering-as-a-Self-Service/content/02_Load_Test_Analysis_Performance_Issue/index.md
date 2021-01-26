@@ -149,6 +149,8 @@ We have setup the Load Test **Calculated service metrics** for you.   Below is a
 
 <img src="../../assets/images/lab_1_calculated_service_metrics.png" width="500"/>
 
+[Create Calculated Service Metrics (SLIs) - Step #8 of this Blog](https://www.dynatrace.com/news/blog/guide-to-automated-sre-driven-performance-engineering-analysis/)
+
 ### Kick off Keptn Customer 2 Build
 
 Click on **01_deploy_order_application** pipeline
