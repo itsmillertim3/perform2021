@@ -265,6 +265,7 @@ In the **Method hotspots** screen click on **Hotspots** button.   This will chan
 
 -  We learned how to create a Process Detection Naming rule to change out of the box detected names
 -  We learned how the use the Dynatrace Service Flow for Architecture Validation
+-  We learned what a x-dynatrace-test request header is, how to use it in your Performance testing tool and the importance for improving of your Performance Test Analysis
 -  We learned what a Dynatrace Load Test Request Attribute is,  how to use it,  and the importance for improving of your Performance Test Analysis
 -  We learned what a Dynatrace Calculated Service Metric is,  how to use it,  and the importance for improving of your Performance Test Analysis
 -  We covered the Performance Test Dashboard with Transaction Steps and how you can use it for improving of your Performance Test Analysis
