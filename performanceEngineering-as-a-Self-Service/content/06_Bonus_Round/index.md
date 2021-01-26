@@ -1,6 +1,8 @@
 ### Bonus Round
 
-If time permits during our session we have created a few more exercises/topics to cover. See below:
+If time permits during our session we have created a few more exercises/topics to cover. 
+
+See below:
 
 - Request Naming Rule
 - Custom Alert
@@ -35,9 +37,9 @@ It should look like this:
 
 ### Custom Alert
 
-We are going to cover how to create a Customer alert based on response time for your Test Step transactions.
-
 A custom alert provides a simple way of defining a threshold on a given metric. Dynatrace sends out alerts when a metric breaches a user-defined threshold. You can define alerts for when actual metric values are above or below the user-defined threshold. Because a metric can be recorded by multiple components within your environment, Dynatrace always alerts with a reference to the component that shows the violating metric.
+
+We are going to cover how to create a Customer alert based on response time for your Test Step transactions.
 
 Go to **"Settings>Anomaly detection>Custom events for alerting"** and then select **Create custom event for alerting**.
 
@@ -59,7 +61,7 @@ We will use the following settings:
 - Operator dropdown pick: **Exists**
 - Value dropdown pick: **Keptn: keptnorders staging**
 
-When finished then select the **Create rule based filer**
+When finished, select the **Create rule based filer**
 
 <img src="../../assets/images/lab_6_custom_alert_2.png" width="500"/>
 
@@ -80,11 +82,11 @@ When finished then select the **Create custom event for alerting** button.   Thi
 
 <img src="../../assets/images/lab_6_custom_alert_3.png" width="500"/>
 
-We wil run another Load Test and review the problem that gets created for your the custom alert setup.
+We wil run another Load Test and review the Problem that gets generated from the custom alert you setup.
 
 ### Performance Analysis
 
-Lets cover another troubleshooting example via an out of the box workflow for a key service that has been impacted during the Performance Test.  
+We will cover another troubleshooting example via an out of the box workflow for a key service that has been impacted during the Performance Test.  
 
 Click "**Transactions and services**" from the Main Navigation menu.
 
@@ -127,3 +129,12 @@ In this example a new deploy for version 2.0.0 of a node.js sample application t
 Focusing on “Average Failure Rate split by Test Names” and comparison with the previous test.
 
 <img src="../../assets/images/lab_6_comparison_example.png" width="800"/>
+
+## Summary
+
+- We learned how to rename transactions using web request naming rules
+- We learned how to how to create a custom alert
+- We showed another example how to analyze a Performance Test
+- We learned how to use the compare feature when you need to compare results from two different Performance tests
+
+## Questions and Answers?
