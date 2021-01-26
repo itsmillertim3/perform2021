@@ -30,7 +30,12 @@ Now we are going to push the **order** version **2**.
 
 Select **"Build with parameters"**
 
-Then we need to change the build for customer to version 2 and select the build for **order** and then click **Build**.
+Select "Build with parameters"
+
+- In the **orderimage** field we need to change the value at the end from 1 to **2**
+- In the DEPLOY_TO field, change the dropdown box to **order**
+
+Next, click the **Build** button.
 
 <img src="../../assets/images/lab_3_order_build.png" width="500"/>
 
