@@ -16,7 +16,7 @@ echo "2. Execute Monaco"
 
 
 echo "-----------------------------------------------------------------------"
-echo "Create Dynatrace SLOs for service in production via API as not yet supported through Monaco"
+echo "Create 2 Dynatrace SLOs for simplenode service in staging and production via API as not yet supported through Monaco"
 echo "-----------------------------------------------------------------------"
 curl -X POST "https://{${DT_TENANT}}/api/v2/slo" \
      -H "accept: */*" \
