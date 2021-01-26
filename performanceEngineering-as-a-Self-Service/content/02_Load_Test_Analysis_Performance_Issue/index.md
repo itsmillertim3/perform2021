@@ -174,8 +174,9 @@ In Dynatrace on the navigation menu, navigate to **settings --> preferences --
 
 Click **Keptn: keptnorders staging** management zone and add a new rule with configuration as show below.
 
-- Rule applies to Process groups
-- Process group name begins with = keptnorders.staging
+- Rule applies to **Process groups**
+- In the conditions section,  select **Process group** in the dropdown 
+- In the text bos use: **keptnorders.staging**
     
 <img src="../../assets/images/lab_1_management_zone.png" width="500"/>
 
