@@ -49,10 +49,10 @@ The will bring you to the **Create custom event for alerting** screen.
 
 In the **Metric** section use the following settings:
  
-- Category dropdown pick: **Services**
+```- Category dropdown pick: **Services**
 - Metric dropdown pick: **Test Step Response Time**
 - Aggregation keep the default which is **Average**
-
+```
 In the **Entities** section click **Add a rule base filer**
 
 We will use the following settings:
