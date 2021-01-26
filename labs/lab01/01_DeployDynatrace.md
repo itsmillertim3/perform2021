@@ -43,15 +43,9 @@ This lab guide will deploy the Dynatrace Operator and Dynatrace integration for 
 
 
 ### 2. Update Kubernetes Integration Settings
-1. In Dynatrace Tenant, Click Settings -> Cloud and Virtualization -> Kubernetes
+1. In Dynatrace Tenant, Click Settings -> Cloud and Virtualization -> edit icon for configured K8s cluster
 
-   ![K8SConfig](../assets/011_k8sUI.png)
-
-
-2. Click on the Edit icon for the configured K8S clustername
-
-  ![ClusterEdit](../../assets/images/clusteredit.png)       
-
+   ![K8SConfig](../assets/011_k8sUI.png)    
 
 3. Set the toggle switches
    - Toggle off "Require valid certificates for communication with API server". This is because the workshop k8s cluster are using self signed certificates.
