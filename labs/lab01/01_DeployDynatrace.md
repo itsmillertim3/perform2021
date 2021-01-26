@@ -5,11 +5,11 @@ In this exercise we will install the Dynatrace Operator.
 
 ### 1. Deploy Dynatrace
 
-1. In Dynatrace tenant select "Deploy"
+1. Navigate to Dynatrace tenant and select "Deploy Dynatrace" from left-hand navigation bar
 
    ![Deploy](../assets/001_DeployDT.png)
 
-2. Search for kubernetes
+2. Search for "kubernetes", then select the kubernetes tile
    ![SearchForK8S](../assets/002_Deployk8s.png)
 
 3. Click on Kubernetes tile from above
