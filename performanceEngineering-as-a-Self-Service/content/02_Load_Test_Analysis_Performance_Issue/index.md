@@ -178,10 +178,9 @@ Click **Keptn: keptnorders staging** management zone and add a new rule with
 - In the conditions section,  select **Process group** in the dropdown
 - Keep **begins with** in the dropdown 
 - In the text box use: **keptnorders.staging**
+- Select **apply to underlying hosts of matching process groups** check box.
     
 <img src="../../assets/images/lab_1_management_zone.png" width="500"/>
-
-Select **apply to underlying hosts of matching process groups** check box.
 
 Click the **preview** button to verify.
 
@@ -222,7 +221,7 @@ Dynatrace uses a sophisticated AI causation engine, called Davis®, to automatic
 
 For Performance Testing the Dynatrace AI might not generate a Problems unless you are doing continuous performance testing. You can setup custom alerts with static thresholds.
 
-If a Dynatrace Problem has generated a Problem during your Performance Test that is always a good place to start.
+If a Dynatrace Problem has generated a Problem during your Performance Test that is always a best place to start.
 
 You can also analyze the data using custom Dashboards as well as out of the box workflows. Your approach should be based on the type of performance analysis you want to do (for example, crashes, resource and performance hotspots, or scalability issues). 
 
@@ -230,7 +229,7 @@ Following is an overview of using our **Performance Test Dashboard with Transact
 
 Open the **Performance Test Dashboard with Transaction Steps** dashboard.  
 
-Then click on the **Transactions** link under **Transaction** on the left side of the dashboard.
+Then click on the **Transactions** link under **Transaction** links section on the left side of the dashboard.
 
 <img src="../../assets/images/lab_1_performance_test_dashboard_with_transaction_steps_1.png" width="500"/>
 
@@ -242,17 +241,19 @@ We are going to focus on the **customer** step name transaction.
 
 <img src="../../assets/images/lab_1_peformance_analysis_1.png" width="500"/>
 
-Click on the ... at the end of the table for **customer** step name transaction which will bring up the **Analyze** menu and then click  **Response time hotspots**
+Click on the ... at the end of the table for **customer** step name transaction which will bring up the **Analyze** menu. 
+
+Click  **Response time hotspots** from the Analyze menu.
 
 <img src="../../assets/images/lab_1_response_time_hotspots_1.png" width="200" height="300"/>
 
-On the Response time analysis page you see the average response time observed during the analyzed timeframe. On the left side of the infographic, under Distribution, you can see how much time is contributed by calls to other services, calls to databases, and code-level execution. On the right side, under Top findings, we list the biggest hotspots identified by Dynatrace. You can click any of these entries to view further details.
+On the Response time analysis page it will display the average response time observed during the analyzed timeframe. On the left side of the infographic, under Distribution, you can see how much time is contributed by calls to other services, calls to databases, and code-level execution. On the right side, under Top findings, we list the biggest hotspots identified by Dynatrace. You can click any of these entries to view further details.
+
+Within the current screen click on **View method hotspots** button which will drill to the **Method hotspots**.
 
 <img src="../../assets/images/lab_1_response_time_hotspots_2.png" width="500"/>
 
-From the current screen click on **View method hotspots** which will drill to the **Method hotspots**
-
-In this screen click on **Hotspots**.   This will change the view to find the **Top hotspots**.   In the **Top hotspots** table click the top node in the tree.   This will update the **Callings methods**.  Click expand and you can see the method that is causing the bottleneck in the code. 
+In the **Method hotspots** screen click on **Hotspots** button.   This will change the view to the **Top hotspots**.  Click expand in the method call tree and you can see the method that is calling the top hotpot in the code. 
 
 <img src="../../assets/images/lab_1_response_time_hotspots_3.png" width="500"/>
 
