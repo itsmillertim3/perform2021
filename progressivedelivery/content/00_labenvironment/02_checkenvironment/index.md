@@ -28,13 +28,43 @@ hot_createkeptnproject.sh  hot_deletekeptnproject.sh  hot_deploy.sh  hot_getinfo
 
 ### 3. Export your STUDENTID
 
-Every student 
+Every student gets assigned a student id. that will help us separate our work as we work on a shared k8s cluster and shared Dynatrace Environment.
+Once you have your student ID, e.g. student003 export it into the following environment variable:
 
-### 3. Access to all required links & tokens
+```console
+export STUDENTID=studentxxx
+```
+
+### 4. Access to all required links & tokens
 
 One of the bash scripts gives us information about all necessary systems that are part of our lab. Its the `hot_getinfo.sh`. Lets execute it:
 ```console
 $ ./hot_getinfo.sh
-hot_createkeptnproject.sh  hot_deletekeptnproject.sh  hot_deploy.sh  hot_getinfo.sh  hot_initialize.sh
+===============================================================================
+Here are all the useful URLs and tokens you will need for the HOTDAY
+===============================================================================
+Your Student ID: studentxxx
+Keptn Bridge URL: http://keptn.keptndomain/bridge
+Keptn Bridge Username / Password: keptn / ABCDEFGHIJKLMNOPQRSTUVWXYZ
+Deployed services will be available under 
+  - Staging:    http://simplenode.-staging.keptn.keptndomain
+  - Production: http://simplenode.-prod.keptn.keptndomain
+
+===============================================================================
+Dynatrace Tenant Url: https://abc12345.xxx.dynatracelabs.com
+Dynatrace Username / Password: see it in Dynatrace University
+===============================================================================
+
+===============================================================================
+Gitea user credentials: keptn / keptn#R0cks
+===============================================================================
+
+===============================================================================
+For some of the excercises you need the Dynatrace API token in the DT_API_TOKEN Env Variable
+To get this - simply run the following command:
+export DT_TENANT=abc12345.xxx.dynatracelabs.com
+export DT_API_TOKEN=ABCDEFGHKIJKLMNOP
 ```
 
+Lets make sure we can access the Keptns Bridge and the Dynatrace Environment.
+Open those links in your browser and login!
