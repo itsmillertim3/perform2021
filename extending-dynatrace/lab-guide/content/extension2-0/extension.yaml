@@ -1,0 +1,7 @@
+name: com.dynatrace.demo.extension
+version: 1.0.0
+minDynatraceVersion: "1.209"
+author: 
+    name: demo
+dashboards:
+ - path: "dashboards/dashboard.json"
