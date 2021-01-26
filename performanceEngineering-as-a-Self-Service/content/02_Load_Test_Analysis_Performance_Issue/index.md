@@ -134,6 +134,8 @@ You can use any (or multiple) HTTP headers or HTTP parameters to pass context in
 We have setup the Load Test **Request attributes** for you.   Below is an example setup but we will also show you in your environment where they are.
 
 <img src="../../assets/images/lab_1_request_attribute_2.png" width="500"/>
+
+[Tag tests with HTTP headers](https://www.dynatrace.com/support/help/shortlink/load-testing-process#tag-test-requests-and-push-custom-events/)
   
 ### Describe Calculated Service Metrics for Load Test Steps
 
@@ -146,6 +148,8 @@ For Performance Testing you can use Calculated service metrics to track your Per
 We have setup the Load Test **Calculated service metrics** for you.   Below is an example setup but we will also show you in your environment where they are.  The Calculated service metrics can be configured via **Settings --> Server-side service monitoring --> Calculated service metrics**.
 
 <img src="../../assets/images/lab_1_calculated_service_metrics.png" width="500"/>
+
+[Create Calculated Service Metrics (SLIs) - Step #8 of this Blog](https://www.dynatrace.com/news/blog/guide-to-automated-sre-driven-performance-engineering-analysis/)
 
 ### Kick off Keptn Customer 2 Build
 
@@ -261,6 +265,7 @@ In the **Method hotspots** screen click on **Hotspots** button.   This will chan
 
 -  We learned how to create a Process Detection Naming rule to change out of the box detected names
 -  We learned how the use the Dynatrace Service Flow for Architecture Validation
+-  We learned what a x-dynatrace-test request header is, how to use it in your Performance testing tool and the importance for improving of your Performance Test Analysis
 -  We learned what a Dynatrace Load Test Request Attribute is,  how to use it,  and the importance for improving of your Performance Test Analysis
 -  We learned what a Dynatrace Calculated Service Metric is,  how to use it,  and the importance for improving of your Performance Test Analysis
 -  We covered the Performance Test Dashboard with Transaction Steps and how you can use it for improving of your Performance Test Analysis
