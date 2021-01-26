@@ -55,6 +55,10 @@ Now we can create the **"evalservice"** tag.
 
 Hopefully the naming rule has been created by the API call.  We need to validate that this has occurred.
 
+If the rule is present, then we can skip to **Architecture Validation - Service Flow**
+
+If the Rule has not been created, then we will need to follow these steps.
+
 Go to **"Settings>Processes and Containers>Process group naming"**
 
 <img src="../../assets/images/lab_1_gettoprocessgroup.png" width="500"/>
