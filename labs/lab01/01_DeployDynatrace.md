@@ -45,7 +45,7 @@ This lab guide will deploy the Dynatrace Operator and Dynatrace integration for 
 ### 2. Update Kubernetes Integration Settings
 1. In Dynatrace Tenant, Click Settings -> Cloud and Virtualization -> Kubernetes
 
-   ![K8SConfig](../../assets/images/k8sconfig.png)
+   ![K8SConfig](../assets/011_k8sUI.png)
 
 
 2. Click on the Edit icon for the configured K8S clustername
