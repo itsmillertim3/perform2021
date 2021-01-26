@@ -10,7 +10,7 @@ In this exercise we will install the Dynatrace Operator.
    ![Deploy](../assets/001_DeployDT.png)
 
 2. Search for kubernetes
-   ![SearchForK8S](../../assets/images/searchk8s.png)
+   ![SearchForK8S](../assets/002_Deployk8s)
 
 3. Click on Kubernetes tile from above
    ![DeployK8S](../../assets/images/deployk8s-full.png)
