@@ -14,7 +14,7 @@ In this exercise we will install the Dynatrace Operator.
 
 3. In the Monitor Kubernetes Deployment screen -> Create a new PaaS Token
 
-4. Click "Generate Token" -> give your token a name -> click "generate"
+4. Click "Generate Token" -> give your token a name -> click "generate" BE SURE TO COPY YOUR PAAS TOKEN
 
    ![CreatePaasToken](../assets/003_PaaSToken.png)
 
