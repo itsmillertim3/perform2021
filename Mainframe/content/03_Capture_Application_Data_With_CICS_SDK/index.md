@@ -8,7 +8,7 @@ In this module you will learn how to capture application data using the SDK and 
 begin and end marked with
 ```COBOL
 *==============================================================*)
-```COBOL
+```
 
 ```COBOL
 *=== Capture Application Data, i.e. Sales-Region as Argument
