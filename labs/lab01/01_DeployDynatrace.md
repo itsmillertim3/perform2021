@@ -47,11 +47,11 @@ This lab guide will deploy the Dynatrace Operator and Dynatrace integration for 
 
    ![K8SConfig](../assets/011_k8sUI.png)    
 
-3. Set the toggle switches
-   - Toggle off "Require valid certificates for communication with API server". This is because the workshop k8s cluster are using self signed certificates.
+3. Toggle the following switches:
+   - Toggle OFF "Require valid certificates for communication with API server" (this workshop cluster uses self-signed).
 
-   - Toggle on "Monitor Prometheus exports"
-   ![K8SToggles](../../assets/images/k8stoggles.png)
+   - Toggle ON "Monitor Prometheus exports"
+   ![K8SToggles](../assets/012_k8sSlider.png)
 
 4. Click Add event field selector
    ![K8SEventSelector](../../assets/images/addevent.png)
