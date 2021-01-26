@@ -125,7 +125,7 @@
             "height": 76
         },
         "tileFilter": {},
-        "markdown": "## This is your SLO Quality Gate Dashboard for Staging\nModify it based on your requirements"
+        "markdown": "## This is your SLO Quality Gate Dashboard for Staging\nSee the Quality Gate evaluations in [Keptns Bridge]({{ .keptnbridge }}/project/{{ .project }}/{{ .service }})Modify it based on your requirements"
     }, {
         "name": "SLOs for Server Side Response Times (p50, p90, p95)",
         "tileType": "HEADER",
