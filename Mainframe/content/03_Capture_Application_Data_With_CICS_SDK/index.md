@@ -3,11 +3,15 @@
 In this module you will learn how to capture application data using the SDK and making it available in Dynatrace.
 
 ### Step 1: Prepare your COBOL application program
-- Edit member ADKCOBOL in `<userid>.JCL`
-- Uncomment the following lines in the source code (between *===========================)
+- Edit member `<userid>.JCL(ADKCOBOL)`
+- Uncomment the following lines in the source code 
+begin and end marked with
+```COBOL
+*==============================================================*)
+```COBOL
 
 ```COBOL
-* Capture Application Data, i.e. Sales-Region as Argument
+*=== Capture Application Data, i.e. Sales-Region as Argument
 Call "DTDCTF" Using ARGUMENT, ARGLEN, ARGCCSID Returning RC.
 If RC Not Equal ZERO                                        
     MOVE "DTDCTF" to MSG_API                                
@@ -16,7 +20,7 @@ If RC Not Equal ZERO
 ```
  
 ```COBOL
-* Insert Node in the current PurePath, which will hold the data
+*=== Insert Node in the current PurePath, which will hold the data
 Call "DTENTF" Using NODENAME, NAMELEN, TOKEN Returning RC.
 If RC Not Equal ZERO                                      
     MOVE "DTENTF" to MSG_API                              
@@ -25,7 +29,7 @@ If RC Not Equal ZERO
 ```
  
 ```COBOL
-* If the data is invalid, create an Exception in the PurePath
+*=== If the data is invalid, create an Exception in the PurePath
 If ARGUMENT Equal "Invalid  "                         
    Move 'DTEXEX' TO PGMNAME                           
    Call 'DTEXEX' Using TOKEN Returning RC             
@@ -38,6 +42,13 @@ If RC Not Equal ZERO
     MOVE RC to MSG_RC                                 
     EXEC CICS WRITE OPERATOR TEXT(ERROR_MSG) END-EXEC.
 ```
+
+- Compile ADKCOBOL using Compile JCL in `<userid>.JCL(ADKBOBJ)`
+- Check if the Compile & Link ended with RC=0 in all steps 
+- Go to your CICS session or open a new session and logon to CICS with `l HVDACnnn` 
+- Click on Keypad and `Clr Scrn`
+- Make a newcopy using `cemt s prog(ADKCOBOL) ne` 
+- Your new ADKCOBOL program is active now
  
 ### Step 2: Define Request Attribute for your Mainframe Data
 - Go to your Dynatrace Tenant
