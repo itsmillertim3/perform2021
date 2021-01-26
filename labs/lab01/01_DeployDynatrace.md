@@ -20,9 +20,13 @@ In this exercise we will install the Dynatrace Operator.
 
 5. In the left-hand setting menu, select "Dynatrace API"
 
-   ![CreateAPIToken](../assets/005_APITokenNav.png)
+   ![APIToken](../assets/005_APITokenNav.png)
 
    - After creating the PaaS token follow the step 1-3 above to get back to this screen.
+   
+6. Create an API Token with the below permissions
+
+   ![CreateAPIToken](../assets/006_APITokenConf.png)
 
 6. Select the PaaS and API tokens you created above
 
