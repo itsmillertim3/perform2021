@@ -57,27 +57,27 @@ In the **Entities** section click **Add a rule base filer**
 
 We will use the following settings:
 
-- Property dropdown pick: **Management zone**
+```- Property dropdown pick: **Management zone**
 - Operator dropdown pick: **Exists**
 - Value dropdown pick: **Keptn: keptnorders staging**
-
+```
 When finished, select the **Create rule based filer**
 
 <img src="../../assets/images/lab_6_custom_alert_2.png" width="500"/>
 
 In the **Monitoring strategy** section we will use the following settings:
 
-- Keep the default which is **Static threshold**.
-
+```- Keep the default which is **Static threshold**.
+```
 In the Static threshold settings section use:
 
-- **4 seconds**
-
+```- **4 seconds**
+```
 In the **Event description** section we will use the following settings:
 
-- Title use:  **Test Step Name Response Time High**
+```- Title use:  **Test Step Name Response Time High**
 - Severity dropdown pick:  **Slowdown**
-
+```
 When finished then select the **Create custom event for alerting** button.   This will create our custom alert.
 
 <img src="../../assets/images/lab_6_custom_alert_3.png" width="500"/>
