@@ -49,10 +49,10 @@ The will bring you to the **Create custom event for alerting** screen.
 
 In the **Metric** section use the following settings:
  
-```- Category dropdown pick: **Services**
-- Metric dropdown pick: **Test Step Response Time**
+- Category dropdown pick: ```**Services**```
+- Metric dropdown pick: ```**Test Step Response Time**```
 - Aggregation keep the default which is **Average**
-```
+
 In the **Entities** section click **Add a rule base filer**
 
 We will use the following settings:
@@ -69,10 +69,12 @@ In the **Monitoring strategy** section we will use the following settings:
 
 ```- Keep the default which is **Static threshold**.
 ```
+
 In the Static threshold settings section use:
 
 ```- **4 seconds**
 ```
+
 In the **Event description** section we will use the following settings:
 
 ```- Title use:  **Test Step Name Response Time High**
