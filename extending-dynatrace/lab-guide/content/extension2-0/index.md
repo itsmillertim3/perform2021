@@ -126,11 +126,11 @@ zip extension.zip and extension.zip.sig under demoextension.zip
 ## Upload the extension to your tenant
 Go back to swagger and switch to environment api V2.
 
-Use extension 2.0, POST extension (2nd link) and try it out.
+Use extension 2.0, POST extension (2nd link) and try it out. Don't forget to authorize first.
 
-Choose you demoextension.zip file 
+Choose your demoextension.zip file 
 
-The extension has been uploaded.
+The extension has been uploaded .
 
 For enable it, use the 8th link: POST extensions/extensionname/environmentConfiguration. Try it out.
 
