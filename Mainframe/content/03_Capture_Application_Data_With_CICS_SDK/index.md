@@ -111,7 +111,7 @@ If RC Not Equal ZERO
 - Go to your Dynatrace Tenant
 - PurePaths with Exceptions should now be marked as failed
 
-  ![Failure](../../assets/images/Failure.png)
+  ![Failures](../../assets/images/Failures.png)
 
 ### You've arrived
 - You have successfuly instrumented your application to capture Mainframe application data as Request Attribute and are also able to create exceptions! 
