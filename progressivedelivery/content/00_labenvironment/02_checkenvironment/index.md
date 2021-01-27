@@ -17,7 +17,7 @@ The other option is that you use any SSH client, e.g: PUTTY on Windows to connec
 Once connected and logged in validate that in the home directory you find the `perform-2021-hotday` directory. Thats the git clone of our workshop!
 Go ahead and change into the following directory:
 ```console
-$ cd perform-2021-hotday/progressive delivery
+$ cd perform-2021-hotday/progressivedelivery
 ```
 
 In that directory you will find several bash scripts (*.sh) that we will need later:
@@ -28,11 +28,12 @@ hot_createkeptnproject.sh  hot_deletekeptnproject.sh  hot_deploy.sh  hot_getinfo
 
 ### 3. Export your STUDENTID
 
-Every student gets assigned a student id. that will help us separate our work as we work on a shared k8s cluster and shared Dynatrace Environment.
-Once you have your student ID, e.g. student003 export it into the following environment variable:
+Every student gets assigned a login to the Dynatrace environment that looks something like this: studentxxxperform2021@somedomain.com. For some of our exercises we need to separate our activities. Therefore we take the unique Student ID from your login, e.g: student123.
+
+Once you have identified your student ID, e.g. student123 export it into the following environment variable:
 
 ```console
-export STUDENTID=studentxxx
+export STUDENTID=student123
 ```
 
 ### 4. Access to all required links & tokens

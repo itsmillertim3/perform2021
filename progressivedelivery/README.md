@@ -67,7 +67,16 @@ $ ./6_outputsetupinfo.sh
 While almost everything in this setup is automated through the scripts, API calls and using Dynatrace Monaco - one step has to be done manually as there is currently no API for it. Its the setup of a **Process Group Detection** rule for the sample Java application as shown in the following screenshot:
 ![](./assets/images/00_pgi_detection_javaapp.png)
 
-## 4: Hands-On Tutorial Scripts
+## 4: Finalize Hands-On Tutorial scripts
+
+Our hands-on scripts will leverage Monaco and create a dashboard. For that we need to set the username for those dashboards created before we upload our monaco scripts to Keptn. To do that we need to run the `hot_initialize.sh` script which requires the Dynatrace username that becomes the owner of the created dashboard. Here is the commands to get this done:
+
+```console
+export DT_USERNAME=dynatraceusername@dynatracedomain.com
+./hot_initalize.sh
+```
+
+## 5: Hands-On Tutorial Scripts
 
 For some of the Hands on Tutorials the trainees need to e.g: deploy a new version of a microservice.
 To make this easier we have created a set of scripts that are prefixed with hot_xxx.sh. Here is an overview:

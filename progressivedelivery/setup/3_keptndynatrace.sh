@@ -97,7 +97,7 @@ echo "3. Install the dynatrace service"
 kubectl apply -n keptn -f https://raw.githubusercontent.com/keptn-contrib/dynatrace-service/0.10.2/deploy/service.yaml
 
 echo "4. Install the Dynatrace SLI Service"
-kubectl apply -n keptn -f https://raw.githubusercontent.com/keptn-contrib/dynatrace-sli-service/patch/release-0.7.3/deploy/service.yaml
+kubectl apply -n keptn -f https://raw.githubusercontent.com/keptn-contrib/dynatrace-sli-service/release-0.7.3/deploy/service.yaml
 
 echo "5. Enable Label & Annotation monitoring of key namespaces"
 kubectl -n keptn create rolebinding default-view --clusterrole=view --serviceaccount=keptn:default

@@ -32,6 +32,8 @@ helm install dynatrace-oneagent-operator dynatrace/dynatrace-oneagent-operator -
 # remove file as it contains sensitive data!
 rm ./gen/values.yaml
 
+# Wait for dynatrace namespace pods to be ready! Otherwise our next steps might not be picked up by OneAgent, e.g: deploying the hello world app
+kubectl wait --namespace=dynatrace --for=condition=Ready pods --timeout=300s --all
 
 echo "2. Setup k8s API Integration"
 # kubectl create namespace dynatrace

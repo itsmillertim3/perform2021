@@ -12,8 +12,11 @@ Here the quick overview:
 3. A host that is connected to the internet and connected to the k8s cluster
 
 **To setup**
-To install the lab environment on your k8s:
+To install the lab environment on your k8s follow the instructions in the GitHub repos readme.md:
+
+In a nutshell:
 1. Clone the github repository on your host
 2. Execute all scripts under the setup folder!
+3. Run the additional "finalization" steps!
 
 After that you are good to go to continue with the lab
