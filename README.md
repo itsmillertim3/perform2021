@@ -8,5 +8,6 @@ This repository contains labs for the Hands-On Kubernetes Session. We will be us
 
 [**Lab 2:** Configure Kubernetes Integration](/labs/lab02)
 
-[**Lab 3:** Deploy Sockshop](/labs/lab03)
+[**Lab 3:** Dynatrace Dashboards for k8s](/labs/lab03)
 
+[**Lab 4:** Deploy Sample Application](/labs/lab04)
