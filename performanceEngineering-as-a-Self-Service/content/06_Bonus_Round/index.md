@@ -27,14 +27,22 @@ Within in the service settings, navigate to Web request naming and click the
 
 Below are the settings we want to use:
 
-- naming pattern = **{RequestAttribute:LSN}**
-- conditions =  **{RequestAttribute:LSN}** exists
+- Naming pattern section use **{RequestAttribute:LSN}**
+- Condition(s) section first dropdown pick **Request attribute**
+- Condition(s) section second dropdown pick **LSN**
+- Condition(s) section third dropdown pick **exists**
 
-click the **Preview Rule** button to verify.
+Next, click the **Preview Rule** button to verify.
 
 It should look like this:
 
 <img src="../../assets/images/lab_6_request_web_request_naming_rule_4.png" width="500"/>
+
+Then click **Save**.
+
+Now moving forward for all future Performance Tests where you use the **TSN** request header your **Test Steps Names** will be used.
+
+<img src="../../assets/images/lab_6_request_web_request_naming_rule_5.png" width="500"/>
 
 ### Custom Alert
 
