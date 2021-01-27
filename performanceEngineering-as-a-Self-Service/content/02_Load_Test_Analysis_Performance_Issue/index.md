@@ -210,8 +210,8 @@ Login to Jenkins
 <img src="../../assets/images/Lab_1_Jenkins_Log_In.png" width="500"/>
 
 We are going to run the **03-simpletest-qualitygate pipeline**.
-Click **"build"** this initial build will fail.
-Refresh the page, now we can do a **"Build with Parameters"**
+
+Click on **"Build with Parameters"**.
 
 We need to change the Deployment URL
 
