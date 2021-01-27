@@ -124,14 +124,7 @@ While executing a load test from your load testing tool of choice (JMeter, Neoty
 
 The header **x-dynatrace-test** is used one or more key/value pairs for the header. Here are some examples:
 
-| **Key**   | **Description**   |
-| --- | --- |
-| VU  | Virtual User ID of the unique user who sent the request.  |
-| SI  | Source ID identifies the product that triggered the request (JMeter, LoadRunner, Neotys, or other)  |
-| TSN  | Test Step Name is a logical test step within your load testing script (for example, Login or Add to cart.  |
-| LSN  | Load Script Name - name of the load testing script. This groups a set of test steps that make up a multi-step transaction (for example, an online purchase).  |
-| LTN  | The Load Test Name uniquely identifies a test execution (for example, 6h Load Test – June 25)  |
-| PC  | Page Context provides information about the document that is loaded in the currently processed page.  |
+<img src="../../assets/images/lab_2_dynatrace_headers_table.png" width="800"/>
 
 Dynatrace can analyze incoming HTTP headers and extract such contextual information from the header values and tag the captured requests with request attributes. Request attributes enable you to filter your monitoring data based on defined tags.
 
