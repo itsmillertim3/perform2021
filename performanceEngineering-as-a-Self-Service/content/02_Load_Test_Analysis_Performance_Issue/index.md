@@ -202,7 +202,9 @@ Click the **preview** button to verify.
 
 <img src="../../assets/images/lab_1_management_zone_2.png" width="500"/>
 
-Save the zone. Click **create rule** button. Then **Save changes** button.
+Click **Create rule** button. 
+
+Then **Save changes** button which will be at the bottom of the page.
 
 ## Run Load Test
 
