@@ -25,8 +25,14 @@ This lab guide will deploy Dynatrace integration for Kubernetes.
 
    - Click Save.
 
-6.  Toggle on Monitor events
+6. Toggle on Monitor events
 
    ![K8SMonitorEvents](../assets/015_k8sUISave.png)
    
    - Click Save. 
+
+7. Verify Dynatrace Operator Deployment
+   
+   - Navigate to Namespaces -> Dynatrace
+   
+   ![K8SVerifyDT](../assets/016_VerifyDT.png)
