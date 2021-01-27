@@ -79,7 +79,16 @@ Click **"Preview"** -> **"create rule"** -> **"save changes"**
 
 ### Architecture Validation - Service Flow
 
-As testers, we typically only test against the service endpoint. As performance engineers we should however understand what happens end-to-end with that request. Which other services does it call? How many round trips to the database does it make? Does service load balancing and failover work correctly? Do the caching layers work well? And do we have any bad architectural patterns such as a data-driven N+1 query problem?
+As testers, we typically only test against the service endpoint. 
+
+As performance engineers we should however understand:
+
+- What happens end-to-end with that request?
+- Which other services does it call? 
+- How many round trips to the database does it make? 
+- Does service load balancing and failover work correctly? 
+- Do the caching layers work well? 
+- Do we have any bad architectural patterns such as a data-driven N+1 query problem?
 
 In Dynatrace, we analyze the Service Flow which shows us the full end-to-end flow of every request executed against our service endpoint. You can also apply filters to only focus on a particular test transaction, a specific time frame or compare the flow of failing vs non- failing transactions.
 
