@@ -195,14 +195,11 @@ This will bring us to the **Failure analysis** screen.   We can see all the fail
 
 ### Summary
 
--  We learned how to create SLOs that can be used for your Performance Test Analysis
--  We learned how to Analyze a detected problem by Dynatraces Davis AI 
--  We covered the Performance Test Dashboard with Transaction Steps and SLOs and how you can use it for improving of your Performance Test Analysis
--  We learned how to analyze Performance Test issue within Dynatrace and get to root cause in minutes
+-  We learned how to create SLOs in Dynatrace and the importance for improving Performance Test results in Dynatrace
+-  We learned how to analyze a detected problem by Dynatraces Davis AI 
+-  We covered the Performance Test Dashboard with Transaction Steps and SLOs and how you can use it to assist in Performance Test Analysis
+-  We learned how to analyze a Performance Test where an Error issue was introduced by a new application build and how get to root cause in minutes using Dynatrace
 
 ### Questions and Answers? 
-
-
-
 
 
