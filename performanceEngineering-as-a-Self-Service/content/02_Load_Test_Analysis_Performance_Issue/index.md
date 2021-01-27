@@ -245,11 +245,7 @@ If a Dynatrace Problem has generated a Problem during your Performance Test that
 
 You can also analyze the data using custom Dashboards as well as out of the box workflows. Your approach should be based on the type of performance analysis you want to do (for example, crashes, resource and performance hotspots, or scalability issues). 
 
-Following is an overview of using our **Performance Test Dashboard with Transaction Steps**.
-
-Open the **Performance Test Dashboard with Transaction Steps** dashboard.  
-
-Then click on the **Transactions** link under **Transaction** links section on the left side of the dashboard.
+From the **Performance Test Dashboard with Transaction Steps** dashboard click on the **Transactions** link under **Transaction** links section on the left side of the dashboard.
 
 <img src="../../assets/images/lab_1_performance_test_dashboard_with_transaction_steps_1.png" width="500"/>
 
