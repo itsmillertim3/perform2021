@@ -1,7 +1,6 @@
-## Instrument Kubernetes with Dynatrace
+## Instrument Kubernetes with Dynatrace - Part 1
 
-This lab guide will deploy the Dynatrace Operator and Dynatrace integration for Kubernetes.
-
+This lab guide will deploy the Dynatrace Operator for Kubernetes.
 
 ### Deploy Dynatrace
 
