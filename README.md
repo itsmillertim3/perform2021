@@ -11,3 +11,11 @@ This repository contains labs for the Hands-On Kubernetes Session. We will be us
 [**Lab 3:** Dynatrace Dashboards for k8s](/labs/lab03)
 
 [**Lab 4:** Deploy Sample Application](/labs/lab04)
+
+[**Lab 5:** Configure Dynatrace Application](/labs/lab05)
+
+[**Lab 6:** Process Group & Service Naming](/labs/lab06)
+
+[**Lab 7:** BizOps Dashboard Configuration](/labs/lab07)
+
+[**Lab 8:** Prometheus Integration](/labs/lab08)
