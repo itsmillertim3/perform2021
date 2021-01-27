@@ -29,11 +29,12 @@ Below are the settings we want to use:
 
 - naming pattern = **{RequestAttribute:LSN}**
 - conditions =  **{RequestAttribute:LSN}** exists
-- click the **Preview Rule** button to verify.
+
+click the **Preview Rule** button to verify.
 
 It should look like this:
 
----Placeholder screenshot---
+<img src="../../assets/images/lab_6_request_web_request_naming_rule_4.png" width="500"/>
 
 ### Custom Alert
 
