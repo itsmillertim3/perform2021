@@ -52,18 +52,19 @@ If RC Not Equal ZERO
 - Your new ADKCOBOL program version is active now
  
 ### Step 2: Define Request Attribute for your Mainframe Data
+
 - Go to your Dynatrace Tenant
 - Select `Settings->Server Side Service Monitoring->Request Attributes`
 - Click on `Define new Request Attribute`
 - Provide any name for the Request Attribute, e.g. `RegionName` (this is how it will be referenceable anywhere in Dynatrace)
 - Use Data Type `Text` 
 
-![Name](../../assets/images/Request_Attribute_Name.png)
+  ![Name](../../assets/images/Request_Attribute_Name.png)
 
 - Define the Data Source, in this case Request Attribute Source `CICS SDK` 
 - Use `Node Name equals TESTNODE`  or `Node Name begins with TEST`
 
-![DataSource](../../assets/images/Request_Attribute_DataSource.png)
+  ![DataSource](../../assets/images/Request_Attribute_DataSource.png)
 
 - Click on `Save` 
 

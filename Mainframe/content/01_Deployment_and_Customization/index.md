@@ -6,7 +6,7 @@ In this module you will learn how to deploy a Mainframe ActiveGate and zRemote a
 - Open the Dynatrace tenant provided to you
 - Login with the credentials provided to you
 
-![Login](../../assets/images/Credentials.png)
+  ![Login](../../assets/images/Credentials.png)
 
 ### Step 2: Install the Mainframe ActiveGate
 - Select `Deploy Dynatrace` and click on `Install Active Gate`
@@ -14,7 +14,7 @@ In this module you will learn how to deploy a Mainframe ActiveGate and zRemote a
 
 - Select `Windows`
 
-![Install](../../assets/images/Install_AG.png)
+  ![Install](../../assets/images/Install_AG.png)
 
 - Check `Route z/OS traffic to Dynatrace` (Step 1)
 - Click on `Download Installer` (Step 2) OR Click on `Copy` and paste the download command into a DOS prompt, press `Enter`
@@ -29,14 +29,14 @@ In this module you will learn how to deploy a Mainframe ActiveGate and zRemote a
 - Double click on the X3270 Session called `Perform` on the Desktop
 - Logon to ISPF with `logon <userid>` using the Userid provided to you 
 
-![LogonISPF](../../assets/images/Logon_ISPF.png)
+  ![LogonISPF](../../assets/images/Logon_ISPF.png)
 
 - Type `ispf` and navigate to `3.4`
 - Edit the SYSIN for the zDC parameters - `<userid>.CI.R070300.ZDCSYSIN(ZDCSYIN1)`
 - Provide the IP-Address of your Mainframe ActiveGate and Port 8898 in the DTAGTCMD string
 - Note: the IP-Address is the one of your VM (the one shown in the titlebar of your RDP-Session)
 
-![ZDCSYSIN](../../assets/images/ZDCSYSIN.png)
+  ![ZDCSYSIN](../../assets/images/ZDCSYSIN.png)
 
 - Keep all other parameters as they are  
 - Submit the zDC JCL in `<userid>.CI.R070300.JCL(ZDCJCL1)`
@@ -55,7 +55,7 @@ ZDC993I Opn1RFD:0008  /u/labuser/labusr2/ci/7.3build/log/dt_ZLOCAL1_Z731_5039735
 - Double click on the X3270 Session called `Perform` on the Desktop again to open a second session
 - Logon to CICS with `l HVDACnnn` 
 
-![LogonCICS](../../assets/images/Logon_CICS.png)
+  ![LogonCICS](../../assets/images/Logon_CICS.png)
 
 - Click on Keypad and `Clr Scrn`
 - Make a newcopy using `cemt s prog(ADKCOBOL) ne` 
@@ -93,8 +93,3 @@ ZDC993I Opn1RFD:0008  /u/labuser/labusr2/ci/7.3build/log/dt_ZLOCAL1_Z731_5039735
 
 ### You've arrived
 - You have successfully deployed Dynatrace and have defined and captured the CICS transaction, which will be used in the SDK Hands-On! 
-
-
-
-
-
