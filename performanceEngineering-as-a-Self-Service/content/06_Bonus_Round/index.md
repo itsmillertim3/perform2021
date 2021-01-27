@@ -21,7 +21,7 @@ Click **Transactions and services** from the Main Navigation menu.  In the Servi
 
 <img src="../../assets/images/lab_6_request_web_request_naming_rule_1.png" width="500"/>
 
-At the top of the **frontend** service page next to the **Smartscape view** button, click the box that has **...** and click the **Edit** button.
+At the top of the **frontend** service page next to the **Smartscape view** button, click the box that has **...**, then click the **Edit** button.
 
 <img src="../../assets/images/lab_6_request_web_request_naming_rule_2.png" width="500"/>
 
