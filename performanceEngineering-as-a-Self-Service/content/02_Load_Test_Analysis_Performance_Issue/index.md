@@ -231,7 +231,7 @@ We have provided a **Performance Test Dashboard with Transaction Steps** in your
 
 Click **"Dashboards"** from the Main Navigation menu.
 
-Then Select the **Performance Test Dashboard with Transaction Steps** Dashboard.
+Then click the **Performance Test Dashboard with Transaction Steps**.
 
 <img src="../../assets/images/lab_1_performance_test_dashboard_with_transaction_steps.png" width="500"/>
 
