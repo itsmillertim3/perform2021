@@ -13,11 +13,11 @@ See below:
 
 Within Dynatrace, you can use request naming rules to adjust how your requests are tracked and to define business transactions in your customer-facing workflow that are critical to the success of your digital business. With such end-to-end tracing, Dynatrace enables you to view and monitor important business transactions from end to end.
 
-For the **order** service, we want to change the discovered transaction names to use the **LSN** request attribute that has the Test Step Name you use in your load test product when running Performance Tests.
+For the **frontend** service, we want to change the discovered transaction names to use the **TSN** request attribute that has the Test Step Name you use in your load test product when running Performance Tests.
 
 <img src="../../assets/images/lab_6_request_web_request_naming_rule_1.png" width="500"/>
 
-At the top of the **order** services page and choosing the edit option as shown below.
+At the top of the **frontend** service page and choosing the edit option as shown below.
 
 <img src="../../assets/images/lab_6_request_web_request_naming_rule_2.png" width="500"/>
 
