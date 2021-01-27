@@ -72,7 +72,7 @@ If RC Not Equal ZERO
 - Go to ISPF
 - Submit 20 DADC test transactions using JCL in `<userid>.JCL(ADKTRAN)`
 - Note the execution time of the transactions 
-- Check any messages in the system log by going to `sdsf` and typing `log'
+- Check any messages in the system log by going to `sdsf` and typing `log`
 - At the bottom you will see messages like these (check those prefixed with your own CICS region `HVDACnnn`):
 
 ```
@@ -96,18 +96,18 @@ If RC Not Equal ZERO
 
 ### Step 4: Verify Request Attributes in Dynatrace
 - Go to your Dynatrace Tenant
-- You will see the recent DADC PurePaths again as Requests under the CICS service (`Transactions and Services -> HVDACnnn -> View PurePaths')
+- You will see the recent DADC PurePaths again as Requests under the CICS service (`Transactions and Services -> HVDACnnn -> View PurePaths`)
 - Please check only the PurePaths for the latest 20 DADC transactions (because only these contain our SDK code and the Request Attribute)
-- Differently to the Deployment Hands-On, we will see the different values (Europe, Asia, America, Africa, Australia, Invalid) as Request Attribute "SalesRegion"
+- Differently to the Deployment Hands-On, we will see the different values (Europe, Asia, America, Africa, Australia, Invalid) as Request Attribute `RegionName`
 - In addition we are now getting an exception in Dynatrace, if Sales Region is "Invalid"
 - Make sure, that at least one value of "Invalid" is shown (if not, just submit additional DADC test transactions until "Invalid" occurs)
 
 
 ### Step 5: Define, that a transaction with an exception is treated and marked as "Failure" in Dynatrace  
 - Go to your Dynatrace Tenant
-- Go to your CICS service (`Transactions and Services -> HVDACnnn')
+- Go to your CICS service (`Transactions and Services -> HVDACnnn`)
 - Click on the three `...` right to the name of the CICS Service
-- Select `Edit
+- Select `Edit`
 
   ![Edit](../../assets/images/Edit.png)
 
@@ -115,7 +115,7 @@ If RC Not Equal ZERO
 
   ![Exception](../../assets/images/Exception.png)
 
-- Note: `TESTNODE` is the `NODENAME` in our SDK-Code, so the Exception name starts with that Node Name, suffixed with `_Exception'    
+- Note: `TESTNODE` is the `NODENAME` in our SDK-Code, so the Exception name starts with that Node Name, suffixed with `_Exception`    
 
 ### Step 6: Trigger some more test transactions
 - Go to ISPF
