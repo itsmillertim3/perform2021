@@ -186,7 +186,9 @@ This exercise shows how to update a management zone that will be used in dashboa
 
 In Dynatrace on the navigation menu, navigate to **Settings --> Preferences --> Management zones**
 
-Click **Keptn: keptnorders staging** management zone and add a new rule with configuration as show below.
+Click **Keptn: keptnorders staging** management zone.
+
+Then click the **Add new rule** button with configuration as show below:
 
 - Rule applies to **Process groups**
 - In the conditions section,  select **Process group** in the dropdown
