@@ -276,11 +276,11 @@ In the **Method hotspots** screen click on **Hotspots** button.   This will chan
 ### Summary
 
 -  We learned how the use the Dynatrace Service Flow for Architecture Validation
--  We learned what a x-dynatrace-test request header is, how to use it with your Performance testing tool and the importance for improving of your Performance Test Analysis
--  We learned what a Dynatrace Load Test Request Attribute is,  how to use it and the importance for improving of your Performance Test Analysis
--  We learned what a Dynatrace Calculated Service Metric is,  how to use it and the benefits for improving of your Performance Test Analysis
+-  We learned what a x-dynatrace-test request header is, how to use it with a Performance testing tool and the importance for improving Performance Test Analysis
+-  We learned what a Dynatrace Load Test Request Attribute is,  how to use it and the importance for improving of Performance Test Analysis
+-  We learned what a Dynatrace Calculated Service Metric is,  how to use it and the benefits for improving Performance Test Analysis
 -  We covered the Performance Test Dashboard with Transaction Steps and how you can use it to assist in Performance Test Analysis
--  We learned how to analyze a Performance Test Performance issue within Dynatrace and how get to root cause in minutes
+-  We learned how to analyze a Performance Test that had a Performance issue with a new build and how get to root cause in minutes
 
 ### Questions and Answers? 
 
