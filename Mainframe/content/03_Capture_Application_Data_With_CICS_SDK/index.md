@@ -60,10 +60,12 @@ If RC Not Equal ZERO
 
 ![Name](../../assets/images/Request_Attribute_Name.png)
 
-- Define the Data Source, in this case Type `CICS SDK` 
+- Define the Data Source, in this case Request Attribute Source `CICS SDK` 
 - Use `Node Name equals TESTNODE`  or `Node Name begins with TEST`
 
 ![DataSource](../../assets/images/Request_Attribute_DataSource.png)
+
+- Click on `Save` 
 
 ### Step 3: Trigger some test transactions
 - Go to ISPF
