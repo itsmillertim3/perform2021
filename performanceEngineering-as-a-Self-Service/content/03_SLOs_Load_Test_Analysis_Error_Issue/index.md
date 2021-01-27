@@ -121,7 +121,7 @@ We can see the SLO for the **Order** service is not being met.  In the next sect
 
 Dynatrace uses a sophisticated AI causation engine, called Davis®, to automatically detect performance anomalies in your applications, services, and infrastructure. Dynatrace-detected problems are used to report and alert on abnormal situations, such as performance degradations, improper functionality, or lack of availability (i.e., problems represent anomalies in baseline system performance).  
 
-For Performance Testing the Dynatrace AI might not generate a Problems unless you are doing continuous performance testing.  You can setup custom alerts with static thresholds.  
+The Dynatrace AI works extremely well in high load environments where, over time, the AI has the chance to learn how your system behaves, understands dependencies and builds up baselines. If you only run sporadic load tests for short periods, the AI might not detect as many problems for you as in a high load production environment due to lack of good baselines. In any case the AI will spot critical problems and immediately show you the root cause.  You can setup custom alerts with static thresholds.  
 
 If a Dynatrace Problem has generated a Problem during your Performance Test that is always a best place to start.  
 
