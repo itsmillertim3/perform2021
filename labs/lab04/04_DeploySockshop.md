@@ -1,7 +1,10 @@
 ## Deploy Sock Shop Sample Application
 
 ### Deploy SockShop
-1. On the EKS Bastion Host deploy sockshop
+1.  Clone the application deployment files from the 20201 HoT Github repo
+  - git clone xxx
+
+2.  On the EKS Bastion Host deploy sockshop
   ```
   ./deploy-sockshop.sh
   ```
