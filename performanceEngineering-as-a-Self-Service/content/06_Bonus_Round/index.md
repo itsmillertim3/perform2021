@@ -25,15 +25,15 @@ At the top of the **frontend** service page next to the **Smartscape view** butt
 
 <img src="../../assets/images/lab_6_request_web_request_naming_rule_2.png" width="500"/>
 
-Within in the service settings, navigate to Web request naming and click the **Add rule** button
+Within in the Service settings, navigate to **Web request naming** and click the **Add rule** button
 
 <img src="../../assets/images/lab_6_request_web_request_naming_rule_3.png" width="500"/>
 
 Below are the settings we want to use:
 
-- Naming pattern section use **{RequestAttribute:LSN}**
+- Naming pattern section use **{RequestAttribute:TSN}**
 - Condition(s) section first dropdown pick **Request attribute**
-- Condition(s) section second dropdown pick **LSN**
+- Condition(s) section second dropdown pick **TSN**
 - Condition(s) section third dropdown pick **exists**
 
 Next, click the **Preview Rule** button to verify.
