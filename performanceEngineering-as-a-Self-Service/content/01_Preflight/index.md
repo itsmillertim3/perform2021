@@ -78,7 +78,12 @@ answer **'y'** if the information is correct.
 
 Press **enter**
 
-Type **'less +F /tmp/install.log'** for viewing the output of installation in realtime
+Type 
+
+```bash
+less +F /tmp/install.log
+```
+for viewing the output of installation in realtime
 
 Please be patient, this build can take ~13-20 minutes to finish.
 

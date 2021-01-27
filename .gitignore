@@ -6,6 +6,7 @@ dtu-lab-managed-as-a-service/content/02_deploy_licensing_extension/.DS_Store
 dtu-lab-guide-example/content/02_cloud_native_concepts/.DS_Store
 dtu-lab-guide-example/.DS_Store
 .DS_Store
+dtu-lab-managed-as-a-service/content/02_import_licensing_dashboard/workspace.code-workspace
 progressivedelivery/setup/0_forandi.txt
 performanceEngineering-as-a-Self-Service/.DS_Store
 performanceEngineering-as-a-Self-Service/content/.DS_Store
@@ -16,7 +17,5 @@ performanceEngineering-as-a-Self-Service/content/02_Load_Test_Analysis_Performan
 performanceEngineering-as-a-Self-Service/content/01_Preflight/.DS_Store
 performanceEngineering-as-a-Self-Service/content/04_Integrate_JMeter/.DS_Store
 performanceEngineering-as-a-Self-Service/content/05_Automated_performance_test/.DS_Store
-.DS_Store
 Opentelemetry_With_Dynatrace/golang/fib.exe
 **/.DS_Store
-
