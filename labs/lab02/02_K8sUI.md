@@ -1,6 +1,7 @@
 
 
-### 2. Update Kubernetes Integration Settings
+### Update Kubernetes Integration Settings
+
 1. In Dynatrace Tenant, Click Settings -> Cloud and Virtualization -> edit icon for configured K8s cluster
 
    ![K8SConfig](../assets/011_k8sUI.png)    
