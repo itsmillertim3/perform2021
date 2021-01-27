@@ -1,4 +1,6 @@
+## Instrument Kubernetes with Dynatrace - Part 2
 
+This lab guide will deploy Dynatrace integration for Kubernetes.
 
 ### Update Kubernetes Integration Settings
 
