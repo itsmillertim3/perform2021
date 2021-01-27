@@ -190,15 +190,17 @@ Click **Keptn: keptnorders staging** management zone.
 
 Then click the **Add new rule** button with configuration as show below:
 
-- Rule applies to **Process groups**
-- In the conditions section,  select **Process group** in the dropdown
+- In the **Rule applies section** pick this dropdown:  **Process groups**
+- In the **Conditions** section pick this dropdown:  **Process group name** 
 - Keep **begins with** in the dropdown 
-- In the text box use: **keptnorders.staging**
-- Select **apply to underlying hosts of matching process groups** check box.
+- In the text box section use: **keptnorders.staging**
+- Select **apply to underlying hosts of matching process groups** check box
     
 <img src="../../assets/images/lab_1_management_zone.png" width="500"/>
 
 Click the **preview** button to verify.
+
+<img src="../../assets/images/lab_1_management_zone_2.png" width="500"/>
 
 Save the zone. Click **create rule** button. Then **Save changes** button.
 
