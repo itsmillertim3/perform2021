@@ -29,6 +29,4 @@ This lab guide will deploy Dynatrace integration for Kubernetes.
 
    ![K8SMonitorEvents](../assets/015_k8sUISave.png)
    
-   - Click Save.
-
-   - Click Save.   
+   - Click Save. 
