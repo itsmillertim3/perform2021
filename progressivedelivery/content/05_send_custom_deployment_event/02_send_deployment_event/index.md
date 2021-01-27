@@ -5,7 +5,7 @@ Now we want to explore the third option to pass version information to Dynatrace
 
 ### Step 1: Hello World Version
 
-When we deployed the Hello World app we set the DT_TAGS environment variable to HELLOWORLD_STUDENTxxx. If you explore your Process Group Instances or your Services and filter by the Enviroment tag HELLOWORLD_STUDENTxxx you can find it easily:
+When we deployed the Hello World app we set the DT_TAGS environment variable to HELLOWORLD_STUDENTxxx. If you explore your Process Group Instances or your Services and filter by the Environment tag HELLOWORLD_STUDENTxxx you can find it easily:
 
 ![](../../../assets/images/05_nginx_tags_on_service.png)
 

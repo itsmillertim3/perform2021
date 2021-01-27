@@ -1,0 +1,8 @@
+config:
+    - keptn_svc_naming: "../naming.json"
+
+keptn_svc_naming:
+    - type: "SERVICE"
+    - name: "Keptn Service Naming Rules"
+#    - nameFormat: "{ProcessGroup:Environment:keptn_service}.{ProcessGroup:Environment:keptn_deployment}"
+    - nameFormat: "{ProcessGroup:Environment:keptn_service}.{ProcessGroup:Environment:keptn_stage}.{ProcessGroup:Environment:keptn_deployment}"
