@@ -184,7 +184,7 @@ Each customizable management zone comprises a set of monitored entities in your 
 
 This exercise shows how to update a management zone that will be used in dashboards to show process and host metrics for analysis.
 
-In Dynatrace on the navigation menu, navigate to **settings --> preferences --> management zones**
+In Dynatrace on the navigation menu, navigate to **Settings --> Preferences --> Management zones**
 
 Click **Keptn: keptnorders staging** management zone and add a new rule with configuration as show below.
 
