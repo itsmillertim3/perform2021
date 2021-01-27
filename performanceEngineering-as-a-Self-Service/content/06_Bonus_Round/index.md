@@ -15,6 +15,10 @@ Within Dynatrace, you can use request naming rules to adjust how your requests a
 
 For the **frontend** service, we want to change the discovered transaction names to use the **TSN** request attribute that has the Test Step Name you use in your load test product when running Performance Tests.
 
+Make sure you are in the **Keptn: keptnorders staging** management zone.
+
+Click **Transactions and services** from the Main Navigation menu.  In the Services view, then click the **frontend** service.
+
 <img src="../../assets/images/lab_6_request_web_request_naming_rule_1.png" width="500"/>
 
 At the top of the **frontend** service page and choosing the edit option as shown below.
