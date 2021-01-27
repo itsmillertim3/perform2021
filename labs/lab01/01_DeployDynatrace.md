@@ -42,7 +42,8 @@ This lab guide will deploy the Dynatrace Operator for Kubernetes.
    ![RunScript](../assets/010_OperatorDeploy2.png)
 
 9. Verify Dynatrace Deployment
-
-   - kubectl get pods -n dynatrace
    
+   ```
+   kubectl get pods -n dynatrace
+   ```
    ![RunScript](../assets/010_OperatorDeploy3.png)
