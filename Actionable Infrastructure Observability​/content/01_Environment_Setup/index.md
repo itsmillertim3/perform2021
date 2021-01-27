@@ -22,7 +22,7 @@ Here are a few quick steps to get your environment ready for today's exercises.
 - Navigate to Synthetics > Create a Synthetic Monitor
 - Create a browser monitor
 - URL is the Public IP address on port 8080
- - Ex: http://12.345.67.89:8080
- - Find the Public IP in the Environments tab in DTU
-- Monitor Name: EasyTravel Home
+  - Ex: http://12.345.67.89:8080
+  - Find the Public IP in the Environments tab in DTU 
+  - Monitor Name: EasyTravel Home
 - Leave all other defaults and select 3 locations
