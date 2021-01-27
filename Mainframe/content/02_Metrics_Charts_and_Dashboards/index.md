@@ -2,6 +2,9 @@
 
 In this module you will learn how to to define Custom metrics, Charts and Dashboards.
 
+The goal is to create this sample Dashboard:
+   ![Sample](../../assets/images/IBM_zSeries_Dashboard.png)
+
 ### Step 1: Open Dynatrace Tenant
 - Open the Dynatrace tenant provided to you
 
