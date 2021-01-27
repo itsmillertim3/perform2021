@@ -1,14 +1,12 @@
-# APAC K8S Workshop 
+# 2021 HoT K8S for Operators Workshop 
 
-This repository contains labs for the Hands-On Kubernetes Session. We will be using Google Kubernetes Engine (GKE) for this hands-on but this will work on other platforms as well. 
-
-For the purposes of the Hands-On, we will automate and make the steps seamless for the participants
+This repository contains labs for the Hands-On Kubernetes Session. We will be using Dynatrace University and AWS (EKS + Bastion Host) for this hands-on.
 
 ## Contents
 
-[**Lab 1:** Setup your GKE Environment](/labs/lab1)
+[**Lab 1:** Deploy Dynatrace Operator](/labs/lab01)
 
-[**Lab 2:** Install k8s OneAgent Operator](/labs/lab2)
+[**Lab 2:** Install k8s OneAgent Operator](/labs/lab02)
 
 [**Lab 3:** Setup k8s Dashboard](/labs/lab3)
 
