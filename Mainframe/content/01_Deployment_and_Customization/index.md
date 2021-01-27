@@ -48,10 +48,30 @@ In this module you will learn how to deploy a Mainframe ActiveGate and zRemote a
 ### Step 6: Trigger the Mainframe transaction 
 - Use member AFDTRAN in `<userid>.JCL`
 - Submit this and it will execute transaction `DADC` 20 times
-- You will see these PurePaths as Requests under the CICS service
+- You will see these PurePaths as Requests under the CICS service (`Transactions and Services -> HVDACnnn -> View PurePaths')
+- Go to `sdsf` and type `log` to browse the System Log
+- At the bottom you will see messages like these (check those prefixed with your own CICS region `HVDACnnn`):
+```
++HVDAC731 Africa                 
++HVDAC731 COBOL ADKCOB  complete.
++HVDAC731 Australia              
++HVDAC731 COBOL ADKCOB  complete.
++HVDAC731 Australia              
++HVDAC731 COBOL ADKCOB  complete.
++HVDAC731 Africa                 
++HVDAC731 COBOL ADKCOB  complete.
++HVDAC731 Australia              
++HVDAC731 COBOL ADKCOB  complete.
++HVDAC731 Africa                 
++HVDAC731 COBOL ADKCOB  complete.
++HVDAC731 America                
++HVDAC731 COBOL ADKCOB  complete.
++HVDAC731 Invalid                
++HVDAC731 COBOL ADKCOB  complete. 
+```
 
 ### You've arrived
-- You have successfully deployed Dynatrace and have defined the CICS transaction, which will be used in the SDK Hands-On! 
+- You have successfully deployed Dynatrace and have defined and captured the CICS transaction, which will be used in the SDK Hands-On! 
 
 
 
