@@ -17,11 +17,11 @@ This lab guide will deploy Dynatrace integration for Kubernetes.
 
 4. Click Add event field selector
 
-   ![K8SEventSelector](../../assets/images/addevent.png)
+   ![K8SEventSelector](../assets/013_k8sEvents.png)
 
-5. Add a field selector name and expression
+5. Provide a field selector (other events) name and expression (involvedObject.kind!=Node)
 
-   ![K8SEventSelector](../../assets/images/nonnodeevent.png)
+   ![K8SEventSelector](../assets/014_k8sEventsS.png)
 
    - Click Save.
 
