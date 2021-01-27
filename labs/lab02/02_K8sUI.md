@@ -27,6 +27,6 @@ This lab guide will deploy Dynatrace integration for Kubernetes.
 
 6.  Toggle on Monitor events
 
-   ![K8SMonitorEvents](../../assets/images/monitorevents.png)
+   ![K8SMonitorEvents](../assets/015_k8sUISave.png)
 
-7. Click Save.   
+   - Click Save.   
