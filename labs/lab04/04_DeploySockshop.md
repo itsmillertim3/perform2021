@@ -6,7 +6,7 @@
   git clone https://github.com/itsmillertim3/perform2021.git
   ```
 
-2.  On the EKS Bastion Host deploy sockshop
+2.  On the EKS Bastion Host navigate to the "k8s-apps" directory and deploy sockshop
   ```
   ./deploy-sockshop.sh
   ```
