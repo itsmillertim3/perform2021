@@ -67,6 +67,7 @@ In this task our goal is to grant users of Dynatrace deeper insight into what is
 - The Data Source for our Request Attribute needs to be a `Span Attribute`.
 - The Key of the Request Attribute is called `fib.result` (unless you have chosen a different name)
 - We are just interested in the last value within the PurePath - any intermediate results should be ignored.
+- Remember to click on `SAVE` in order for the Request Attribute to be registered!
   ![ReqAttributes](../../../assets/images/03-02-OpenTelemetryReqAttributes.gif)
 - Use either your Browser or `curl http://localhost:28080/fib?n=3` within a new Terminal to access your new HTTP Service
   ![ReqAttributes](../../../assets/images/03-02-OpenTelemetryReqAttributes-Result.gif)
