@@ -1,6 +1,6 @@
 ## UseCase CPULoadJourneyService
 
-- We want to understand why the release CPULoadJourneySevice failed.
+- We want to understand why the release CPULoadJourneySevice failed.
 
 - Compare CPULoadJourneyService with build Zero (None) (filter the Loadtest)
 
