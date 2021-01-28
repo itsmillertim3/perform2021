@@ -67,6 +67,9 @@ If RC Not Equal ZERO
   ![DataSource](../../assets/images/Request_Attribute_DataSource.png)
 
 - Click on `Save` 
+- Note: if you would like to use a Node name different than `TESTNODE`, just change the variable `NODENAME` in `<userid>.JCL(ADKCOBJ)`, re-compile and newcopy. 
+Make sure, that the Request Attribute is defined appropriately with the correct Node Name.
+
 
 ### Step 3: Trigger some test transactions
 - Go to ISPF
