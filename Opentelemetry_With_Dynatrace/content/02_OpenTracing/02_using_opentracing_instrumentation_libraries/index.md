@@ -65,5 +65,5 @@ In this step we extend the Java SpringBoot application with an available OpenTra
 - Access your Dynatrace tenant in the browser
 - Go to Transactions and Services > CommandController > Purepaths
 - Choose the /pop2 transaction
-- You will observe that we are getting more visibility into the application execution
+- You will observe that we are getting more visibility into the application execution - we are seeing 100 calls made to hazelcast `put` command, with each command taking about 30 ms, and 100 calls of 30 ms will compound to almost 3 secs!
   ![OpenTracingPurePaths](../../../assets/images/03-ExploreDynatrace-1.gif)
