@@ -45,7 +45,7 @@ We're going to use the local http://localhost:14499/metrics/ingest API endpoint 
 1. Run the following script:
 
    ```bash
-   while true; do; data=$(who | awk '{print "host.users.sessions,ip="$5",name="$1" "NR}'); curl -d $data http://localhost:14499/metrics/ingest -H "Content-Type: text/plain; charset=utf-8"; sleep 10; done
+   while true; do data=$(who | awk '{print "host.users.sessions,ip="$5",name="$1" "NR}'); curl -d $data http://localhost:14499/metrics/ingest -H "Content-Type: text/plain; charset=utf-8"; sleep 10; done
    ```
 
 ### Step 4. Query Data in Data Explorer

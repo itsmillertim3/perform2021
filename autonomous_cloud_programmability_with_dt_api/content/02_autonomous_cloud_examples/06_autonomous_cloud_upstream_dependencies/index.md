@@ -87,7 +87,7 @@ This example will utilize the `monitored entities v2 API` to crawl upstream depe
 1. Add a message to output statuses as our code processes the dependencies. Place the following code inside the `fetch_upstream` function. This will just output the device ID and level that's being queried, so we can follow the flow
    
    ```python
-   print ("Fetching upstream entities for", entity_ID, "at level", level)
+   print(f"Fetching upstream entities for {entity_ID} at level {level}")
    ```
 
 2. Create a variable called `flat_hosts` that contains a flattened copy of the `hosts` object, so we can hack together a check to make sure we're not looping endlessly when a host is a dependency of itself. In our logic we'll search this flattened dictionary to see if the ID we're about to query
@@ -96,7 +96,7 @@ This example will utilize the `monitored entities v2 API` to crawl upstream depe
    flat_hosts = str(hosts)
    ```
 
-3. Perform the API request and print the result. Add the following to the `fetch_metrics` function to query the API using the URL we built in previous steps
+3. Perform the API request and print the result. Add the following to the `fetch_upstream` function to query the API using the URL we built in previous steps
    
    ```python
    response = requests.get(req_url)
@@ -174,6 +174,7 @@ This example will utilize the `monitored entities v2 API` to crawl upstream depe
                   hosts[level].append(i["id"])
                else:
                   hosts[level] = [i["id"]]
+                  fetch_upstream(i["id"], level + 1)
 
    fetch_upstream(hosts[0][0], 1)
    print (hosts)
