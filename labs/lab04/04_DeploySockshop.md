@@ -7,7 +7,8 @@ This lab will require accessing the EKS Bastion Host you were assigned for this 
   ```
   git clone https://github.com/itsmillertim3/perform2021.git
   ```
-
+ ![GitSockShop](../assets/lab4-downloadsockshop.png)
+ 
 2.  On the EKS Bastion Host navigate to the "k8s-apps" directory and deploy sockshop
   ```
   ./deploy-sockshop.sh
