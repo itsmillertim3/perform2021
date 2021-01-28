@@ -65,7 +65,9 @@ Copy and paste the below text into the **filter** section:
 
 ```mzName("Keptn: keptnorders staging"),type("SERVICE"),entityName("order")```
 
-Then click the **Verify Button**, and after verified, click the **Next** button.
+Then click the **Verify** button.  
+
+When verified, click the **Next** button.
 
 <img src="../../assets/images/lab_3_slo_3.png" width="500"/>
 
@@ -77,13 +79,13 @@ After the **Availability - Order_Staging** has been created lets create two more
 
 Use the follow settings for the **catalog** SLO: 
 
-- SLO Name = **Availability - Catalog_Staging**
-- Filter   = **mzName("Keptn: keptnorders staging"),type("SERVICE"),entityName("catalog")**
+- SLO Name = ```Availability - Catalog_Staging```
+- Filter   = ```mzName("Keptn: keptnorders staging"),type("SERVICE"),entityName("catalog")```
 
 Use the follow settings for the **customer** SLO:
 
-- SLO Name = **Availability - Customer_Staging**
-- Filter   = **mzName("Keptn: keptnorders staging"),type("SERVICE"),entityName("customer")**
+- SLO Name = ```Availability - Customer_Staging```
+- Filter   = ```mzName("Keptn: keptnorders staging"),type("SERVICE"),entityName("customer")```
 
 When complete,  review the results.
 
