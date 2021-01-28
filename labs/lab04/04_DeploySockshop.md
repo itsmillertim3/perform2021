@@ -39,15 +39,15 @@ This lab will require accessing the EKS Bastion Host you were assigned for this 
   kubectl get all -n production
   ```
   
- ![SockShopDevRunning](../assets/images/sockshopdev.png)
+ ![SockShopDevRunning](../assets/lab4-prodrunning1.png)
 
 2. Wait a couple of minutes until all the pods are Ready and Running and the LoadBalancer objects have EXTERNAL-IPs
- ![SockShopDevRunning](../assets/images/sockshopdevrun.png)  
+ ![SockShopDevRunning](../assets/lab4-prodrunning2.png)  
 
-3. Copy external IP for the load balancer into notepad (Prod).
+3. Copy the external IP for the load balancer into notepad (Prod) and add ":8080". 8080 is the port number for the application.
 
 4. Validate the Prod instance
   - Use the External IP of service/front-end and port 8080  
-  ![SockShopDevWeb](../assets/images/sockshopdevweb.png)  
+  ![SockShopDevWeb](../assets/lab4-sockshopuiprod.png)  
   - Register an account
   - Purchase an item
