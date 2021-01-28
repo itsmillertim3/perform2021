@@ -6,7 +6,7 @@ In this lab you'll learn how to leverage the keptn bridge to analyze the differe
 
 ### Step 1: Go to the keptn bridge
 
-1. Go to the keptn bridge url and login with the username and password as demonstrated in the [Install keptn lab](../01_Install_Keptn).
+1. Go to the keptn bridge url and login with the username and password.
 
 1. Select the project `acl-sockshop` to visualize the services part of the project:
 ![keptn-bridge_main](../../../assets/images/keptn-bridge-main.png)
@@ -33,7 +33,7 @@ During our second run, one of the two objectives exceeded the warning threshold 
 - error_rate: 0<=+5%<0.5
 ```
 
-During our third run, one of the two objectives exceeded the failure threshold after getting a result over 700ms for the metric `response_time_p95` this resulted in a failing score of 50.
+During our third run, one of the two objectives exceeded the failure threshold after getting a result over 700ms for the metric `response_time_p95` this resulted in a failing score of 50/100.
 
 ```yaml
 50 < 75  Result: fail

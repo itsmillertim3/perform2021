@@ -1,5 +1,5 @@
 ## Environment overview and configuration
-Before getting started configuring our quality gate we will review the build and release process and trigger a full build from development up to production using Jenkins and our applications carts.
+Before getting started configuring our quality gate we will review the build and release process and trigger a full build from development up to staging using Jenkins and our applications `carts`.
 
 ### Step 1 - Get into the virtual machine using ssh
 In order to get into our working environment we will be using an ssh to conect to our AWS machine. 

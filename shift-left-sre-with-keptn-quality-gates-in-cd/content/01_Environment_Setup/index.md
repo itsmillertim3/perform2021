@@ -13,7 +13,7 @@ In order to build this application we will be using the following technologies.
 
  - **Gitea**
 
-    Instead of using a public repository like github for hosting our pipeline definitions and required files to build our application, we will be using a self hosted source control using the gitea project. https://gitea.io
+    Instead of using a public repository like GitHub for hosting our pipeline definitions and required files to build our application, we will be using a self hosted source control using the gitea project. https://gitea.io
 
  - **JMeter**
 

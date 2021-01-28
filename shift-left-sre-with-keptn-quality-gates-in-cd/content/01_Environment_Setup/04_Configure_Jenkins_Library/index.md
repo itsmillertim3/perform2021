@@ -4,10 +4,9 @@ In this exercise you'll learn how to configure the Keptn library for Jenkins.
 
 ### Step 1: Review Keptn library installation
 
-Following the `everything as code` best practice, we have configure Jenkins to consume a Yaml file to grab all the configurations for our environment. One of those configurations is the keptn library for Jenkins that we will be using to simplify the communication between the keptn API and Jenkins pipelines. 
+Following the `everything as code` best practice, we have configured Jenkins to use a `Yaml` file to grab all the configurations for our environment. One of those configurations is the keptn library for Jenkins that we will be using to simplify the communication between the keptn API and Jenkins. 
 
-1. In order to check the library configuration in the yaml file use the following 
-command and search for `globalLibraries` on line 474.
+1. In order to check the library configuration in the yaml file use the following command and search for `globalLibraries` on line `474`.
 
     **Note:** if you need to enable line numbers in vim, you can do so following these steps:
 
@@ -15,10 +14,10 @@ command and search for `globalLibraries` on line 474.
     1. Press `:` (colon) and the cursor will move at the bottom left corner of the screen.
     1. Type `set number` or `set nu` and hit `Enter`.
 
-```(bash)
-(bastion) $ vi ./bootstrap/box/helm/jenkins-values-gen.yml 
-```
-You should see something like this 
+  ```(bash)
+  vi ./bootstrap/box/helm/jenkins-values-gen.yml 
+  ```
+  You should see something like this 
 
     ```yaml
           globalLibraries:
@@ -52,12 +51,12 @@ You should see something like this
 Retrieve the Keptn credentials using the following
 
 ```bash
-(bastion)$ export KEPTN_API_TOKEN=$(kubectl get secret keptn-api-token -n keptn -ojsonpath={.data.keptn-api-token} | base64 --decode)
-(bastion)$ echo $KEPTN_API_TOKEN
-(bastion)$ export KEPTN_BRIDGE=http://$(kubectl -n keptn get ingress keptn -ojsonpath='{.spec.rules[0].host}')/bridge
-(bastion)$ echo $KEPTN_BRIDGE
-(bastion)$ export KEPTN_ENDPOINT=http://$(kubectl -n keptn get ingress keptn -ojsonpath='{.spec.rules[0].host}')/api
-(bastion)$ echo $KEPTN_ENDPOINT
+ export KEPTN_API_TOKEN=$(kubectl get secret keptn-api-token -n keptn -ojsonpath={.data.keptn-api-token} | base64 --decode)
+ echo $KEPTN_API_TOKEN
+ export KEPTN_BRIDGE=http://$(kubectl -n keptn get ingress keptn -ojsonpath='{.spec.rules[0].host}')/bridge
+ echo $KEPTN_BRIDGE
+ export KEPTN_ENDPOINT=http://$(kubectl -n keptn get ingress keptn -ojsonpath='{.spec.rules[0].host}')/api
+ echo $KEPTN_ENDPOINT
 ```
 
 ### Step 3: Store Keptn credentials in Jenkins
@@ -66,8 +65,8 @@ Retrieve the Keptn credentials using the following
  1. To access jenkins, find your URL by running:
 
     ```bash
-    (bastion)$ export JENKINS_URL=http://$(kubectl get ing jenkins -n jenkins -ojsonpath={.spec.rules[0].host})
-    (bastion)$ echo $JENKINS_URL
+    export JENKINS_URL=http://$(kubectl get ing jenkins -n jenkins -ojsonpath={.spec.rules[0].host})
+    echo $JENKINS_URL
     ```
     You can log in using:
     - Username: `admin`
