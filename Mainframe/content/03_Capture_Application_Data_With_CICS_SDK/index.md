@@ -47,7 +47,7 @@ If RC Not Equal ZERO
 - Compile ADKCOBOL by submitting Compile JCL in `<userid>.JCL(ADKCOBJ)`
 - Check if the Compile & Link ended with RC=0 in all steps 
 - Go to your CICS session or open a new session and logon to CICS with `l HVDACnnn` 
-- Click on Keypad and `Clr Scrn`
+- Click on Keypad and `Clr`
 - Make a newcopy using `cemt s prog(ADKCOBOL) ne`
 - Your new ADKCOBOL program version is active now
  
@@ -69,7 +69,7 @@ If RC Not Equal ZERO
 - Click on `Save` 
 - Note: if you would like to use a Node name different than `TESTNODE`, just change the variable `NODENAME` in `<userid>.JCL(ADKCOBJ)`, re-compile and newcopy. 
 Make sure, that the Request Attribute is defined appropriately with the correct Node Name.
-
+  ![Nodename](../../assets/images/Nodename.png)
 
 ### Step 3: Trigger some test transactions
 - Go to ISPF
