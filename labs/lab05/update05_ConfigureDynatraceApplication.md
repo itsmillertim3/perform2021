@@ -13,7 +13,7 @@ This lab exercise will create a Dynatrace application for the Sock Shop applicat
   
 3. 
   
-   ![Applications](../assets/lab5-application3.png)
+   ![Applications](../assets/lab5-application2.png)
 
 ### Validate SockShop Dev instance
 1. List all objects
