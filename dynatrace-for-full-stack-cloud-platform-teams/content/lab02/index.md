@@ -3,6 +3,7 @@
 ### Deploy SockShop
 1. On the EKS Bastion Host deploy sockshop
   ```
+  cd k8s-apps
   ./deploy-sockshop.sh
   ```
 
@@ -21,14 +22,15 @@
    - Use the External IP of service/front-end and port 8080  
    ![SockShopDevWeb](../assets/images/sockshopdevweb.png)  
    - Register an account
-   - Purchase an item
+   - Browse the items
+   - Add an item to your cart
 
 ### Validate SockShop Production instance
 1. List all objects
   ```
   kubectl get all -n production
   ```
-  
+
  ![SockShopDevRunning](../assets/images/sockshopdev.png)
 
 2. Wait a couple of minutes until all the pods are Ready and Running and the LoadBalancer objects have EXTERNAL-IPs
@@ -38,4 +40,5 @@
   - Use the External IP of service/front-end and port 8080  
   ![SockShopDevWeb](../assets/images/sockshopdevweb.png)  
   - Register an account
-  - Purchase an item
+  - Browse the items
+  - Add an item to your cart
