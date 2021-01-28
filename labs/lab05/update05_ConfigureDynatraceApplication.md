@@ -20,11 +20,11 @@ This lab exercise will create a Dynatrace application for the Sock Shop applicat
 
    ![TransferDomain](../assets/lab5-transferdomain.png)
    
-   Click "Create"
+5. Click "Create"
    
    ![CreateApplication](../assets/lab5-createapplication.png)
    
-5. Navigate back to Application in the Dynatrace menu and select Applications. Select the application you just created. You will see the application is named by the domain selected. Once you have selected the application, use the elypsis and select edit.
+6. Navigate back to Application in the Dynatrace menu and select Applications. Select the application you just created. You will see the application is named by the domain selected. Once you have selected the application, use the elypsis and select edit.
 
    ![EditApplication](../assets/lab5-editapplication.png)
 
