@@ -59,3 +59,4 @@ In this step we extend the Java SpringBoot application with an available OpenTra
 - Go to Transactions and Services > CommandController > Purepaths
 - Choose the /pop2 transaction
 - You will observe that we are getting more visibility into the application execution
+  ![OpenTracingPurePaths](../../../assets/images/03-ExploreDynatrace-1.gif)
