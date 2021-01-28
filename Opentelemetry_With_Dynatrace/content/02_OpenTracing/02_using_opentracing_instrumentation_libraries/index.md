@@ -2,7 +2,7 @@
 In this step we extend the Java SpringBoot application with an available OpenTracing instrumentation libary.
 
 ### Step 1: Decorate the java code with the HazelCast OpenTracing libaries
-- Open `CommandController.java`
+- Open `CommandController.java` from src\main > java\com\hazelcast\kubernetes
   ![EditFile](../../../assets/images/02_using_opentracing_instrumentation_libraries-01.png)
 - Import the OpenTracing Libraries - Comment line 3 and 7
   ```java
