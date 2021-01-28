@@ -4,9 +4,9 @@ I hope you keep having fun. Now we are really going to have fun as we are going 
 
 ### Prerequisits
 
-The subdiretory *tictactoejava* holds a TicTacToe console app. Its very simply but it allows us to also show how Dynatrace can detect version, application and environment for any type of process. In our case its a Java Process.
+The sub-directory *tictactoejava* holds a TicTacToe console app. Its very simply but it allows us to also show how Dynatrace can detect version, application and environment for any type of process. In our case its a Java Process.
 
-As we all run on the same bastion host we want to make sure that Dynatrace uniquly identifies our Java Processes as separate Process Groups. 
+As we all run on the same bastion host we want to make sure that Dynatrace uniquely identifies our Java Processes as separate Process Groups. 
 For that its required that we have our STUDENTID environment variable exported. We have validated this earlier - but - lets double check
 
 ```bash

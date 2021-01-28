@@ -7,7 +7,7 @@ if [[ -z "$1" ]]; then
   exit 1
 fi
 
-source ./gitea-functions.sh $K8S_DOMAIN
+source ./gitea-functions.sh
 
 # read the Token and keep the hash in memory
 readApiTokenFromFile

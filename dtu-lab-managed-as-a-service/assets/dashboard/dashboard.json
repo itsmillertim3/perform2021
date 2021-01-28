@@ -1,0 +1,725 @@
+{
+    "metadata": {
+        "configurationVersions": [3],
+        "clusterVersion": "1.206.119.20201208-162938"
+    },
+    "id": "b5809784-f914-41a7-85f7-25f949afd4bb",
+    "dashboardMetadata": {
+        "name": "MSP - Patton Enterprises",
+        "shared": true,
+        "owner": "alasdair.patton",
+        "sharingDetails": {
+            "linkShared": true,
+            "published": true
+        },
+        "dashboardFilter": {
+            "timeframe": "-2h"
+        }
+    },
+    "tiles": [{
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 0,
+            "width": 342,
+            "height": 228
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Total Customer/Environments",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "builtin:tech.customDevice.count",
+                    "aggregation": "NONE",
+                    "type": "LINE",
+                    "entityType": "MONITORED_ENTITY˟CUSTOM_DEVICE_GROUP",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.custom_device_group",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 342,
+            "width": 342,
+            "height": 228
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Max Host Units",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "ext:Licensing.Host_Units.licenses.total_license_host_units",
+                    "aggregation": "MAX",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullext:Licensing.Host_Units.licenses.total_license_host_units|MAX|TOTAL|LINE|IOT": {
+                        "lastModified": 1607705495725,
+                        "customColor": "#1496ff"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 684,
+            "width": 342,
+            "height": 228
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Max Full Stack Host Units",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "ext:Licensing.Host_Units.licenses.total_license_FS_host_units",
+                    "aggregation": "MAX",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullext:Licensing.Host_Units.licenses.total_license_FS_host_units|MAX|TOTAL|LINE|IOT": {
+                        "lastModified": 1607705075792,
+                        "customColor": "#73be28"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1026,
+            "width": 342,
+            "height": 228
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Max Infra Host Units",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "ext:Licensing.Host_Units.licenses.total_license_IM_host_units",
+                    "aggregation": "MAX",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullext:Licensing.Host_Units.licenses.total_license_IM_host_units|MAX|TOTAL|LINE|IOT": {
+                        "lastModified": 1607705102444,
+                        "customColor": "#6f2da8"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1368,
+            "width": 342,
+            "height": 228
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Max Hosts",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "ext:Licensing.Host_Units.licenses.total_license_hosts",
+                    "aggregation": "MAX",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 0,
+            "width": 342,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Top Customers by Host Units",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "ext:Licensing.Host_Units.licenses.total_tenant_host_units",
+                    "aggregation": "MAX",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.custom_device",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 646,
+            "left": 0,
+            "width": 342,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Top Customers by Hosts",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "ext:Licensing.Host_Units.licenses.total_tenant_num_hosts",
+                    "aggregation": "MAX",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.custom_device",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 304,
+            "left": 342,
+            "width": 1710,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Host Units By Type",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "ext:Licensing.Host_Units.licenses.total_license_FS_host_units",
+                    "aggregation": "MAX",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "ext:Licensing.Host_Units.licenses.total_license_IM_host_units",
+                    "aggregation": "MAX",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullext:Licensing.Host_Units.licenses.total_license_FS_host_units|MAX|TOTAL|LINE|IOT": {
+                        "lastModified": 1607446657148,
+                        "customColor": "#6f2da8"
+                    },
+                    "null¦type»INFRA_ONLY»falseext:Licensing.Host_Units.licenses.host_unit_2|MAX|TOTAL|LINE|IOT": {
+                        "lastModified": 1606471733106,
+                        "customColor": "#6f2da8"
+                    },
+                    "null¦type»FULL_STACK»falseext:Licensing.Host_Units.licenses.host_unit_2|MAX|TOTAL|LINE|IOT": {
+                        "lastModified": 1606471725655,
+                        "customColor": "#73be28"
+                    },
+                    "nullext:Licensing.Host_Units.licenses.total_license_IM_host_units|MAX|TOTAL|LINE|IOT": {
+                        "lastModified": 1607446675524,
+                        "customColor": "#73be28"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 646,
+            "left": 342,
+            "width": 1710,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Running Hosts",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TIMESERIES",
+                "series": [{
+                    "metric": "ext:Licensing.Host_Units.licenses.total_license_IM_hosts",
+                    "aggregation": "MAX",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": false,
+                    "aggregationRate": "TOTAL"
+                }, {
+                    "metric": "ext:Licensing.Host_Units.licenses.total_license_FS_hosts",
+                    "aggregation": "AVG",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullext:Licensing.Host_Units.licenses.total_license_FS_hosts|MAX|TOTAL|LINE|IOT": {
+                        "lastModified": 1607702225941,
+                        "customColor": "#73be28"
+                    },
+                    "nullext:Licensing.Host_Units.licenses.total_num_hosts|MAX|TOTAL|BAR|IOT": {
+                        "lastModified": 1607081109181,
+                        "customColor": "#7c38a1"
+                    },
+                    "nullext:Licensing.Host_Units.licenses.total_license_hosts|MAX|TOTAL|BAR|IOT": {
+                        "lastModified": 1607446783829,
+                        "customColor": "#7c38a1"
+                    },
+                    "nullext:Licensing.Host_Units.licenses.total_license_IM_hosts|MAX|TOTAL|LINE|IOT": {
+                        "lastModified": 1607702211658,
+                        "customColor": "#6f2da8"
+                    },
+                    "nullext:Licensing.Host_Units.licenses.total_num_hosts|AVG|TOTAL|LINE|IOT": {
+                        "lastModified": 1607446765699,
+                        "customColor": "#f5d30f"
+                    },
+                    "null¦type»INFRA_ONLY»falseext:Licensing.Host_Units.licenses.host_unit_2|MAX|TOTAL|LINE|IOT": {
+                        "lastModified": 1606471733106,
+                        "customColor": "#6f2da8"
+                    },
+                    "null¦type»FULL_STACK»falseext:Licensing.Host_Units.licenses.host_unit_2|MAX|TOTAL|LINE|IOT": {
+                        "lastModified": 1606471725655,
+                        "customColor": "#73be28"
+                    },
+                    "nullext:Licensing.Host_Units.licenses.total_license_FS_hosts|AVG|TOTAL|LINE|IOT": {
+                        "lastModified": 1607702547931,
+                        "customColor": "#73be28"
+                    }
+                }
+            },
+            "filtersPerEntityType": {
+                "IOT": {
+                    "SPECIFIC_ENTITIES": ["CUSTOM_DEVICE-45CBDCF7BE561685"]
+                }
+            }
+        }
+    }, {
+        "name": "Cluster Totals",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 0,
+            "left": 0,
+            "width": 2052,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Top Tenants by HU Consumption",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 0,
+            "width": 342,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Full Stack Vs Infra",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 266,
+            "left": 342,
+            "width": 1710,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Deployed Hosts",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 608,
+            "left": 342,
+            "width": 1710,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Top Tenants by Total Hosts",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 608,
+            "left": 0,
+            "width": 342,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Top Tenants by DEM Units",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 950,
+            "left": 0,
+            "width": 342,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "DEM Unit Consumption (Reported Hourly)",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 950,
+            "left": 342,
+            "width": 1710,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 988,
+            "left": 0,
+            "width": 342,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Top Customers by DEM",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "ext:Licensing.Host_Units.licenses.total_tenant_dem_units",
+                    "aggregation": "SUM",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.custom_device",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 988,
+            "left": 342,
+            "width": 1710,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "DEM Consumption",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "ext:Licensing.Host_Units.licenses.total_license_dem_units",
+                    "aggregation": "SUM",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullext:Licensing.Host_Units.licenses.total_license_dem_units|SUM|TOTAL|LINE|IOT": {
+                        "lastModified": 1607705596918,
+                        "customColor": "#bedf2a"
+                    },
+                    "null¦type»INFRA_ONLY»falseext:Licensing.Host_Units.licenses.host_unit_2|MAX|TOTAL|LINE|IOT": {
+                        "lastModified": 1606471733106,
+                        "customColor": "#6f2da8"
+                    },
+                    "null¦type»FULL_STACK»falseext:Licensing.Host_Units.licenses.host_unit_2|MAX|TOTAL|LINE|IOT": {
+                        "lastModified": 1606471725655,
+                        "customColor": "#73be28"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 1710,
+            "width": 342,
+            "height": 228
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Total DEM",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "ext:Licensing.Host_Units.licenses.total_license_dem_units",
+                    "aggregation": "SUM",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullext:Licensing.Host_Units.licenses.total_license_dem_units|SUM|TOTAL|LINE|IOT": {
+                        "lastModified": 1607705581601,
+                        "customColor": "#bedf2a"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Problems",
+        "tileType": "OPEN_PROBLEMS",
+        "configured": true,
+        "bounds": {
+            "top": 38,
+            "left": 2052,
+            "width": 152,
+            "height": 152
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1330,
+            "left": 0,
+            "width": 342,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "Top Customers by DDU",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "TOP_LIST",
+                "series": [{
+                    "metric": "ext:Licensing.Host_Units.licenses.total_tenant_ddus",
+                    "aggregation": "SUM",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [{
+                        "id": "0",
+                        "name": "dt.entity.custom_device",
+                        "values": [],
+                        "entityDimension": true
+                    }],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {}
+            },
+            "filtersPerEntityType": {}
+        }
+    }, {
+        "name": "Top Tenants by DDUs",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 1292,
+            "left": 0,
+            "width": 342,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "DDU Consumption (Reported Hourly)",
+        "tileType": "HEADER",
+        "configured": true,
+        "bounds": {
+            "top": 1292,
+            "left": 342,
+            "width": 1710,
+            "height": 38
+        },
+        "tileFilter": {}
+    }, {
+        "name": "Custom chart",
+        "tileType": "CUSTOM_CHARTING",
+        "configured": true,
+        "bounds": {
+            "top": 1330,
+            "left": 342,
+            "width": 1710,
+            "height": 304
+        },
+        "tileFilter": {},
+        "filterConfig": {
+            "type": "MIXED",
+            "customName": "DDU Consumption",
+            "defaultName": "Custom chart",
+            "chartConfig": {
+                "legendShown": true,
+                "type": "SINGLE_VALUE",
+                "series": [{
+                    "metric": "ext:Licensing.Host_Units.licenses.total_license_ddus",
+                    "aggregation": "SUM",
+                    "type": "LINE",
+                    "entityType": "IOT",
+                    "dimensions": [],
+                    "sortAscending": false,
+                    "sortColumn": true,
+                    "aggregationRate": "TOTAL"
+                }],
+                "resultMetadata": {
+                    "nullext:Licensing.Host_Units.licenses.total_license_ddus|SUM|TOTAL|LINE|IOT": {
+                        "lastModified": 1608214455413,
+                        "customColor": "#FFFF00"
+                    },
+                    "nullext:Licensing.Host_Units.licenses.total_license_dem_units|SUM|TOTAL|LINE|IOT": {
+                        "lastModified": 1607705596918,
+                        "customColor": "#bedf2a"
+                    },
+                    "null¦type»INFRA_ONLY»falseext:Licensing.Host_Units.licenses.host_unit_2|MAX|TOTAL|LINE|IOT": {
+                        "lastModified": 1606471733106,
+                        "customColor": "#6f2da8"
+                    },
+                    "null¦type»FULL_STACK»falseext:Licensing.Host_Units.licenses.host_unit_2|MAX|TOTAL|LINE|IOT": {
+                        "lastModified": 1606471725655,
+                        "customColor": "#73be28"
+                    }
+                }
+            },
+            "filtersPerEntityType": {}
+        }
+    }]
+}

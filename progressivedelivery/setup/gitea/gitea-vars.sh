@@ -1,13 +1,14 @@
 #!/bin/bash
-if [ $# -eq 1 ]; then
-    # Read JSON and set it in the CREDS variable 
-    K8S_DOMAIN=$1
-    echo "Domain has been passed: $K8S_DOMAIN"
-else
+
+K8S_DOMAIN=${K8S_DOMAIN:-none}
+
+if [[ "$K8S_DOMAIN" == "none" ]]; then
     echo "No Domain has been passed, getting it from the api-Ingress"
     KEPTN_K8S_DOMAIN=$(kubectl get ing -n keptn api-keptn-ingress -o=jsonpath='{.spec.rules[0].host}')
     K8S_DOMAIN=${KEPTN_K8S_DOMAIN/#keptn.}
     echo "Domain: $K8S_DOMAIN"
+else 
+    echo "Domain has been passed: $K8S_DOMAIN"  
 fi
 
 #Default values
