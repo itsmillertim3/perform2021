@@ -7,7 +7,7 @@ This lab exercise will create a Dynatrace application for the Sock Shop applicat
  
  ![Applications](../assets/lab5-applications.png)
  
-2.  On the EKS Bastion Host navigate to the "k8s-apps" directory and deploy sockshop
+2.  This is the default application bucket that catches all URLs for servers and services that are instrumented with Dynatrace. Scroll towards the bottom to "Top x Include Domains"
  
   ![Applications1](../assets/lab5-applications1.png)
   
