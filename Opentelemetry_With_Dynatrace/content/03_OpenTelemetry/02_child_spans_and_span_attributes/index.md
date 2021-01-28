@@ -58,14 +58,18 @@ In this task our goal is to grant users of Dynatrace deeper insight into what is
 
 ### Step 2: Tell Dynatrace which OpenTelemetry Attributes are of interest for you
 - In Dynatrace navigate to `Settings` > `Server-side service monitoring` > `Span Attributes`. Add an additional item here. The key you want Dynatrace to capture is `fib.result`.
+  ![SpanAttributes](../../../assets/images/03-02-OpenTelemetryAttributes-1.gif)
 - Use either your Browser or `curl http://localhost:28080/fib?n=3` within a new Terminal to access your new HTTP Service
+  ![SpanAttributes](../../../assets/images/03-02-OpenTelemetryAttributes-2.gif)
 
 ### Step 3: Capture a Request Attribute based on the OpenTelemetry Key
 - In Dynatrace navigate to `Settings` > `Server-side service monitoring` > `Request Attributes`.
 - The Data Source for our Request Attribute needs to be a `Span Attribute`.
 - The Key of the Request Attribute is called `fib.result` (unless you have chosen a different name)
 - We are just interested in the last value within the PurePath - any intermediate results should be ignored.
+  ![ReqAttributes](../../../assets/images/03-02-OpenTelemetryReqAttributes.gif)
 - Use either your Browser or `curl http://localhost:28080/fib?n=3` within a new Terminal to access your new HTTP Service
+  ![ReqAttributes](../../../assets/images/03-02-OpenTelemetryReqAttributes-Result.gif)
 
 ### You've arrived
 - The PurePath you just created now contains an additional PurePath Node per invocation of the Fibonacci Calculator's `Calc` function. In addition the Request Attribute you just created is also available on every PurePath.
