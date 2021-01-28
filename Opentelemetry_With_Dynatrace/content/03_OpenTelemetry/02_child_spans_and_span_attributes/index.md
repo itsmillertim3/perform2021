@@ -53,6 +53,7 @@ In this task our goal is to grant users of Dynatrace deeper insight into what is
 - Launch `fib.exe` via your current Terminal
 - Use either your Browser or `curl http://localhost:28080/fib?n=3` within a new Terminal to access your new HTTP Service
 - The PurePath you just created now contains an additional PurePath Node per invocation of the Fibonacci Calculator's `Calc` function.
+  ![OTelPurepathCalc](../../../assets/images/OTelPurepathCalc.png)
 
 ### Step 2: Tell Dynatrace which OpenTelemetry Attributes are of interest for you
 - In Dynatrace navigate to `Settings` > `Server-side service monitoring` > `Span Attributes`. Add an additional item here. The key you want Dynatrace to capture is `fib.result`.
