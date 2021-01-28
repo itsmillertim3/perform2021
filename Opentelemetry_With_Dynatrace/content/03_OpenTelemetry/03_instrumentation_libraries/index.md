@@ -28,10 +28,11 @@ The idea behind OpenTelemetry is that third party software either already comes 
   ```
 - Press `Ctrl-S` in order to save the changes you've made in `kafka.go`
 - Shut down `fib.exe` using `Ctrl-C` within your Terminal if you haven't done so already.
-- Compile the program using the command line `go build'`. This produces a file name `fib.exe` within the current directory.
+- Compile the program using the command line `go build`. This produces a file name `fib.exe` within the current directory.
 - Launch `fib.exe` via your current Terminal
 - Use either your Browser or `curl http://localhost:28080/fib?n=3` within a new Terminal to access your new HTTP Service
 - The PurePath you just created contains an additional PurePath Node for when the application reaches out to the Kafka Broker
+  ![OTelPurepathKafka](../../../assets/images/OTelPurepathKafka.png)
 
 ### Step 2: Introduce OpenTelemetry via instrumentation library
 - Investigate the additional PurePath Node. What additional data does it potentially offer?

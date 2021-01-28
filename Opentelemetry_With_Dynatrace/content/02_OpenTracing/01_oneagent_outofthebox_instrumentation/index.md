@@ -51,6 +51,9 @@ In this step we will compile our Java Springboot application and explore the out
 ### Step 3: Explore Dynatrace PurePaths after auto instrumentation 
 - Access your Dynatrace tenant in the browser
 - Go to Transactions and Services > CommandController > Purepaths
+  ![OpenTracingPurePaths](../../../assets/images/02-ExploreDynatrace-1.gif)
 - Choose the /pop1 transaction
+  ![OpenTracingPurePaths](../../../assets/images/02-ExploreDynatrace-2.gif)
 - You will observe that the totoal transaction response time was 3 secs, but all of the Java method calls were less than 30 ms.
+  ![OpenTracingPurePaths](../../../assets/images/02-ExploreDynatrace-3spp.png)
 - Clearly something else is responsible

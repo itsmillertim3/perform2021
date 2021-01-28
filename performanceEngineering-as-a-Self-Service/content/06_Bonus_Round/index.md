@@ -31,7 +31,7 @@ Within in the Service settings page, navigate to **Web request naming** and 
 
 Below are the settings we want to use:
 
-- Naming pattern section use: **{RequestAttribute:TSN}**
+- Naming pattern section use: ```{RequestAttribute:TSN}```
 - Condition(s) section first dropdown box pick: **Request attribute**
 - Condition(s) section second dropdown box pick: **TSN**
 - Condition(s) section third dropdown box pick: **exists**
@@ -88,7 +88,7 @@ In the Static threshold settings section use:
 
 In the **Event description** section we will use the following settings:
 
-- Title use:  **Test Step Name Response Time High**
+- Title use:  ```Test Step Name Response Time High```
 - Severity dropdown box pick:  **Slowdown**
 
 When finished, select the **Create custom event for alerting** button.   This will create your custom alert.
@@ -135,9 +135,9 @@ This will bring up the **Order** Service **Response time** screen.   Click the *
 
 This will bring us to the **Response time analysis** screen.   We can see Average response time,  Distributions and Top findings.
 
-In the *Distributions* section click the **Interactions witt services and queues**.   
+In the **Distributions** section click the **Interactions with services and queues**.   
 
-To dig deeper you can drill-down to the Purepaths by click on the **Purepaths** button at the bottom of the screen under the **Analyze 'order' requests** section*.
+To dig deeper you can drill-down to the Purepaths by clicking on the **Purepaths** button at the bottom of the screen under the **Analyze 'order' requests** section*.
 
 <img src="../../assets/images/lab_6_oob_nplus1_4.png" width="500"/>
 
@@ -155,15 +155,15 @@ This is a **N+1** issue!!  This is inefficient at that transaction level but can
 
 Analyzing one test run is great, but comparing two is better as we want to know what the difference between two test runs really is.
 
-In this example a new deploy for version 2.0.0 of a node.js sample application that had some issues where requests to one of the api endpoints has a high failure rate.
+In this example below, version 2.0.0 of a node.js sample application had some issues where requests to one of the api endpoints had high failure rates.
 
-Focusing on “Average Failure Rate split by Test Names” and comparison with the previous test.
+Focusing on **Average Failure Rate split by Test Names** and comparison with the previous test.
 
 <img src="../../assets/images/lab_6_comparison_example.png" width="800"/>
 
 ## Summary
 
-- We learned how to rename transactions using web request naming rules
+- We learned how to rename transactions using web request naming rule
 - We learned how to how to create a custom alert
 - We showed another example how to analyze a Performance Test
 - We learned how to compare results from two different Performance tests

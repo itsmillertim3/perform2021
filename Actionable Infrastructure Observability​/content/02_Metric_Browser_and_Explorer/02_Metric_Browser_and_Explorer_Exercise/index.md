@@ -1,7 +1,6 @@
 ## Metric Browser and Explorer
 
 ### Metric Browser
-![metricbrowser](../../assets/images/metricbrowser.png)
 - Search for Metric by name
   - Example: Telegraf.mem.used_percent
   - Favorite the Metric
@@ -10,12 +9,13 @@
   - Give the dashboard a meaningful name
   - Ex: Infrastructure Overview
   - Tile Name: Memory Utilization
+ ![metricbrowser](/Actionable%20Infrastructure%20Observability%E2%80%8B/assets/images/metricbrowser.png)
  
 ### Metric Browser vs Explorer
-![metricexplorer](../../assets/images/metricexplorer.png)
 - Metric Explorer
   - Create Custom Chart > Try it out
   - Search for the CPU System Usage Telegraf Metric
   - Pin the CPU System Usage Telegraf Metric to the dashboard
 - Which way was easier, browser or explorer? 
   - Why would you choose one over the other?
+  ![metricexplorer](/Actionable%20Infrastructure%20Observability%E2%80%8B/assets/images/metricexplorer.png)
