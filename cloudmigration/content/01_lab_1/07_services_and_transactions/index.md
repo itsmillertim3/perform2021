@@ -14,8 +14,10 @@ Let’s now take a look at the transactions and Services by clicking on the `Tra
 
 💥 **TECHNICAL NOTE**: There a lot of services in this list. To help manage this list a [Dynatrace auto-tagging rule](https://www.dynatrace.com/support/help/how-to-use-dynatrace/tags-and-metadata/) was added by the workshop scripts and we can now use a tag filter to make this list more manageable.
 
-In the management zone drop down, choose `monolith`.
+Management zones are a powerful information-partitioning mechanism that promote collaboration and the sharing of relevant team-specific data while simultaneously ensuring secure access control.
 
+In the management zone drop down, choose `monolith`.
+ 
 ![image](../../../assets/images/lab1-pick-monolith-mz.png)
 
 It should look like this:

@@ -10,14 +10,13 @@ Sample app representing a "monolith" architecture of a frontend and backend.  Th
 
 **#2 . Dynatrace monitoring**
 
-the Dynatrace OneAgent was preinstalled and is sending data to your Dynatrace SaaS environment.  We will review this next.
+The Dynatrace OneAgent was preinstalled and is sending data to your Dynatrace SaaS environment. 
 
 **#3 . Load generator process**
 
 Two docker processes that loop to send simulated user traffic to the sample app.  You will not need to interact with these, they just run in the background.
 
 ![image](../../../assets/images/lab1-setup.png)
-
 
 ## Log into Dynatrace 
 
@@ -31,9 +30,9 @@ To login, follow the steps defined in the picture below:
 
 ## OneAgent
 
-The host running the sample application was created by the Dynatrace University team using scripts to install and run the Sample Application as well as to install the Dynatrace OneAgent.
+The host running the sample application was created by the Dynatrace University team using scripts to install and run the Sample Application and to install the Dynatrace OneAgent.
 
-To see the running OneAgent, choose the `Deployment status` option from the left side menu to open the OneAgent deployment page.
+We don't have to install the OneAgent, but we can review its status by choosing the `Deployment status` option from the left side menu to open the OneAgent deployment page.
 
 ![image](../../../assets/images/lab1-deployment-status.png)
 

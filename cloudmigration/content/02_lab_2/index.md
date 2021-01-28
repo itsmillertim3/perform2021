@@ -10,4 +10,4 @@ We just learned how we can get great information on services, processes and user
 
 🔷 Review how Dynatrace monitors Kubernetes
 
-🔷 Review how Dynatrace helps benchmark the before and after of re-architectured applications
+🔷 Examine the transformed application using service flows and back traces 

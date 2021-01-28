@@ -10,7 +10,7 @@ By just installing the OneAgent, we have now gained a detailed topological view 
 
 In this section, you should have completed the following:
 
-🔷 Review how to install and monitor the Dynatrace OneAgent
+🔷 Review the Dynatrace OneAgent setup
 
 🔷 Review real-time data now available for the sample application
 

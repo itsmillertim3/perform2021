@@ -16,6 +16,10 @@ As you validate your modernization decisions, each of these views will give insi
 
 From the left-side menu in Dynatrace choose **kubernetes**
 
+**NOTE: Be sure that your management zone is NOT filtered!**
+
+![image](../../../assets/images/lab2-mz-filter-none.png)
+
 This dashboard summarized the cluster and workloads
 
 ![image](../../../assets/images/lab2-k8.png)
