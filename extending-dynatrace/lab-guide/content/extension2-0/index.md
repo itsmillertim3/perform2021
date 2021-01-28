@@ -1,4 +1,4 @@
-## Extension 2.0, export a dashboard
+## Extension 2.0, automate dashboard distribution
 
 ### Create a dashboard
 
