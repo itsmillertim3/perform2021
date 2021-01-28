@@ -50,7 +50,7 @@ We're going to use the new endpoint `/api/v2/metrics/ingest​` to push external
 1. Run the following script with the edited command you made from our last step:
 
    ```bash
-   while true; do; covid=$(curl -s --location --request GET 'http://covidtracking.com/api/us' | jq -r '.[].positive' | awk '{print "COVID.US.positive "$1}'); curl -X POST "https://TENANTID.live.dynatrace.com/api/v2/metrics/ingest" -H "accept: */*" -H "Authorization: Api-Token XXXXXXXXXXXXX" -H "Content-Type: text/plain; charset=utf-8" -d "$covid"; sleep 60; done
+   while true; do covid=$(curl -s --location --request GET 'http://covidtracking.com/api/us' | jq -r '.[].positive' | awk '{print "COVID.US.positive "$1}'); curl -X POST "https://TENANTID.live.dynatrace.com/api/v2/metrics/ingest" -H "accept: */*" -H "Authorization: Api-Token XXXXXXXXXXXXX" -H "Content-Type: text/plain; charset=utf-8" -d "$covid"; sleep 60; done
    ```
 
 ### Step 4. Query Data in Data Explorer
