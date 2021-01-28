@@ -9,7 +9,7 @@ The result of that calculation is getting sent to a Kafka Broker.
   ![Deep Monitoring](../../../assets/images/deep_monitoring.png)
 
 ### Step 1: Compile and launch the program
-- Start Visual Studio if it has not been started yet and choose the `03_OpenTelemetry` directory of the previously checked out GitHub Repository. TODO: Specify the EXACT directory
+- Start `Visual Studio Code` if it has not been started yet and choose the `03_OpenTelemetry` directory of the previously checked out GitHub Repository.
 - In Visual Studio Code open up a Terminal
 - Ensure that you are already in the `03_OpenTelemetry` directory, else change diretory to `03_OpenTelemetry` directory and compile the program using the command line `go build`. This produces a file name `fib.exe` within the current directory.
   ```powershell
@@ -48,8 +48,8 @@ The result of that calculation is getting sent to a Kafka Broker.
       http.ListenAndServe(":28080", nil)
     }
     ```
-- We will replace the function `FibServer` (Lines 26-36) with an enriched version of that code (Lines 40-57)
-  - Delete Lines 28 and 35 in order to remove enable the currently commented out code. The function `FibServer` should now look like this:
+- Within function `FibServer` there exists currently commented out code. These lines are accessing the OpenTelemetry API.
+  - Delete Lines 28 and 35 in order to enable the currently commented out code. The function `FibServer` should now look like this:
     ```go
     // FibServer handles HTTP requests for fibonacci calculation
     func FibServer(w http.ResponseWriter, r *http.Request) {
