@@ -13,6 +13,10 @@
 - Title: CPU Temperature
 - Severity: Resource
 
+![static1](/Actionable%20Infrastructure%20Observability%E2%80%8B/assets/images/static1.png)
+
+![static2](/Actionable%20Infrastructure%20Observability%E2%80%8B/assets/images/static2.png)
+
 ### Let's turn up the heat!
 - Back in the DTU Terminal 
 - Stop the retailresponsetime.py script if it’s still running (Ctrl + C)
@@ -31,3 +35,4 @@
 ### Problem Evaluation
 - Review the problem ticket
 - Drill into the host and view the events
+![problem](/Actionable%20Infrastructure%20Observability%E2%80%8B/assets/images/problem.png)
