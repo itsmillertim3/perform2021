@@ -63,7 +63,7 @@ This brings us to the **Define a filter** screen.
 
 Copy and paste the below text into the **filter** section:
 
-**mzName("Keptn: keptnorders staging"),type("SERVICE"),entityName("order")**
+```mzName("Keptn: keptnorders staging"),type("SERVICE"),entityName("order")```
 
 Then click the **Verify Button**, and after verified, click the **Next** button.
 
