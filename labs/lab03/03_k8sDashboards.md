@@ -13,9 +13,9 @@ This lab guide will cover the standard dashboards that are part of K8s deploymen
    
    ![K8SToggles](../assets/lab3-k8s-step2-dashclusteroverview.png)
 
-4. Click Add event field selector
+3. Explore the dashboard to see a performance overview of the cluster
 
-   ![K8SEventSelector](../assets/013_k8sEvents.png)
+   ![K8SEventSelector](../assets/lab3-k8s-step3-exploreclusteroverview.png)
 
 5. Provide a field selector (other events) name and expression (involvedObject.kind!=Node)
 
