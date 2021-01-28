@@ -67,7 +67,15 @@ ZDC993I Opn1RFD:0008  /u/labuser/labusr2/ci/7.3build/log/dt_ZLOCAL1_Z731_5039735
   ![LogonCICS](../../assets/images/Logon_CICS.png)
 
 - Click on Keypad and `Clr Scrn`
-- Make a newcopy using `cemt s prog(ADKCOBOL) ne` 
+- Make a newcopy using `cemt s prog(ADKCOBOL) ne`
+ 
+  ![newcopy](../../assets/images/newcopy.png)
+
+- Optionally check the status of your CICS Agent using transaction `DTAX` in your CICS 
+
+  ![DTAX](../../assets/images/DTAX.png)
+
+- CICS agent should be `Enabled` and `Agent ID` should contain a value
 
 ### Step 5: Define the CICS transaction in Dynatrace
 - Open your Dynatrace Tenant
