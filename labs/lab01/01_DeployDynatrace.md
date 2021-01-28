@@ -11,8 +11,7 @@ This lab guide will deploy the Dynatrace Operator for Kubernetes.
 2. Search for "kubernetes", then select the kubernetes tile and then "Monitor Kubernetes"
 
    ![SearchForK8S](../assets/002_Deployk8s.png)
-   ![SearchForK8S](../assets/002a-Select Kubernetes.png)
-
+  
 3. In the Monitor Kubernetes Deployment screen -> Create a new PaaS Token
 
 4. Click "Generate Token" -> give your token a name -> click "generate" BE SURE TO COPY YOUR PAAS TOKEN
