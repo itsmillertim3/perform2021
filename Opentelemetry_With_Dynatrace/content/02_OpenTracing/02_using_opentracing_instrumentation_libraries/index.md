@@ -2,7 +2,7 @@
 In this step we extend the Java SpringBoot application with an available OpenTracing instrumentation libary.
 
 ### Step 1: Decorate the java code with the HazelCast OpenTracing libaries
-- Open `CommandController.java`
+- Open `CommandController.java` from src\main > java\com\hazelcast\kubernetes
   ![EditFile](../../../assets/images/02_using_opentracing_instrumentation_libraries-01.png)
 - Import the OpenTracing Libraries - Comment line 3 and 7
   ```java
@@ -42,7 +42,14 @@ In this step we extend the Java SpringBoot application with an available OpenTra
 
 ### Step 3: Populate the HazelCast instance with new entries and retrieve the data
 - Switch to the 2nd terminal tab
-- Enter `curl.exe http://localhost:8080/pop2`
+- Enter a few `get` transactions with any values for the key, for example
+  ```powershell
+  PS C:\Users\dtu.training\Documents\vhot2021> curl.exe http://localhost:8080/get?key=samplekey
+  {"response":null}
+  PS C:\Users\dtu.training\Documents\vhot2021> curl.exe http://localhost:8080/get?key=1.2.3.4-1
+  {"response":1.2.3.4-1}
+  ```
+- Now, populate the HazelCast cache with new entries, enter `curl.exe http://localhost:8080/pop2`
   ```powershell
   PS C:\Users\dtu.training\Documents\vhot2021> curl.exe http://localhost:8080/pop2
   {"response":"100 entry inserted to the map with key: 1.2.3.4-* , starting with 200 "}
@@ -59,3 +66,4 @@ In this step we extend the Java SpringBoot application with an available OpenTra
 - Go to Transactions and Services > CommandController > Purepaths
 - Choose the /pop2 transaction
 - You will observe that we are getting more visibility into the application execution
+  ![OpenTracingPurePaths](../../../assets/images/03-ExploreDynatrace-1.gif)

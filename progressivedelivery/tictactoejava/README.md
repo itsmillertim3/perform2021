@@ -17,7 +17,12 @@ java TicTacToeAI.java
 
 ## To Run It with Dynatrace Release Management
 
+**Caution** If you run this as part of HOTDAY and have previously set DT_TENANT env variable its time to clear that to avoid any conflict.
+
+```console
+export DT_TENANT=
 export DT_APPLICATION_RELEASE_VERSION=1
 export DT_APPLICATION_NAME=tictactoe
 export DT_APPLICATION_ENVIRONMENT=gameenvironment
 java TicTacToeAI
+```

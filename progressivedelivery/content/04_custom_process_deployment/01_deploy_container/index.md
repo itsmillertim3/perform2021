@@ -7,9 +7,16 @@ This will allow us to play around with the k8s annotations as well as with envir
 ### Step 1: Explore and edit deployment.yaml
 
 In the subdirectoy helloworldk8sdeploy you will find a file called **deployment.yaml**
+As we are all working on the same file system lets first create a copy so each of us has a unique deployment.yaml
+
+```bash
+cd helloworldk8sdeploy
+cp deployment.yaml deployment_$STUDENTID.yaml
+```
+
 Lets edit that file using vi:
 ```bash
-(bastion)$ vi helloworldk8sdeploy/deployment.yaml
+$ vi deployment_$STUDENTID.yaml
 ```
 
 You can see the two annotations for **Version** (version) and **Application** (part-of) and also one of the specific DT_APPLICATION_ENVIRONMENT environment variables that will define the **Environment**
@@ -27,7 +34,7 @@ Now we can apply that deployment description. In order to separate our deploymen
 To do that we execute the kubectl apply command where we pass the target namespace as parameter. Here is the example for student016 - but - make sure you put in your correct student id!
 
 ```bash
-(bastion)$ kubectl apply -n student016-staging -f helloworldk8sdeploy/deployment.yaml
+$ kubectl apply -n $STUDENTID-staging -f deployment_$STUDENTID.yaml
 deployment.apps/helloworld created
 ```
 
@@ -35,7 +42,7 @@ It should say "deployment.apps/helloworld created". If not then please check the
 
 We can also validate that everything worked as expected by looking at the running pods in our namespace. Here the example for student016-staging (again - make sure you use your `studentid`):
 ```bash
-(bastion)$ kubectl get pods -n student016-staging
+$ kubectl get pods -n student016-staging
 NAME                          READY   STATUS    RESTARTS   AGE
 helloworld-7b7c586b78-mxntv   1/1     Running   0          106s
 simplenode-54f6d97477-vjgnt   1/1     Running   0          59m

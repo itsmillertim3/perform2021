@@ -24,7 +24,7 @@ In this module you will learn how to deploy a Mainframe ActiveGate and zRemote a
 - `Copy` installation command from the Dynatrace Tenant (Step 3) and install with the default settings
 - Click on `Show Deployment Status` after the Installation has been successful
 
-  ![ActiveGate](../../assets/images/AG_Details.png)
+  ![ActiveGate](../../assets/images/MF_AG_Details.png)
 
 ### Step 3: Prepare and start the zDC
 - Double click on the X3270 Session called `Perform` on the Desktop
@@ -33,6 +33,9 @@ In this module you will learn how to deploy a Mainframe ActiveGate and zRemote a
   ![LogonISPF](../../assets/images/Logon_ISPF.png)
 
 - Type `ispf` and navigate to `3.4`
+
+  ![ISPF](../../assets/images/ISPF.png)
+
 - Edit the SYSIN for the zDC parameters - `<userid>.CI.R070300.ZDCSYSIN(ZDCSYIN1)`
 - Provide the IP-Address of your Mainframe ActiveGate and Port 8898 in the DTAGTCMD string
 - Note: the IP-Address is the one of your VM (the one shown in the titlebar of your RDP-Session)
@@ -52,21 +55,38 @@ ZDC993I Opn1RFD:0008  /u/labuser/labusr2/ci/7.3build/log/dt_ZLOCAL1_Z731_5039735
 
 ### Step 4: Prepare CICS transaction
 - Submit the CICS JCL in dataset `<userid>.CI.R070300.JCL (Cnnn5301)`
-- Check in SDSF, if the job `HVDACnnn` is running 
+- Check in SDSF, if the job `HVDACnnn` is running
+- You can use command `=s.st` from anywhere in ISPF
+- You may use commands `owner <userid>` and `pre *` to display all jobs running under your userid
+
+  ![SDSF](../../assets/images/sdsf.png)
+
 - Double click on the X3270 Session called `Perform` on the Desktop again to open a second session
 - Logon to CICS with `l HVDACnnn` 
 
   ![LogonCICS](../../assets/images/Logon_CICS.png)
 
 - Click on Keypad and `Clr Scrn`
-- Make a newcopy using `cemt s prog(ADKCOBOL) ne` 
+- Make a newcopy using `cemt s prog(ADKCOBOL) ne`
+ 
+  ![newcopy](../../assets/images/newcopy.png)
+
+- Optionally check the status of your CICS Agent using transaction `DTAX` in your CICS 
+
+  ![DTAX](../../assets/images/DTAX.png)
+
+- CICS agent should be `Enabled` and `Agent ID` should contain a value
 
 ### Step 5: Define the CICS transaction in Dynatrace
 - Open your Dynatrace Tenant
 - Navigate to `Settings -> Server Side Service Monitoring -> Deep Monitoring -> CICS, IMS and MQ Monitoring` 
 - In section `Transaction Monitoring` click on `Add CICS transaction Start Id filter` and add transaction `DADC`
 - Do not forget to `Save changes`
+- Check the status of your CICS Agent using transaction `DTAX` in your CICS 
+- Type command `conf` after `Option ===>`  
 
+   ![conf](../../assets/images/conf.png)
+ 
 ### Step 6: Trigger the Mainframe transaction 
 - Submit `<userid>.JCL (AFDTRAN)` 
 - This will execute transaction `DADC` 20 times

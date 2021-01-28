@@ -11,8 +11,9 @@ To access Dynatrace open the Dynatrace Environment URL and make sure you can log
 
 ### 2. Access to your Bastion Host
 
-To access the Bastion Host you can either click on the **Open Terminal** link which will open a terminal window in the same browser window.
-The other option is that you use any SSH client, e.g: PUTTY on Windows to connect to the provided IP with the provided username & password!
+To access the Bastion Host we recommend you use your local SSH client, e.g: PUTTY on Windows.
+You can connect to it with the IP Address, username and password given.
+For HOTDAY we also provide the **Open Terminal** option but prefer if everyone connects via SSH to get their own terminal session. This avoids potential conflicts when setting environment variables and running programs!
 
 Once connected and logged in validate that in the home directory you find the `perform-2021-hotday` directory. Thats the git clone of our workshop!
 Go ahead and change into the following directory:
@@ -28,9 +29,8 @@ hot_createkeptnproject.sh  hot_deletekeptnproject.sh  hot_deploy.sh  hot_getinfo
 
 ### 3. Export your STUDENTID
 
-Every student gets assigned a login to the Dynatrace environment that looks something like this: studentxxxperform2021@somedomain.com. For some of our exercises we need to separate our activities. Therefore we take the unique Student ID from your login, e.g: student123.
-
-Once you have identified your student ID, e.g. student123 export it into the following environment variable:
+Every student gets student ID assigned by the instructor, e.g: student123. We use this ID to separate our activities.
+Once you have your student ID, e.g. student123 export it into the following environment variable:
 
 ```console
 export STUDENTID=student123
@@ -39,6 +39,7 @@ export STUDENTID=student123
 ### 4. Access to all required links & tokens
 
 One of the bash scripts gives us information about all necessary systems that are part of our lab. Its the `hot_getinfo.sh`. Lets execute it:
+
 ```console
 $ ./hot_getinfo.sh
 ===============================================================================
@@ -67,5 +68,6 @@ export DT_TENANT=abc12345.xxx.dynatracelabs.com
 export DT_API_TOKEN=ABCDEFGHKIJKLMNOP
 ```
 
-Lets make sure we can access the Keptns Bridge and the Dynatrace Environment.
-Open those links in your browser and login!
+Lets do the following
+1. Copy this output to a local text document so we always have it handy
+2. Lets open these links and validate we can access Keptn Bridge and Dynatrace Environment

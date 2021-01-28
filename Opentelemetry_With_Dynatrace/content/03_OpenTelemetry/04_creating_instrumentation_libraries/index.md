@@ -8,7 +8,7 @@ Second, our solution traces ALL the invocations of the `Calc` function. Trace si
 - Shut down `fib.exe` using `Ctrl-C` within your Terminal if you haven't done so already.
 
 ### Step 1: Restore the original Fibonacci Calculator and create a Wrapper
-- Delete Lines 12 - 48. We are getting rid of our patched version of of the Fibonacci Calculator
+- Delete Lines 12 - 48 in `fibonacci.go`. We are getting rid of our patched version of of the Fibonacci Calculator
 - Delete Lines 14 and 57 in `fibonacci.go`. What we're getting is the original source code of the Fibonacci Calculator - and a bit more on top
 - Press `Ctrl-S` in order to save the changes you've made in `fibonacci.go`
 - The changes we've made to `fibonacci.go` again are creating errors within `main.go`.
@@ -22,3 +22,4 @@ Second, our solution traces ALL the invocations of the `Calc` function. Trace si
 
 ### You've arrived
 - The PurePath you just created does no longer report a Span for every single invocation of the function `Calc`. Most importantly the code of the original Fibonacci Calculator remains untouched. You've managed to create an instrumentation library that performs the necessary work.
+  ![OTelPurepathInstLib](../../../assets/images/OTelPurepathInstLib.png)
