@@ -25,7 +25,7 @@ This lab will require accessing the EKS Bastion Host you were assigned for this 
 2. Wait a couple of minutes until all the pods are Ready and Running and the LoadBalancer objects have EXTERNAL-IPs
   ![SockShopDevRunning](../assets/lab4-devrunning2.png)  
   
-3. Copy external IP for the load balancer into notepad (Dev).
+3. Copy the external IP for the load balancer into notepad (Dev) and add ":8080". 8080 is the port number for the application.
 
 4. Validate the Dev instance
    - Use the External IP of service/front-end and port 8080  
