@@ -95,8 +95,25 @@ When finished, select the **Create custom event for alerting** button.   This wi
 
 <img src="../../assets/images/lab_6_custom_alert_3.png" width="500"/>
 
-We need to run a Load Test so we can review the Problem that gets generated from the custom alert you setup.
+We will need to run a Load Test so we can review the Problem that gets generated from the custom alert you setup.
 
+Open Jenkins.
+
+Click on **04-performancetest-qualitygate** pipeline
+
+<img src="../../assets/images/lab_3_jenkins_run_load_test_1.png" width="500"/>
+
+Select **"Build with parameters"**
+
+We only need to update the **DeployomentURI** section.   
+
+Copy your Order Application URL and paste into the **DeployomentURI** section.   
+
+**Make sure to remove the last / if present when you copied it**
+
+When done click the **Build** button which will start the Performance Test.
+
+<img src="../../assets/images/lab_3_jenkins_run_load_test_2.png" width="500"/>
 ### Performance Analysis
 
 We will cover another troubleshooting example via an out of the box workflow for a key service that has been impacted during the Performance Test.  
