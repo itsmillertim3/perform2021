@@ -29,7 +29,7 @@ This lab will require accessing the EKS Bastion Host you were assigned for this 
 
 4. Validate the Dev instance
    - Use the External IP of service/front-end and port 8080  
-   ![SockShopDevWeb](../assets/images/sockshopdevweb.png)  
+   ![SockShopDevWeb](../assets/lab4-sockshopui.png)  
    - Register an account
    - Purchase an item
 
