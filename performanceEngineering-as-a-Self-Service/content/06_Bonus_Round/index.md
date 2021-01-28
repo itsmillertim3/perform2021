@@ -114,6 +114,7 @@ Copy your Order Application URL and paste into the **DeployomentURI** section.
 When done click the **Build** button which will start the Performance Test.
 
 <img src="../../assets/images/lab_3_jenkins_run_load_test_2.png" width="500"/>
+
 ### Performance Analysis
 
 We will cover another troubleshooting example via an out of the box workflow for a key service that has been impacted during the Performance Test.  
