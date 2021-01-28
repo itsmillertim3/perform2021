@@ -24,7 +24,7 @@ In this module you will learn how to deploy a Mainframe ActiveGate and zRemote a
 - `Copy` installation command from the Dynatrace Tenant (Step 3) and install with the default settings
 - Click on `Show Deployment Status` after the Installation has been successful
 
-  ![ActiveGate](../../assets/images/AG_Details.png)
+  ![ActiveGate](../../assets/images/MF_AG_Details.png)
 
 ### Step 3: Prepare and start the zDC
 - Double click on the X3270 Session called `Perform` on the Desktop
