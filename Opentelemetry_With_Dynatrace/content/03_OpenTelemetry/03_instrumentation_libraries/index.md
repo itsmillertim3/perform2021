@@ -32,6 +32,7 @@ The idea behind OpenTelemetry is that third party software either already comes 
 - Launch `fib.exe` via your current Terminal
 - Use either your Browser or `curl http://localhost:28080/fib?n=3` within a new Terminal to access your new HTTP Service
 - The PurePath you just created contains an additional PurePath Node for when the application reaches out to the Kafka Broker
+  ![OTelPurepathKafka](../../../assets/images/OTelPurepathKafka.png)
 
 ### Step 2: Introduce OpenTelemetry via instrumentation library
 - Investigate the additional PurePath Node. What additional data does it potentially offer?
