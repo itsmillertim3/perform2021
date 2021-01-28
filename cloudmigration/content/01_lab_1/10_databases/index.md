@@ -18,7 +18,7 @@ Pick the `scripts_backend-scripts_1` service.
 
 ![image](../../../assets/images/lab1-trans-services-db.png)
 
-Now click on the **scripts_backend-service_1** database to open the database service page. 
+Now click on the `[embedded]` database to open the database service page. 
 
 ![image](../../../assets/images/lab1-pick-db.png)
 

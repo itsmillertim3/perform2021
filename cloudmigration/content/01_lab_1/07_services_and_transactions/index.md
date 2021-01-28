@@ -24,7 +24,9 @@ It should look like this:
 
 ![image](../../../assets/images/lab1-trans-services.png)
 
-From the `Dynamic Web Requests` section on the right, click the `view Dynamic Requests` button to see what it calls. 
+Choose the `frontend` service.
+
+On the `frontend` service page, find the `Dynamic Web Requests` section on the right and click the `view Dynamic Requests` button to see what it calls. 
 
 ![image](../../../assets/images/lab1-dynamic-requests-arrow.png)
 

@@ -12,11 +12,11 @@ Using the service flow and service backtrace, these two tools give you a complet
 
 Let’s now take a look at the transactions and Services by clicking on the `Transactions and services` left side Dynatrace menu.
 
-Pick the `scripts_backend-scripts_1` service.
+Pick the `backend` service.
 
 ![image](../../../assets/images/lab1-trans-services-db.png)
 
-On the **scripts_backend-service_1** service, click on the **Analyze Backtrace** button.
+On the **backend** service, click on the **Analyze Backtrace** button.
 
 ![image](../../../assets/images/lab1-service-backtrace-arrow.png)
 
@@ -24,10 +24,9 @@ You should be on the service backtrace page where you will see information for t
 
 This will get more interesting in the next lab, but for the monolith backend, we can see that the backtrace is as follows:
 
-1 . The starting point is the **scripts_backend-service_1**
-
-2 . **scripts_backend-service_1** is called by the **scripts_front-end_1**
-
-3 . **scripts_front-end_1** is a where end user requests start and the user sessions get captured within the **My web application** by default
+1. The starting point is the `backend`
+1. `backend` is called by the `frontend` service
+1. `Apachejmeter` traffic from the load generator script
+1. `frontend` is a where end user requests start and the user sessions get captured within the `My web application` by default
 
 ![image](../../../assets/images/lab1-service-backtrace-arrows.png)

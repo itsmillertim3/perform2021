@@ -1,4 +1,4 @@
-## Enable another problem
+## Enable order service problem
 
 Now we are going to look at `order-service` version 2 that causes two problems, but lets review the first one:
 * failure time issues on the `Click the Add Line to an Order (/order/line request)`
@@ -11,7 +11,6 @@ Run these commands to turn off the other problem and enable another one. we will
 Back in the SSH terminal, just run these commands.
 
 ```
-kubectl -n dt-orders set image deployment/customer customer=dtdemos/dt-orders-customer-service:1
 kubectl -n dt-orders set image deployment/order order=dtdemos/dt-orders-order-service:2
 ```
 

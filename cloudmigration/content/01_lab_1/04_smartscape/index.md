@@ -22,6 +22,7 @@ Smartscape shows all the dependencies of a given service. Those include connecti
 
 Let’s see how Dynatrace can visualize these processes using Smartscape.
 
+1. Be sure you are on the `monolith` host page
 1. Just click on the `...` box on the to the right of the host name
 1. pick **Smartscape view** menu option
 1. this will open Smartscape filtered to this EC2 Instance

@@ -1,4 +1,4 @@
-## Enable a problem
+## Enable customer service problem
 
 Various problem patterns that Dynatrace can detect are built into the sample application codebase so that we can easily simulate problems without redeploying the application.
 
@@ -65,4 +65,10 @@ Back on the problem page, click into the `visual resolution path` to see how the
 
 ![image](../../../assets/images/lab3-customer-problem-path.png)
 
+## Turn off the problem in Dynatrace
 
+Back in the SSH terminal, just run these commands.
+
+```
+kubectl -n dt-orders set image deployment/customer customer=dtdemos/dt-orders-customer-service:1
+```

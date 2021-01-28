@@ -46,7 +46,7 @@ See more details in the [Dynatrace documentation](https://www.dynatrace.com/supp
 Now Let’s review a specific service.
 
 1. Click the **services** square above the host infographic to open the list of services
-1. From the list of services, choose the **scripts_backend-service_1**
+1. From the list of services, choose the **backend**
 
 ![image](../../../assets/images/lab1-process-view-list.png)
 
