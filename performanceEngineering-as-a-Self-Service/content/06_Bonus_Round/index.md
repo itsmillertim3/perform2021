@@ -88,7 +88,7 @@ In the Static threshold settings section use:
 
 In the **Event description** section we will use the following settings:
 
-- Title use:  **Test Step Name Response Time High**
+- Title use:  ```Test Step Name Response Time High```
 - Severity dropdown box pick:  **Slowdown**
 
 When finished, select the **Create custom event for alerting** button.   This will create your custom alert.
