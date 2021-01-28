@@ -42,7 +42,7 @@ In this lab you'll learn how to ingest the number of users currently logged into
 1. Run the following script:
 
    ```bash
-   while true; do; echo host.users.active `who | wc -l` | dynatrace_ingest -v; sleep 10; done
+   while true; do echo host.users.active `who | wc -l` | dynatrace_ingest -v; sleep 10; done
    ```
 
 ### Step 4. Query Data in Data Explorer
