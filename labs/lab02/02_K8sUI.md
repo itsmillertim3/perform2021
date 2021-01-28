@@ -9,6 +9,8 @@ This lab guide will deploy Dynatrace integration for Kubernetes.
    ![K8SConfig](../assets/011_k8sUI.png)    
 
 3. Toggle the following switches:
+   - Change the connection name to "Hot 2021".
+
    - Toggle OFF "Require valid certificates for communication with API server" (this workshop cluster uses self-signed).
 
    - Toggle ON "Monitor Prometheus exports"
