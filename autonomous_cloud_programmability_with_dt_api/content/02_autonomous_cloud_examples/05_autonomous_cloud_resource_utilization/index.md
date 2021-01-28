@@ -1,6 +1,6 @@
 ## Host Resource Utilization
 
-In this lab you'll learn how to utilize the `metrics v2 API` to fetch resource utilization informnation for hosts in your environment. We'll build a sample script that pulls CPU, Memory and Disk utilization and flags any hosts that are over or under utilized.
+In this lab you'll learn how to utilize the `metrics v2 API` to fetch resource utilization information for hosts in your environment. We'll build a sample script that pulls CPU, Memory and Disk utilization and flags any hosts that are over or under utilized.
 
 ### Step 1: Setup
 
@@ -104,7 +104,7 @@ In this lab you'll learn how to utilize the `metrics v2 API` to fetch resource u
 
 ### Step 4. Add the actual API query
 
-1. Add a message to output statuses as our code fecthes metric data. Place the following code inside the `fetch_metrics` function. The first line just exracts the metric category from the metric selector (`cpu`, `disk`, `mem`) so we can use it in the message and elsewhere
+1. Add a message to output statuses as our code fetches metric data. Place the following code inside the `fetch_metrics` function. The first line just extracts the metric category from the metric selector (`cpu`, `disk`, `mem`) so we can use it in the message and elsewhere
    
    ```python
    m = metric.split('.')[1]
@@ -120,7 +120,7 @@ In this lab you'll learn how to utilize the `metrics v2 API` to fetch resource u
 
 3. If you run the code now, you won't see any of the returned data, only the response code from the request, which is hopefully `200`. If it isn't examine the code to make sure there aren't any issues before proceeding
    
-4. Parse the json object returned from the API and print the result to inpect. replace the existing `print(response)` line with the following lines that parse the json and log the result
+4. Parse the json object returned from the API and print the result to inspect. Replace the existing `print(response)` line with the following lines that parse the json and log the result
    
    ```python
    jresponse = response.json()
@@ -137,10 +137,10 @@ In this lab you'll learn how to utilize the `metrics v2 API` to fetch resource u
    
    ```python
    for i in jresponse["result"][0]["data"]:
-   if i["values"][0] > 95:
-      issues.append(f'{i["dimensions"][0]},over,{m},{i["values"][0]}')
-   if i["values"][0] < 5:
-      issues.append(f'{i["dimensions"][0]},under,{m},{i["values"][0]}')
+      if i["values"][0] > 95:
+         issues.append(f'{i["dimensions"][0]},over,{m},{i["values"][0]}')
+      if i["values"][0] < 5:
+         issues.append(f'{i["dimensions"][0]},under,{m},{i["values"][0]}')
    ```
 
 7. Almost finished! Let's add a line to print out our issues list. Add the following line to the very end of our script
