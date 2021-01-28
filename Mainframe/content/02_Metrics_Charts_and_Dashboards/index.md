@@ -6,6 +6,14 @@ The goal is to create this sample Dashboard:
 
    ![Sample](../../assets/images/IBM_zSeries_Dashboard.png)
 
+### Step 1: Create Dashboard
+- Open the Dynatrace tenant provided to you
+- Go to `Dashboards` and click on `Create Dashboard`
+- Provide Dashboard name `IBM zSeries Performance` and type `Create
+- This will bring you to an empty Dashboard
+
+   ![Dashboard](../../assets/images/Dashboard.png)
+
 ### Step 1: Create "Host Health" Chart
 - Open the Dynatrace tenant provided to you
 
