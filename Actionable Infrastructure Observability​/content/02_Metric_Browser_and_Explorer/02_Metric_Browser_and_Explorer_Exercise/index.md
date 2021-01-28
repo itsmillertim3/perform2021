@@ -1,7 +1,7 @@
 ## Metric Browser and Explorer
 
 ### Metric Browser
-![metricbrowser](../../assets/images/metricbrowser.png)
+![metricbrowser](/Actionable%20Infrastructure%20Observability%E2%80%8B/assets/images/dtu_lab_guide_example.png)
 - Search for Metric by name
   - Example: Telegraf.mem.used_percent
   - Favorite the Metric
