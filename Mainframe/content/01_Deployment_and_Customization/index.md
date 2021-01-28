@@ -82,7 +82,11 @@ ZDC993I Opn1RFD:0008  /u/labuser/labusr2/ci/7.3build/log/dt_ZLOCAL1_Z731_5039735
 - Navigate to `Settings -> Server Side Service Monitoring -> Deep Monitoring -> CICS, IMS and MQ Monitoring` 
 - In section `Transaction Monitoring` click on `Add CICS transaction Start Id filter` and add transaction `DADC`
 - Do not forget to `Save changes`
+- Check the status of your CICS Agent using transaction `DTAX` in your CICS 
+- Type command `conf` after `Option ===>`  
 
+   ![conf](../../assets/images/conf.png)
+ 
 ### Step 6: Trigger the Mainframe transaction 
 - Submit `<userid>.JCL (AFDTRAN)` 
 - This will execute transaction `DADC` 20 times
