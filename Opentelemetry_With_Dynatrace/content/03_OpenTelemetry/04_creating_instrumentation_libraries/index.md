@@ -9,7 +9,7 @@ Second, our solution traces ALL the invocations of the `Calc` function. Trace si
 
 ### Step 1: Restore the original Fibonacci Calculator and create a Wrapper
 - Delete Lines 12 - 48 in `fibonacci.go`. We are getting rid of our patched version of of the Fibonacci Calculator
-- Delete Lines 14 and 57 in `fibonacci.go`. What we're getting is the original source code of the Fibonacci Calculator - and a bit more on top
+- Delete Lines 14 and 56 in `fibonacci.go`. What we're getting is the original source code of the Fibonacci Calculator - and a bit more on top
 - Press `Ctrl-S` in order to save the changes you've made in `fibonacci.go`
 - The changes we've made to `fibonacci.go` again are creating errors within `main.go`.
 - Delete Line 45 and Line 65 in `main.go`. Between these two lines is yet another version of the function `FibServer`
