@@ -2,8 +2,6 @@
 
 If time permits during our session we have created a few more exercises/topics to cover. 
 
-See below:
-
 - Request Naming Rule
 - Custom Alert
 - Performance Analysis
@@ -17,7 +15,9 @@ For the **frontend** service, we want to change the discovered transaction names
 
 Make sure you are in the **Keptn: keptnorders staging** management zone.
 
-Click **Transactions and services** from the Main Navigation menu.  In the Services view, then click the **frontend** service.
+Click **Transactions and services** from the Main Navigation menu.  
+
+In the Services page click the **frontend** service.
 
 <img src="../../assets/images/lab_6_request_web_request_naming_rule_1.png" width="500"/>
 
@@ -25,16 +25,16 @@ At the top of the **frontend** service page next to the **Smartscape view** butt
 
 <img src="../../assets/images/lab_6_request_web_request_naming_rule_2.png" width="500"/>
 
-Within in the Service settings, navigate to **Web request naming** and click the **Add rule** button
+Within in the Service settings page, navigate to **Web request naming** and then click the **Add rule** button
 
 <img src="../../assets/images/lab_6_request_web_request_naming_rule_3.png" width="500"/>
 
 Below are the settings we want to use:
 
-- Naming pattern section use **{RequestAttribute:TSN}**
-- Condition(s) section first dropdown pick **Request attribute**
-- Condition(s) section second dropdown pick **TSN**
-- Condition(s) section third dropdown pick **exists**
+- Naming pattern section use: **{RequestAttribute:TSN}**
+- Condition(s) section first dropdown box pick: **Request attribute**
+- Condition(s) section second dropdown box pick: **TSN**
+- Condition(s) section third dropdown box pick: **exists**
 
 Next, click the **Preview Rule** button to verify.
 
