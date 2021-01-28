@@ -23,16 +23,6 @@ This lab guide will cover the standard dashboards that are part of K8s deploymen
 
    ![K8SEventSelector](../assets/lab3-k8s-step4-clickdynatracepod.png)
 
-6. Toggle on Monitor events
+5. Dynatrace Namespace Applications
 
-   ![K8SMonitorEvents](../assets/015_k8sUISave.png)
-   
-   - Click Save. 
-
-7. Verify Dynatrace Operator Deployment
-   
-   - Navigate to Kubernetes -> HoT 2021 
-   - Scroll down to Name Spaces and select Dynatrace
-   
-   ![K8SVerifyDT](../assets/016_VerifyDT.png)
-
+   ![K8SMonitorEvents](../assets/lab3-k8s-step5-cloudapplications.png)
