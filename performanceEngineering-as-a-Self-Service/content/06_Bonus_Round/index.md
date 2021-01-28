@@ -31,7 +31,7 @@ Within in the Service settings page, navigate to **Web request naming** and 
 
 Below are the settings we want to use:
 
-- Naming pattern section use: **{RequestAttribute:TSN}**
+- Naming pattern section use: ```{RequestAttribute:TSN}```
 - Condition(s) section first dropdown box pick: **Request attribute**
 - Condition(s) section second dropdown box pick: **TSN**
 - Condition(s) section third dropdown box pick: **exists**
