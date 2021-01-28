@@ -11,6 +11,7 @@ This lab exercise will create a Dynatrace application for the Sock Shop applicat
  
   ![Applications](../assets/lab5-applications1.png)
   
+3. 
   
    ![Applications](../assets/lab5-application3.png)
 
