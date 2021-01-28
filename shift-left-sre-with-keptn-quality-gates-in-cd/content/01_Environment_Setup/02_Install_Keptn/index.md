@@ -19,7 +19,7 @@ We will install [Keptn](https://keptn.sh/) on your AWS instance and use the qual
 1. To install the keptn runtime on your cluster, execute the following command:
 
     ```bash
-    (bastion)$ keptn install --endpoint-service-type=ClusterIP
+     keptn install --endpoint-service-type=ClusterIP
     ```
 
 1. The installer will ask you for the following information:

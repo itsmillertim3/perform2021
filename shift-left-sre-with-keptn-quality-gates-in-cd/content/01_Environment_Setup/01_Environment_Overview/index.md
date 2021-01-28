@@ -55,12 +55,12 @@ gitea       gitea-gitea         <none>   gitea.xx.xx.xxx.nip.io                 
 jenkins     jenkins             <none>   jenkins.xx.xx.xxx.nip.io                10.0.0.90   80      9h
 ```
 ### Step 4 - Explore Gitea
-Navigate into Gitea by using the host domain from step 3. Username and password will be provided during the lab.
+Navigate into Gitea by using the host domain from step 3. username dynatrace and password dynatrace
 ![gitea](../../../assets/images/pre-build.png)
 ![repos](../../../assets/images/repos.png)
 
 ### Step 5 - Explore Jenkins
-Navigate into Jenkins by using the host domain from step 3. Username and password will be provided during the lab.
+Navigate into Jenkins by using the host domain from step 3. Username admin and password dynatrace.
 ![jenkins](../../../assets/images/jenkins.png)
 
 
@@ -73,7 +73,7 @@ Navigate into your Dynatrace environment and go to Transactions and services to 
 
 ![dynatrace1](../../../assets/images/d1.png)
 
-As you see, it's difficult to locate an specific service with the current configuration, next we are going to solve that by creating service tags. This would allow us to identify our services in later labs.
+As you see, it's difficult to locate an specific service with the current configuration, next we are going to solve that by using service tags.
 
 #### Part 1: Create a Naming Rule for Process Groups
 1. Go to **Settings**, **Process and containers**, and click on **Process group naming**.

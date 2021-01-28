@@ -1,6 +1,6 @@
 ## Write Load Test Script for Performance Validation
 
-In this lab you will write a JMeter load test that stresses a service with a bulk of requests. 
+In this lab you will review a JMeter load test that stresses a service with a bulk of requests. 
 
 This load test needs a list of parameters:
 * **SERVER_URL** - The domain of the service.
@@ -21,7 +21,7 @@ Each request needs to be correctly tagged in order to identify them later on. Th
     
     You can Run the following to find out your exact URL:
     ```bash
-    (bastion)$ echo http://$(kubectl get ing gitea-gitea -n gitea -ojsonpath={.spec.rules[0].host})/perform/k8s-deploy-staging/src/branch/master/jmeter
+     echo http://$(kubectl get ing gitea-gitea -n gitea -ojsonpath={.spec.rules[0].host})/perform/k8s-deploy-staging/src/branch/master/jmeter
     ```
 1. Open the file `carts_perfcheck.jmx`
 1. In this file, locate the XML tag `<stringProp name="script">`, which contains the following Java code fragment:
