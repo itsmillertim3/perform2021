@@ -11,10 +11,13 @@ In this example you can get an overview of:
 - most failing services 
 - service throughput
 - slowest services
-- db calls per service
+- database calls per service
+- service time spent in wait, lock, IO and CPU
 - JVM CPU by ThreadGroup
 - GC by Poolname
 - Memory Allocation Objects by API
+
+![software-intelligence-dashboard](../../../assets/images/dashboard-softint.png)
 
 
 ### Let's get the big picture of the environment. 
@@ -25,4 +28,4 @@ In this example you can get an overview of:
   - Smartscape
 
 
-### Introducing Diagnostic Tools
+### Introducing Diagnostic Tools## 
