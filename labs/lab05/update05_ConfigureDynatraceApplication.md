@@ -9,11 +9,11 @@ This lab exercise will create a Dynatrace application for the Sock Shop applicat
  
 2.  On the EKS Bastion Host navigate to the "k8s-apps" directory and deploy sockshop
  
-  ![Applications](../assets/lab5-applications1.png)
+  ![Applications1](../assets/lab5-applications1.png)
   
 3. 
   
-   ![Applications](../assets/lab5-application2.png)
+   ![Applications2](../assets/lab5-applications2.png)
 
 ### Validate SockShop Dev instance
 1. List all objects
