@@ -27,5 +27,12 @@ This lab exercise will create a Dynatrace application for the Sock Shop applicat
 6. Navigate back to Application in the Dynatrace menu and select Applications. Select the application you just created. You will see the application is named by the domain selected. Once you have selected the application, use the elypsis and select edit.
 
    ![EditApplication](../assets/lab5-editapplication.png)
+   
+7. Rename the application to DEV-Sock Shope or PROD-Sock Shop depending what application environment you are setting up first. Remember the environment names were based on the domain names and that is why we are changing them. 
+   - When finished with the new naming, select the menu item for "Async Web Requests and SPAs".
 
+![EditApplication](../assets/lab5-editapplication1.png)
 
+8.
+
+![EditApplication](../assets/lab5-editapplication2.png)
