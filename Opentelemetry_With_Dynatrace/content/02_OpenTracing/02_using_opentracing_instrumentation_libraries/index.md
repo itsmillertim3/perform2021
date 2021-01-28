@@ -42,7 +42,14 @@ In this step we extend the Java SpringBoot application with an available OpenTra
 
 ### Step 3: Populate the HazelCast instance with new entries and retrieve the data
 - Switch to the 2nd terminal tab
-- Enter `curl.exe http://localhost:8080/pop2`
+- Enter a few `get` transactions with any values for the key, for example
+  ```powershell
+  PS C:\Users\dtu.training\Documents\vhot2021> curl.exe http://localhost:8080/get?key=samplekey
+  {"response":null}
+  PS C:\Users\dtu.training\Documents\vhot2021> curl.exe http://localhost:8080/get?key=1.2.3.4-1
+  {"response":1.2.3.4-1}
+  ```
+- Now, populate the HazelCast cache with new entries, enter `curl.exe http://localhost:8080/pop2`
   ```powershell
   PS C:\Users\dtu.training\Documents\vhot2021> curl.exe http://localhost:8080/pop2
   {"response":"100 entry inserted to the map with key: 1.2.3.4-* , starting with 200 "}
