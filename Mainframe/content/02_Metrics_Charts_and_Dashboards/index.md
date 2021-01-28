@@ -38,11 +38,6 @@ The goal is to create this sample Dashboard:
 - Select your Dashboard and `Pin`, then `Open Dashboard`
 
 
-
-### Step 3: Create "Database" Chart
-- Go to `Diagnostic tools` and and click on `Create analysis view`
-- ...
-
 ### Step 5: Create "CICS Transaction Most Frequent" Chart
 - Go to `Diagnostic tools` and and click on `Create analysis view`
 - ...
