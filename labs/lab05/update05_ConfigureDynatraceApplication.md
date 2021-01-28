@@ -1,18 +1,18 @@
-## Deploy Sock Shop Sample Application
+## Configure Dynatrace Application
 
-This lab will require accessing the EKS Bastion Host you were assigned for this session.
+This lab exercise will create a Dynatrace application for the Sock Shop application that was deployed. 
 
-### Deploy SockShop
-1.  Clone the application deployment files from the 20201 HoT Github repo
-  ```
-  git clone https://github.com/itsmillertim3/perform2021.git
-  ```
- ![GitSockShop](../assets/lab4-downloadsockshop.png)
+### Create Application
+1.  Navigate to Applications and then select "My Web Application".
+ 
+ ![Applications](../assets/lab5-applications.png)
  
 2.  On the EKS Bastion Host navigate to the "k8s-apps" directory and deploy sockshop
-  ```
-  ./deploy-sockshop.sh
-  ```
+ 
+  ![Applications](../assets/lab5-applications1.png)
+  
+  
+   ![Applications](../assets/lab5-application3.png)
 
 ### Validate SockShop Dev instance
 1. List all objects
