@@ -33,6 +33,9 @@ In this module you will learn how to deploy a Mainframe ActiveGate and zRemote a
   ![LogonISPF](../../assets/images/Logon_ISPF.png)
 
 - Type `ispf` and navigate to `3.4`
+
+  ![ISPF](../../assets/images/ISPF.png)
+
 - Edit the SYSIN for the zDC parameters - `<userid>.CI.R070300.ZDCSYSIN(ZDCSYIN1)`
 - Provide the IP-Address of your Mainframe ActiveGate and Port 8898 in the DTAGTCMD string
 - Note: the IP-Address is the one of your VM (the one shown in the titlebar of your RDP-Session)
