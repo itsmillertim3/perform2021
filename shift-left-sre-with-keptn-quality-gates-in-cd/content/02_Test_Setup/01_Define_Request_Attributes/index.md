@@ -1,5 +1,5 @@
 ## Define Request Attributes in Dynatrace
-In this lab you will learn how to capture request attributes in Dynatrace based on web request data. In more detail, the data stored in the request header `x-dynatrace-test` will be extracted to create request attributes that tag and distinguish service traffic. 
+In this exercise you will learn how to capture request attributes in Dynatrace based on web request data. In more detail, the data stored in the request header `x-dynatrace-test` will be extracted to create request attributes that tag and distinguish service traffic. 
 
 For further information on how to capture request attributes, [please see this page in the Dynatrace documentation.](https://www.dynatrace.com/support/help/monitor/transactions-and-services/request-attributes/how-do-i-capture-request-attributes-based-on-web-request-data/)
 
@@ -12,7 +12,7 @@ For further information on how to capture request attributes, [please see this p
 1. Specify the *Parameter name*: `x-dynatrace-test`.
 1. Open *Optionally restrict or process the captured parameter(s) further*
 1. At *Preprocess by extracting substring* set: `between` > `LTN=` > `;`
-1. Finally, click **Save**, click **Save**.
+1. Finally, click **Save**, and click **Save** again.
 
 Screenshot shows this rule definition.
 ![request-attribute](../../../assets/images/request_attribute.png)
@@ -26,7 +26,7 @@ Screenshot shows this rule definition.
 1. Specify the *Parameter name*: `x-dynatrace-test`.
 1. Open *Optionally restrict or process the captured parameter(s) further*
 1. At *Preprocess by extracting substring* set: `between` > `LSN=` > `;`
-1. Finally, click **Save**, click **Save**.
+1. Finally, click **Save**, and click **Save** again.
 
 ### Step 3: Create Request Attribute for Test Script Name (TSN)
 1. Go to **Settings**, **Server-side monitoring**, and click on **Request attributes**.
@@ -37,4 +37,4 @@ Screenshot shows this rule definition.
 1. Specify the *Parameter name*: `x-dynatrace-test`.
 1. Open *Optionally restrict or process the captured parameter(s) further*
 1. At *Preprocess by extracting substring* set: `between` > `TSN=` > `;`
-1. Finally, click **Save**, click **Save**.
+1. Finally, click **Save**, and click **Save** again.

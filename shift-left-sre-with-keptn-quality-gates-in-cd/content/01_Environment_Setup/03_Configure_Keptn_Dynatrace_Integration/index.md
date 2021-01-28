@@ -13,9 +13,14 @@ The OneAgent Operator has already been deployed in earlier stages of the lab. Ho
     ```
 
 1. This script will perform the following steps:
-    - Configure automated tagging rules in Dynatrace for environment, service and test-subject
-    - Configure a problem notification in Dynatrace for sending events to the keptn api
+    - Create a secret called "dynatrace" which will hold the details of how to connect to the Dynatrace environment through the API
+    - Deploy the [Dynatrace service](https://github.com/keptn-contrib/dynatrace-service) for Keptn from an [online resource](https://raw.githubusercontent.com/keptn-contrib/dynatrace-service/0.10.0/deploy/service.yaml)
     - Set up the Dynatrace Service in keptn
+
+    As part of setting up the Dynatrace Service for Keptn, the following are created:
+    - Tagging rules for keptn_service, keptn_stage, keptn_project, and keptn_deployment
+    - Problem notifications for sending events to the keptn API
+    - Alerting profile for Problems
 
 ### Step 2: Install Dynatrace SLI service
 In order to allow Keptn to use Dynatrace as an SLI provider we will need to install the [Dynatrace SLI Service](https://github.com/keptn-contrib/dynatrace-sli-service) for Keptn. This would allow us to write SLI definitions to obtain metrics from the Dynatrace API and use them as part of the evaluations.

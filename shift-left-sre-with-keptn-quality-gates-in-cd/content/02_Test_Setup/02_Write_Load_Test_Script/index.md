@@ -17,7 +17,13 @@ Each request needs to be correctly tagged in order to identify them later on. Th
 * **LTN** - The Load Test Name uniquely identifies a test execution (for example, 6h Load Test – June 25)
 
 ### Step 1: Open Performance Test Template
-1. Open the file `carts_perfcheck.jmx` in ```carts/jmeter```.
+1. Access your local Git server (Gitea). And navigate to the `perform/k8s-deploy-staging/jmeter` folder.
+    
+    You can Run the following to find out your exact URL:
+    ```bash
+    (bastion)$ echo http://$(kubectl get ing gitea-gitea -n gitea -ojsonpath={.spec.rules[0].host})/perform/k8s-deploy-staging/src/branch/master/jmeter
+    ```
+1. Open the file `carts_perfcheck.jmx`
 1. In this file, locate the XML tag `<stringProp name="script">`, which contains the following Java code fragment:
     ```
     import org.apache.jmeter.util.JMeterUtils;
@@ -37,6 +43,10 @@ Each request needs to be correctly tagged in order to identify them later on. Th
     ```
 
 ### Step 2: Generate the x-dynatrace-test header
+**Note:** You may need to  first log into Gitea to make changes in-browser. If you need to do this, use the following credentials:
+ - Username: `dynatrace`
+ - Password: `dynatrace`
+
 1. Add the following snippet after the comment section: **// Generate the x-dynatrace-test header**.
     ```
     String LTN=JMeterUtils.getProperty(&quot;DT_LTN&quot;);
@@ -62,5 +72,4 @@ Each request needs to be correctly tagged in order to identify them later on. Th
     ```
 
 ### Step 4: Commit changes
-1. Save the file. 
-1. Commit/Push the changes to your GitHub Repository *carts*.
+1. Commit the changes by scrolling down and clicking *commit changes*.

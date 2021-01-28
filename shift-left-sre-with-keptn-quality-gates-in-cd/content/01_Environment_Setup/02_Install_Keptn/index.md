@@ -11,7 +11,7 @@ We will install [Keptn](https://keptn.sh/) on your AWS instance and use the qual
     ```
 
 1. You will be presented with a response like the following:
-![keptn](../../.../../../assets/images/images/keptn-cli-response1.png)
+![keptn](../../../assets/images/keptn-cli-response1.png)
 
 
 ### Step 2: Install the keptn runtime

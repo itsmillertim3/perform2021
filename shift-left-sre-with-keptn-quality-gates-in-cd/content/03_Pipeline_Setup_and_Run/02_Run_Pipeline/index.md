@@ -1,12 +1,12 @@
 ## Run Performance Test on Carts Service
 
-In this lab you'll measure the performance for the carts service 3 times. The first time you'll run the test and create a baseline for future runs. The second time you will introduce a small slowdown that will be evaluated as a warning SLO result. The third time you will increase the slowdown to see how the pipelines fails when it goes beyond the SLI objetive for the response time.
+In this exercise you'll measure the performance for the carts service 3 times. The first time you'll run the test and create a baseline for future runs. The second time you will introduce a small slowdown that will be evaluated as a warning SLO result. The third time you will increase the slowdown to see how the pipelines fails when it goes beyond the SLI objetive for the response time.
 
 ### Step 1: Run Performance Test on current Implementation
 
-1. Go to  **Jenkins** and click on **sockshop** folder.
-1. Click on **carts.performance**.
-1. Click on **Build with parameters** to trigger the performance pipeline. (leave the default values).
+1. Go to your **Jenkins** homepage and click on **sockshop** folder.
+1. Click on **carts**, then **master**.
+1. Click on **Build with parameters** to trigger the pipeline. (leave the default values).
 1. Wait until the pipeline build exists with a *Success* status.
 
 ### Step 2: Introduce a small slowdown in the Carts Service
