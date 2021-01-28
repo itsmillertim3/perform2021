@@ -55,9 +55,9 @@ ZDC993I Opn1RFD:0008  /u/labuser/labusr2/ci/7.3build/log/dt_ZLOCAL1_Z731_5039735
 
 ### Step 4: Prepare CICS transaction
 - Submit the CICS JCL in dataset `<userid>.CI.R070300.JCL (Cnnn5301)`
-- Check in SDSF, if the job `HVDACnnn` is running 
-You can use command `=s.st` from anywhere in ISPF
-You may use commands `owner <userid>` and `pre *` to display all jobs running under your userid
+- Check in SDSF, if the job `HVDACnnn` is running
+ You can use command `=s.st` from anywhere in ISPF
+ You may use commands `owner <userid>` and `pre *` to display all jobs running under your userid
 
   ![SDSF](../../assets/images/sdsf.png)
 
