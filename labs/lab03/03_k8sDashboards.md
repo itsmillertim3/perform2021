@@ -8,14 +8,10 @@ This lab guide will cover the standard dashboards that are part of K8s deploymen
 
    ![K8SConfig](../assets/lab3-k8s-selectDash.png)    
 
-3. Toggle the following switches:
-   - Change the connection name to "HoT 2021".
-
-   - Toggle OFF "Require valid certificates for communication with API server" (this workshop cluster uses self-signed).
-
-   - Toggle ON "Monitor Prometheus exports"
+2. The Kuberbetes deployment created the following preset dashboards.
+   - Click on the Kubernetes namespace resource quotas dashboard.
    
-   ![K8SToggles](../assets/012_k8sSlider.png)
+   ![K8SToggles](../assets/lab3-k8s-step2-dashnamespacequota.png)
 
 4. Click Add event field selector
 
