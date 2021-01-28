@@ -19,9 +19,9 @@ This lab guide will cover the standard dashboards that are part of K8s deploymen
 
    ![K8SEventSelector](../assets/lab3-k8s-step3-clickrunningpods.png)
 
-5. Provide a field selector (other events) name and expression (involvedObject.kind!=Node)
+4. Review the running Pods and click on Dynatrace
 
-   ![K8SEventSelector](../assets/014_k8sEventsS.png)
+   ![K8SEventSelector](../assets/lab3-k8s-step4-clickdynatracepod.png)
 
 6. Toggle on Monitor events
 
