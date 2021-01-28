@@ -9,9 +9,9 @@ This lab guide will cover the standard dashboards that are part of K8s deploymen
    ![K8SConfig](../assets/lab3-k8s-selectDash.png)    
 
 2. The Kuberbetes deployment created the following preset dashboards.
-   - Click on the Kubernetes namespace resource quotas dashboard.
+   - Click on the Kubernetes Cluster Overview dashboard.
    
-   ![K8SToggles](../assets/lab3-k8s-step2-dashnamespacequota.png)
+   ![K8SToggles](../assets/lab3-k8s-step2-dashclusteroverview.png)
 
 4. Click Add event field selector
 
