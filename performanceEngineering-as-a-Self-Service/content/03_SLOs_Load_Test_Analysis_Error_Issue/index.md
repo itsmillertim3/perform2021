@@ -43,7 +43,7 @@ The Dynatrace Software Intelligence Platform delivers all the necessary Service-
 
 Click "**SLOs**" from the Main Navigation menu.
 
-Then Select the "**Add new SLO**" Button.
+Then Select the "**Add new SLO**" button.
 
 <img src="../../assets/images/lab_3_slo_1.png" width="500"/>
 
@@ -51,7 +51,9 @@ This will bring up the **Add new SLO** wizard screen.
 
 Click on the **Service-level availability** button.
 
-In the **Name this service-level availability SLO** section use this name:  **Availability - Order_Staging**
+In the **Name this service-level availability SLO** section use this name:  
+
+```Availability - Order_Staging```
 
 Click **Next** at the button right of the screen.
 
