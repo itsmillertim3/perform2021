@@ -77,3 +77,4 @@ The result of that calculation is getting sent to a Kafka Broker.
 
 ### You've arrived
 - The PurePath you just created now contains an additional PurePath Node created via OpenTelemetry
+  ![OTelPurepath](../../../assets/images/OTelPurepath.png)
