@@ -22,7 +22,7 @@ Create a workspace: PerformHOT2021
 
 ### Postman
 - Let’s get data from the Dynatrace Metric API!
-- For the CPU and Disk GET:
+- For the CPU and Disk GET Requests:
   - Replace {{URL}} in GET with your Dynatrace Environment
   - Be mindful that it’s easy to copy and paste https:// and it’s already in the GET
   - Replace {{API_TOKEN}} in the header with your API Token
