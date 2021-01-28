@@ -19,7 +19,8 @@ In this step we will prepare the environment for the hands on exercises
   ![CloneRepo](../../assets/images/01_prepare_the_environment-3.png)
 - Select the folder (e.g. Documents folder) to store the cloned repo 
   ![Folder](../../assets/images/01_prepare_the_environment-4.png)
-- If prompted to open the cloned repository, click on `Open` 
+- If prompted to open the cloned repository, click on `Open`
+
   ![Open](../../assets/images/01_prepare_the_environment-5.png)
 
 ### You've arrived
