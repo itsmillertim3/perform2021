@@ -41,7 +41,7 @@ The tiles will also be clickable opening up the actual list of issues in your ex
 
 ## Release events
 
-This view shows all deployment, info, configuration or proces events that match the current filter. This allows you to answer questions such as
+This view shows all deployment, info, configuration or process events that match the current filter. This allows you to answer questions such as
 * When was the last deployments in a specific environment?
 * When did we have process crashes on a particular service?
 * Were there any configuration changes in a particular timeframe?

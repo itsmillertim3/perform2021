@@ -21,7 +21,7 @@ The k8s environment we are using in the HOT class has enabled OneAgent to pull t
 
 ### For any process: Environment Variables
 
-Version awareness also works for any type of process that doesnt live in k8s. Here Dynatrace looks for 3 specific environment variables on that process:
+Version awareness also works for any type of process that doesn't live in k8s. Here Dynatrace looks for 3 specific environment variables on that process:
 * **Version** from DT_APPLICATION_RELEASE_VERSION 
 * **Application** from DT_APPLICATION_NAME
 * **Environment** DT_APPLICATION_ENVIRONMENT

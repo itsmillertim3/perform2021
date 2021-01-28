@@ -1,67 +1,12 @@
 {
 	"info": {
-		"_postman_id": "7b7cd134-8175-4a50-99c1-ff0a886ca042",
+		"_postman_id": "eb4fdaa7-1164-48d6-bc9e-da02091be336",
 		"name": "DT Managed Perform 2021 Cluster API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "Lookup Token Meta Data",
-			"protocolProfileBehavior": {
-				"disabledSystemHeaders": {
-					"content-type": true,
-					"connection": true
-				}
-			},
-			"request": {
-				"method": "POST",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "Api-Token {{dtAPIAuthToken}}",
-						"type": "text"
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					},
-					{
-						"key": "Charset",
-						"value": "utf-8",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"token\": \"{{dtAPITokenID}}\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "https://{{dtManaged}}.dynatrace-managed.com/api/cluster/v2/tokens/lookup",
-					"protocol": "https",
-					"host": [
-						"{{dtManaged}}",
-						"dynatrace-managed",
-						"com"
-					],
-					"path": [
-						"api",
-						"cluster",
-						"v2",
-						"tokens",
-						"lookup"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Create Token",
+			"name": "01.Create Token",
 			"protocolProfileBehavior": {
 				"disabledSystemHeaders": {
 					"connection": true,
@@ -89,7 +34,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Environment Token Management One\",\r\n    \"expiresIn\": {\r\n        \"value\": 10,\r\n        \"unit\": \"DAYS\"\r\n    },\r\n    \"scopes\": [\r\n        \"EnvironmentTokenManagement\"\r\n    ]\r\n}",
+					"raw": "{\r\n    \"name\": \"Service Provider API One\",\r\n    \"expiresIn\": {\r\n        \"value\": 10,\r\n        \"unit\": \"DAYS\"\r\n    },\r\n    \"scopes\": [\r\n        \"ServiceProviderAPI\"\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -115,7 +60,7 @@
 			"response": []
 		},
 		{
-			"name": "Create Token License Extension",
+			"name": "02.Create Token License Extension",
 			"protocolProfileBehavior": {
 				"disabledSystemHeaders": {
 					"connection": true,
@@ -169,11 +114,11 @@
 			"response": []
 		},
 		{
-			"name": "Delete Token",
+			"name": "03.Lookup Token Meta Data",
 			"protocolProfileBehavior": {
 				"disabledSystemHeaders": {
-					"connection": true,
-					"content-type": true
+					"content-type": true,
+					"connection": true
 				}
 			},
 			"request": {
@@ -181,8 +126,63 @@
 				"header": [
 					{
 						"key": "Authorization",
+						"value": "Api-Token {{dtAPIAuthToken}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Charset",
+						"value": "utf-8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"token\": \"This is where you place your Service Provicer API One\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{dtManaged}}.dynatrace-managed.com/api/cluster/v2/tokens/lookup",
+					"protocol": "https",
+					"host": [
+						"{{dtManaged}}",
+						"dynatrace-managed",
+						"com"
+					],
+					"path": [
+						"api",
+						"cluster",
+						"v2",
+						"tokens",
+						"lookup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "04.Delete Token",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
 						"type": "text",
-						"value": "Api-Token "
+						"value": "Api-Token {{dtAPIAuthToken}}"
 					},
 					{
 						"key": "Content-Type",
@@ -197,7 +197,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Environment Token Management holy shit\",\r\n    \"expiresIn\": {\r\n        \"value\": 10,\r\n        \"unit\": \"DAYS\"\r\n    },\r\n    \"scopes\": [\r\n        \"EnvironmentTokenManagement\"\r\n    ]\r\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -205,10 +205,10 @@
 					}
 				},
 				"url": {
-					"raw": "https://gjy420.dynatrace-managed.com/api/cluster/v2/tokens",
+					"raw": "https://{{dtManaged}}.dynatrace-managed.com/api/cluster/v2/tokens/PlaceTokenIDHere",
 					"protocol": "https",
 					"host": [
-						"gjy420",
+						"{{dtManaged}}",
 						"dynatrace-managed",
 						"com"
 					],
@@ -216,9 +216,391 @@
 						"api",
 						"cluster",
 						"v2",
-						"tokens"
+						"tokens",
+						"PlaceTokenIDHere"
 					]
 				}
+			},
+			"response": []
+		},
+		{
+			"name": "05.Create Environment",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"//Check if the envNumber environment variable has been set. We use this to workout if the request has been sent before or not. ",
+							"//If envNumber is not set then it is set to 1, if it is set it is incremented by 1.",
+							"//The envNumber is used to ensure the IDs are unique",
+							"var envNumber = pm.environment.get(\"envNumber\");",
+							"    if (!envNumber) {",
+							"        envNumber = 1;",
+							"    } else {",
+							"        envNumber++;",
+							"    }",
+							"pm.environment.set(\"envNumber\", envNumber)"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Parse the JSON response body and extract the envID and token\r",
+							"var jsonData = JSON.parse(responseBody);\r",
+							"pm.environment.set(\"envID\", jsonData.id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Api-Token {{dtAPITokenID}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Perform2021-Managed-Cluster-{{envNumber}}\",\n  \"state\": \"ENABLED\",\n  \"tags\": [\n    \"customerA\",\n    \"production\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "https://{{dtManaged}}.dynatrace-managed.com/api/cluster/v2/environments?createToken=true",
+					"protocol": "https",
+					"host": [
+						"{{dtManaged}}",
+						"dynatrace-managed",
+						"com"
+					],
+					"path": [
+						"api",
+						"cluster",
+						"v2",
+						"environments"
+					],
+					"query": [
+						{
+							"key": "createToken",
+							"value": "true"
+						}
+					]
+				},
+				"description": "This will create a new environment on your managed cluster"
+			},
+			"response": []
+		},
+		{
+			"name": "06.Disable Environment",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Api-Token {{dtAPITokenID}}"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Perform2021-Managed-Cluster-{{envNumber}}\",\n  \"state\": \"DISABLED\",\n  \"tags\": [\n    \"customerA\",\n    \"production\"\n  ],\n  \"trial\": false\n}"
+				},
+				"url": {
+					"raw": "https://{{dtManaged}}.dynatrace-managed.com/api/cluster/v2/environments/{{envID}}",
+					"protocol": "https",
+					"host": [
+						"{{dtManaged}}",
+						"dynatrace-managed",
+						"com"
+					],
+					"path": [
+						"api",
+						"cluster",
+						"v2",
+						"environments",
+						"{{envID}}"
+					]
+				},
+				"description": "This will create a new environment on your managed cluster"
+			},
+			"response": []
+		},
+		{
+			"name": "07.Delete Environment",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Api-Token {{dtAPITokenID}}"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Perform2021-Managed-Cluster-{{envNumber}}\",\n  \"state\": \"DISABLED\",\n  \"tags\": [\n    \"customerA\",\n    \"production\"\n  ],\n  \"trial\": false\n}"
+				},
+				"url": {
+					"raw": "https://{{dtManaged}}.dynatrace-managed.com/api/cluster/v2/environments/{{envID}}",
+					"protocol": "https",
+					"host": [
+						"{{dtManaged}}",
+						"dynatrace-managed",
+						"com"
+					],
+					"path": [
+						"api",
+						"cluster",
+						"v2",
+						"environments",
+						"{{envID}}"
+					]
+				},
+				"description": "This will create a new environment on your managed cluster"
+			},
+			"response": []
+		},
+		{
+			"name": "08.Create User Group",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Api-Token {{dtAPITokenID}}"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"\",\n    \"name\": \"Perform2021-Managed-UserGroup-{{envNumber}}\",\n    \"ldapGroupNames\": [\n        \"\"\n    ],\n    \"accessRight\": {\n        \"VIEWER\": [\n            \"{{envID}}\"\n        ],\n        \"AGENT_INSTALL\": [\n            \"{{envID}}\"\n        ],\n        \"LOG_VIEWER\": [\n            \"{{envID}}\"\n        ],\n        \"VIEW_SENSITIVE_REQUEST_DATA\": [\n            \"{{envID}}\"\n        ],\n        \"CONFIGURE_REQUEST_CAPTURE_DATA\": [\n            \"{{envID}}\"\n        ],\n        \"REPLAY_SESSION_DATA\": [\n            \"{{envID}}\"\n        ]\n    },\n    \"isClusterAdminGroup\": false\n}"
+				},
+				"url": {
+					"raw": "https://{{dtManaged}}.dynatrace-managed.com/api/v1.0/onpremise/groups",
+					"protocol": "https",
+					"host": [
+						"{{dtManaged}}",
+						"dynatrace-managed",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1.0",
+						"onpremise",
+						"groups"
+					]
+				},
+				"description": "This will create a new user group  on your managed cluster"
+			},
+			"response": []
+		},
+		{
+			"name": "09.Create Licensing Environment",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Parse the JSON response body and extract the envID and token\r",
+							"var jsonData = JSON.parse(responseBody);\r",
+							"pm.environment.set(\"envID\", jsonData.id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Api-Token {{dtAPITokenID}}"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Licensing\",\n  \"state\": \"ENABLED\",\n  \"tags\": [\n    \"License\",\n    \"production\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "https://{{dtManaged}}.dynatrace-managed.com/api/cluster/v2/environments?createToken=true",
+					"protocol": "https",
+					"host": [
+						"{{dtManaged}}",
+						"dynatrace-managed",
+						"com"
+					],
+					"path": [
+						"api",
+						"cluster",
+						"v2",
+						"environments"
+					],
+					"query": [
+						{
+							"key": "createToken",
+							"value": "true"
+						}
+					]
+				},
+				"description": "This will create a new environment on your managed cluster"
+			},
+			"response": []
+		},
+		{
+			"name": "10.Create User",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Api-Token {{dtAPITokenID}}"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": \"user{{envNumber}}\",\n  \"email\": \"test{{envNumber}}@test{{envNumber}}.com\",\n  \"firstName\": \"test\",\n  \"lastName\": \"user\",\n  \"groups\": [\n    \"Perform2021-Managed-UserGroup-{{envNumber}}\"\n  ]\n}"
+				},
+				"url": {
+					"raw": "https://{{dtManaged}}.dynatrace-managed.com/api/v1.0/onpremise/users",
+					"protocol": "https",
+					"host": [
+						"{{dtManaged}}",
+						"dynatrace-managed",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1.0",
+						"onpremise",
+						"users"
+					]
+				},
+				"description": "This will create a new user on your managed cluster"
 			},
 			"response": []
 		}

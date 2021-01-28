@@ -1,8 +1,16 @@
-**/.DS_Store
-dtu-lab-managed-as-a-service/.DS_Store
-dtu-lab-managed-as-a-service/assets/.DS_Store
-dtu-lab-managed-as-a-service/content/.DS_Store
-dtu-lab-managed-as-a-service/content/02_deploy_licensing_extension/.DS_Store
-dtu-lab-guide-example/content/02_cloud_native_concepts/.DS_Store
-dtu-lab-guide-example/.DS_Store
+# OS generated files #
+######################
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+### Other session files
+dtu-lab-managed-as-a-service/content/02_import_licensing_dashboard/workspace.code-workspace
+
+progressivedelivery/setup/0_forandi.txt
+
+Opentelemetry_With_Dynatrace/golang/fib.exe

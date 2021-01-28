@@ -1,14 +1,14 @@
 #!/bin/bash
 # This script initializes a couple of important env-variables for istio & keptn
 
-INGRESS_HOST=$(kubectl get svc istio-ingressgateway -n istio-system -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')
-K8S_DOMAIN=${INGRESS_HOST:-none}
+# INGRESS_HOST=$(kubectl get svc istio-ingressgateway -n istio-system -o jsonpath='{.status.loadBalancer.ingress[0].hostname}')
+K8S_DOMAIN=${K8S_DOMAIN:-none}
 INGRESS_PORT=${INGRESS_PORT:-80}
 INGRESS_PROTOCOL=${INGRESS_PROTOCOL:-http}
-ISTIO_GATEWAY=${ISTIO_GATEWAY:-public-gateway.istio.system}
+ISTIO_GATEWAY=${ISTIO_GATEWAY:-public-gateway.istio-system}
 
 if [[ "$K8S_DOMAIN" == "none" ]]; then
-    echo "Couldnt get istio-ingressgateway to retrieve ingress hostname!"
+    echo "K8S_DOMAIN variable not set. Please set it to the domain that can resolve to the istio-ingress!"
     echo "We need this to expose Keptn services. For more information visit: https://keptn.sh/docs/0.7.x/continuous_delivery/expose_services/"
     exit 1
 fi

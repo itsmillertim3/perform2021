@@ -6,8 +6,8 @@ In your bastion host navigate to the directory ~/perform-2021-hotday/progressive
 (bastion)$ cd ~/perform-2021-hotday/progressivedelivery
 ```
 
-There are several bash scripts prefixed with *hot_* that we will be using for our excercises when deploying apps.
-Lets execute hot_getinfo.sh as it will give us all relevant informaiton and links for our excercises:
+There are several bash scripts prefixed with *hot_* that we will be using for our exercises when deploying apps.
+Lets execute hot_getinfo.sh as it will give us all relevant information and links for our exercises:
 ```bash
 (bastion)$ ./hot_getinfo.sh
 ===============================================================================
@@ -24,7 +24,7 @@ Dynatrace Tenant Url: https://abc12345.sprint.dynatracelabs.com
 Dynatrace Username / Password: see it in Dynatrace University
 
 ===============================================================================
-For some of the excercises you need the Dynatrace API token in the DT_API_TOKEN Env Variable
+For some of the exercises you need the Dynatrace API token in the DT_API_TOKEN Env Variable
 To get this - simply run the following command:
 export DT_API_TOKEN=YYYYYYYYYYYYYYYYYYY
 ```
@@ -57,7 +57,7 @@ You get the Keptn's Bridge URL, username and password from the hot_getinfo.sh ou
 ### Step 2: Deploy version 1
 
 As we have a Keptn project that is configured for staging and production we can start deploying version 1 of our sample node.js based microservice.
-We can use the script hot_deploy.sh by passing in our studentid and the version we want to deploy. We start with version 1 which means we can call the script like this
+We can use the script hot_deploy.sh by passing in our `studentid` and the version we want to deploy. We start with version 1 which means we can call the script like this
 ```bash
 (bastion)$ ./hot_deploy.sh $STUDENTID 1
 ```

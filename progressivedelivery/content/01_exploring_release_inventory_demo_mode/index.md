@@ -20,4 +20,4 @@ You will learn how this screen helps you answer important questions such as
 
 ### Feature background
 
-The *Releases* menu item is as of creating this tutorial (December 2020) only accessible through a Preview program. You therefore may not see it yet in your own Dynatrace enviornment.
+The *Releases* menu item is as of creating this tutorial (December 2020) only accessible through a Preview program. You therefore may not see it yet in your own Dynatrace environment.

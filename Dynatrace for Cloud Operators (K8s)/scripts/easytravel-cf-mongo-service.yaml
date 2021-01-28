@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.service.expose: easytravel-cf-mongo
+    kompose.service.type: nodeport
+    kompose.version: 1.13.0 (84fa826)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: easytravel-cf-mongo
+  name: easytravel-cf-mongo
+spec:
+  ports:
+  - name: "27017"
+    port: 27017
+    targetPort: 27017
+    nodePort: 30717
+  - name: "28017"
+    port: 28017
+    targetPort: 28017
+    nodePort: 30817
+  selector:
+    io.kompose.service: easytravel-cf-mongo
+  type: NodePort
+status:
+  loadBalancer: {}

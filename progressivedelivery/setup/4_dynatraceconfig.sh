@@ -12,4 +12,20 @@ curl -L https://github.com/dynatrace-oss/dynatrace-monitoring-as-code/releases/d
 chmod +x monaco_cli
 
 echo "2. Execute Monaco"
-monaco_cli -e=monaco-environment.yaml -p=hotday monaco
+./monaco_cli -e=monaco-environment.yaml -p=hotday monaco
+
+
+echo "-----------------------------------------------------------------------"
+echo "Create 2 Dynatrace SLOs for simplenode service in staging and production via API as not yet supported through Monaco"
+echo "-----------------------------------------------------------------------"
+curl -X POST "https://{${DT_TENANT}}/api/v2/slo" \
+     -H "accept: */*" \
+     -H "Authorization: Api-Token ${DT_API_TOKEN}" \
+     -H "Content-Type: application/json; charset=utf-8" \
+     -d "{\"enabled\":true,\"name\":\"Success Rate simplenode (PROD)\",\"description\":\"Simplenode Successes Server Rate > 99.98% in PROD\",\"useRateMetric\":true,\"metricRate\":\"builtin:service.successes.server.rate\",\"metricNumerator\":\"\",\"target\":99.98,\"warning\":99.99,\"evaluationType\":\"AGGREGATE\",\"timeframe\":\"-1w\",\"filter\":\"type(\\\"SERVICE\\\"),tag(\\\"keptn_stage:prod\\\"),tag(\\\"keptn_service:simplenode\\\")\"}"
+
+curl -X POST "https://{${DT_TENANT}}/api/v2/slo" \
+     -H "accept: */*" \
+     -H "Authorization: Api-Token ${DT_API_TOKEN}" \
+     -H "Content-Type: application/json; charset=utf-8" \
+     -d "{\"enabled\":true,\"name\":\"Success Rate simplenode (STAGING)\",\"description\":\"Simplenode Successes Server Rate > 70.00% in STAGING\",\"useRateMetric\":true,\"metricRate\":\"builtin:service.successes.server.rate\",\"metricNumerator\":\"\",\"target\":70,\"warning\":90,\"evaluationType\":\"AGGREGATE\",\"timeframe\":\"-1w\",\"filter\":\"type(\\\"SERVICE\\\"),tag(\\\"keptn_stage:staging\\\"),tag(\\\"keptn_service:simplenode\\\")\"}"
