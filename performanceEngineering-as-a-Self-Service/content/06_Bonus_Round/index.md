@@ -44,17 +44,17 @@ It should look like this:
 
 Then click **Save**.
 
-Now moving forward for all future Performance Tests where you use the **TSN** request header your **Test Steps Names** will be used.
+Now moving forward for all future Performance Tests where you use the **TSN** request header your **Test Steps Names** will be used by Dynatrace for the request name.
 
 <img src="../../assets/images/lab_6_request_web_request_naming_rule_5.png" width="500"/>
 
 ### Custom Alert
 
-A custom alert provides a simple way of defining a threshold on a given metric. Dynatrace sends out alerts when a metric breaches a user-defined threshold. You can define alerts for when actual metric values are above or below the user-defined threshold. Because a metric can be recorded by multiple components within your environment, Dynatrace always alerts with a reference to the component that shows the violating metric.
+A custom alert provides a simple way of defining a threshold on a given metric. Dynatrace sends out alerts when a metric breaches a user-defined threshold. You can define alerts for when actual metric values are above or below the user-defined threshold or adaptive baselines.
 
-We are going to cover how to create a Customer alert based on response time for your Test Step transactions.
+We are going to cover how to create a Custom alert based on response time for your Test Step transactions.
 
-Go to **"Settings>Anomaly detection>Custom events for alerting"** and then select **Create custom event for alerting**.
+Go to **"Settings-->Anomaly detection-->Custom events for alerting"** and then click the **Create custom event for alerting** button.
 
 <img src="../../assets/images/lab_6_custom_alert_1.png" width="500"/>
 
