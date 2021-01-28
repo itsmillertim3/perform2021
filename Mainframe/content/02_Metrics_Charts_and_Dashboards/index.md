@@ -37,32 +37,45 @@ The goal is to create this sample Dashboard:
 - Keep defaults and select `Pin as new tile`
 - Select your Dashboard and `Pin`, then `Open Dashboard`
 
-### Step 5: Create "CICS Transaction Most Frequent" Chart
+### Step 5: Create Analysis Views for different Metrics
 - Go to `Diagnostic tools` and and click on `Create analysis view`
-- Select CPU Time, Maximum, Merge Services, Filter by CICS Service
-- Save it as 'Mainframe Max CPU'
+- Select CPU Time, Sum, Merge Services, Filter by CICS Service
+- Click `Save metric`
+- Create metric as "CICS Sum CPU"
 
-  ![MaxCPU](../../assets/images/MaxCPU.png)
+  ![SumCPU](../../assets/images/SumCPU.png)
 
-### Step 6: Create "CICS Transaction High Overall CPU" Chart
 - Go to `Diagnostic tools` and and click on `Create analysis view`
-- ...
+- Select CPU Time, Average, Merge Services, Filter by CICS Service
+- Click `Save metric`
+- Create metric as "CICS Avg CPU"
 
-### Step 7: Create "CICS Transaction Max Response Time" Chart
 - Go to `Diagnostic tools` and and click on `Create analysis view`
-- ...
+- Select Response Time, Maximum, Merge Services, Filter by CICS Service
+- Click `Save metric`
+- Create metric as "CICS Max Response Time"
 
-### Step 8: Create "CICS Transaction Failure Rate" Chart
 - Go to `Diagnostic tools` and and click on `Create analysis view`
-- ...
+- Select Response Time, Average, Merge Services, Filter by CICS Service
+- Click `Save metric`
+- Create metric as "CICS Avg Response Time"
 
-### Step 9: Create "CICS Transaction Average CPU Time" Chart
 - Go to `Diagnostic tools` and and click on `Create analysis view`
-- ...
+- Select Failure Rate, Average, Merge Services, Filter by CICS Service
+- Click `Save metric`
+- Create metric as "CICS Failure Rate"
 
-### Step 10: Create "CICS Transaction Average Response Time" Chart
 - Go to `Diagnostic tools` and and click on `Create analysis view`
-- ...
+- Select Request Count, Count, Merge Services, Filter by CICS Service
+- Click `Save metric`
+- Save it as 'CICS Request Count'
+
+### Step 6: Open your Dashboard and add Charts
+- Drag and drop a Custom Chart for each Metric created above
+- Select `Configure Custom Chart`
+- Select your metric from the dropdown (should contain CICS)
+- Click `Update Dashboard Tile`
+- Rearrange Tiles as needed
 
 ### You've arrived
 - You have successfully created a new Dashboard with your key Mainframe components! 
