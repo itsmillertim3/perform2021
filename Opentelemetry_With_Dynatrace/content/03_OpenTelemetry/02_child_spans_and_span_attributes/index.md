@@ -50,6 +50,7 @@ In this task our goal is to grant users of Dynatrace deeper insight into what is
 - Delete Lines 26-43 in `main.go`. This is the old version of function `FibServer`. We don't need it anymore.
 - Press `Ctrl-S` in order to save the changes you've made in `main.go`
 - Shut down `fib.exe` using `Ctrl-C` within your Terminal if you haven't done so already.
+- In your Terminal, compile the program using the command line `go build`
 - Launch `fib.exe` via your current Terminal
 - Use either your Browser or `curl http://localhost:28080/fib?n=3` within a new Terminal to access your new HTTP Service
 - The PurePath you just created now contains an additional PurePath Node per invocation of the Fibonacci Calculator's `Calc` function.
