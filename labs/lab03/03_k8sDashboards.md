@@ -2,11 +2,11 @@
 
 This lab guide will cover the standard dashboards that are part of K8s deployment.
 
-### Update Kubernetes Integration Settings
+### Navigating K8s Dashboards
 
-1. In Dynatrace Tenant, Click Settings -> Cloud and Virtualization -> edit icon for configured K8s cluster
+1. In Dynatrace Tenant menu, Click Kubernetes, then click on Dashboards
 
-   ![K8SConfig](../assets/011_k8sUI.png)    
+   ![K8SConfig](../assets/lab3-k8s-selectDash.png)    
 
 3. Toggle the following switches:
    - Change the connection name to "HoT 2021".
