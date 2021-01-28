@@ -4,7 +4,7 @@ In this step we will compile our Java Springboot application and explore the out
 ### Step 1: Compile and run the application
 - Edit `hazelcast-client.yaml` in VHOT2001 > 02_OpenTracing > src\main > resources
   ![EditFile](../../../assets/images/01_oneagent_outofthebox_instrumentation-01.png)
-- Input the public IP address `34.67.1.60`
+- Input the public IP address given to you on the Zoom chat.
 - Save the file, example `CTRL+S`
 - Open up a Terminal from the top menu bar
   ![EditFile](../../../assets/images/01_oneagent_outofthebox_instrumentation-02.png)
