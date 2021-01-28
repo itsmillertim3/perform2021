@@ -20,10 +20,10 @@ This lab will require accessing the EKS Bastion Host you were assigned for this 
    kubectl get all -n dev
   ```
 
-  ![SockShopDevRunning](../assets/images/lab4-devrunning1.png)
+  ![SockShopDevRunning](../assets/lab4-devrunning1.png)
 
 2. Wait a couple of minutes until all the pods are Ready and Running and the LoadBalancer objects have EXTERNAL-IPs
-  ![SockShopDevRunning](../assets/images/lab4-devrunning2.png)  
+  ![SockShopDevRunning](../assets/lab4-devrunning2.png)  
   
 3. Copy external IP for the load balancer into notepad (Dev).
 
