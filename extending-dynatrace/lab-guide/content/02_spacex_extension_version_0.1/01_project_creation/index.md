@@ -10,7 +10,7 @@ A python extension needs at least two files:
 
 #### Project creation and structure
 
-1. Create a new PyCharm project `File > New Project`
+1. Create a new empty folder for our project, open it with vscode
    * *Best practice is to use a virtual environment for every project, not necessary for the lab*
 2. Create a `src` folder in the root, this will hold our source code
 3. Create a `built` folder in the root, this will hold the built extension, that we can later distribute for other users
