@@ -33,6 +33,7 @@ This lab guide will deploy Dynatrace integration for Kubernetes.
 
 7. Verify Dynatrace Operator Deployment
    
-   - Navigate to Namespaces -> Dynatrace
+   - Navigate to Kubernetes -> HoT 2021 
+   - Scroll down to Name Spaces and select Dynatrace
    
    ![K8SVerifyDT](../assets/016_VerifyDT.png)
