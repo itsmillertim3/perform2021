@@ -1,5 +1,7 @@
 ## Deploy Sock Shop Sample Application
 
+This lab will require accessing the EKS Bastion Host you were assigned for this session.
+
 ### Deploy SockShop
 1.  Clone the application deployment files from the 20201 HoT Github repo
   ```
