@@ -13,6 +13,8 @@ In this module you will go through the following actions:
 1. Learn how Dynatrace extracts the version information
 1. Deploy a new version of your microservice app
 
+![](../../assets/images/keptn_workflow_animated.gif)
+
 
 ### Prerequisites
 

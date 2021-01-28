@@ -64,8 +64,8 @@ Gitea user credentials: keptn / keptn#R0cks
 ===============================================================================
 For some of the excercises you need the Dynatrace API token in the DT_API_TOKEN Env Variable
 To get this - simply run the following command:
-export DT_TENANT=abc12345.xxx.dynatracelabs.com
-export DT_API_TOKEN=ABCDEFGHKIJKLMNOP
+DT_TENANT: abc12345.xxx.dynatracelabs.com
+DT_API_TOKEN: ABCDEFGHKIJKLMNOP
 ```
 
 Lets do the following

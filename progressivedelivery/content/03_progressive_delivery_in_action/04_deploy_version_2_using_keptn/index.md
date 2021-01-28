@@ -7,7 +7,7 @@ Now - lets try to deploy more versions and explore whats happening
 
 Just as we did before we use the hot_deploy.sh to deploy a new version. Now we deploy version 2
 ```bash
-(bastion)$ ./hot_deploy.sh $STUDENTID 2
+$ ./hot_deploy.sh $STUDENTID 2
 ```
 
 You will be able to watch Keptn deploy version 2 into staging, then run tests and then most likely stop version 2 from entering production. 
