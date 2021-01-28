@@ -1,6 +1,5 @@
 ## UseCase Memory Allocation
 
-
 ![memac](../../../assets/images/uc_garbage.png)
 
 - Which Release has a high GarbageCollection Impact? A Memory Allocation Problem? (it should be on the EasyTravel API)

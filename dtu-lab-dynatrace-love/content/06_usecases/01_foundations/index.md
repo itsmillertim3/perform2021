@@ -1,6 +1,6 @@
 ## Foundations of Loadtest analysis
 
-- Show the service flow of the “9 - Finish Payment” test step (of any build)
+- Show the service flow of the “9 - Finish Payment” test step (of any release)
 
 - Show the response time, throughput and failure rate of the different test steps (without a chart)
 
