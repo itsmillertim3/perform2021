@@ -1,6 +1,6 @@
 ## SLOs and Load Test Analysis Error Issue
 
-In this lab we walk through how to create SLOs in Dynatrace that can be used in your Performance Testing and we will also troubleshoot why a Availability/Error SLO failed.
+In this lab we will walk through creating SLOs in Dynatrace that can be used in Performance Testing analysis. We will also troubleshoot why a Availability/Error SLO failed.
 
 <img src="../../assets/images/lab_3_overview.png" width="800"/>
 
@@ -8,7 +8,7 @@ The Google’s SRE Handbook mostly focuses on the production use case for SLIs/S
 
 While an SLI is just a metric, an SLO just a threshold you expect your SLI to be in and SLA is just the business contract on top of an SLO. It’s great that this discipline and ideas have got a lot of attention lately.
 
-“The earlier in the lifecycle we ensure SLIs meet their SLOs the better it will to ensure these service levels in production”.
+The earlier in the lifecycle we ensure SLIs meet their SLOs the better it will to ensure these service levels in production.
 
 ### Configuration
 
@@ -30,8 +30,8 @@ Now we are going to push the **order** version **2**.
 
 Select **"Build with parameters"**
 
-- In the **orderimage** field we need to change the value at the end from 1 to **2**
-- In the **DEPLOY_TO field**, change the dropdown box to **order**
+- In the **orderimage** field change the value at the end of the current line from 1 to **2**
+- In the **DEPLOY_TO** field change the dropdown box to **order**
 
 Next, click the **Build** button.
 
