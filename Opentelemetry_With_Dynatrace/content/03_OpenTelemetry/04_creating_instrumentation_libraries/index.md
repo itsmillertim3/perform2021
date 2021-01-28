@@ -22,3 +22,4 @@ Second, our solution traces ALL the invocations of the `Calc` function. Trace si
 
 ### You've arrived
 - The PurePath you just created does no longer report a Span for every single invocation of the function `Calc`. Most importantly the code of the original Fibonacci Calculator remains untouched. You've managed to create an instrumentation library that performs the necessary work.
+  ![OTelPurepathInstLib](../../../assets/images/OTelPurepathInstLib.png)
