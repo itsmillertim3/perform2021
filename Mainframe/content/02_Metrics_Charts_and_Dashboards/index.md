@@ -37,10 +37,12 @@ The goal is to create this sample Dashboard:
 - Keep defaults and select `Pin as new tile`
 - Select your Dashboard and `Pin`, then `Open Dashboard`
 
-
 ### Step 5: Create "CICS Transaction Most Frequent" Chart
 - Go to `Diagnostic tools` and and click on `Create analysis view`
-- ...
+- Select CPU Time, Maximum, Merge Services, Filter by CICS Service
+- Save it as 'Mainframe Max CPU'
+
+  ![MaxCPU](../../assets/images/MaxCPU.png)
 
 ### Step 6: Create "CICS Transaction High Overall CPU" Chart
 - Go to `Diagnostic tools` and and click on `Create analysis view`
@@ -54,7 +56,7 @@ The goal is to create this sample Dashboard:
 - Go to `Diagnostic tools` and and click on `Create analysis view`
 - ...
 
-### Step 9: Create "CICS Transaction  Average CPU Time" Chart
+### Step 9: Create "CICS Transaction Average CPU Time" Chart
 - Go to `Diagnostic tools` and and click on `Create analysis view`
 - ...
 
