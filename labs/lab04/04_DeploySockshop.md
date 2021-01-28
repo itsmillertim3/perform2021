@@ -21,8 +21,10 @@
 
 2. Wait a couple of minutes until all the pods are Ready and Running and the LoadBalancer objects have EXTERNAL-IPs
   ![SockShopDevRunning](../assets/images/sockshopdevrun.png)  
+  
+3. Copy external IP for the load balancer into notepad (Dev).
 
-3. Validate the Dev instance
+4. Validate the Dev instance
    - Use the External IP of service/front-end and port 8080  
    ![SockShopDevWeb](../assets/images/sockshopdevweb.png)  
    - Register an account
@@ -39,7 +41,9 @@
 2. Wait a couple of minutes until all the pods are Ready and Running and the LoadBalancer objects have EXTERNAL-IPs
  ![SockShopDevRunning](../assets/images/sockshopdevrun.png)  
 
-3. Validate the Dev instance
+3. Copy external IP for the load balancer into notepad (Prod).
+
+4. Validate the Prod instance
   - Use the External IP of service/front-end and port 8080  
   ![SockShopDevWeb](../assets/images/sockshopdevweb.png)  
   - Register an account
