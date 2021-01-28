@@ -79,7 +79,16 @@ Click **"Preview"** -> **"create rule"** -> **"save changes"**
 
 ### Architecture Validation - Service Flow
 
-As testers, we typically only test against the service endpoint. As performance engineers we should however understand what happens end-to-end with that request. Which other services does it call? How many round trips to the database does it make? Does service load balancing and failover work correctly? Do the caching layers work well? And do we have any bad architectural patterns such as a data-driven N+1 query problem?
+As testers, we typically only test against the service endpoint. 
+
+As performance engineers we should however understand:
+
+- What happens end-to-end with that request?
+- Which other services does it call? 
+- How many round trips to the database does it make? 
+- Does service load balancing and failover work correctly? 
+- Do the caching layers work well? 
+- Do we have any bad architectural patterns such as a data-driven N+1 query problem?
 
 In Dynatrace, we analyze the Service Flow which shows us the full end-to-end flow of every request executed against our service endpoint. You can also apply filters to only focus on a particular test transaction, a specific time frame or compare the flow of failing vs non- failing transactions.
 
@@ -87,7 +96,9 @@ Click **"Applications"** from the Main Navigation menu. Then click **My web appl
 
 <img src="../../assets/images/lab_1_application_service_flow_1.png" width="500"/>
 
-This will bring up the **My web application** Performance Overview.  In the Dynatrace infographic click on the **1 Service** box.   Then under the **Called services** table click on the aqua box called **View service flow**.
+This will bring up the **My web application** Performance analysis screen.  
+
+In the Dynatrace infographic click on the **1 Service** box.   Then under the **Called services** section click on the aqua box called **View service flow**.
 
 <img src="../../assets/images/lab_1_application_service_flow_2.png" width="500"/>
 
@@ -124,14 +135,7 @@ While executing a load test from your load testing tool of choice (JMeter, Neoty
 
 The header **x-dynatrace-test** is used one or more key/value pairs for the header. Here are some examples:
 
-| **Key**   | **Description**   |
-| --- | --- |
-| VU  | Virtual User ID of the unique user who sent the request.  |
-| SI  | Source ID identifies the product that triggered the request (JMeter, LoadRunner, Neotys, or other)  |
-| TSN  | Test Step Name is a logical test step within your load testing script (for example, Login or Add to cart.  |
-| LSN  | Load Script Name - name of the load testing script. This groups a set of test steps that make up a multi-step transaction (for example, an online purchase).  |
-| LTN  | The Load Test Name uniquely identifies a test execution (for example, 6h Load Test – June 25)  |
-| PC  | Page Context provides information about the document that is loaded in the currently processed page.  |
+<img src="../../assets/images/lab_2_dynatrace_headers_table.png" width="800"/>
 
 Dynatrace can analyze incoming HTTP headers and extract such contextual information from the header values and tag the captured requests with request attributes. Request attributes enable you to filter your monitoring data based on defined tags.
 
@@ -180,21 +184,27 @@ Each customizable management zone comprises a set of monitored entities in your 
 
 This exercise shows how to update a management zone that will be used in dashboards to show process and host metrics for analysis.
 
-In Dynatrace on the navigation menu, navigate to **settings --> preferences --> management zones**
+In Dynatrace on the navigation menu, navigate to **Settings --> Preferences --> Management zones**
 
-Click **Keptn: keptnorders staging** management zone and add a new rule with configuration as show below.
+Click **Keptn: keptnorders staging** management zone.
 
-- Rule applies to **Process groups**
-- In the conditions section,  select **Process group** in the dropdown
+Then click the **Add new rule** button with configuration as show below:
+
+- In the **Rule applies section** pick this dropdown:  **Process groups**
+- In the **Conditions** section pick this dropdown:  **Process group name** 
 - Keep **begins with** in the dropdown 
-- In the text box use: **keptnorders.staging**
-- Select **apply to underlying hosts of matching process groups** check box.
+- In the text box section use: **keptnorders.staging**
+- Select **apply to underlying hosts of matching process groups** check box
     
 <img src="../../assets/images/lab_1_management_zone.png" width="500"/>
 
 Click the **preview** button to verify.
 
-Save the zone. Click **create rule** button. Then **Save changes** button.
+<img src="../../assets/images/lab_1_management_zone_2.png" width="500"/>
+
+Click **Create rule** button. 
+
+Then **Save changes** button which will be at the bottom of the page.
 
 ## Run Load Test
 
@@ -206,8 +216,8 @@ Login to Jenkins
 <img src="../../assets/images/Lab_1_Jenkins_Log_In.png" width="500"/>
 
 We are going to run the **03-simpletest-qualitygate pipeline**.
-Click **"build"** this initial build will fail.
-Refresh the page, now we can do a **"Build with Parameters"**
+
+Click on **"Build with Parameters"**.
 
 We need to change the Deployment URL
 
@@ -221,7 +231,7 @@ We have provided a **Performance Test Dashboard with Transaction Steps** in your
 
 Click **"Dashboards"** from the Main Navigation menu.
 
-Then Select the **Performance Test Dashboard with Transaction Steps** Dashboard.
+Then click the **Performance Test Dashboard with Transaction Steps**.
 
 <img src="../../assets/images/lab_1_performance_test_dashboard_with_transaction_steps.png" width="500"/>
 
@@ -229,17 +239,13 @@ Then Select the **Performance Test Dashboard with Transaction Steps** Dashboard.
 
 Dynatrace uses a sophisticated AI causation engine, called Davis®, to automatically detect performance anomalies in your applications, services, and infrastructure. Dynatrace-detected problems are used to report and alert on abnormal situations, such as performance degradations, improper functionality, or lack of availability (i.e., problems represent anomalies in baseline system performance).
 
-For Performance Testing the Dynatrace AI might not generate a Problems unless you are doing continuous performance testing. You can setup custom alerts with static thresholds.
+The Dynatrace AI works extremely well in high load environments where, over time, the AI has the chance to learn how your system behaves, understands dependencies and builds up baselines. If you only run sporadic load tests for short periods, the AI might not detect as many problems for you as in a high load production environment due to lack of good baselines. In any case the AI will spot critical problems and immediately show you the root cause. You can setup custom alerts with static thresholds.
 
 If a Dynatrace Problem has generated a Problem during your Performance Test that is always a best place to start.
 
 You can also analyze the data using custom Dashboards as well as out of the box workflows. Your approach should be based on the type of performance analysis you want to do (for example, crashes, resource and performance hotspots, or scalability issues). 
 
-Following is an overview of using our **Performance Test Dashboard with Transaction Steps**.
-
-Open the **Performance Test Dashboard with Transaction Steps** dashboard.  
-
-Then click on the **Transactions** link under **Transaction** links section on the left side of the dashboard.
+From the **Performance Test Dashboard with Transaction Steps** dashboard click on the **Transactions** link under **Transaction** links section on the left side of the dashboard.
 
 <img src="../../assets/images/lab_1_performance_test_dashboard_with_transaction_steps_1.png" width="500"/>
 
@@ -257,7 +263,7 @@ Click  **Response time hotspots** from the Analyze menu.
 
 <img src="../../assets/images/lab_1_response_time_hotspots_1.png" width="200" height="300"/>
 
-On the Response time analysis page it will display the average response time observed during the analyzed timeframe. On the left side of the infographic, under Distribution, you can see how much time is contributed by calls to other services, calls to databases, and code-level execution. On the right side, under Top findings, we list the biggest hotspots identified by Dynatrace. You can click any of these entries to view further details.
+On the Response time analysis page it will display the average response time observed during the analyzed timeframe. On the left side of the infographic, under Distribution, you can see how much time is contributed by calls to other services, calls to databases, and code-level execution. On the right side, under Top findings, we see the biggest hotspots identified by Dynatrace. You can click any of these entries to view further details.
 
 Within the current screen click on **View method hotspots** button which will drill to the **Method hotspots**.
 
@@ -269,13 +275,12 @@ In the **Method hotspots** screen click on **Hotspots** button.   This will chan
 
 ### Summary
 
--  We learned how to create a Process Detection Naming rule to change out of the box detected names
 -  We learned how the use the Dynatrace Service Flow for Architecture Validation
--  We learned what a x-dynatrace-test request header is, how to use it in your Performance testing tool and the importance for improving of your Performance Test Analysis
--  We learned what a Dynatrace Load Test Request Attribute is,  how to use it,  and the importance for improving of your Performance Test Analysis
--  We learned what a Dynatrace Calculated Service Metric is,  how to use it,  and the importance for improving of your Performance Test Analysis
--  We covered the Performance Test Dashboard with Transaction Steps and how you can use it for improving of your Performance Test Analysis
--  We learned how to analyze Performance Test issue within Dynatrace and get to root cause in minutes
+-  We learned what a x-dynatrace-test request header is, how to use it with a Performance testing tool and the importance for improving Performance Test results in Dynatrace
+-  We learned what a Dynatrace Load Test Request Attribute is,  how to use it and the importance for improving Performance Test results in Dynatrace
+-  We learned what a Dynatrace Calculated Service Metric is,  how to use it and the benefits for improving Performance Test results in Dynatrace
+-  We covered the Performance Test Dashboard with Transaction Steps and how you can use it to assist in Performance Test Analysis
+-  We learned how to analyze a Performance Test where a Performance issue was introduced by a new application build and how get to root cause in minutes using Dynatrace
 
 ### Questions and Answers? 
 

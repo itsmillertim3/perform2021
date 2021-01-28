@@ -2,8 +2,6 @@
 
 If time permits during our session we have created a few more exercises/topics to cover. 
 
-See below:
-
 - Request Naming Rule
 - Custom Alert
 - Performance Analysis
@@ -13,35 +11,50 @@ See below:
 
 Within Dynatrace, you can use request naming rules to adjust how your requests are tracked and to define business transactions in your customer-facing workflow that are critical to the success of your digital business. With such end-to-end tracing, Dynatrace enables you to view and monitor important business transactions from end to end.
 
-For the **order** service, we want to change the discovered transaction names to use the **LSN** request attribute that has the Test Step Name you use in your load test product when running Performance Tests.
+For the **frontend** service, we want to change the discovered transaction names to use the **TSN** request attribute that has the Test Step Name you use in your load test product when running Performance Tests.
+
+Make sure you are in the **Keptn: keptnorders staging** management zone.
+
+Click **Transactions and services** from the Main Navigation menu.  
+
+In the Services page click the **frontend** service.
 
 <img src="../../assets/images/lab_6_request_web_request_naming_rule_1.png" width="500"/>
 
-At the top of the **order** services page and choosing the edit option as shown below.
+At the top of the **frontend** service page next to the **Smartscape view** button, click the box that has **...**, then click the **Edit** button.
 
 <img src="../../assets/images/lab_6_request_web_request_naming_rule_2.png" width="500"/>
 
-Within in the service settings, navigate to Web request naming and click the **Add rule** button
+Within in the Service settings page, navigate to **Web request naming** and then click the **Add rule** button
 
 <img src="../../assets/images/lab_6_request_web_request_naming_rule_3.png" width="500"/>
 
 Below are the settings we want to use:
 
-- naming pattern = **{RequestAttribute:LSN}**
-- conditions =  **{RequestAttribute:LSN}** exists
-- click the **Preview Rule** button to verify.
+- Naming pattern section use: **{RequestAttribute:TSN}**
+- Condition(s) section first dropdown box pick: **Request attribute**
+- Condition(s) section second dropdown box pick: **TSN**
+- Condition(s) section third dropdown box pick: **exists**
+
+Next, click the **Preview Rule** button to verify.
 
 It should look like this:
 
----Placeholder screenshot---
+<img src="../../assets/images/lab_6_request_web_request_naming_rule_4.png" width="500"/>
+
+Then click **Save**.
+
+Now moving forward for all future Performance Tests where you use the **TSN** request header your **Test Steps Names** will be used by Dynatrace for the request name.
+
+<img src="../../assets/images/lab_6_request_web_request_naming_rule_5.png" width="500"/>
 
 ### Custom Alert
 
-A custom alert provides a simple way of defining a threshold on a given metric. Dynatrace sends out alerts when a metric breaches a user-defined threshold. You can define alerts for when actual metric values are above or below the user-defined threshold. Because a metric can be recorded by multiple components within your environment, Dynatrace always alerts with a reference to the component that shows the violating metric.
+A custom alert provides a simple way of defining a threshold on a given metric. Dynatrace sends out alerts when a metric breaches a user-defined threshold. You can define alerts for when actual metric values are above or below the user-defined threshold or adaptive baselines.
 
-We are going to cover how to create a Customer alert based on response time for your Test Step transactions.
+We are going to cover how to create a Custom alert based on response time for your Test Step transactions.
 
-Go to **"Settings>Anomaly detection>Custom events for alerting"** and then select **Create custom event for alerting**.
+Go to **"Settings-->Anomaly detection-->Custom events for alerting"** and then click the **Create custom event for alerting** button.
 
 <img src="../../assets/images/lab_6_custom_alert_1.png" width="500"/>
 
@@ -49,19 +62,19 @@ The will bring you to the **Create custom event for alerting** screen.
 
 In the **Metric** section use the following settings:
  
-- Category dropdown pick: **Services**
+- Category dropdown box pick: **Services**
 - Metric dropdown pick: **Test Step Response Time**
 - Aggregation keep the default which is **Average**
 
-In the **Entities** section click **Add a rule base filer**
+In the **Entities** section click **Add a rule base filer** button.
 
 We will use the following settings:
 
-- Property dropdown pick: **Management zone**
-- Operator dropdown pick: **Exists**
-- Value dropdown pick: **Keptn: keptnorders staging**
+- Property dropdown box pick: **Management zone**
+- Operator dropdown box pick: **Exists**
+- Value dropdown box pick: **Keptn: keptnorders staging**
 
-When finished, select the **Create rule based filer**
+When finished, select the **Create rule based filer** button.
 
 <img src="../../assets/images/lab_6_custom_alert_2.png" width="500"/>
 
@@ -76,13 +89,31 @@ In the Static threshold settings section use:
 In the **Event description** section we will use the following settings:
 
 - Title use:  **Test Step Name Response Time High**
-- Severity dropdown pick:  **Slowdown**
+- Severity dropdown box pick:  **Slowdown**
 
 When finished, select the **Create custom event for alerting** button.   This will create your custom alert.
 
 <img src="../../assets/images/lab_6_custom_alert_3.png" width="500"/>
 
-We need to run a Load Test so we can review the Problem that gets generated from the custom alert you setup.
+We will need to run a Load Test so we can review the Problem that gets generated from the custom alert you setup.
+
+Open Jenkins.
+
+Click on **04-performancetest-qualitygate** pipeline
+
+<img src="../../assets/images/lab_3_jenkins_run_load_test_1.png" width="500"/>
+
+Select **"Build with parameters"**
+
+We only need to update the **DeployomentURI** section.   
+
+Copy your Order Application URL and paste into the **DeployomentURI** section.   
+
+**Make sure to remove the last / if present when you copied it**
+
+When done click the **Build** button which will start the Performance Test.
+
+<img src="../../assets/images/lab_3_jenkins_run_load_test_2.png" width="500"/>
 
 ### Performance Analysis
 
