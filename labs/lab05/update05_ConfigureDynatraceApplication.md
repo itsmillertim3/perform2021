@@ -31,8 +31,16 @@ This lab exercise will create a Dynatrace application for the Sock Shop applicat
 7. Rename the application to DEV-Sock Shope or PROD-Sock Shop depending what application environment you are setting up first. Remember the environment names were based on the domain names and that is why we are changing them. 
    - When finished with the new naming, select the menu item for "Async Web Requests and SPAs".
 
-![EditApplication](../assets/lab5-editapplication1.png)
+   ![EditApplication](../assets/lab5-editapplication1.png)
 
-8.
+8. Dynatrace automatically detect the jquery framework. Toggle the switch for jquery to the on position. 
+   - Click on "Save".
 
-![EditApplication](../assets/lab5-editapplication2.png)
+   ![EditApplication](../assets/lab5-editapplication2.png)
+   
+9. Visit the Sock Shop and run transactions
+
+10. Navigate back to Applications on the Dynatrace menu and select the newly named application.
+   - Repeat these same steps for creating the production application.
+   
+   ![EditApplication](../assets/lab5-applicationview.png)
