@@ -70,7 +70,7 @@ In this task our goal is to grant users of Dynatrace deeper insight into what is
 - Remember to click on `SAVE` in order for the Request Attribute to be registered!
   ![ReqAttributes](../../../assets/images/03-02-OpenTelemetryReqAttributes.gif)
 - Use either your Browser or `curl http://localhost:28080/fib?n=3` within a new Terminal to access your new HTTP Service
-  ![ReqAttributes](../../../assets/images/03-02-OpenTelemetryReqAttributes-Result.gif)
 
 ### You've arrived
 - The PurePath you just created now contains an additional PurePath Node per invocation of the Fibonacci Calculator's `Calc` function. In addition the Request Attribute you just created is also available on every PurePath.
+  ![ReqAttributes](../../../assets/images/03-02-OpenTelemetryReqAttributes-Result.gif)
