@@ -9,7 +9,7 @@ This lab will require accessing the EKS Bastion Host you were assigned for this 
   ```
  ![GitSockShop](/Dynatrace%20for%20Cloud%20Operators%20(K8s)/assets/images/lab4-downloadsockshop.png)
  
-2.  On the EKS Bastion Host navigate to the "k8s-apps" directory and deploy sockshop
+2.  On the EKS Bastion Host navigate to the "/Dynatrace for Cloud Operators (K8s)/k8s-apps" directory and deploy sockshop
   ```
   ./deploy-sockshop.sh
   ```
