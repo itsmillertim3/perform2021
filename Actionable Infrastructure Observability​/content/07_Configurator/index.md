@@ -10,4 +10,6 @@
   
   ![config2](/Actionable%20Infrastructure%20Observability%E2%80%8B/assets/images/config2.png)
   
+  - Deploy Ops, AIOps, Dashboard Basics
+  - Deploy any other dashboard templates you want to try out.
 - Navigate back to the Dynatrace UI and see the new dashboards!
