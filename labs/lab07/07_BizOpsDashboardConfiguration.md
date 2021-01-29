@@ -8,15 +8,15 @@ This lab exercise will create a dashboard pack for the Sock Shop application tha
  
  ![CreateAPIToken](../assets/lab7-GenerateAPIToken.png)
  
-2.  Enter "BizOps" for the token name. 
+2.  Enter "BizOps" for the token name. (See Screenshot Below)
 
-3.  Toggle the switches on for the following, everything else shouldbe toggled off.
+3.  Toggle the switches on for the following, everything else shouldbe toggled off. (See Screenshot Below)
     - Access problem and event fees, metrics, and topology.
     - Read configuration
     - Write configuration
     - User sessions
     
-4. Click Generate and copy the token to notepad. 
+4. Click Generate and copy the token to notepad. (See Screenshot Below)
    - Note if you don't copy it, you will lose access to visibility and will need to create a new one for security reasons.
  
   ![Applications1](../assets/lab7-ConfigureAPIToken.png)
