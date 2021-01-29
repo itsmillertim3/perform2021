@@ -42,22 +42,9 @@ This lab exercise will create a dashboard pack for the Sock Shop application tha
    
    ![BizOpsConfigurator](../assets/lab7-BeginBizOps.png)
    
-
-
-
-
-
-
-
-
-
-
-
-
-
-5. Click "Create"
+3.  Click Deploy
    
-   ![CreateApplication](../assets/lab5-createapplication.png)
+   ![CreateApplication](../assets/lab7-BizOpsDeploy.png)
    
 6. Navigate back to Application in the Dynatrace menu and select Applications. Select the application you just created. You will see the application is named by the domain selected. Once you have selected the application, use the elypsis and select edit.
 
