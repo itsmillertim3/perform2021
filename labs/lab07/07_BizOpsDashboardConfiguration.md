@@ -33,10 +33,28 @@ This lab exercise will create a dashboard pack for the Sock Shop application tha
   
    ![TenantURL](../assets/lab7-TenantURL.png)
    
-4. Expand the domain and click on "Create New Application".
-
-   ![TransferDomain](../assets/lab5-transferdomain.png)
+2. Open the BizOps Configurator in a new browser tab.
+   - https://dynatrace.github.io/BizOpsConfigurator/#home
+   - Select Begin.
+   - Enter Tenant URL from notepad.
+   - Enter BizOps Token from notepad.
+   - Click Connect
    
+   ![BizOpsConfigurator](../assets/lab7-BeginBizOps.png)
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
 5. Click "Create"
    
    ![CreateApplication](../assets/lab5-createapplication.png)
