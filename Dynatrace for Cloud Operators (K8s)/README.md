@@ -4,7 +4,7 @@ This repository contains labs for the Hands-On Kubernetes Session. We will be us
 
 ## Contents
 
-[**Lab 1:** Deploy Dynatrace Operator](Dynatrace for Cloud Operators (K8s)/content/01_Deploy_Dynatrace_Operator/index.md)
+[**Lab 1:** Deploy Dynatrace Operator](/Dynatrace for Cloud Operators (K8s)/content/01_Deploy_Dynatrace_Operator/index.md)
 
 [**Lab 2:** Configure Kubernetes Integration](/labs/lab02)
 
