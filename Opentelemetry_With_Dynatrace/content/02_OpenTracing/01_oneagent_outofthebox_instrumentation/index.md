@@ -2,9 +2,9 @@
 In this step we will compile our Java Springboot application and explore the out-of-the-box instrumentation of the OneAgent
 
 ### Step 1: Compile and run the application
-- Edit `hazelcast-client.yaml` in VHOT2001 > 02_OpenTracing > src\main > resources
+- Edit `hazelcast-client.yaml` in VHOT2021 > 02_OpenTracing > src\main > resources
   ![EditFile](../../../assets/images/01_oneagent_outofthebox_instrumentation-01.png)
-- Input the public IP address `34.67.1.60`
+- Input the public IP address given to you on the Zoom chat.
 - Save the file, example `CTRL+S`
 - Open up a Terminal from the top menu bar
   ![EditFile](../../../assets/images/01_oneagent_outofthebox_instrumentation-02.png)
@@ -33,7 +33,7 @@ In this step we will compile our Java Springboot application and explore the out
   PS C:\Users\dtu.training\Documents\vhot2021> curl.exe http://localhost:8080/get?key=1.2.3.4-1
   {"response":1.2.3.4-1}
   ```
-- Execute a few more `get` transactions with different keys (until number 99)
+- Execute a few more `get` transactions with different keys (you can use the any number from 1 to 99). If you use a number outside of the range, you will get a response of `null`
 - Once done, go back to the first terminal tab and terminate the Java program by using `CTRL+C`
 
   ![EditFile](../../../assets/images/01_oneagent_outofthebox_instrumentation-04.png)
@@ -51,6 +51,9 @@ In this step we will compile our Java Springboot application and explore the out
 ### Step 3: Explore Dynatrace PurePaths after auto instrumentation 
 - Access your Dynatrace tenant in the browser
 - Go to Transactions and Services > CommandController > Purepaths
+  ![OpenTracingPurePaths](../../../assets/images/02-ExploreDynatrace-1.gif)
 - Choose the /pop1 transaction
+  ![OpenTracingPurePaths](../../../assets/images/02-ExploreDynatrace-2.gif)
 - You will observe that the totoal transaction response time was 3 secs, but all of the Java method calls were less than 30 ms.
+  ![OpenTracingPurePaths](../../../assets/images/02-ExploreDynatrace-3spp.png)
 - Clearly something else is responsible

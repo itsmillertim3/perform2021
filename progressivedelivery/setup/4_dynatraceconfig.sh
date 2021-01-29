@@ -16,16 +16,16 @@ echo "2. Execute Monaco"
 
 
 echo "-----------------------------------------------------------------------"
-echo "Create Dynatrace SLOs for service in production via API as not yet supported through Monaco"
+echo "Create 2 Dynatrace SLOs for simplenode service in staging and production via API as not yet supported through Monaco"
 echo "-----------------------------------------------------------------------"
 curl -X POST "https://{${DT_TENANT}}/api/v2/slo" \
      -H "accept: */*" \
      -H "Authorization: Api-Token ${DT_API_TOKEN}" \
      -H "Content-Type: application/json; charset=utf-8" \
-     -d "{\"enabled\":true,\"name\":\"Success Rate simplenode (PROD)\",\"description\":\"Simplenode Successes Server Rate > 99.98% in PROD\",\"evaluatedPercentage\":100,\"errorBudget\":0.02,\"status\":\"SUCCESS\",\"error\":\"NONE\",\"useRateMetric\":true,\"metricRate\":\"builtin:service.successes.server.rate\",\"metricNumerator\":\"\",\"numeratorValue\":0,\"metricDenominator\":\"\",\"denominatorValue\":0,\"target\":99.98,\"warning\":99.99,\"evaluationType\":\"AGGREGATE\",\"timeframe\":\"-1w\",\"filter\":\"type(\\\"SERVICE\\\"),tag(\\\"keptn_stage:prod\\\"),tag(\\\"keptn_service:simplenode\\\")\"}"
+     -d "{\"enabled\":true,\"name\":\"Success Rate simplenode (PROD)\",\"description\":\"Simplenode Successes Server Rate > 99.98% in PROD\",\"useRateMetric\":true,\"metricRate\":\"builtin:service.successes.server.rate\",\"metricNumerator\":\"\",\"target\":99.98,\"warning\":99.99,\"evaluationType\":\"AGGREGATE\",\"timeframe\":\"-1w\",\"filter\":\"type(\\\"SERVICE\\\"),tag(\\\"keptn_stage:prod\\\"),tag(\\\"keptn_service:simplenode\\\")\"}"
 
 curl -X POST "https://{${DT_TENANT}}/api/v2/slo" \
      -H "accept: */*" \
      -H "Authorization: Api-Token ${DT_API_TOKEN}" \
      -H "Content-Type: application/json; charset=utf-8" \
-     -d "{\"enabled\":true,\"name\":\"Success Rate simplenode (STAGING)\",\"description\":\"Simplenode Successes Server Rate > 90.00% in STAGING\",\"evaluatedPercentage\":100,\"errorBudget\":0.02,\"status\":\"SUCCESS\",\"error\":\"NONE\",\"useRateMetric\":true,\"metricRate\":\"builtin:service.successes.server.rate\",\"metricNumerator\":\"\",\"numeratorValue\":0,\"metricDenominator\":\"\",\"denominatorValue\":0,\"target\":90.00,\"warning\":70.00,\"evaluationType\":\"AGGREGATE\",\"timeframe\":\"-1w\",\"filter\":\"type(\\\"SERVICE\\\"),tag(\\\"keptn_stage:staging\\\"),tag(\\\"keptn_service:simplenode\\\")\"}"
+     -d "{\"enabled\":true,\"name\":\"Success Rate simplenode (STAGING)\",\"description\":\"Simplenode Successes Server Rate > 70.00% in STAGING\",\"useRateMetric\":true,\"metricRate\":\"builtin:service.successes.server.rate\",\"metricNumerator\":\"\",\"target\":70,\"warning\":90,\"evaluationType\":\"AGGREGATE\",\"timeframe\":\"-1w\",\"filter\":\"type(\\\"SERVICE\\\"),tag(\\\"keptn_stage:staging\\\"),tag(\\\"keptn_service:simplenode\\\")\"}"

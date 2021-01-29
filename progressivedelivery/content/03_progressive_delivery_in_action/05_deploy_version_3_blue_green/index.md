@@ -8,7 +8,7 @@ Once that *Canary* gets validated by Keptn it will be switched to become the mai
 
 Just as we did before we use the hot_deploy.sh to deploy a new version. Now we deploy version 3
 ```bash
-(bastion)$ ./hot_deploy.sh $STUDENTID 3
+ ./hot_deploy.sh $STUDENTID 3
 ```
 
 You will be able to watch Keptn deploy version 3 into staging, then run tests and then hopefully pass the quality gate to make it into production!

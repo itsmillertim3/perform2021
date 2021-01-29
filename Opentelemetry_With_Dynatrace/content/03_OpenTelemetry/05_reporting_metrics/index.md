@@ -22,7 +22,7 @@ In this lesson we learn how to enable the OpenTelemetry Metric Exporter for Dyna
 - Press `Ctrl-S` in order to save the changes you've made in `main.go`
 - Line 21 within `metrics.go` requires the endpoint URL for metric ingest of your Dynatrace environment to be specified
     - You can find the host name of your Dynatrace environment in the address line of your browser when navigating within the Dynatrace WebUI
-    - Example: `https://axe92169.dev.dynatracelabs.com/api/v2/metrics/ingest`
+    - Example: `https://abc12345.sprint.dynatracelabs.com/api/v2/metrics/ingest`
 - Line 18 within `metrics.go` requires you to specify an API Token. It is required for authentication.
     - In the Dynatrace WebUI navigate to `Settings` > `Integration` > `Dynatrace API`
     - Generate a new API Token here

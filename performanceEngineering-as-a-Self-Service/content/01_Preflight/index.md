@@ -78,7 +78,12 @@ answer **'y'** if the information is correct.
 
 Press **enter**
 
-Type **'less +F /tmp/install.log'** for viewing the output of installation in realtime
+Type 
+
+```bash
+less +F /tmp/install.log
+```
+for viewing the output of installation in realtime
 
 Please be patient, this build can take ~13-20 minutes to finish.
 
@@ -210,4 +215,27 @@ Pre-configured items also include:
 1. Automatically Applied Tags
 
 Now that we are more familiar with what we have running, let's continue to the next activity.
+
+### Troubleshooting
+
+If you need to rebuild the environment, follow these steps.
+
+```bash
+cd ~/keptn-in-a-box
+```
+
+This script will reset the Ubuntu instance by removing Kubernetes and the Dynatrace ActiveGate.
+
+```bash
+./resetenv.sh
+```
+
+Now we need to re-initialize the environment.
+
+Run the following commands, then follow the process from above.
+    
+```bash
+cd ~
+sudo bash -c './keptn-in-a-box.sh'
+```
 

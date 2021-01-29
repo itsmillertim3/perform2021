@@ -94,17 +94,17 @@ echo "2. Make Dynatrace the default SLI provider"
 kubectl create configmap lighthouse-config -n keptn --from-literal=sli-provider=dynatrace || true
 
 echo "3. Install the dynatrace service"
-kubectl apply -n keptn -f https://raw.githubusercontent.com/keptn-contrib/dynatrace-service/0.10.1/deploy/service.yaml
+kubectl apply -n keptn -f https://raw.githubusercontent.com/keptn-contrib/dynatrace-service/0.10.2/deploy/service.yaml
 
 echo "4. Install the Dynatrace SLI Service"
-kubectl apply -n keptn -f https://raw.githubusercontent.com/keptn-contrib/dynatrace-sli-service/patch/release-0.7.1/deploy/service.yaml
+kubectl apply -n keptn -f https://raw.githubusercontent.com/keptn-contrib/dynatrace-sli-service/release-0.7.3/deploy/service.yaml
 
 echo "5. Enable Label & Annotation monitoring of key namespaces"
 kubectl -n keptn create rolebinding default-view --clusterrole=view --serviceaccount=keptn:default
 kubectl -n istio-system create rolebinding default-view --clusterrole=view --serviceaccount=istio-system:default
 
 echo "6. Install Dynatrace Monaco Keptn Service"
-kubectl apply -n keptn -f https://raw.githubusercontent.com/keptn-sandbox/monaco-service/release-0.2.0/deploy/service.yaml
+kubectl apply -n keptn -f https://raw.githubusercontent.com/keptn-sandbox/monaco-service/release-0.2.1/deploy/service.yaml
 
 echo "7. Authenticate Keptn CLI"
 keptn auth  --api-token "${KEPTN_API_TOKEN}" --endpoint "${KEPTN_ENDPOINT}/api"
