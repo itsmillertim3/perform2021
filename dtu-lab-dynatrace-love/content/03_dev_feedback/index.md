@@ -5,3 +5,5 @@
 In this section we will see how developers can get feedback on real time from integration or production systems.
 
 **No more "well... it worked on my computer, is operations problem now 🤷‍♂️ "❗️**
+
+![](../../assets/images/ops_problem.png)
