@@ -25,6 +25,6 @@
 1. Review the playbooks used by ansible AWX through the labs: [playbooks](https://github.com/dynatrace-ace/perform2021-vhot-auto-remediation/tree/main/playbooks)
     * enable_backend.yml: registers your host to the HAProxy server for load balancing easyTravel.
     * remediation.yml: playbook triggered during remediation of the easyTravel app.
-    * trigger_memory_leak: triggers the `MediumMemoryLeak` plugin via the easyTravel REST API.
+    * trigger_memory_leak.yml: triggers the `MediumMemoryLeak` plugin via the easyTravel REST API.
 
 1. (Optional) Navigate to `Settings -> Miscellaneous System` and click on the `Edit` button on the bottom left to increase the `Idle Time Force Log Out` seconds to 50000.

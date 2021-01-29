@@ -14,9 +14,9 @@ A ServiceNow Update Set is provided to run this tutorial. To install the Update 
 1. Click the Upload button.
 1. Open the `hot_2021_auto_remediation_1.0` Update Set.
     ![servicenow-updateset-list](../../../assets/images/servicenow-updateset-list.png)
-1. In the right upper corner, click on Preview Update Set and 
+1. In the right upper corner, click on Preview Update Set.
     ![servicenow-preview-updateset](../../../assets/images/servicenow-preview-updateset.png)
-1. After successfully previewing ther update set, click on `Commit Update Set` to add the required configurations required for this lab to your instance.
+1. After successfully previewing the update set, click on `Commit Update Set` to add the required configurations required for this lab to your instance.
     ![servicenow-commit-updateset](../../../assets/images/servicenow-commit-updateset.png)
 1. Review the newly imported subflow named `Trigger ansible AWX Template` by navigating to `Process Automation` -> `Flow Designer`. Click on the Subflows tab and then search for `Trigger ansible AWX Template` under the Name column.
 

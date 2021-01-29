@@ -87,7 +87,7 @@ Add the required steps to execute the remediation and trigger the ansible AWX te
 1. Select `Flow logic` -> `If` and complete the fields as shown below:
 
     - **Condition:** subflow finishes successfully
-    - **Condition 1 (case sensitive):** `12 - Trigger ansible AWX Template -> Status is successful`
+    - **Condition 1 (case sensitive):** Click on the `data pill picker` button and select `12 - Trigger ansible AWX Template -> Status is successful`
 
     ![servicenow-add-subflow-4](../../../assets/images/servicenow-add-subflow-4.png)
 
@@ -95,8 +95,8 @@ Add the required steps to execute the remediation and trigger the ansible AWX te
 
 1. Add an `Update Record` action under the `13 - If` step with the following values:
     - **action:** Update Record
-    - **Record:** Click on the data pill picker and select - `Subflow-Inputs -> alertGR`
-    - **Field Value:** `Work notes` set to `Remediation completed successfully`
+    - **Record:** Click on the `data pill picker` and select - `Subflow-Inputs -> alertGR`
+    - **Fields:** Click on the `+ Add Field Value` buttons, select `Work notes` and set the field value to `Remediation completed successfully`
 
     ![servicenow-add-subflow-5](../../../assets/images/servicenow-add-subflow-5.png)
 
@@ -111,8 +111,8 @@ Add the required steps to execute the remediation and trigger the ansible AWX te
 
 1. Add an `Update Record` action under the `15 - Else` step with the following values:
     - **action:** Update Record
-    - **Record:** Click on the data pill picker and select - `Subflow-Inputs -> alertGR`
-    - **Field Value:** `Work notes` set to `Remediation failed`
+    - **Record:** Click on the `data pill picker` and select - `Subflow-Inputs -> alertGR`
+    - **Fields:** Click on the `+ Add Field Value` buttons, select `Work notes` and set the field value to `Remediation failed`
 
     ![servicenow-add-subflow-8](../../../assets/images/servicenow-add-subflow-8.png)
 

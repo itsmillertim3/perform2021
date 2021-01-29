@@ -34,7 +34,7 @@
 
 1. Create a new Automatic Tagging Rule with the following fields set:
 
-    - **Tag name:** support_group
+    - **Tag name (Case Sensitive):** support_group
 
 1. Click on `Add a new rule`:
     - **Optional Tag Value:** {Host:Environment:supportgroup}
