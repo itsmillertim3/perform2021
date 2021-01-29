@@ -4,6 +4,6 @@
   
 - We will cover some best practices on Loadtesting and Release comparison so you can apply this in you company and help release better software faster.
 
-- The software optimizations and analysis can be done [in any technology that Dynatrace can monitor](https://www.dynatrace.com/support/help/technology-support/supported-technologies-and-versions/)
+- The software optimizations and analysis can be done <a href="https://www.dynatrace.com/support/help/technology-support/supported-technologies-and-versions/" target="_blank">in any technology that Dynatrace can monitor</a> 
 
 - There is no need to be an Azure or Keptn expert and everything we are covering can be applied to ANY environment (e.g. Azure, GCP, Kubernetes, On-Prem, etc…) and any modern CI/CD Pipeline that can be triggered via REST.

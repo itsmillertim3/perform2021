@@ -31,7 +31,7 @@ Content-Type: application/json
 x-developer: yourname
 ```
 
-For this we can use cURL, Postman or any REST tool. Here is an API Test already preconfigured for you [API TEST Template for SingIn](https://apitester.com/shared/checks/961787656e25474a903dd5dd917d7570 )
+For this we can use cURL, Postman or any REST tool. Here is an API Test already preconfigured for you <a href="https://apitester.com/shared/checks/961787656e25474a903dd5dd917d7570" target="_blank">🚦 API TEST Template for SingIn</a>
 
 
 - The test consists of basically 2 steps, POST request and an assert.

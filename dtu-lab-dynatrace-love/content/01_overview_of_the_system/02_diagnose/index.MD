@@ -1,5 +1,5 @@
 ## Diagnosing the Health of an Environment
-Leveraging tags and ManagedZones you can get very fast and easy an understanding of UX, transactions, hosts, application network traffic, failures on the whole environment or on specific stages, departments, subcompanies, etc.
+Leveraging tags and Management Zones you can get very fast and easy an understanding of UX, transactions, hosts, application network traffic, failures on the whole environment or on specific stages, departments, subcompanies, etc.
 
 In this example you can get an overview of:
 
@@ -22,10 +22,12 @@ In this example you can get an overview of:
 
 ### Let's get the big picture of the environment. 
 
+- Use the Management Zone
+
 - Navigate into:
   - Technologies
   - Applications
   - Smartscape
 
-
-### Introducing Diagnostic Tools## 
+### Introducing Diagnostic Tools 
+- Open Technologies
