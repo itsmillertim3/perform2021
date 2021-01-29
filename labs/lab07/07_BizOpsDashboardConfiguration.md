@@ -50,31 +50,24 @@ This lab exercise will create a dashboard pack for the Sock Shop application tha
     - Persona is "App Owner".
     - Use Case is "Application Overview".
     - Workflow is "Kubernetes Namespace Overview".
+    - Click Next.
 
    ![ConfigureDeploy](../assets/lab7-ConfigureDeploy.png)
    
+5. Dashboard Configuration User Inputs.
+    - Tagging rules - Select "PUSH" for both categories
+    - Dashboard name is Sock Shop
+    - Cloud type - kubernetes (generic)
+    - No management zone
 
+   ![EditApplication](../assets/lab7-ConfigureDeployUserInputs.png)
 
+6. Click Done
+    - Click on little box with arrow to view new dashboard
 
-
-
-
-
-
-7. Rename the application to DEV-Sock Shope or PROD-Sock Shop depending what application environment you are setting up first. Remember the environment names were based on the domain names and that is why we are changing them. 
-   - When finished with the new naming, select the menu item for "Async Web Requests and SPAs".
-
-   ![EditApplication](../assets/lab5-editapplication1.png)
-
-8. Dynatrace automatically detect the jquery framework. Toggle the switch for jquery to the on position. 
-   - Click on "Save".
-
-   ![EditApplication](../assets/lab5-editapplication2.png)
+   ![EditApplication](../assets/lab7-ClickDone.png)
    
-9. Visit the Sock Shop and run transactions
-
-10. Navigate back to Applications on the Dynatrace menu and select the newly named application.
-   - Repeat these same steps for creating the production application.
+7. Review Newly Created Dashbaord 
    
-   ![EditApplication](../assets/lab5-applicationview.png)
+   ![EditApplication](../assets/lab7-NewDashboard.png)
 
