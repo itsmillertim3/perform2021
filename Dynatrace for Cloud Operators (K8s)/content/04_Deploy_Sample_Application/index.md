@@ -5,7 +5,7 @@ This lab will require accessing the EKS Bastion Host you were assigned for this 
 ### Deploy SockShop
 1.  Clone the application deployment files from the 20201 HoT Github repo
   ```
-  git clone https://github.com/itsmillertim3/perform2021.git
+  git clone https://github.com/Dynatrace/perform-2021-hotday.git
   ```
  ![GitSockShop](/Dynatrace%20for%20Cloud%20Operators%20(K8s)/assets/images/lab4-downloadsockshop.png)
  
