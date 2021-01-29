@@ -39,34 +39,34 @@ The goal is to create this sample Dashboard:
 
 ### Step 5: Create Analysis Views for different Metrics
 - ===> Go to `Diagnostic tools` and and click on `Create analysis view`
-- Select CPU Time, Sum, Merge Services, Filter by CICS Service
+- Select CPU Time, Sum, Split Services, Filter by CICS Service
 - Click `Save metric`
 - Create metric as "CICS Sum CPU"
 
   ![SumCPU](../../assets/images/SumCPU.png)
 
 - ===> Go to `Diagnostic tools` and and click on `Create analysis view`
-- Select CPU Time, Average, Merge Services, Filter by CICS Service
+- Select CPU Time, Average, Split Services, Filter by CICS Service
 - Click `Save metric`
 - Create metric as "CICS Avg CPU"
 
 - ===> Go to `Diagnostic tools` and and click on `Create analysis view`
-- Select Response Time, Maximum, Merge Services, Filter by CICS Service
+- Select Response Time, Maximum, Split Services, Filter by CICS Service
 - Click `Save metric`
 - Create metric as "CICS Max Response Time"
 
 - ===> Go to `Diagnostic tools` and and click on `Create analysis view`
-- Select Response Time, Average, Merge Services, Filter by CICS Service
+- Select Response Time, Average, Split Services, Filter by CICS Service
 - Click `Save metric`
 - Create metric as "CICS Avg Response Time"
 
 - ===> Go to `Diagnostic tools` and and click on `Create analysis view`
-- Select Failure Rate, Average, Merge Services, Filter by CICS Service
+- Select Failure Rate, Average, Split Services, Filter by CICS Service
 - Click `Save metric`
 - Create metric as "CICS Failure Rate"
 
 - ===> Go to `Diagnostic tools` and and click on `Create analysis view`
-- Select Request Count, Count, Merge Services, Filter by CICS Service
+- Select Request Count, Count, Split Services, Filter by CICS Service
 - Click `Save metric`
 - Save it as 'CICS Request Count'
 
