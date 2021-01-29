@@ -13,14 +13,14 @@
    kubectl get all -n dev
   ```
 
-  ![SockShopDevRunning](../assets/images/sockshopdev.png)
+  ![SockShopDevRunning](../../assets/images/sockshopdev.png)
 
 2. Wait a couple of minutes until all the pods are Ready and Running and the LoadBalancer objects have EXTERNAL-IPs
-  ![SockShopDevRunning](../assets/images/sockshopdevrun.png)  
+  ![SockShopDevRunning](../../assets/images/sockshopdevrun.png)  
 
 3. Validate the Dev instance
    - Use the External IP of service/front-end and port 8080  
-   ![SockShopDevWeb](../assets/images/sockshopdevweb.png)  
+   ![SockShopDevWeb](../../assets/images/sockshopdevweb.png)  
    - Register an account
    - Browse the items
    - Add an item to your cart
@@ -31,14 +31,14 @@
   kubectl get all -n production
   ```
 
- ![SockShopDevRunning](../assets/images/sockshopdev.png)
+ ![SockShopDevRunning](../../assets/images/sockshopdev.png)
 
 2. Wait a couple of minutes until all the pods are Ready and Running and the LoadBalancer objects have EXTERNAL-IPs
- ![SockShopDevRunning](../assets/images/sockshopdevrun.png)  
+ ![SockShopDevRunning](../../assets/images/sockshopdevrun.png)  
 
 3. Validate the Dev instance
   - Use the External IP of service/front-end and port 8080  
-  ![SockShopDevWeb](../assets/images/sockshopdevweb.png)  
+  ![SockShopDevWeb](../../assets/images/sockshopdevweb.png)  
   - Register an account
   - Browse the items
   - Add an item to your cart
