@@ -37,21 +37,17 @@ Add the required steps to execute the remediation and trigger the ansible AWX te
 
 1. Paste the following script:
 
-    ```javascript
+    ``` javascript
     var dtData = JSON.parse(fd_data.subflow_inputs.ah_alertgr.additional_info);
     var dtTags = JSON.stringify(dtData.tags);
-
     var sgArray = dtTags.split(",");
     var sgArray_length = sgArray.length;
-
     for (var i = 0; i < sgArray.length; i++) {
         var arrTag = sgArray[i];
-
         if (arrTag.includes('support_group')) {
             var sgName = dtTags.match(/.*support_group:\s*([a-zA-Z-]+)/i);
         }
     }
-
     if (sgName.length > 0) {
         var sysGroup = new GlideRecord('sys_user_group');
         sysGroup.get('name', sgName[1]);
