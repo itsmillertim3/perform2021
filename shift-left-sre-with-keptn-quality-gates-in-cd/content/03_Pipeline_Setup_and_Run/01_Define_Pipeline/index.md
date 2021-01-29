@@ -1,4 +1,4 @@
-## Define Performance Pipeline
+## Define QG Pipeline
 
 In this exercise you will activate a Quality Gate for the carts service that will catch any build issues in the staging environment.
 

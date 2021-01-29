@@ -1,4 +1,4 @@
-## Run Performance Test on Carts Service
+## Run the pipeline for the Carts Service
 
 In this exercise you'll measure the performance for the carts service 3 times. The first time you'll run the test and create a baseline for future runs. The second time you will introduce a small slowdown that will be evaluated as a warning SLO result. The third time you will increase the slowdown to see how the pipelines fails when it goes beyond the SLI objetive for the response time.
 
