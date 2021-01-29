@@ -46,9 +46,17 @@ Since we'll be using self-signed certificates, we'll need to add/update system p
 
     ![servicenow_sys_properties](../../../assets/images/servicenow_sys_properties.png)
 
-1. Update/create the following properties with their respective values:
-    - **com.glide.communications.httpclient.verify_revoked_certificate:** false
-    - **com.glide.communications.trustmanager_trust_all:** true
-    - **com.glide.communications.httpclient.verify_hostname:** false
+1. Create the following properties with their respective values:
 
-    ![servicenow_sys_properties_values](../../../assets/images/servicenow_sys_properties_values.png)
+    - **com.glide.communications.httpclient.verify_revoked_certificate:** false
+
+    ![servicenow_sys_properties_cert](../../../assets/images/servicenow_sys_properties_cert.png)
+
+1. Update the following properties with their respective values:
+
+    - **com.glide.communications.trustmanager_trust_all:** true
+
+    ![servicenow_sys_properties_trustall](../../../assets/images/servicenow_sys_properties_trustall.png)
+
+    - **com.glide.communications.httpclient.verify_hostname:** false
+    ![servicenow_sys_properties_hostname](../../../assets/images/servicenow_sys_properties_hostname.png)

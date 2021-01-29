@@ -26,6 +26,20 @@
 
     ![dynatrace-new-pn1](../../../assets/images/dynatrace-new-pn1.png)
 
+### Update Default Alerting Profile
+
+We want the automated remediation to trigger as soon as the problem is detected, in order for that to happen the `Default` Alerting Profile needs to be updated so that the problem event is sent to ServiceNow upon problem detection without delays.
+
+1. In Dynatrace Navigate to `Settings` -> `Alerting` -> `Alerting profiles` and click on the `Default` alerting profile name to open it.
+
+1. Click on the `Resource alert` severity rule and set the value of `Send a notification if a problem remains open longer than` to **0** `minutes`:
+
+1. Click `Save`.
+
+1. On the top right of the Alerting Profile screen click on the blue `Done` button.
+
+    ![dynatrace-ap](../../../assets/images/dynatrace-ap.png)
+
 ### Create Automatic Tagging Rule for easyTravel processes and services
 
 1. In Dynatrace Navigate to `Settings` -> `Tags` -> `Automatically applied tags` and click on the `Create tag` button:
