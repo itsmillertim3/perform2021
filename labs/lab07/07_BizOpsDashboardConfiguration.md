@@ -1,15 +1,15 @@
-## Configure Dynatrace Application
+## BizOps Dashboard Configuration
 
-This lab exercise will create a Dynatrace application for the Sock Shop application that was deployed. 
+This lab exercise will create a dashboard pack for the Sock Shop application that was deployed. In this exercise, we will utilize the Dynatrace BizOps Configurator that is publicly available on GitHub.
 
-### Create Application
+### Create API Token
 1.  Navigate to Applications and then select "My Web Application".
  
- ![Applications](../assets/lab5-applications.png)
+ ![CreateAPIToken](../assets/lab7-GenerateAPIToken.png)
  
 2.  This is the default application bucket that catches all URLs for servers and services that are instrumented with Dynatrace. Scroll towards the bottom to "Top x Include Domains".
  
-  ![Applications1](../assets/lab5-applications1.png)
+  ![Applications1](../assets/lab7-ConfigureAPIToken.png)
   
 3. Click on View Details
    - Both dev and prod Sock Shop domains are listed. They should match what you copied to notepad.
