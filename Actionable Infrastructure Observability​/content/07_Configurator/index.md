@@ -13,3 +13,11 @@
   - Deploy Ops, AIOps, Dashboard Basics
   - Deploy any other dashboard templates you want to try out.
 - Navigate back to the Dynatrace UI and see the new dashboards!
+
+### How can I bring my dashboard home with me?
+- Go to your Infrastructure Overview dashboard
+- Click ... Button in upper right corner > Share > Advanced Settings
+- Click dashboard JSON > Download
+- This is also available in the Configuration API for managing dashboards at scale
+
+![dashboardjson](/Actionable%20Infrastructure%20Observability%E2%80%8B/assets/images/dashboardjson.png)
