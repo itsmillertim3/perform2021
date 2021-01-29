@@ -21,14 +21,16 @@
 - Back in the DTU Terminal 
 - Stop the retailresponsetime.py script if it’s still running (Ctrl + C)
 - Start the retail script: 
+
+```bash
+(ubuntuvm)$ python3 cputemp.py HHMM 10
+```
+
   - HHMM is the time you’d like the CPU scenario to start
   - Start it a few minutes after the current time
   - You can run timedatectl to check current time
   - Ex: 1828 is 1:28 PM EST or 18:28 UTC
   - 10 is the number of minutes you’d like the scenario to run for
-```bash
-(ubuntuvm)$ python3 cputemp.py HHMM 10
-```
 - Wait a few minutes and let’s see the problem!
 
 
