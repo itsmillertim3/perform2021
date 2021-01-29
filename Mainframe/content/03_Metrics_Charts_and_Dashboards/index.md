@@ -37,7 +37,16 @@ The goal is to create this sample Dashboard:
 - Keep defaults and select `Pin as new tile`
 - Select your Dashboard and `Pin`, then `Open Dashboard`
 
-### Step 5: Create Analysis Views for different Metrics
+### Step 5: Create "LPAR CPU Utilization" Chart
+- Drag & Drop `Custom Chart` to your Dashboard 
+- You might need to click `Edit` if you are not yet Edit mode
+- Click `Configure Chart`
+- Under `add Metric` select Category `Hosts`
+- Under Metric select `z/OS z/OS Rolling 4 hour MSU average`
+- Keep defaults and select `Pin as new tile`
+- Select your Dashboard and `Pin`, then `Open Dashboard`
+
+### Step 6: Create Analysis Views for different Metrics
 - ===> Go to `Diagnostic tools` and and click on `Create analysis view`
 - Select CPU Time, Sum, Split Services, Filter by CICS Service
 - Click `Save metric`
@@ -70,7 +79,7 @@ The goal is to create this sample Dashboard:
 - Click `Save metric`
 - Save it as 'CICS Request Count'
 
-### Step 6: Open your Dashboard and add Charts
+### Step 7: Open your Dashboard and add Charts
 - Drag and drop a Custom Chart for each Metric created above
 - Select `Configure Custom Chart`
 - Select your metric from the dropdown (should contain CICS)
