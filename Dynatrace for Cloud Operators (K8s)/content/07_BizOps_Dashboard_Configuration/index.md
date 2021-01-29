@@ -6,7 +6,7 @@ This lab exercise will create a dashboard pack for the Sock Shop application tha
 1.  Navigate Settings>Integration>Dynatrace API.
     - Click on "Generate Token".
  
- ![CreateAPIToken](../assets/lab7-GenerateAPIToken.png)
+ ![CreateAPIToken](/Dynatrace%20for%20Cloud%20Operators%20(K8s)/assets/images/lab7-GenerateAPIToken.png)
  
 2.  Enter "BizOps" for the token name. (See Screenshot Below)
 
@@ -19,11 +19,11 @@ This lab exercise will create a dashboard pack for the Sock Shop application tha
 4. Click Generate (See Screenshot Below)
    - Note if you don't copy it, you will lose access to visibility and will need to create a new one for security reasons.
  
-  ![GenerateToken](../assets/lab7-ConfigureAPIToken.png)
+  ![GenerateToken](/Dynatrace%20for%20Cloud%20Operators%20(K8s)/assets/images/lab7-ConfigureAPIToken.png)
   
 5. Copy Token and place it in your notepad file - Failure to copy now may result in another creation because of security considerations.
 
-  ![CopyToken](../assets/lab7-CopyToken.png)
+  ![CopyToken](/Dynatrace%20for%20Cloud%20Operators%20(K8s)/assets/images/lab7-CopyToken.png)
 
 ### BizOps Configurator
 
@@ -31,7 +31,7 @@ This lab exercise will create a dashboard pack for the Sock Shop application tha
    - Remember the URL is unique to your environment.
    - When copying to notepad, add https://YOUR_TENANT_URL/
   
-   ![TenantURL](../assets/lab7-TenantURL.png)
+   ![TenantURL](/Dynatrace%20for%20Cloud%20Operators%20(K8s)/assets/images/lab7-TenantURL.png)
    
 2. Open the BizOps Configurator in a new browser tab.
    - https://dynatrace.github.io/BizOpsConfigurator/#home
@@ -40,11 +40,11 @@ This lab exercise will create a dashboard pack for the Sock Shop application tha
    - Enter BizOps Token from notepad.
    - Click Connect.
    
-   ![BizOpsConfigurator](../assets/lab7-BeginBizOps.png)
+   ![BizOpsConfigurator](/Dynatrace%20for%20Cloud%20Operators%20(K8s)/assets/images/lab7-BeginBizOps.png)
    
 3.  Click Deploy under Current Flows.
    
-   ![BizOpsDeploy](../assets/lab7-BizOpsDeploy.png)
+   ![BizOpsDeploy](/Dynatrace%20for%20Cloud%20Operators%20(K8s)/assets/images/lab7-BizOpsDeploy.png)
    
 4. Configure Dashboard Deployment.
     - Persona is "App Owner".
@@ -52,7 +52,7 @@ This lab exercise will create a dashboard pack for the Sock Shop application tha
     - Workflow is "Kubernetes Namespace Overview".
     - Click Next.
 
-   ![ConfigureDeploy](../assets/lab7-ConfigureDeploy.png)
+   ![ConfigureDeploy](/Dynatrace%20for%20Cloud%20Operators%20(K8s)/assets/images/lab7-ConfigureDeploy.png)
    
 5. Dashboard Configuration User Inputs.
     - Tagging rules - Select "PUSH" for both categories
@@ -60,14 +60,14 @@ This lab exercise will create a dashboard pack for the Sock Shop application tha
     - Cloud type - kubernetes (generic)
     - No management zone
 
-   ![EditApplication](../assets/lab7-ConfigureDeployUserInputs.png)
+   ![EditApplication](/Dynatrace%20for%20Cloud%20Operators%20(K8s)/assets/images/lab7-ConfigureDeployUserInputs.png)
 
 6. Click Done
     - Click on little box with arrow to view new dashboard
 
-   ![EditApplication](../assets/lab7-ClickDone.png)
+   ![EditApplication](/Dynatrace%20for%20Cloud%20Operators%20(K8s)/assets/images/lab7-ClickDone.png)
    
 7. Review Newly Created Dashbaord 
    
-   ![EditApplication](../assets/lab7-NewDashboard.png)
+   ![EditApplication](/Dynatrace%20for%20Cloud%20Operators%20(K8s)/assets/images/lab7-NewDashboard.png)
 
