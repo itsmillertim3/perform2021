@@ -11,7 +11,7 @@ In this step we will prepare the environment for the hands on exercises
 
 ### Step 2: Enable OpenTelemetry and OpenTracing instrumentation
 - Go to your environment, under `Settings` > `Server-side service monitoring` > `Deep Monitoring` > `OpenTelemetry and OpenTracing`
-  ![Deep Monitoring](../../assets/images/deep_monitoring.png)
+  ![Deep Monitoring](../../assets/images/01-DeepMonitoringSettings.gif)
 
 ### Step 3: Clone the repos
 - Launch Visual Studio Code
