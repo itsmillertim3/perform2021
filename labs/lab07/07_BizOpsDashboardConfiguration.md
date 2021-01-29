@@ -25,13 +25,13 @@ This lab exercise will create a dashboard pack for the Sock Shop application tha
 
   ![CopyToken](../assets/lab7-CopyToken.png)
 
+### BizOps Configurator
 
-
-
-3. Click on View Details
-   - Both dev and prod Sock Shop domains are listed. They should match what you copied to notepad.
+1. Copy Dynatrace Tenant URL to notepad.
+   - Remember the URL is unique to your environment
+   - When copying to notepad, add https://YOUR_TENANT_URL/
   
-   ![Applications2](../assets/lab5-applications1b.png)
+   ![TenantURL](../assets/lab7-TenantURL.png)
    
 4. Expand the domain and click on "Create New Application".
 
