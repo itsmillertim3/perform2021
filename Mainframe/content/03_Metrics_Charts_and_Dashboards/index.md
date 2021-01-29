@@ -37,7 +37,7 @@ The goal is to create this sample Dashboard:
 - Keep defaults and select `Pin as new tile`
 - Select your Dashboard and `Pin`, then `Open Dashboard`
 
-### Step 5: Create "LPAR CPU Utilization" Chart
+### Step 5: Create "LPAR 4HRA MSU" Chart
 - Drag & Drop `Custom Chart` to your Dashboard 
 - You might need to click `Edit` if you are not yet Edit mode
 - Click `Configure Chart`
