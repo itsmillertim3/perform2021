@@ -11,11 +11,15 @@ In this step we will prepare the environment for the hands on exercises
 
 ### Step 2: Enable OpenTelemetry and OpenTracing instrumentation
 - Go to your environment, under `Settings` > `Server-side service monitoring` > `Deep Monitoring` > `OpenTelemetry and OpenTracing`
+- You might also be required to go to `New OneAgent features` to enable some flags
   ![Deep Monitoring](../../assets/images/01-DeepMonitoringSettings.gif)
 
 ### Step 3: Clone the repos
 - Launch Visual Studio Code
-- Click on `clone repository`, and enter `https://github.com/Dynatrace-APAC/vhot2021.git`
+- Click on `clone repository`, and copy/enter
+
+  `https://github.com/Dynatrace-APAC/vhot2021.git`
+
   ![CloneRepo](../../assets/images/01_prepare_the_environment-3.png)
 - Select the folder (e.g. Documents folder) to store the cloned repo 
   ![Folder](../../assets/images/01_prepare_the_environment-4.png)

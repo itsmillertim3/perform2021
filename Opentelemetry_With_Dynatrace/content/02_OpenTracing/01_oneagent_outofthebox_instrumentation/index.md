@@ -2,7 +2,7 @@
 In this step we will compile our Java Springboot application and explore the out-of-the-box instrumentation of the OneAgent
 
 ### Step 1: Compile and run the application
-- Edit `hazelcast-client.yaml` in VHOT2001 > 02_OpenTracing > src\main > resources
+- Edit `hazelcast-client.yaml` in VHOT2021 > 02_OpenTracing > src\main > resources
   ![EditFile](../../../assets/images/01_oneagent_outofthebox_instrumentation-01.png)
 - Input the public IP address given to you on the Zoom chat.
 - Save the file, example `CTRL+S`
