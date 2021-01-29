@@ -16,11 +16,18 @@ This lab exercise will create a dashboard pack for the Sock Shop application tha
     - Write configuration
     - User sessions
     
-4. Click Generate and copy the token to notepad. (See Screenshot Below)
+4. Click Generate (See Screenshot Below)
    - Note if you don't copy it, you will lose access to visibility and will need to create a new one for security reasons.
  
-  ![Applications1](../assets/lab7-ConfigureAPIToken.png)
+  ![GenerateToken](../assets/lab7-ConfigureAPIToken.png)
   
+5. Copy Token and place it in your notepad file - Failure to copy now may result in another creation because of security considerations.
+
+  ![CopyToken](../assets/lab7-CopyToken.png)
+
+
+
+
 3. Click on View Details
    - Both dev and prod Sock Shop domains are listed. They should match what you copied to notepad.
   
