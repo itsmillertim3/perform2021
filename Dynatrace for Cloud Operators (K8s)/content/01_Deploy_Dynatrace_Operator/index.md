@@ -6,7 +6,7 @@ This lab guide will deploy the Dynatrace Operator for Kubernetes.
 
 1. Navigate to Dynatrace tenant and select "Deploy Dynatrace" from left-hand navigation bar
 
-   ![Deploy](../assets/001_DeployDT.png)
+   ![Deploy](../assets/images/001_DeployDT.png)
 
 2. Search for "kubernetes", then select the kubernetes tile and then "Monitor Kubernetes"
 
