@@ -11,6 +11,7 @@ In this step we will prepare the environment for the hands on exercises
 
 ### Step 2: Enable OpenTelemetry and OpenTracing instrumentation
 - Go to your environment, under `Settings` > `Server-side service monitoring` > `Deep Monitoring` > `OpenTelemetry and OpenTracing`
+- You might also be required to go to `OneAgent features` to enable some flags
   ![Deep Monitoring](../../assets/images/01-DeepMonitoringSettings.gif)
 
 ### Step 3: Clone the repos
