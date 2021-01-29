@@ -5,8 +5,7 @@
   - API v1 - Access problem and event feed, metrics, and topology, Read Configuration, Write Configuration, User Sessions
   - API v2 - Read Metrics
   - Copy the value and store in a safe place
-- Navigate to the API Explorer
-  - Environment API v2
+- Navigate to the API Explorer: Environment API v2
   - Authorize and paste in API Token
 - GET /metrics/query 
   - Metric Selector: telegraf.cpu.usage_guest
