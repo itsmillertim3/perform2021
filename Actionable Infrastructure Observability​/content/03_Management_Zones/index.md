@@ -1,7 +1,7 @@
 ## Management Zones
 ### Creating a dimension mananagement zone
 - Look at the retail.shop.responsetime metric in the metric browser and gain insights on available data dimensions
-- Scenario
+### Scenario
   - You have different IT teams for East and West stores
   - Each team only wants to analyze their region’s performance
   - Create 2 different management zones to cover this
