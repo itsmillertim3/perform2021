@@ -8,7 +8,7 @@
 - Navigate to the API Explorer: Environment API v2
   - Authorize and paste in API Token
 - GET /metrics/query 
-  - Metric Selector: telegraf.cpu.usage_guest
+  - Metric Selector: telegraf.cpu.usage_user
   - View available options and output
 ![metricapi](/Actionable%20Infrastructure%20Observability%E2%80%8B/assets/images/metricapi.png)
 
