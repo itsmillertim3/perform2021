@@ -9,10 +9,14 @@ In this lab we will run  the scripts to install the packages and create configur
     ```
 
     ```bash
-    ./install_packages.sh && logout
+    ./install_packages.sh && source ~/.bashrc
     ```
 
-1. Log back into the ubuntu server with your username and password.
+1. Run the following command to confirm that your public IP is set as an environment variable:
+
+    ```bash
+    echo $PUBLICIP
+    ```
 
 1. Create the extra vars file (HAProxy IP address will be provided by the instructor):
 
