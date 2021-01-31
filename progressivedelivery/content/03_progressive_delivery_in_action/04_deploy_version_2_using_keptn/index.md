@@ -7,12 +7,15 @@ Now - lets try to deploy more versions and explore whats happening
 
 Just as we did before we use the hot_deploy.sh to deploy a new version. Now we deploy version 2
 ```bash
-(bastion)$ ./hot_deploy.sh $STUDENTID 2
+$ ./hot_deploy.sh $STUDENTID 2
 ```
 
 You will be able to watch Keptn deploy version 2 into staging, then run tests and then most likely stop version 2 from entering production. 
 Why? Because Version 2 has a built in high error rate which causes Keptn's SLO-based Quality Gate to stop it. 
-For our purposes this is OK as we are just intersted in deploying a new version into an environment and then validating whether Dynatrace also shows that same real time inventory view for us.
+For our purposes this is OK as we are just interested in deploying a new version into an environment and then validating whether Dynatrace also shows that same real time inventory view for us.
+
+**Look at your SLO Quality Gate Dashboard**
+In Dynatrace you will find your own Keptn Quality Gate dashboard. You can either open it in Dynatrace or get the link from the Keptn's Bridge as part of the Quality Gate Evaluation.
 
 
 **Learn more about SLO-based Quality Gates**

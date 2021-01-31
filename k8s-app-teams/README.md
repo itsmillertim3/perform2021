@@ -1,0 +1,1 @@
+See [here](./content/01_welcome/index.md) for the class material. 

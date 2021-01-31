@@ -7,12 +7,19 @@ In a matter of minutes you'll have a fully configured Single Node Kubernetes Clu
 
 Keptn-in-a-Box runs on microk8s, which is a simple production-grade upstream certified Kubernetes made for developers and DevOps.
 
+Projects used for this Session
+- [Keptn](https://keptn.sh/)
+- [Jenkins Service for Keptn](https://github.com/keptn-sandbox/jenkins-service/)
+- [Order Overview](https://github.com/dthotday-performance/overview)
+- [Jmeter Plugin](https://github.com/dynatrace-oss/jmeter-dynatrace-plugin)
+- [KIAB](https://github.com/keptn-sandbox/keptn-in-a-box)
+- [Jmeter Service](https://github.com/keptn/keptn/tree/master/jmeter-service#workloads)
 
 Let's begin by creating the necessary credentials.
 
 ### Create Credentials
 
-  - [ ] TENANTID="https://mytenant.live.dynatrace.com"
+  - [ ] TENANTID=mytenant.sprint.dynatracelabs.com
   - [ ] PAASTOKEN=myDynatracePaaSToken
   - [ ] APITOKEN=myDynatraceApiToken
 
@@ -23,6 +30,8 @@ Open a text editor, we will use this as a cheat sheet, for our Credential inform
 For this exercise, we need the fully qualified name without the trailing /.
 
 **xxxx.sprint.dynatracelabs.com**
+
+_For the TenantID protocol use: https://{your-domain}/e/{your-environment-id} for managed or https://{your-environment-id}.live.dynatrace.com for SaaS__
 
 <img src="../../assets/images/Tenant_id.png" width="500"/>
 
@@ -69,7 +78,12 @@ answer **'y'** if the information is correct.
 
 Press **enter**
 
-Type **'less +F /tmp/install.log'** for viewing the output of installation in realtime
+Type 
+
+```bash
+less +F /tmp/install.log
+```
+for viewing the output of installation in realtime
 
 Please be patient, this build can take ~13-20 minutes to finish.
 
@@ -103,6 +117,23 @@ Open a Browser window with the URL.
 Welcome to KIAB.
 
 <img src="../../assets/images/KIAB.png" width="400"/>
+
+### Run Pipeline
+
+Click on **"Jenkins"**
+
+Now we will kick off the Pipeline **01-deploy-order-application** to build out the application.
+
+Login to Jenkins with the following credentials
+
+* username = keptn
+* password = keptn
+
+<img src="../../assets/images/Lab_1_Jenkins_Log_In.png" width="250"/>
+
+After selecting the pipeline click **"build"**
+
+<img src="../../assets/images/Lab_1_deploy_order_application_1.png" width="500"/>
 
 ### Order App Overview
 
@@ -146,4 +177,65 @@ Both these scenearios are enabled
 and...
 
 <img src="../../assets/images/usecase3.png" width="500"/>
+
+### Examine Dynatrace 
+
+Now lets look at what we have discovered in Dynatrace.
+
+Open Dynatrace and navigate to **Hosts** in the menu and select the host.
+
+Here we can examine all the proceses automatically discovered by the Dynatrace oneAgent.
+
+<img src="../../assets/images/pre_host.png" width="400"/>
+
+We can also see the processes for the order application.
+
+<img src="../../assets/images/pre_processes.png" width="300"/>
+
+Next we can examine the Transactions and Services.
+
+Select **Transactions and Services** from the menu.
+
+<img src="../../assets/images/pre_services.png" width="400"/>
+
+You can also change the focus by using the _management zone_ filter.
+
+Finally, we can also see how the KIAB configured Kubernetes cluster monitoring.
+
+Select **Kubernetes** from the menu.
+
+<img src="../../assets/images/pre_kube.png" width="400"/>
+
+Pre-configured items also include:
+
+1. Dashboards
+1. Request Attributes
+1. Calculated Service Metrics
+1. Management Zones
+1. Automatically Applied Tags
+
+Now that we are more familiar with what we have running, let's continue to the next activity.
+
+### Troubleshooting
+
+If you need to rebuild the environment, follow these steps.
+
+```bash
+cd ~/keptn-in-a-box
+```
+
+This script will reset the Ubuntu instance by removing Kubernetes and the Dynatrace ActiveGate.
+
+```bash
+./resetenv.sh
+```
+
+Now we need to re-initialize the environment.
+
+Run the following commands, then follow the process from above.
+    
+```bash
+cd ~
+sudo bash -c './keptn-in-a-box.sh'
+```
 

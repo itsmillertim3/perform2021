@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: helloworld
-        image: hello-world:linux
+        image: nginxdemos/hello:0.2
         imagePullPolicy: IfNotPresent
         env:
         - name: DT_APPLICATION_ENVIRONMENT

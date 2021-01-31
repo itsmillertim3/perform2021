@@ -1,0 +1,84 @@
+{
+  "name": "custom.remote.python.spacex",
+  "version": "1.003",
+  "metricGroup": "tech.SpaceX",
+  "technologies": [
+    "SpaceX"
+  ],
+  "favicon": "https://imgur.com/H0kgC2m.png",
+  "type": "python",
+  "entity": "CUSTOM_DEVICE",
+  "source": {
+    "package": "spacex_extension",
+    "className": "SpaceXExtension",
+    "install_requires": ["requests"]
+  },
+  "properties": [
+    {"key":  "url", "type": "String"}
+  ],
+  "configUI": {
+    "displayName": "SpaceX",
+    "properties": [
+      {"key":  "url", "displayName":  "SpaceX API URL", "displayHint":  "http://54.158.160.249/v3/ships"}
+    ]
+  },
+  "metrics": [
+    {"timeseries":       { "key": "fuel", "unit": "Count", "displayname": "Fuel" }},
+    {"timeseries":       { "key": "thrust", "unit": "Percent", "displayname": "Thrust", "dimensions": ["Engine"] }},
+    {"statetimeseries":  { "key":  "weather", "states":  ["Fair", "Cloudy", "Sunny", "Rainy", "Stormy", "Snowy", "Windy", "Hail"], "displayname":  "Weather"}}
+  ],
+  "ui": {
+    "keymetrics": [
+      {"key":  "fuel", "displayName": "Fuel"},
+      {"key":  "thrust", "displayName": "Thrust", "mergeaggregation": "AVG"}
+    ],
+    "keycharts": [
+      {
+        "group": "Performance",
+        "title": "Fuel",
+        "series": [
+          {"key":  "fuel", "displayName": "Fuel", "seriestype":  "bar", "color": "#5ead35"}
+        ]
+      },
+      {
+        "group": "Performance",
+        "title": "Thrust",
+        "series": [
+          {"key":  "thrust", "displayName": "Thrust", "mergeaggregation": "AVG"}
+        ]
+      },
+      {
+        "group": "Weather",
+        "title": "Weather",
+        "series": [
+          {"key":  "weather", "displayName":  "Weather", "statechart":  true,
+            "statecolors":  ["#ef651f", "#f5d30f", "#4fd5e0", "#4556d7", "#ffa86c", "#4556d7", "#ffa86c", "#4fd5e0"]}
+        ]
+      }
+    ],
+    "charts": [
+      {
+        "group": "Performance",
+        "title": "Fuel",
+        "series": [
+          {"key":  "fuel", "displayName": "Fuel", "seriestype":  "bar", "color": "#5ead35"}
+        ]
+      },
+      {
+        "group": "Performance",
+        "title": "Thrust",
+        "series": [
+          {"key":  "thrust", "displayName": "Thrust"}
+        ]
+      },
+      {
+        "group": "Weather",
+        "title": "Weather",
+        "series": [
+          {"key":  "weather", "displayName":  "Weather", "statechart":  true,
+            "statecolors":  ["#ef651f", "#f5d30f", "#4fd5e0", "#4556d7", "#ffa86c", "#4556d7", "#ffa86c", "#4fd5e0"]}
+        ]
+      }
+    ]
+  }
+}
