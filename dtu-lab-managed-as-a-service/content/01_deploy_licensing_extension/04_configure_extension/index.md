@@ -21,5 +21,4 @@ Verify successful extension start. The Demo Plugin should display the Ok status.
 
 ### Step 2: Look around
 1. Navigate to Technologies and find LICENSING tile.
-2. The Group page lets you analyze the group and compare the performance of its members
 3. Analyze various chart types on device page

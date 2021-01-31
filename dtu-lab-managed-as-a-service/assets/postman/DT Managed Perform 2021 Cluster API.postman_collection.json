@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "eb4fdaa7-1164-48d6-bc9e-da02091be336",
+		"_postman_id": "07e13aa1-60ac-4d64-b6a2-28c3ce499a9f",
 		"name": "DT Managed Perform 2021 Cluster API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -88,7 +88,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"name\": \"EnvToken\",\r\n  \"expiresIn\": {\r\n    \"value\": 30,\r\n    \"unit\": \"DAYS\"\r\n  },\r\n  \"scopes\": [\r\n    \"DiagnosticExport\",\r\n    \"ServiceProviderAPI\"\r\n  ]\r\n}",
+					"raw": "{\r\n  \"name\": \"EnvToken\",\r\n  \"expiresIn\": {\r\n    \"value\": 30,\r\n    \"unit\": \"DAYS\"\r\n  },\r\n  \"scopes\": [\r\n    \"ServiceProviderAPI\"\r\n  ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -293,6 +293,67 @@
 							"key": "createToken",
 							"value": "true"
 						}
+					]
+				},
+				"description": "This will create a new environment on your managed cluster"
+			},
+			"response": []
+		},
+		{
+			"name": "05a.Create Env Management Token",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Api-Token {{dtAPIEnvToken}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Token Management001\",\n  \"expiresIn\": {\n    \"value\": 3,\n    \"unit\": \"DAYS\"\n  }\n}"
+				},
+				"url": {
+					"raw": "https://{{dtManaged}}.dynatrace-managed.com/api/cluster/v2/environments/{{envID}}/tokenManagementToken",
+					"protocol": "https",
+					"host": [
+						"{{dtManaged}}",
+						"dynatrace-managed",
+						"com"
+					],
+					"path": [
+						"api",
+						"cluster",
+						"v2",
+						"environments",
+						"{{envID}}",
+						"tokenManagementToken"
 					]
 				},
 				"description": "This will create a new environment on your managed cluster"
