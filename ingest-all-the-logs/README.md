@@ -28,6 +28,10 @@ sudo vim /etc/td-agent/td-agent.conf
 ```Shell
 curl -X POST -d 'json={"json":"message"}' http://localhost:8888/debug.test
 ```
+5. Add user td-agent read/write access to specific folder
+```Shell
+setfacl -m 'u:td-agent:rwx' /home/ec2-user
+```
 
 # Active Gate operations
 1. Start & stop Active Gate
