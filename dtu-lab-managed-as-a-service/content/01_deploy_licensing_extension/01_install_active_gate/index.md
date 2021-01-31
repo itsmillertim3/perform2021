@@ -31,13 +31,7 @@ Wait for the download to complete. Then verify the signature by copying the comm
 ### Step 3: Run the installer
 Installation parameters are automatically set for the command. Make sure you use the command displayed in the Dynatrace web UI that reflects the ActiveGate purpose.
 
-1. Run the following command in the directory where you downloaded the installation script.
-
-   ```bash
-   (activegate)$ chmod +x Dynatrace-ActiveGate-Linux-x86-1.207.228.sh
-   ```
-
-1. Copy the installation script command from the *Run the installer with root rights* step, paste it into your terminal and execute it.
+Copy the installation script command from the *Run the installer with root rights* step, paste it into your terminal and execute it.
 
 ### You've arrived 
 After Environment ActiveGate connects to Dynatrace, installation is complete.

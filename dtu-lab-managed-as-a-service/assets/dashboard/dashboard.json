@@ -401,9 +401,6 @@
                 }
             },
             "filtersPerEntityType": {
-                "IOT": {
-                    "SPECIFIC_ENTITIES": ["CUSTOM_DEVICE-45CBDCF7BE561685"]
-                }
             }
         }
     }, {
