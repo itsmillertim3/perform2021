@@ -11,7 +11,8 @@ logger = logging.getLogger(__name__)
 f_handler = logging.FileHandler('file.log')
 
 # Create formatters and add it to handlers
-f_format = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+# f_format = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+f_format = logging.Formatter('{"status":"%(levelname)s","content":"%(message)s"}')
 f_handler.setFormatter(f_format)
 
 # Add handlers to the logger
