@@ -22,12 +22,12 @@ The service accounts must be granted viewer role in order to have access
 In the CLI, execute the following command to grant viewer role
 
 ```
-	$ kubectl create rolebinding serviceaccounts-view --clusterrole=view --	group=system:serviceaccounts:production --namespace=production
+	$ kubectl create rolebinding serviceaccounts-view --clusterrole=view --group=system:serviceaccounts:production --namespace=production
 ```
 You can repeat the procedure for the dev project
 
 ```
-	$ kubectl create rolebinding serviceaccounts-view --clusterrole=view --	group=system:serviceaccounts:dev --namespace=dev
+	$ kubectl create rolebinding serviceaccounts-view --clusterrole=view --group=system:serviceaccounts:dev --namespace=dev
 ```
 
 Wait for the Dynatrace to pickup the change. Alternatively, you can recycle the apps with k8s-apps/recycle-sockshop-frontend.sh
