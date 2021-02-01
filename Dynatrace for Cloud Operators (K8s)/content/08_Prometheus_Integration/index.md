@@ -11,7 +11,7 @@
    ```
    kubectl get pods
    ```
-   ![PODS](../../assets/images/rpcapppods.png)
+   ![PODS](../../assets/images/lab8-rpcapp.png)
 
 3. Inspect the POD details
    Run the following command (use one of the pod names listed above)
