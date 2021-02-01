@@ -75,7 +75,7 @@ Repeat the procedure for dev
 
 Wait for the Dynatrace to pickup the change. Alternatively, you can recycle the apps with k8s-apps/recycle-sockshop-frontend.sh
 
-#### 4. Validate
+#### Validate
 
 Once working, you can validate the change in Dynatrace
 
