@@ -1,5 +1,11 @@
 ## Prometheus Integration
 
+Navigate to session home directory
+
+  ```
+  cd /perform-2021-hotday/Dynatrace for Cloud Operators (K8s)/
+  ```
+
 ### 1. Deploy a Sample Deployment
 
 1. On the Bastion host create the sample app
