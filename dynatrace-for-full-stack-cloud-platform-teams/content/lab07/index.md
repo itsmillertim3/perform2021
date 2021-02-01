@@ -6,7 +6,7 @@ Help Documentation: https://www.dynatrace.com/support/help/technology-support/cl
 
 1. On the Bastion host create the sample app
    ```
-   kubectl create -f content/lab08/rpc-app.yaml
+   kubectl create -f content/lab07/rpc-app.yaml
    ```
 
 2. Validate the pods are deployed
@@ -27,7 +27,7 @@ Help Documentation: https://www.dynatrace.com/support/help/technology-support/cl
 
 1. Inspect the modified manifest
    ```
-   cat content/lab08/rpc-app2.yaml
+   cat content/lab07/rpc-app2.yaml
    ```
    ![PODS](../../assets/images/rpcappmod.png)
 
