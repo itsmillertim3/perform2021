@@ -33,7 +33,7 @@ Navigate to session home directory
    ```
    cat content/08_Prometheus_Integration/rpc-app-with-dt.yaml
    ```
-   ![PODS](../../assets/images/rpcwithdt.png)
+   ![PODS](../../assets/images/lab8-rpcwithdt.png)
 
 
 2. Apply the modified manifest
