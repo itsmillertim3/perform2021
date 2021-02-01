@@ -12,7 +12,7 @@ curl -i -X POST https://ydm87138.sprint.dynatracelabs.com/api/v2/logs/ingest -H 
 1. Start fluentD and check status
 ```Shell
 sudo systemctl start td-agent.service
-sudo systemctl start td-agent.service
+sudo systemctl status td-agent.service
 ```
 2. Check fluentD logs
 ```Shell
