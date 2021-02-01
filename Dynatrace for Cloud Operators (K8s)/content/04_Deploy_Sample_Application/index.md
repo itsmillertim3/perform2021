@@ -87,4 +87,4 @@ Recycle the apps with k8s-apps/recycle-sockshop-frontend.sh
 
 Once working, you can validate the change in Dynatrace
 
-![SockShopDevRunning](../../assets/images/lab4-labels_annotations.png)
+![SockShopDevRunning](../../assets/images/lab4-annotations.png)
