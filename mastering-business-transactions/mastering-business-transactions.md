@@ -95,6 +95,7 @@ SELECT FUNNEL(useraction.name='loading of page /easytravel/search' AS 'Search', 
 
 ## 2) Key request
 
+1. Stay in the same dashboard that we just created
 1. Click on the "book now" key user action tile
 1. Top-right menu, click on the three dots button "..."
 1. Click on "Analyze user sessions"
