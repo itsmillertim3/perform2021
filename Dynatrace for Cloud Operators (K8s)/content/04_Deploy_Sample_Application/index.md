@@ -73,7 +73,15 @@ Repeat the procedure for dev
 	$ kubectl create rolebinding serviceaccounts-view --clusterrole=view --	group=system:serviceaccounts:dev --namespace=dev
 ```
 
-Wait for the Dynatrace to pickup the change. Alternatively, you can recycle the apps with k8s-apps/recycle-sockshop-frontend.sh
+Recycle the apps with k8s-apps/recycle-sockshop-frontend.sh
+
+```
+chmod +x recycle-sockshop-frontend.sh
+```
+
+```
+./recycle-sockshop-frontend.sh
+```
 
 #### Validate
 
