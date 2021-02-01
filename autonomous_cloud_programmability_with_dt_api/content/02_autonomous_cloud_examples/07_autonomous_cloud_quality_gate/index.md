@@ -25,47 +25,52 @@ In this example we will code a Simple Quality Gate validation that performs a 'B
 
 ### Step 2: Create our Code Deployment script
 
-1. Now that we have a "before" baseline load running, we will prepare our Code Deployment script. To do this we will create a shell script that will:
+1. Export the following environment variables for your Dynatrace environment `DT_TENANT`, `DT_API_TOKEN`, `DT_ENTITY_ID`, and `DT_CHGEVENTDTTM`
+
+    ```bash
+    (dtu.training@ip-10-0-0-X)$ export DT_TENANT="{Tenant ID}.live.dynatrace.com"
+    (dtu.training@ip-10-0-0-X)$ export DT_API_TOKEN="{API Token}"
+    (dtu.training@ip-10-0-0-X)$ export DT_ENTITY_ID="{Service Entity ID from the prior step}"
+    (dtu.training@ip-10-0-0-X)$ export DT_CHGEVENTDTTM=$(date +"%s")
+    ```
+2. Now that we have a "before" baseline load running, we will prepare our Code Deployment script. To do this we will create a shell script that will:
 
     - Post a `CUSTOM_DEPLOYMENT` event to our `'easyTravel Customer Frontend'` service.
     - Spike some load against our Web Application.  
-
+    
     ```bash
     (dtu.training@ip-10-0-0-X)$ vi exec_code_deployment.sh
     ```
-2. Copy the contents from below and `Insert` it into our exec_code_deployment.sh script. 
+3. Copy the contents from below and `Insert` it into our exec_code_deployment.sh script. 
 
     ```bash
     #!/bin/bash
-    export DT_TENANT="{Tenant ID}.live.dynatrace.com"
-    export DT_API_TOKEN="{API Token}"
-    export DT_ENTITY_ID="{Service Entity ID from the prior step}"
-    export DT_CHGEVENTDTTM=$(date +"%s")
+
     if [[ -z "$DT_TENANT" || -z "$DT_API_TOKEN" || -z "$DT_ENTITY_ID" ]]; then
-    echo "DT_TENANT, DT_API_TOKEN & DT_ENTITY_ID MUST BE SET!!"
-    echo "DT_ENTITY_ID is the Dynatrace Monitored Entity ID, e.g: HOST-ABCD123213123 that this script sends an error event to"
-    exit 1
+        echo "DT_TENANT, DT_API_TOKEN & DT_ENTITY_ID MUST BE SET!!"
+        echo "DT_ENTITY_ID is the Dynatrace Monitored Entity ID, e.g: HOST-ABCD123213123 that this script sends an error event to"
+        exit 1
     fi
     EVENT_TYPE=$1
     if [[ -z "$EVENT_TYPE" ]]; then
-    EVENT_TYPE="ERROR_EVENT"
-    fi 
+        EVENT_TYPE="CUSTOM_DEPLOYMENT"
+    fi
     PROBLEM_TITLE=$2
     if [[ -z "$PROBLEM_TITLE" ]]; then
-    PROBLEM_TITLE="Simulated Power outage"
-    fi 
+        PROBLEM_TITLE="Simulated Power outage"
+    fi
     PAYLOAD='
     {
-    "source" : "Quality Gate Sample Script",
-    "deploymentName" : "Quality Gate Code Change",
-    "deploymentVersion" : "v11.11.11",
-    "eventType": "'$EVENT_TYPE'",
-    "attachRules":{
+        "source" : "Quality Gate Sample Script",
+        "deploymentName" : "Quality Gate Code Change",
+        "deploymentVersion" : "v11.11.11",
+        "eventType": "'$EVENT_TYPE'",
+        "attachRules":{
             "entityIds" : ["'$DT_ENTITY_ID'"]
-    },
-    "customProperties":{
-        "Triggered by": "Exec_Change.sh Script"
-    }
+        },
+        "customProperties":{
+            "Triggered by": "Exec_Change.sh Script"
+        }
     }
     '
     curl -X POST \
@@ -86,13 +91,13 @@ In this example we will code a Simple Quality Gate validation that performs a 'B
     #function to clean up
     function cleanup {
         echo "Cleaning up..."
-        killall -9 curl
+        for i in $(ps -ef | grep curl | awk '{print $2}' >> /dev/null); do kill -9 $i; done
     }
     #cleanup if canceled early
     bashtrap(){
         echo "Load generation canceled."
     }
-    site=http://localhost:8080
+    site=site=http://localhost:8080
     for i in `seq 1 $numProcs`
     do
         echo "Spawning process ${i} against ${site}"
@@ -104,14 +109,7 @@ In this example we will code a Simple Quality Gate validation that performs a 'B
     echo "Done!"
     ```
 
-3. Now let's update the below parameters at the top of our file.
-
-    ```bash
-    export DT_TENANT="{Tenant ID}.live.dynatrace.com"
-    export DT_API_TOKEN="{API Token}"
-    export DT_ENTITY_ID="{Service Entity ID from the prior step}"
-    ```
-- Save the file. 
+4. Save the file. 
 
     ```bash
     <esc key> : wq
@@ -119,7 +117,7 @@ In this example we will code a Simple Quality Gate validation that performs a 'B
 
 - Now back at the command line make sure the script is an executable file.
 
-    <span style="color:red">**NOTE: We do NOT want to execute this file just yet!**</span>
+    **NOTE: We do NOT want to execute this file just yet!**
 
     ```bash
     (dtu.training@ip-10-0-0-X)$ chmod +x exec_code_deployment.sh
@@ -172,7 +170,7 @@ In this example we will code a Simple Quality Gate validation that performs a 'B
     after_change = requests.get(after_change_query, headers={"Content-Type": "application/json","Authorization": f"Api-Token {token}"})
     after_change_median_rt = json.loads(after_change.text)['result'][0]['data'][0]['values'][0]
    ```
-5. The only thing left to do is to setup the comparison of the before and after response data to validate that it does not exceed our Quality Gate performance objectives.  
+6. The only thing left to do is to setup the comparison of the before and after response data to validate that it does not exceed our Quality Gate performance objectives.  
 
    ```python
     if (before_change_median_rt-after_change_median_rt < -0.05*before_change_median_rt): 
@@ -181,9 +179,42 @@ In this example we will code a Simple Quality Gate validation that performs a 'B
         print(f"No Quality Gate impact detected after the change")
    ```
 
+7. Your finished python script should now look like this:
+
+    ```python
+    import requests, os, time, json
+
+    tenant = "https://" + str(os.getenv("DT_TENANT"))
+    token = os.getenv("DT_API_TOKEN")
+    change_event_time = int(os.getenv("DT_CHGEVENTDTTM")) * 1000
+    entity = os.getenv("DT_ENTITY_ID")
+    metric = 'builtin:service.response.time'
+
+    before_change_query = f'{tenant}/api/v2/metrics/query?metricSelector={metric}:percentile(50)' \
+                        + f'&entitySelector=type("{entity.split("-")[0]}"),entityId("{entity}")'\
+                        + f'&from={change_event_time-1800000}' \
+                        + f'&to={change_event_time}' \
+                        + f'&resolution=Inf'
+    after_change_query = f'{tenant}/api/v2/metrics/query?metricSelector={metric}:percentile(50)' \
+                    + f'&entitySelector=type("{entity.split("-")[0]}"),entityId("{entity}")' \
+                    + f'&from={change_event_time}' \
+                    + f'&to={change_event_time+1800000}' \
+                    + f'&resolution=Inf' 
+
+    before_change = requests.get(before_change_query, headers={"Content-Type": "application/json","Authorization": f"Api-Token {token}"})
+    before_change_median_rt = json.loads(before_change.text)['result'][0]['data'][0]['values'][0]
+    after_change = requests.get(after_change_query, headers={"Content-Type": "application/json","Authorization": f"Api-Token {token}"})
+    after_change_median_rt = json.loads(after_change.text)['result'][0]['data'][0]['values'][0]
+
+    if (before_change_median_rt-after_change_median_rt < -0.05*before_change_median_rt): 
+        print(f"A difference larger than the 5% target was detected.  Consider investigation or change roll-back")
+    else: 
+        print(f"No Quality Gate impact detected after the change")
+    ```
+
 ### Step 4. Execute our Code Deployment and Quality Validation scripts and check the results
 
-1. We will first kick off our Code Deployment. This will take approximately 10 minutes to run, so now might be agood time to take a break if you need one. 
+1. We will first kick off our Code Deployment. This will take approximately 10 minutes to run, so now might be a good time to take a break if you need one. 
 
    ```bash 
     (dtu.training@ip-10-0-0-X)$ bash exec_code_deployment.sh 
