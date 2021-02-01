@@ -29,7 +29,7 @@ Go to the "little guy" (top right hand side), configuration api, press authorise
 
 Go to the dashboards section, expand /dashboards/{id} (3rd link) and press "try it out".
 
-Copy the dashboardId in the box and press execute.
+Copy the dashboard Id in the box and press execute.
 
 You should get a 200 ok response and see the dashboard data in the response field.
 
@@ -113,7 +113,7 @@ Zip the files and call the file extension.zip
 ## Sign the extension
 Create a key with openssl. 
 
-Open a dos window (AKA cmd) and type:
+Open a dos window (AKA cmd) and go to your project folder, type:
 
 openssl genrsa -out customer_private.pem 4096
 
@@ -132,7 +132,7 @@ Choose your demoextension.zip file
 
 The extension has been uploaded .
 
-For enable it, use the 8th link: POST extensions/extensionname/environmentConfiguration. Try it out.
+To enable it, use the 8th link: POST extensions/extensionname/environmentConfiguration. Try it out.
 
 Enter the name of the extension com.dynatrace.demo.extension and enter the correct version number (1.0.0).
 
