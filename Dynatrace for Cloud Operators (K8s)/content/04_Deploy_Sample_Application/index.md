@@ -58,7 +58,7 @@ This lab will require accessing the EKS Bastion Host you were assigned for this 
   - Purchase an item
 
 ### Enable Labels & Annotations Import
-1. The OneAgent will use a pod service account to query for its metadata via the Kubernetes REST API.
+The OneAgent will use a pod service account to query for its metadata via the Kubernetes REST API.
 
 The service accounts must be granted viewer role in order to have access
 
@@ -75,7 +75,7 @@ Repeat the procedure for dev
 
 Wait for the Dynatrace to pickup the change. Alternatively, you can recycle the apps with k8s-apps/recycle-sockshop-frontend.sh
 
-### 4. Validate
+#### 4. Validate
 
 Once working, you can validate the change in Dynatrace
 
