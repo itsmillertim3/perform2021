@@ -215,6 +215,7 @@ SELECT FUNNEL(useraction.name='loading of page /easytravel/search' AS 'Search', 
 
 1. You might have to wait 2 or 3 minutes and 
 1. Expand the metric row
+1. Change "Chart type" to "Bar"
 1. Mark the checkbox for "Service" 
 1. Mark the checkbox for "Dimensions"
 1. Scroll down to see the dimensions
