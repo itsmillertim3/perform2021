@@ -34,7 +34,7 @@ Help Documentation: https://www.dynatrace.com/support/help/technology-support/cl
 
 2. Apply the modified manifest
    ```
-   kubectl apply -f content/lab08/rpc-app2.yaml
+   kubectl apply -f content/lab07/rpc-app2.yaml
    ```
 
 ### 3. Viewing Prometheus Data in Dynatrace   
