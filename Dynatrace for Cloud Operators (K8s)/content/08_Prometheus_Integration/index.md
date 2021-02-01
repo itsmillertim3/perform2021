@@ -31,9 +31,9 @@ Navigate to session home directory
 
 1. Inspect the modified manifest
    ```
-   vi content/08_Prometheus_Integration/rpc-app-with-dt.yaml
+   cat content/08_Prometheus_Integration/rpc-app-with-dt.yaml
    ```
-   ![PODS](../../assets/images/rpcappmod.png)
+   ![PODS](../../assets/images/rpcwithdt.png)
 
 
 2. Apply the modified manifest
