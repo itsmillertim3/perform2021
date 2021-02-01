@@ -126,16 +126,18 @@ zip extension.zip and extension.zip.sig under demoextension.zip
 ## Upload the extension to your tenant
 Go back to swagger and switch to environment api V2.
 
-Use extension 2.0, POST extension (2nd link) and try it out. Don't forget to authorize first.
+Use the extension 2.0 section, POST extension (2nd link) and try it out. Don't forget to authorize yourself first.
 
-Choose your demoextension.zip file 
+Choose your demoextension.zip file, and press execute. 
 
-The extension has been uploaded .
+Check that the extension has been uploaded successfully by checking the response.
 
-To enable it, use the 8th link: POST extensions/extensionname/environmentConfiguration. Try it out.
+To enable the extension, use the 8th link: POST extensions/extensionname/environmentConfiguration. Try it out.
 
 Enter the name of the extension com.dynatrace.demo.extension and enter the correct version number (1.0.0).
 
-Press execute.
+Press execute. 
+
+Check that the extension has been uploaded activated by checking the response.
 
 Wait a few seconds and check that your dashboard has been imported on the Dynatrace UI under dashboards.
