@@ -1,5 +1,3 @@
-** Work in progress **
-
 Perform 2021
 
 Mastering Business Transactions
@@ -16,45 +14,170 @@ Mastering Business Transactions
 
 # Hands-on 1
 
-User action naming
+## 1) User action naming
+1. Navigate to "Applications"
+1. Click on "My web application"
+1. Top-right menu, click on the three dots button "..."
+1. Click on "Edit"
+1. Click on "Capturing" menu group
+1. Click on "User actions"
+1. Scroll down to "User action naming rules"
+1. Click the middle tab "Naming rules for XHR actions"
+1. Click "Add naming rule"
+1. Paste the text below in the field "Naming pattern"
+```{userInteraction} on "{elementIdentifier}"```
+1. Scroll down to validate in "Preview your rule"
+1. Click "Save"
 
-1. Add an XHR naming rule: {userInteraction} on "{elementIdentifier}"
+## 2) Key user actions
 
-Define two key user actions
+1. Navigate to "Applications"
+1. Click on "My web application"
+1. Scroll down to find "Top 3 user actions" section
+1. Click on "View full details" of this section
+1. Scroll down to the list of actions
+1. In the filter, type "sign in"
+1. Find the action in the filtered table
+1. Click on the name of the action
+1. Top-right menu, click on the three dots button "..."
+1. Click "Mark as key user action"
+1. Click on "User actions" in the breadcrumbs menu
+1. Scroll down to the list of actions
+1. In the filter, type "book now"
+1. Find the action in the filtered table
+1. Click on the name of the action
+1. Top-right menu, click on the three dots button "..."
+1. Click "Mark as key user action"
+1. Click on "User actions" in the breadcrumbs menu
+1. Scroll down to the list of actions
+1. Click on the tab "Key user actions (2)"
+1. Find the two actions that were defined
 
-1. click on "Sign In"
-1. click on "Book now"
+## Conversion goal
 
-Define a conversion goal
+1. Navigate to "Applications"
+1. Click on "My web application"
+1. Top-right menu, click on the three dots button "..."
+1. Click on "Edit"
+1. Click on "Session Replay and behaviour" menu group
+1. Click on "Conversion goals"
+1. Click on "Add goal"
+1. Type "Travel bookings" on "Name" field
+1. Change "Type of goal" to "User Action"
+1. Change "Rule applies to" to "XHR actions"
+1. Change "begins with" to "contains"
+1. Type "book journey for" in the last field
+1. Click on "Add goal"
 
-1. User action name contains "book journey for"
-
-Create a dashboard including the key user actions and conversion goal
-
+## Create dashboard
+1. Add one tile for the each key user action
+1. Add one tile for the conversion goal
 
 # Hands-on 2
 
-1. From the user session screen, create a funnel query
+## Funnel query
 
- ```
- SELECT FUNNEL(useraction.name='loading of page /easytravel/home' AS 'Home', useraction.name='click on "Search"' AS 'Search', useraction.name='click on "Sign In"' AS 'Sign in', useraction.name='click on "Book Now"' AS 'Book journey', useraction.name='click on "BOOK JOURNEY FOR "' AS 'Final booking') FROM usersession
- ```
+1. Navigate to "User sessions"
+1. Click on "User session query"
+1. Type the query below in the input field
+```
+SELECT FUNNEL(useraction.name='loading of page /easytravel/search' AS 'Search', useraction.name='click on "book now"' AS 'Book', useraction.name='click on "sign in"' AS 'Authenticate', useraction.name LIKE '*book journey for*' AS 'Pay') FROM usersession
+```
+1. Click on "Run query"
+1. Click the pencil to edit the name
+1. Type "Conversion funnel"
+1. Click on "Pin to dashboard"
+1. Make sure our dashboard is selected
+1. Click on "Pin"
+1. Click on "Open dashboard"
+1. Position the tile just below the first row
 
-2. Drill into Transactions & Services > BookingService 
-1. Define a key request: storeBooking
-1. Add the key request to the dashboard
+## Key request
 
-Extra exercise:
-1. Define a request naming for image requests: URL path contains “dt-map”
-1. Is it a business problem if the image of a big marketing campaign is not loading?
+1. Click on the "book now" key user action tile
+1. Top-right menu, click on the three dots button "..."
+1. Click on "Analyze user sessions"
+1. Type "Converted" in the filter field
+1. Select "Yes"
+1. Select any user from the list
+1. Click on one of the user's sessions
+1. Scroll down to find the conversion action
+1. Click on the arrow in the far right of the line
+1. Click on "Perform waterfall analysis"
+1. Click on the "/bookings/" request
+1. Click on "View PurePath"
+1. Click on the PurePath name
+1. Check in the PurePath that we have the method "storeBooking" in the trace
+1. Make sure you select the one in the BookingService!
+1. Click on the "storeBooking" link, in the Summary tab
+1. Remove the instance filter
+1. Top-right menu, click on the three dots button "..."
+1. Click on "Mark as key request"
+1. Click on "Pin to dashboard"
+1. Make sure our dashboard is selected
+1. Click on "Pin"
+1. Click on "Open dashboard"
+1. Position the tile to the right of the funnel
 
 
 # Hands-on 3
 
-Create two Request Attributes
+1. Navigate to "Settings"
+1. Click on "Server-side service monitoring" menu group
+1. Click on "Request attributes"
 
-1. Go to Settings > Server-side service monitoring > Request Attributes
-1. Click New
+## Define Revenue request attribute
+1. Click on "Define a new request attribute"
+1. Type "Revenue" on "Request attribute name"
+1. Change "Data type" to "Double"
+1. Click on "Add new data source"
+1. Change "Request attribute source" to "Java method parameter(s)"
+1. Click on "Select method sources"
+1. Type "backend" and choose the "com.dynatrace.easytravel.business.backend.jar" process group
+1. Click on the process that appears
+1. Click on "Continue"
+1. Type "BookingService"
+1. Click on "Search"
+1. Select the class that was found
+1. Click on "Continue"
+1. Make sure "Use the selected class" is selected
+1. Click on "Continue"
+1. Click on "Show 10 more"
+1. Find the method "public java.lang.String storeBooking(...)"
+1. Mark its checkbox
+1. Click on "Finish"
+1. Verify the method appears
+1. Change "Capture" value from "Class name" to "4: java.lang.Double"
+1. Click "Save" in the method source section
+1. Click "Save" at the top of the screen
+
+## Define Loyalty status request attribute
+1. Click on "Define a new request attribute"
+1. Type "Loyalty Status" on "Request attribute name"
+1. Leave "Data type" as "Text"
+1. Click on "Add new data source"
+1. Change "Request attribute source" to "Java method parameter(s)"
+1. Click on "Select method sources"
+1. Type "backend" and choose the "com.dynatrace.easytravel.business.backend.jar" process group
+1. Click on the process that appears
+1. Click on "Continue"
+1. Type "BookingService"
+1. Click on "Search"
+1. Select the class that was found
+1. Click on "Continue"
+1. Make sure "Use the selected class" is selected
+1. Click on "Continue"
+1. Click on "Show 10 more"
+1. Find the method "private void checkLoyaltyStatus(...)"
+1. Mark its checkbox
+1. Click on "Finish"
+1. Verify the method appears
+1. Change "Capture" value from "Class name" to "2: java.lang.String"
+1. Click "Save" in the method source section
+1. Click "Save" at the top of the screen
+
+
+## Summary of request attributes properties
 
 ```
 Name: Loyalty Status
@@ -65,8 +188,6 @@ Method: private void checkLoyaltyStatus
 Argument: 2: java.lang.String (Text)
 ```
 
-3. Define a request attribute based on the Java method parameter
-
 ```
 Name: Revenue
 Data type: Double
@@ -76,16 +197,75 @@ Method: public java.lang.String storeBooking
 Argument: 4: java.lang.Double (Double)
 ```
 
+## Validate capturing
+
+1. Navigate to Transactions & Services
+1. Type "Request attribute" in the filter bar
+1. Select Revenue
+1. Click on "BookingService"
+1. Click on "View requests"
+1. Scroll down to the bottom of the page
+1. Click the tab "Request attributes"
+1. Expand the arrow at the right side of the row
+1. Validate that both attributes are showing data
+
 # Hands-on 4
 
-1. Go to Settings, server-side monitoring, Calculated Service Metrics
-1. Create a metric for Revenue 
-1. Make sure to select the previously created Request Attribute as source
-1. Create a multi-dimensional analysis chart, save the view
-1. Use Revenue as Metric
-1. Use Loyalty Status as “Split by dimension”
-1. Pin it to a dashboard
-1. Create a new alerting rule based on the Revenue (Calculated Service Metric)
+## Preview with "multi-dimensional analysis"
+1. Navigate to "Transactions and Services"
+1. Click on "BookingService"
+1. Click on "Create analysis view"
+1. Select "Revenue" as Metric
+1. Delete the default "Split by dimension" value
+1. Type "loyalty" and click the auto-completed value "{RequestAttribute:Loyalty Status}"
+1. Either click the checkmark at the end of the field or type "<tab>"
+1. In the "Filter requests" field type "attribute" and click the auto-completed value "Request attribute"
+1. Select "Loyalty Status"
+1. Type "Platinum" (upper case 'P')
+1. Type "<enter>"
+
+## Create metric to track value
+
+1. Click on "Create metric..."
+1. Type "Revenue from Platinum customers" on the "Metric name"
+1. Click on "Create metric"
+1. Click on "Create custom chart"
+
+## Add chart to dashboard
+
+1. Wait a minute or so for the metric to be first calculated
+1. Expand the metric row
+1. Mark the checkbox for "Service" 
+1. Mark the checkbox for "Dimensions"
+1. Scroll down to see the dimensions
+1. Edit the colors: None is 'black', Gold is 'gold', Silver is 'silver', Platinum is 'gray'
+1. Click on "Pin to dashboard"
+1. Make sure our dashboard is selected
+1. Click on "Pin"
+1. Click on "Open dashboard"
+1. Position the tile below the funnel
+
+## Custom events for alerting
+
+1. Navigate to "Settings"
+1. Click on "Anomaly detection" menu group
+1. Click on "Custom events for alerting"
+1. Click on "Create custom event for alerting"
+1. Type "revenue" in the Metric field and select the metric
+1. Expand "Dimensions"
+1. Click on the "Filtered by" field and select "Platinum"
+1. Click on "Add rule-based filter"
+1. Click on "Value" field and select "BookingService"
+1. Click on "Create rule-based filter"
+1. Select "Auto-adaptive baseline"
+1. Type "1" in the signal fluctuation value
+1. Change from "above" to "below"
+1. Type "2" in the first numeric field
+1. Type "30" in the second numeric field
+1. Type "Reduced bookings for Platinum users"
+1. Click on "Create custom event for alerting" 
+
+We will not wait for the alert to happen.
 
 # Appendix
 
@@ -206,4 +386,11 @@ Validation
 Validation
 * Use the preview
 * Wait for the event to appear
+
+
+## H02 extra
+
+Extra exercise:
+1. Define a request naming for image requests: URL path contains “dt-map”
+1. Is it a business problem if the image of a big marketing campaign is not loading?
 
