@@ -5,7 +5,7 @@ curl -i -X POST --data "Log content" https://<env-URL>/api/v2/logs/ingest -H "Co
 ```
 2. JSON ingest
 ```Shell
-curl -i -X POST "https://<env-URL>/api/v2/logs/ingest" -H "accept: */*" -H "Authorization: Api-Token ***" -H "Content-Type: application/json; charset=utf-8" --data "{\"content\":\"JSON log content\"}"
+curl -i -X POST https://ydm87138.sprint.dynatracelabs.com/api/v2/logs/ingest -H "Authorization: Api-Token h_ezSujRSN28aEJsUDqoo" -H "Content-Type: application/json; charset=utf-8" --data "{\"content\":\"JSON log content\",\"status\":\"error\"}"
 ```
 
 # FluentD operations
