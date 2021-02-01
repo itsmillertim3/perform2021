@@ -1,6 +1,6 @@
 # Welcome to Progressive Delivery & Release Management HOTWEEK
 
-This repository contains 3 major assets
+This repository contains several assets for the [Dynatrace Perform 2021](https://www.dynatrace.com/perform-2021) HOT (Hands On Training) week on Progressive Delivery & Release Automation
 
 ## 1: CodeLab instructions
 
