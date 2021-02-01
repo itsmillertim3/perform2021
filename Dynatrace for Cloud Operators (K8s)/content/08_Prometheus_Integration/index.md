@@ -25,7 +25,7 @@
 
 1. Inspect the modified manifest
    ```
-   cat content/lab08/rpc-app2.yaml
+   vi content/08_Prometheus_Integration/rpc-app-with-dt.yaml
    ```
    ![PODS](../../assets/images/rpcappmod.png)
 
