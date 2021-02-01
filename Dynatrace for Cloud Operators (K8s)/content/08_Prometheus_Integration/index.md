@@ -38,7 +38,7 @@ Navigate to session home directory
 
 2. Apply the modified manifest
    ```
-   kubectl apply -f content/lab08/rpc-app-with-dt.yaml
+   kubectl apply -f content/08_Prometheus_Integration/rpc-app-with-dt.yaml
    ```
 
 ### 3. Viewing Prometheus Data in Dynatrace   
