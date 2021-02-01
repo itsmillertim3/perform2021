@@ -243,8 +243,9 @@ SELECT FUNNEL(useraction.name='loading of page /easytravel/search' AS 'Search', 
 1. Select "Auto-adaptive baseline"
 1. Change the values so it matches
 
-"Alert anomalies of `1` times the normal signal fluctuation.
-Raise an alert if the metric is `below` the baseline for `2` minutes during any `30` minute period."
+>Alert anomalies of `1` times the normal signal fluctuation.
+>
+> Raise an alert if the metric is `below` the baseline for `2` minutes during any `30` minute period.
 
 1. Scroll down to find the "Event description" section
 1. Type "Reduced bookings for Platinum users" on the "Title" field
