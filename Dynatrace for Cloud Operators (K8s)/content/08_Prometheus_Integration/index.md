@@ -4,7 +4,7 @@
 
 1. On the Bastion host create the sample app
    ```
-   kubectl create -f content/lab08/rpc-app.yaml
+   kubectl create -f content/08_Prometheus_Integration/rpc-app.yaml
    ```
 
 2. Validate the pods are deployed
