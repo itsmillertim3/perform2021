@@ -56,3 +56,27 @@ This lab will require accessing the EKS Bastion Host you were assigned for this 
   ![SockShopDevWeb](/Dynatrace%20for%20Cloud%20Operators%20(K8s)/assets/images/lab4-sockshopuiprod.png)  
   - Register an account
   - Purchase an item
+
+### Enable Labels & Annotations Import
+1. The OneAgent will use a pod service account to query for its metadata via the Kubernetes REST API.
+
+The service accounts must be granted viewer role in order to have access
+
+In the CLI, execute the following command to grant viewer role
+
+```
+	$ kubectl create rolebinding serviceaccounts-view --clusterrole=view --	group=system:serviceaccounts:production --namespace=production
+```
+Repeat the procedure for dev
+
+```
+	$ kubectl create rolebinding serviceaccounts-view --clusterrole=view --	group=system:serviceaccounts:dev --namespace=dev
+```
+
+Wait for the Dynatrace to pickup the change. Alternatively, you can recycle the apps with k8s-apps/recycle-sockshop-frontend.sh
+
+### 4. Validate
+
+Once working, you can validate the change in Dynatrace
+
+![SockShopDevRunning](../../assets/images/lab4-labels_annotations.png)
