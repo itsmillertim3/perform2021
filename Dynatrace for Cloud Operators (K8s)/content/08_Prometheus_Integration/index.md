@@ -17,7 +17,7 @@
    Run the following command (use one of the pod names listed above)
 
    ```
-   kubectl describe pod rpc-app-deployment-76f9d9ccf4-qbxj2
+   kubectl describe pod rpc-app-deployment-7fc8fc987b-m94nr
    ```   
    ![PODS](../../assets/images/rpcappdsc.png)
 
@@ -32,7 +32,7 @@
 
 2. Apply the modified manifest
    ```
-   kubectl apply -f content/lab08/rpc-app2.yaml
+   kubectl apply -f content/lab08/rpc-app-with-dt.yaml
    ```
 
 ### 3. Viewing Prometheus Data in Dynatrace   
