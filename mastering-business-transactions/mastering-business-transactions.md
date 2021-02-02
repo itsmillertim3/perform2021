@@ -222,7 +222,12 @@ SELECT FUNNEL(useraction.name='loading of page /easytravel/search' AS 'Search', 
 1. Mark the checkbox for "Service" 
 1. Mark the checkbox for "Dimensions"
 1. Scroll down to see the dimensions
-1. Edit the colors: None is 'black', Gold is 'gold', Silver is 'silver', Platinum is 'gray'
+1. Click on each of the dimensions' squares
+1. Type the name of the color for each one
+1. For the 'None' dimension, write 'black'
+1. For the 'Gold' is 'gold'
+1. For the 'Silver' is 'silver'
+1. For the 'Platinum' is 'gray'
 1. Click on "Pin to dashboard"
 1. Make sure our dashboard is selected
 1. Click on "Pin"
