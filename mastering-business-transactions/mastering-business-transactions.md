@@ -147,8 +147,7 @@ SELECT FUNNEL(useraction.name='loading of page /easytravel/search' AS 'Search', 
 1. Click on "Continue"
 1. Make sure "Use the selected class" is selected
 1. Click on "Continue"
-1. Click on "Show 10 more"
-1. Find the method "public java.lang.String storeBooking(...)"
+1. Type "store" in the filter to find the method "public java.lang.String storeBooking(...)"
 1. Mark its checkbox
 1. Click on "Finish"
 1. Change "Capture" value from "Class name" to "4: java.lang.Double"
@@ -173,8 +172,7 @@ SELECT FUNNEL(useraction.name='loading of page /easytravel/search' AS 'Search', 
 1. Click on "Continue"
 1. Make sure "Use the selected class" is selected
 1. Click on "Continue"
-1. Click on "Show 10 more"
-1. Find the method "private void checkLoyaltyStatus(...)"
+1. Type "check" in the filter to find the method "private void checkLoyaltyStatus(...)"
 1. Mark its checkbox
 1. Click on "Finish"
 1. Change "Capture" value from "Class name" to "2: java.lang.String"
