@@ -20,6 +20,7 @@ Mastering Business Transactions
 1. Click on "Capturing" menu group
 1. Click on "User actions"
 1. Scroll down to "User action naming rules"
+1. Change the dropdown from "in top 100 actions..." to "in all user actions"
 1. Click the middle tab "Naming rules for XHR actions"
 1. Click "Add naming rule"
 1. Paste the text below in the field "Naming pattern"
