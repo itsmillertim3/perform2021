@@ -115,7 +115,9 @@ SELECT FUNNEL(useraction.name='loading of page /easytravel/search' AS 'Search', 
 1. Check in the PurePath that we have the method "storeBooking" in the trace
 1. Make sure you select the one in the BookingService!
 1. Click on the "storeBooking" link, in the Summary tab
-1. Remove the instance filter
+1. Take a look at the top of the screen, just below the name "Booking Service"
+1. You will see a Filter field
+1. Click on the "X" in the box "Instance: com.dynatrace.easytravel...X" to remove the filter
 1. Top-right menu, click on the three dots button "..."
 1. Click on "Mark as key request"
 1. Click on "Pin to dashboard"
