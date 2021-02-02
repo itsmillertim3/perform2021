@@ -28,10 +28,10 @@ In this example we will code a Simple Quality Gate validation that performs a 'B
 1. Export the following environment variables for your Dynatrace environment `DT_TENANT`, `DT_API_TOKEN`, `DT_ENTITY_ID`, and `DT_CHGEVENTDTTM`
 
     ```bash
-    (dtu.training@ip-10-0-0-X)$ export DT_TENANT="{Tenant ID}.live.dynatrace.com"
-    (dtu.training@ip-10-0-0-X)$ export DT_API_TOKEN="{API Token}"
-    (dtu.training@ip-10-0-0-X)$ export DT_ENTITY_ID="{Service Entity ID from the prior step}"
-    (dtu.training@ip-10-0-0-X)$ export DT_CHGEVENTDTTM=$(date +"%s")
+    export DT_TENANT="{Tenant ID}.live.dynatrace.com"
+    export DT_API_TOKEN="{API Token}"
+    export DT_ENTITY_ID="{Service Entity ID from the prior step}"
+    export DT_CHGEVENTDTTM=$(date +"%s")
     ```
 2. Now that we have a "before" baseline load running, we will prepare our Code Deployment script. To do this we will create a shell script that will:
 
