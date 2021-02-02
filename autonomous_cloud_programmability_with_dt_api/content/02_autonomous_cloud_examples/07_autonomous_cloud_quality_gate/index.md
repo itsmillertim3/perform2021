@@ -42,7 +42,7 @@ In this example we will code a Simple Quality Gate validation that performs a 'B
     - Spike some load against our Web Application.  
     
     ```bash
-    (dtu.training@ip-10-0-0-X)$ vi exec_code_deployment.sh
+    (dtu.training@ip-10-0-0-X)$ nano exec_code_deployment.sh
     ```
 3. Copy the contents from below and `Insert` it into our exec_code_deployment.sh script. 
 
@@ -114,10 +114,6 @@ In this example we will code a Simple Quality Gate validation that performs a 'B
 
 4. Save the file. 
 
-    ```bash
-    <esc key> : wq
-    ```
-
 - Now back at the command line make sure the script is an executable file.
 
     **NOTE: We do NOT want to execute this file just yet!**
@@ -131,7 +127,7 @@ In this example we will code a Simple Quality Gate validation that performs a 'B
 1. We will now create a Python script that will run the Quality Gate validation. Create a file called `quality_gate_validation.py`
 
    ```bash
-   (dtu.training@ip-10-0-0-X)$ vi quality_gate_validation.py
+   (dtu.training@ip-10-0-0-X)$ nano quality_gate_validation.py
    ```
 
 2. Import the following packages to the top of the file, so we can fetch data from the API.
