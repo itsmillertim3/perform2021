@@ -94,7 +94,7 @@
         "tileFilter": {},
         "filterConfig": {
             "type": "MIXED",
-            "customName": "Server side response time;sli=response_time_p90;pass=<=500;warning=<=600",
+            "customName": "Server side response time;sli=response_time_p90;pass=<=500;warning=<=800",
             "defaultName": "Custom chart",
             "chartConfig": {
                 "legendShown": true,
