@@ -2,12 +2,15 @@
 
 In this example we will code a Simple Quality Gate validation that performs a 'Before' and 'After' check of a given Code Deployment.  We will be using the service metric response time named `builtin:service.response.time`.  This example can later be extrapolated to conduct additional validations using other service metrics such as error rates, throughput, CPU, etc.
 
-### Step 1: Startup our Sample Application and generate some load.
+### Step 1: Setup
 
-1. Login to your VM and execute:
+1.  We will need EasyTravel running on your tenant, which should have been started already.  If it is running already you can skip item 1) and 2) of this Step.
+
+  If your EasyTravel application is not running already, logon to your VM and execute:
 
    ```bash
-   (dtu.training@ip-10-0-0-X)$ sudo nohup ./easytravel-2.0.0-x64/weblauncher/weblauncher.sh &
+   cd ~
+   sudo nohup ./easytravel-2.0.0-x64/weblauncher/weblauncher.sh &
    ```
 
 2. Using your web browser, navigate to the Weblauncher UI on the exteral IP of your VM, on port 8094 and kick off some load. On the EasyTravel Weblaunch page go to the `Production` tab, and click `Standard`.   
