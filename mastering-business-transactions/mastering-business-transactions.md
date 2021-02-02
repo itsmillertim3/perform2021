@@ -36,7 +36,7 @@ Mastering Business Transactions
 1. Scroll down to find "Top 3 user actions" section
 1. Click on "View full details" of this section
 1. Scroll down to the list of actions
-1. Change the dropdown from "in top 100 actions..." to "in all user actions"
+1. Click on the filter field and change the dropdown from "in top 100 actions..." to "in all user actions"
 1. In the filter, type "sign in"
 1. Find the action in the filtered table
 1. Click on the name of the action
@@ -44,7 +44,7 @@ Mastering Business Transactions
 1. Click "Mark as key user action"
 1. Click on "User actions" in the breadcrumbs menu
 1. Scroll down to the list of actions
-1. Change the dropdown from "in top 100 actions..." to "in all user actions"
+1. Click on the filter field and change the dropdown from "in top 100 actions..." to "in all user actions"
 1. In the filter, type "book now"
 1. Find the action in the filtered table
 1. Click on the name of the action
