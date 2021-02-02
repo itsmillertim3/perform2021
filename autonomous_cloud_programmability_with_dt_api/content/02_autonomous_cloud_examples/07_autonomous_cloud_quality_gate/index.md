@@ -220,7 +220,13 @@ In this example we will code a Simple Quality Gate validation that performs a 'B
     (dtu.training@ip-10-0-0-X)$ bash exec_code_deployment.sh 
    ```
 
-2. We will now run our Quality Gate validation script and check the results.
+2. After the above script runs, you may need to clean up the old processes.   
+
+   ```bash 
+    (dtu.training@ip-10-0-0-X)$ sudo pkill -f curl 
+   ```
+
+3. We will now run our Quality Gate validation script and check the results.
 
     ```bash
     (dtu.training@ip-10-0-0-X)$ python3 quality_gate_validation.py
