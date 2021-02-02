@@ -174,7 +174,7 @@ This example will utilize the `monitored entities v2 API` to crawl upstream depe
                   hosts[level].append(i["id"])
                else:
                   hosts[level] = [i["id"]]
-                  fetch_upstream(i["id"], level + 1)
+               fetch_upstream(i["id"], level + 1)
 
    fetch_upstream(hosts[0][0], 1)
    print (hosts)
