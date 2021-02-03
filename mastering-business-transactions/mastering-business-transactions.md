@@ -20,7 +20,7 @@ Mastering Business Transactions
 1. Click on "Capturing" menu group
 1. Click on "User actions"
 1. Scroll down to "User action naming rules"
-1. Click the middle tab "Naming rules for XHR actions"
+1. **Click the middle tab "Naming rules for XHR actions"**
 1. Click "Add naming rule"
 1. Paste the text below in the field "Naming pattern"
 
@@ -35,8 +35,9 @@ Mastering Business Transactions
 1. Click on "My web application"
 1. Scroll down to find "Top 3 user actions" section
 1. Click on "View full details" of this section
-1. Scroll down to the list of actions
-1. Click on the filter field and change the dropdown from "in top 100 actions..." to "in all user actions"
+1. Scroll down to the list of actions at the bottom of the page
+1. Click on the filter field and a dropdown list will appear
+1. Change the dropdown from "in top 100 actions..." to "in all user actions"
 1. In the filter, type "sign in"
 1. Find the action in the filtered table
 1. Click on the name of the action
