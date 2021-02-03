@@ -158,6 +158,8 @@ SELECT FUNNEL(useraction.name='loading of page /easytravel/search' AS 'Search', 
 1. Click on "Finish"
 1. Change "Capture" value from "Class name" to "4: java.lang.Double"
 1. Click "Save" in the method source section
+1. Scroll up to the top of the page
+1. **Make sure that the "Data type" field is "Double"**
 1. Click "Save" at the top of the screen
 
 ## 2) Capture "Loyalty Status" request attribute
@@ -183,6 +185,7 @@ SELECT FUNNEL(useraction.name='loading of page /easytravel/search' AS 'Search', 
 1. Click on "Finish"
 1. Change "Capture" value from "Class name" to "2: java.lang.String"
 1. Click "Save" in the method source section
+1. Scroll up to the top of the page
 1. Click "Save" at the top of the screen
 
 ## 3) Validate data collection
