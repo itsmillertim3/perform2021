@@ -108,9 +108,9 @@ SELECT FUNNEL(useraction.name='loading of page /easytravel/search' AS 'Search', 
 1. Select "Yes"
 1. Select any user from the list
 1. Click on one of the user's sessions
-1. Scroll down to find the conversion action
-1. Click on the arrow in the far right of the line
-1. Click on "Perform waterfall analysis"
+1. Scroll down the list of actions to find 'click on "book journey for ..."'
+1. Click on the arrow in the far right of the line to see the details of the action
+1. Click on "Perform waterfall analysis" 
 1. Click on the "/bookings/" request
 1. Click on "View PurePath"
 1. Click on the PurePath name
