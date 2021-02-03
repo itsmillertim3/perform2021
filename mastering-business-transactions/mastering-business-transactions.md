@@ -35,7 +35,7 @@ Mastering Business Transactions
 1. Click on "My web application"
 1. Scroll down to find "Top 3 user actions" section
 1. Click on "View full details" of this section
-1. Scroll down to the list of actions at the bottom of the page
+1. Scroll down to "Top 100 user actions" section, just below the charts
 1. Click on the filter field and a dropdown list will appear
 1. Change the dropdown from "in top 100 actions..." to "in all user actions"
 1. In the filter, type "sign in"
