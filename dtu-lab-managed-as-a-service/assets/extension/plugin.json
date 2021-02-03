@@ -1,0 +1,278 @@
+{
+  "name": "custom.remote.python.host_unit",
+  "version": "1.111.17",
+  "productiveMinVersion": "1.000",
+  "requiredAgentVersion": "1.000",
+  "type": "python",
+  "entity": "CUSTOM_DEVICE",
+  "metricGroup": "Licensing.Host_Units",
+  "technologies": ["LICENSING"],
+  "source": {
+    "package": "customPartnerLicenses",
+    "className": "custom_Partner_Licenses",
+    "install_requires": [
+      "requests>=2.6.0"
+    ],
+    "activation": "Remote"
+  },
+  "ui" : {
+    "keymetrics" : [
+      {
+        "key": "licenses.total_tenant_host_units",
+        "aggregation": "max",
+        "mergeaggregation": "sum",
+        "displayname": "Host units"
+      },
+      {
+        "key": "licenses.total_tenant_num_hosts",
+        "aggregation": "max",
+        "mergeaggregation": "sum",
+        "displayname": "Total number of hosts"
+      }
+    ],
+    "keycharts" : [
+        {
+            "group": "Monitoring Mode",
+            "title": "Mode",
+            "series": [
+            {
+                "key": "mode.state_9",
+                "displayname": "Mode",
+                "seriestype": "bar",
+                "statecolors": ["#6f2da8", "#73be28", "#1496ff", "#a6a6a6"],
+                "statechart": true
+            }]
+        },
+        {
+            "group": "Host Units",
+            "title": "Total host unit usage",
+            "series": [
+            {
+                "key": "licenses.total_tenant_host_units",
+                "displayname": "Per environment host units",
+                "aggregation": "max",
+                "mergeaggregation": "sum",
+                "seriestype": "line",
+                "color": "#74cff7"
+            }]
+        },
+        {
+          "group": "Hosts",
+          "title": "Total number of hosts",
+          "series": [
+              {
+                  "key": "licenses.total_tenant_num_hosts",
+                  "displayname": "Total number of hosts",
+                  "seriestype": "line",
+                  "color": "#1496ff",
+                  "metricexplanation": "How many hosts per environment"
+              }
+          ]
+        },
+        {
+          "group": "DEM Units",
+          "title": "Total number of DEM units",
+          "series": [
+              {
+                  "key": "licenses.total_tenant_dem_units",
+                  "displayname": "Total number of DEM units consumed",
+                  "seriestype": "line",
+                  "color": "#bedf2a",
+                  "metricexplanation": "How many DEM units per environment"
+              }
+          ]
+        },
+        {
+          "group": "DAVIS Data Units",
+          "title": "Total number of DDUs",
+          "series": [
+              {
+                  "key": "licenses.total_tenant_ddus",
+                  "displayname": "Total number of DDUs consumed",
+                  "seriestype": "line",
+                  "color": "#FFFF00",
+                  "metricexplanation": "How many DDUs per environment"
+              }
+          ]
+        }
+        ],
+    "charts" : [
+      {
+        "group": "Host Units",
+        "title": "Host unit consumption",
+        "series": [
+            {
+                "key": "licenses.total_tenant_host_units",
+                "displayname": "Per environment host units",
+                "seriestype": "area",
+                "color": "#74cff7",
+                "metricexplanation": "How many host units per environment"
+            }
+        ]
+      },
+      {
+        "group": "FS Host Units",
+        "title": "FS Host unit consumption",
+        "series": [
+            {
+                "key": "licenses.total_tenant_FS_host_units",
+                "displayname": "Per environment FS host units",
+                "seriestype": "area",
+                "color": "#73be28",
+                "metricexplanation": "How many FS host units per environment"
+            }
+        ]
+      },  
+      {
+        "group": "Application-only monitoring Units",
+        "title": "Application-only monitoring unit consumption",
+        "series": [
+            {
+                "key": "licenses.total_tenant_PS_host_units",
+                "displayname": "Per environment App-only monitoring units",
+                "seriestype": "area",
+                "color": "#73be28",
+                "metricexplanation": "How many App-only monitoring units per environment"
+            }
+        ]
+      },      
+      {
+        "group": "IM Host Units",
+        "title": "IM Host unit consumption",
+        "series": [
+            {
+                "key": "licenses.total_tenant_IM_host_units",
+                "displayname": "Per environment IM host units",
+                "seriestype": "area",
+                "color": "#6f2da8",
+                "metricexplanation": "How many IM host units per environment"
+            }
+        ]
+      },
+      {
+        "group": "Hosts",
+        "title": "Total number of hosts",
+        "series": [
+            {
+                "key": "licenses.total_tenant_num_hosts",
+                "displayname": "Total number of hosts",
+                "seriestype": "line",
+                "color": "#1496ff",
+                "metricexplanation": "How many hosts per environment"
+            }
+        ]
+      },
+      {
+        "group": "FS Hosts",
+        "title": "Total number of FS hosts",
+        "series": [
+            {
+                "key": "licenses.total_tenant_num_FS_hosts",
+                "displayname": "Total number of FS hosts",
+                "seriestype": "line",
+                "color": "#73be28",
+                "metricexplanation": "How many FS hosts per environment"
+            }
+        ]
+      },
+      {
+        "group": "Application-only Monitors",
+        "title": "Total number of Application-only monitors",
+        "series": [
+            {
+                "key": "licenses.total_tenant_num_PS_hosts",
+                "displayname": "Total number of Application-only monitors",
+                "seriestype": "line",
+                "color": "#73be28",
+                "metricexplanation": "How many Application-only monitoring instances per environment"
+            }
+        ]
+      },
+      {
+        "group": "IM Hosts",
+        "title": "Total number of IM hosts",
+        "series": [
+            {
+                "key": "licenses.total_tenant_num_IM_hosts",
+                "displayname": "Total number of IM hosts",
+                "seriestype": "line",
+                "color": "#6f2da8",
+                "metricexplanation": "How many IM hosts per environment"
+            }
+        ]
+      },
+      {
+        "group": "DEM Units",
+        "title": "Total number of DEM units",
+        "series": [
+            {
+                "key": "licenses.total_tenant_dem_units",
+                "displayname": "Total number of DEM units consumed",
+                "seriestype": "line",
+                "color": "#bedf2a",
+                "metricexplanation": "How many DEM units per environment"
+            }
+        ]
+      },
+      {
+        "group": "DAVIS Data Units",
+        "title": "Total number of DDUs",
+        "series": [
+            {
+                "key": "licenses.total_tenant_ddus",
+                "displayname": "Total number of DDUs consumed",
+                "seriestype": "line",
+                "color": "#FFFF00",
+                "metricexplanation": "How many DDUs per environment"
+            }
+        ]
+      }
+    ]
+  },
+  "metrics": [
+    { "statetimeseries": {"key": "mode.state_9", "states": ["Infrastructure", "FullStack", "Mixed", "Unused"], "displayname": "Monitoring Mode", "source": {"state_entrypoint": "/api/state" }}, "entity": "CUSTOM_DEVICE"},
+    { "timeseries": { "key": "licenses.total_tenant_host_units", "unit":"Count", "displayname": "Host Units", "aggregation": "SUM"}, "entity": "CUSTOM_DEVICE"},
+    { "timeseries": { "key": "licenses.total_tenant_FS_host_units", "unit":"Count", "displayname": "FS Host Units", "aggregation": "SUM"}, "entity": "CUSTOM_DEVICE"},
+    { "timeseries": { "key": "licenses.total_tenant_PS_host_units", "unit":"Count", "displayname": "App-only Units", "aggregation": "SUM"}, "entity": "CUSTOM_DEVICE"},
+    { "timeseries": { "key": "licenses.total_tenant_IM_host_units", "unit":"Count", "displayname": "IM Host Units", "aggregation": "SUM"}, "entity": "CUSTOM_DEVICE"},
+    { "timeseries": { "key": "licenses.total_tenant_num_hosts", "unit": "Count", "displayname": "Hosts", "aggregation": "MAX" }, "entity": "CUSTOM_DEVICE"},
+    { "timeseries": { "key": "licenses.total_tenant_num_FS_hosts", "unit": "Count", "displayname": "FS Hosts", "aggregation": "MAX" }, "entity": "CUSTOM_DEVICE"},
+    { "timeseries": { "key": "licenses.total_tenant_num_PS_hosts", "unit": "Count", "displayname": "App-only Instances", "aggregation": "MAX" }, "entity": "CUSTOM_DEVICE"},
+    { "timeseries": { "key": "licenses.total_tenant_num_IM_hosts", "unit": "Count", "displayname": "IM Hosts", "aggregation": "MAX" }, "entity": "CUSTOM_DEVICE"},
+    { "timeseries": { "key": "licenses.total_tenant_dem_units", "unit": "Count", "displayname": "DEM Units", "aggregation": "SUM" }, "entity": "CUSTOM_DEVICE"},
+    { "timeseries": { "key": "licenses.total_tenant_ddus", "unit": "Count", "displayname": "DDUs", "aggregation": "SUM" }, "entity": "CUSTOM_DEVICE"},
+    { "timeseries": { "key": "licenses.total_license_host_units", "unit":"Count", "displayname": "Total license Host Units", "aggregation": "MAX"}, "entity": "CUSTOM_DEVICE"},
+    { "timeseries": { "key": "licenses.total_license_FS_host_units", "unit":"Count", "displayname": "Total license FS Host Units", "aggregation": "MAX"}, "entity": "CUSTOM_DEVICE"},
+    { "timeseries": { "key": "licenses.total_license_PS_host_units", "unit":"Count", "displayname": "Total license App-only instances", "aggregation": "MAX"}, "entity": "CUSTOM_DEVICE"},
+    { "timeseries": { "key": "licenses.total_license_IM_host_units", "unit":"Count", "displayname": "Total license IM Host Units", "aggregation": "MAX"}, "entity": "CUSTOM_DEVICE"},
+    { "timeseries": { "key": "licenses.total_license_hosts", "unit": "Count", "displayname": "Total license hosts", "aggregation": "MAX" }, "entity": "CUSTOM_DEVICE"},
+    { "timeseries": { "key": "licenses.total_license_FS_hosts", "unit": "Count", "displayname": "Total license FS hosts", "aggregation": "MAX" }, "entity": "CUSTOM_DEVICE"},
+    { "timeseries": { "key": "licenses.total_license_PS_hosts", "unit": "Count", "displayname": "Total license App-only instances", "aggregation": "MAX" }, "entity": "CUSTOM_DEVICE"},
+    { "timeseries": { "key": "licenses.total_license_IM_hosts", "unit": "Count", "displayname": "Total license IM hosts", "aggregation": "MAX" }, "entity": "CUSTOM_DEVICE"},
+    { "timeseries": { "key": "licenses.total_license_dem_units", "unit": "Count", "displayname": "Total license DEM units", "aggregation": "SUM" }, "entity": "CUSTOM_DEVICE"},
+    { "timeseries": { "key": "licenses.total_license_ddus", "unit": "Count", "displayname": "Total license DDUs", "aggregation": "SUM" }, "entity": "CUSTOM_DEVICE"}
+  ],
+  "properties": [
+    {
+      "key": "url",
+      "type": "String"
+    },
+    {
+      "key": "api_token",
+      "type": "Password"
+    },
+    {
+      "key": "company_name",
+      "type": "String"
+    }
+  ],
+"configUI" :{
+    "displayName": "Custom Dynatrace Licensing",
+        "properties" : [
+          { "key" : "url", "displayName": "Managed URL", "displayOrder": 2, "displayHint": "https://ynw039.dynatrace-managed.com" },
+          { "key" : "api_token", "displayName": "Service Provider API token", "displayOrder": 3, "displayHint": "Cluster token with ServiceProviderAPI scope" },
+          { "key" : "company_name", "displayName": "Company or Cluster Name", "displayOrder": 1 }          
+        ]
+  }
+}
+  
