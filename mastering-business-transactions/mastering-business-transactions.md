@@ -221,8 +221,9 @@ SELECT FUNNEL(useraction.name='loading of page /easytravel/search' AS 'Search', 
 
 ## 3) Add chart to dashboard
 
-1. You might have to wait 2 or 3 minutes and 
-1. Expand the metric row
+1. You might have to wait 2 or 3 minutes before datapoints appear
+1. Just below the chart, see the metric name that we just created
+1. All the way to the right, click on the arrow to expand that row
 1. Change "Chart type" to "Stacked Bar"
 1. Mark the checkbox for "Service" 
 1. Mark the checkbox for "Dimensions"
