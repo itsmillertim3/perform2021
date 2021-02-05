@@ -24,7 +24,7 @@ Mastering Business Transactions
 1. Click "Add naming rule"
 1. Paste the text below in the field "Naming pattern"
 
-```{userInteraction} on "{elementIdentifier}"```
+```{userInteraction (default)}on "{elementIdentifier (default)}"```
 
 11. Scroll down to validate in "Preview your rule"
 1. Click "Save"
